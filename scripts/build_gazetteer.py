@@ -40,13 +40,57 @@ SETTLEMENT_TYPES = {
     'Municipi',
     'Capital de municipi',
     'Capital de Municipi',
+    'Nucli de població capital de municipi',
     'Entitat de Població',
     'Llogaret, llogarret, ranxo',
+    'Altre nucli de població, llogaret',
     'Vila',
     'Barri',
     'Barriada',
     'Urbanització, barriada (aïllat)',
 }
+
+# Tipus NGIB ordenats de més a menys autoritatiu per resoldre col·lisions
+# d'homònims dins d'una mateixa illa. Quan dos registres NGIB normalitzen al
+# mateix nom (p. ex. `sa Pobla` com a municipi al nord de Mallorca i `sa Pobla`
+# com a possessió a Llucmajor), el de major prioritat prevaldrà al dedup.
+LOCAL_TYPE_PRIORITY = [
+    'Municipi',
+    'Capital de municipi',
+    'Capital de Municipi',
+    'Nucli de població capital de municipi',
+    'Vila',
+    'Entitat de Població',
+    'Llogaret, llogarret, ranxo',
+    'Altre nucli de població, llogaret',
+    'Illa gran',
+    'Illa mitjana',
+    'Urbanització, barriada (aïllat)',
+    'Barriada',
+    'Barri',
+    'Santuari',
+    'Monestir, convent, cartoixa',
+    'Església, capella, oratori, ermita',
+    'Edifici religiós',
+    'Castell, fortalesa',
+    'Far',
+    'Cim, puig, talaia',
+    'Elevació gran',
+    'Serra, serral, serralada',
+    'Cap, punta, morro mitjà',
+    'Cap, punta, morro petit',
+    'Estret, cala, badia mitjana',
+    'Estret, cala petita, rada',
+    'Construcció agroindustrial',
+    'Finca, possessió, lloc, casa pagesa, caseta',
+    'Accident petit, relleu del fons marí, illot',
+    'Monument',
+]
+def _type_rank(ltype: str | None) -> int:
+    try:
+        return LOCAL_TYPE_PRIORITY.index(ltype or '')
+    except ValueError:
+        return len(LOCAL_TYPE_PRIORITY)  # unknown → lowest priority
 POSSESSION_TYPES = {
     'Finca, possessió, lloc, casa pagesa, caseta',
     'Construcció agroindustrial',
@@ -62,6 +106,7 @@ NATURAL_TYPES = {
     'Cim, puig, talaia',
     'Pic, cim petit (puntual)',
     'Elevació petita',
+    'Elevació gran',
     'Serra, serral, serralada',
     'Cap, punta, morro mitjà',
     'Cap, punta, morro petit',
@@ -70,7 +115,8 @@ NATURAL_TYPES = {
     'Cova, balma, avenc',
     'Torrent',
     'Font, surgència',
-    'Illa, illot, escull',
+    'Illa gran',
+    'Illa mitjana',
     'Accident petit, relleu del fons marí, illot',
     'Pla, plana',
     'Castell, fortalesa',
@@ -112,6 +158,11 @@ def normalize(s: str) -> str:
     s = strip_article(s.strip())
     s = strip_diacritics(s)
     s = s.upper()
+    # Hyphens and slashes act as word separators in Miñano's typography
+    # (e.g. ALCARIA-ROJA, SAN JUAN/SANT JOAN). Converting them to spaces
+    # lets the fuzzy matcher line up tokens correctly.
+    for sep in ('-', '–', '—', '/'):
+        s = s.replace(sep, ' ')
     s = ' '.join(s.split())
     # Drop common punctuation that may obscure matching.
     for ch in '.,;:¡¿!?()[]{}«»"\'`':
@@ -219,6 +270,13 @@ HISTORICAL_VARIANTS = [
     ("San Lorenzo del Cardasar","Sant Llorenç des Cardassar","Mallorca"),
     ("Capdepera",  "Capdepera",  "Mallorca"),
     ("Cap de Pera","Capdepera",  "Mallorca"),
+    # Miñano writes 'Alcaria' for what NGIB records as 'Alqueria'
+    # (same Arabic etymology, al-qarya). Curated mappings to the actual
+    # modern Catalan toponyms.
+    ("Alcaria-Roja",   "Alqueria Roja",      "Mallorca"),
+    ("Alcaria Roja",   "Alqueria Roja",      "Mallorca"),
+    ("Alcaria-Blanca", "s'Alqueria Blanca",  "Mallorca"),
+    ("Alcaria Blanca", "s'Alqueria Blanca",  "Mallorca"),
     ("Artá",       "Artà",       "Mallorca"),
     ("Artà",       "Artà",       "Mallorca"),
     ("Porreras",   "Porreres",   "Mallorca"),
@@ -334,10 +392,23 @@ def main():
 
     settlement_set = SETTLEMENT_TYPES | POSSESSION_TYPES
 
+    # Sort the combined rows so that, within each (normalized, island)
+    # group, the most authoritative local type comes first. The dedup loop
+    # below then picks that one and drops the rest. Without this step the
+    # dedup is order-dependent and can promote a possessió over the
+    # actual village of the same name (`sa Pobla` farm in Llucmajor was
+    # winning over `sa Pobla` municipality in the north of Mallorca).
+    all_rows = ngib_rows + variant_rows
+    all_rows.sort(key=lambda r: (
+        normalize(r[0] or '') or '~',  # group by normalized name
+        r[2] or '',                    # then by island
+        _type_rank(r[3]),              # then most authoritative type first
+    ))
+
     out_rows = []
     seen_norm = set()  # dedupe by (normalized, island)
 
-    for (spelling, mun, isl, ltype, gn_id, lon, lat) in ngib_rows + variant_rows:
+    for (spelling, mun, isl, ltype, gn_id, lon, lat) in all_rows:
         if not spelling or not isl:
             continue
         norm = normalize(spelling)

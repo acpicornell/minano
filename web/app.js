@@ -846,8 +846,12 @@ function buildPopupHTML(e) {
   const more = (e.description || "").length > 600 ? "…" : "";
   const matched = e.matched_toponym
     ? ` <span class="map-popup-meta">↔ ${esc(e.matched_toponym)}</span>` : "";
-  const fb = e.coord_fallback
-    ? ` <em style="color:#94a3b8">(coord aproximada)</em>` : "";
+  const fbLabel = {
+    "ambiguous-homonym": "topònim ambigu — ubicació indeterminada",
+    "island-centroid":   "ubicació aproximada al centre de l'illa",
+  }[e.coord_fallback];
+  const fb = fbLabel
+    ? ` <em style="color:#94a3b8">(${esc(fbLabel)})</em>` : "";
   return (
     `<h3 class="map-popup-title">${esc(e.title)}${matched}</h3>` +
     `<p class="map-popup-meta">${esc(meta)} · Tom ${e.vol} · pàg. ${e.page_printed || "?"}${fb}</p>` +
