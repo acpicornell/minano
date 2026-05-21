@@ -11,8 +11,17 @@
       "place_type": "isla",
       "island": "Mallorca",
       "description": "El P. Fr. Luis de Villafranca con fecha 16 noviembre 1828 corrige las cifras de extracción anual de aceite: el estado de la Real Aduana de Mallorca registra 1,477,201 arrobas castellanas de aceite extraído entre 1790 y 1805 (16 años inclusive), lo que da una media anual de 92,325 ½ arrobas. En benisalem [Binisalem], Pollensa, Bañalbufar y algunos puntos de Andraix se hacen los mejores vinos (principalmente Binisalem y malvasía de Bañalbufar). Varones ilustres añadidos: Juan Dameto (historiador), P. Jaime Custurer, Vicente Mut (historiador y matemático).",
-      "stats": {"aceite_arrobas_16_anos": 1477201, "aceite_arrobas_media_anual": 92325, "periodo": "1790-1805"},
-      "cross_references": ["Binisalem", "Pollensa", "Bañalbufar", "Andratx"],
+      "stats": {
+        "aceite_arrobas_16_anos": 1477201,
+        "aceite_arrobas_media_anual": 92325,
+        "periodo": "1790-1805"
+      },
+      "cross_references": [
+        "Binisalem",
+        "Pollensa",
+        "Bañalbufar",
+        "Andratx"
+      ],
       "confidence": "high",
       "note": "Suplement amb dades quantitatives importants sobre el comerç balear d'oli i vi. Cita Pere Joan Dameto (cronista del Regne), P. Jaume Custurer (jesuïta historiador), Vicenç Mut (matemàtic militar)."
     },
@@ -22,10 +31,19 @@
       "island": "Mallorca",
       "municipality": "Manacor",
       "description": "En la línea 9 donde dice 'que la nobleza de Palma posee la mayor parte de su territorio', añádase: 'y esta es la causa de que sea la V. donde hay mayor número de pobres, por no poseer los más ni un palmo de tierra'. Celebra feria el día 8 de septiembre y los dos domingos siguientes. Sobre un monte al S. E. de la villa se halla una ermita con la advocación de Santa Lucía. Hay en el término de esta villa 8 molinos de viento. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "stats": {"feria": "8 sept + 2 dom siguientes", "ermitas": 1, "molinos_viento": 8},
-      "cross_references": ["Manacor", "Palma", "Santa Lucía"],
+      "stats": {
+        "feria": "8 sept + 2 dom siguientes",
+        "ermitas": 1,
+        "molinos_viento": 8
+      },
+      "cross_references": [
+        "Manacor",
+        "Palma",
+        "Santa Lucía"
+      ],
       "confidence": "high",
-      "note": "Suplement social important: pobresa estructural de Manacor per concentració de la terra en mans de la noblesa palmesana. Ermita de Santa Llúcia (avui Santuari de Sant Salvador?)."
+      "note": "Suplement social important: pobresa estructural de Manacor per concentració de la terra en mans de la noblesa palmesana. Ermita de Santa Llúcia (avui Santuari de Sant Salvador?).",
+      "seigneurial_regime": "Realengo"
     },
     {
       "title": "MANCOR (adición)",
@@ -33,18 +51,27 @@
       "island": "Mallorca",
       "municipality": "Selva",
       "description": "No es el terreno tan llano como se dice en el Diccionario, pues está al pie de los montes mas altos de Mallorca, de los que se compone la mayor parte de su distrito. Añádase que al O. se halla la Aldea de Biniarroy, su aneja, y la ermita de Santa Lucía. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "cross_references": ["Biniarroy", "Selva", "Santa Lucía"],
+      "cross_references": [
+        "Biniarroy",
+        "Selva",
+        "Santa Lucía"
+      ],
       "confidence": "high",
-      "note": "Modern: Mancor de la Vall (Mallorca). Confirma Biniarroi com a annex. Santuari de Santa Llúcia al cim del Puig de Santa Llúcia, conegut."
+      "note": "Modern: Mancor de la Vall (Mallorca). Confirma Biniarroi com a annex. Santuari de Santa Llúcia al cim del Puig de Santa Llúcia, conegut.",
+      "seigneurial_regime": "Realengo"
     },
     {
       "title": "MARRATCHI (adición)",
       "place_type": "villa",
       "island": "Mallorca",
       "description": "En la línea 1 donde dice 'sit. al N. O. de Palma', léase 'sit. al N. E. de Palma'.",
-      "cross_references": ["Marratchí", "Palma"],
+      "cross_references": [
+        "Marratchí",
+        "Palma"
+      ],
       "confidence": "high",
-      "note": "Correcció topològica: Marratxí està al NE de Palma, no NO (això últim seria cap a Bunyola)."
+      "note": "Correcció topològica: Marratxí està al NE de Palma, no NO (això últim seria cap a Bunyola).",
+      "seigneurial_regime": "Realengo"
     },
     {
       "title": "MARÍA (adición)",
@@ -52,9 +79,13 @@
       "island": "Mallorca",
       "municipality": "Santa Margarita",
       "description": "Contribuye no con Palma sino con Santa Margarita, que es su matriz.",
-      "cross_references": ["María", "Santa Margarita"],
+      "cross_references": [
+        "María",
+        "Santa Margarita"
+      ],
       "confidence": "high",
-      "note": "Modern: Maria de la Salut. Correcció: contribueix amb Santa Margalida (la seva matriu), no amb Palma."
+      "note": "Modern: Maria de la Salut. Correcció: contribueix amb Santa Margalida (la seva matriu), no amb Palma.",
+      "seigneurial_regime": "Realengo"
     },
     {
       "title": "MASANELLA (adición)",
@@ -62,7 +93,9 @@
       "island": "Mallorca",
       "municipality": "Selva",
       "description": "Está sit. al O. de la V. de Selva. El número de vec., habitantes y contribución se incluyen con los de su matriz Selva.",
-      "cross_references": ["Selva"],
+      "cross_references": [
+        "Selva"
+      ],
       "confidence": "high",
       "note": "Modern: Massanella (Selva/Mancor, Mallorca). Origina el nom del Puig Massanella (segon cim més alt de la Serra de Tramuntana)."
     }

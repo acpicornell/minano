@@ -10,10 +10,16 @@
       "place_type": "villa",
       "island": "Mallorca",
       "description": "Muro. A este artículo debe añadirse, que en su distrito á la parte del N. E. se halla la Albufera, y en sus marjales siembran cáñamo de que hacen grande cosecha. Sit. al E. y á 6 leguas y ½ de Palma. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "stats": {"dist_palma_leg": 6.5},
-      "cross_references": ["Albufera", "Palma"],
+      "stats": {
+        "dist_palma_leg": 6.5
+      },
+      "cross_references": [
+        "Albufera",
+        "Palma"
+      ],
       "confidence": "high",
-      "note": "Modern: Muro (Mallorca, llevant). L'Albufera de Mallorca està al seu NE — important per al cultiu de cànem (marjals)."
+      "note": "Modern: Muro (Mallorca, llevant). L'Albufera de Mallorca està al seu NE — important per al cultiu de cànem (marjals).",
+      "seigneurial_regime": "Realengo"
     }
   ]
 }

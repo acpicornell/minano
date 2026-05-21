@@ -10,9 +10,16 @@
       "place_type": "villa",
       "island": "Mallorca",
       "description": "Algaida, el de Mallorca. A. Las 2 filiales de su parroquia que son Randa y Pina, deben añadirse Punchuat y Castelix, que es una iglesia situada al E. y á 2,000 pasos de la V., y antiguamente fue iglesia parroquial. Algaida es patria del ex-jesuita Bartolomé Pon, peritísimo en las lenguas griega y latina. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "cross_references": ["Randa", "Pina", "Punchuat", "Castelix", "Bartolomé Pon"],
+      "cross_references": [
+        "Randa",
+        "Pina",
+        "Punchuat",
+        "Castelix",
+        "Bartolomé Pon"
+      ],
       "confidence": "high",
-      "note": "Suplement: el municipi d'Algaida té 4 filials (no 2 com diu el Diccionari): Randa, Pina, Punchuat, Castellitx. Castellitx fou antiga parròquia. Bartomeu Pou (1727-1802), jesuïta hel·lenista d'Algaida — traductor d'Heròdot, professor a Calatayud."
+      "note": "Suplement: el municipi d'Algaida té 4 filials (no 2 com diu el Diccionari): Randa, Pina, Punchuat, Castellitx. Castellitx fou antiga parròquia. Bartomeu Pou (1727-1802), jesuïta hel·lenista d'Algaida — traductor d'Heròdot, professor a Calatayud.",
+      "seigneurial_regime": "Realengo"
     }
   ]
 }

@@ -10,9 +10,18 @@
       "place_type": "villa",
       "island": "Mallorca",
       "description": "En la línea 3 donde dice 'sit. al E. de la costa', léase 'sit. al S. de la Isla, al S. E. y 8 leg. de la C. de Palma'. Falta en el Diccionario que son sus anejas las salinas, Llombarts, Alcaria Blanca, Alcaria Roja, Calonja. Añádase que en su territorio se hallan muchos sepulcros, inscripciones y medallas romanas, como igualmente la famosa piedra que llaman de Santagny de la que se hizo el Castelnuovo de Nápoles, la Lonja de Mallorca y otros edificios. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "cross_references": ["Palma", "Llombarts", "Alcaria Blanca", "Alcaria Roja", "Calonja", "Castelnuovo de Nápoles", "Lonja de Mallorca"],
+      "cross_references": [
+        "Palma",
+        "Llombarts",
+        "Alcaria Blanca",
+        "Alcaria Roja",
+        "Calonja",
+        "Castelnuovo de Nápoles",
+        "Lonja de Mallorca"
+      ],
       "confidence": "high",
-      "note": "Suplement crucial: enumera 5 annexos de Santanyí (salines, Llombards, Alqueria Blanca, Alqueria Roja, Calonge). La 'pedra de Santanyí' (calcària) va ser exportada per construir el Castel Nuovo de Nàpols i la Llotja de Palma (s. XV, obra de Guillem Sagrera). Inscripcions i tombes romanes confirmen ocupació antiga del territori."
+      "note": "Suplement crucial: enumera 5 annexos de Santanyí (salines, Llombards, Alqueria Blanca, Alqueria Roja, Calonge). La 'pedra de Santanyí' (calcària) va ser exportada per construir el Castel Nuovo de Nàpols i la Llotja de Palma (s. XV, obra de Guillem Sagrera). Inscripcions i tombes romanes confirmen ocupació antiga del territori.",
+      "seigneurial_regime": "Realengo"
     }
   ]
 }

@@ -10,10 +10,17 @@
       "place_type": "villa",
       "island": "Mallorca",
       "description": "Selva. En la línea 5 donde dice 'terreno llano', léase 'montuoso'; y para entrar á la iglesia por el portal mayor han de subir 32 grados, y la mitad de la villa se halla más arriba. Al pie de ella hay dos fuentes de que se provee la villa, y en su territorio hay muchas. Alcaida y Camarato son las dos partes en que se halla dividida la villa. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "stats": {"escalones_iglesia": 32, "fuentes_principales": 2},
-      "cross_references": ["Alcaida", "Camarato"],
+      "stats": {
+        "escalones_iglesia": 32,
+        "fuentes_principales": 2
+      },
+      "cross_references": [
+        "Alcaida",
+        "Camarato"
+      ],
       "confidence": "high",
-      "note": "Correcció: Selva (Mallorca) està en terreny MONTUÓS (no llano com diu el Diccionari). 32 escalons fins a l'església. Dos barris: Alcaida i Camarato. Moltes fonts."
+      "note": "Correcció: Selva (Mallorca) està en terreny MONTUÓS (no llano com diu el Diccionari). 32 escalons fins a l'església. Dos barris: Alcaida i Camarato. Moltes fonts.",
+      "seigneurial_regime": "Realengo"
     },
     {
       "title": "SERRECÓ",
@@ -23,7 +30,9 @@
       "mayor_type": "Alcalde Pedáneo",
       "municipality": "Andratx",
       "description": "Aid. Ecl. de España en la Isla y obispado de Mallorca. A. P., 1 parroquia donde se venera un devoto crucifijo. Está sit. al N. de la villa de Andraix, con la cual se incluyen el número de vecinos, habitantes y contribución. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "cross_references": ["Andratx"],
+      "cross_references": [
+        "Andratx"
+      ],
       "confidence": "high",
       "note": "Modern: S'Arracó (Andratx, Mallorca). Confirma el SARRECÓ de Tomo VIII leaf 182 amb informació addicional: parròquia amb crucifix venerat; annex d'Andratx."
     }

@@ -11,9 +11,15 @@
       "island": "Mallorca",
       "municipality": "Esporlas",
       "description": "Establiments. En lugar de la sit., prod. y contr. que expresamos en el Diccionario, léase lo siguiente. Está sit. al S. E. de la villa de Esporlas, de la que depende en lo civil, y su mar más inmediato es el del puerto de Palma, de la que dista 1 legua y ½. Su cosecha principal es de aceite, algarroba, granos y almendra. Contribuye con su matriz y no con Palma, como se dice en el Diccionario. (Not. dada por el R. P. Fr. Luis de Villafranca). Este pueblo es llamado, por unos Establimens, y por otros el Rulló, por comprenderse en él las aldeas de Establimens, la Punta y Rulló, y hallarse la parr. en esta última, desde donde se descubre la bahía y la expresada ciudad de Palma. Sus vecinos se hallan esparcidos en una media legua de extensión.",
-      "cross_references": ["Esporlas", "Palma", "Rulló", "La Punta"],
+      "cross_references": [
+        "Esporlas",
+        "Palma",
+        "Rulló",
+        "La Punta"
+      ],
       "confidence": "high",
-      "note": "Confirma: Establiments = Rulló (3 aldees: Establimens, La Punta, Rulló). Annex civil d'Esporles, no de Palma. Avui barri de Palma. La parròquia és a Rulló (la Punta) — modern Establiments-Esporles."
+      "note": "Confirma: Establiments = Rulló (3 aldees: Establimens, La Punta, Rulló). Annex civil d'Esporles, no de Palma. Avui barri de Palma. La parròquia és a Rulló (la Punta) — modern Establiments-Esporles.",
+      "seigneurial_regime": "Realengo"
     }
   ]
 }

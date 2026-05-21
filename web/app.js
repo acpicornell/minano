@@ -623,7 +623,11 @@ function renderStats() {
 
   // === Sunburst (island → regime → place_type) =========================
   $("stats-chart-sunburst").innerHTML = renderSunburst(state.entries);
+  wireSunburstHover();
 }
+
+const SUNB_NO_REG = "(sense règim)";
+const SUNB_NO_TYP = "(sense tipus)";
 
 // ===========================================================================
 // === SUNBURST (island → regime → place_type) ==============================
@@ -668,8 +672,8 @@ function renderSunburst(entries) {
   const hier = new Map();
   for (const e of entries) {
     const isl = e.island || "(altres)";
-    const reg = e.seigneurial_regime || "(s.r.)";
-    const typ = e.place_type || "(s.t.)";
+    const reg = e.seigneurial_regime || SUNB_NO_REG;
+    const typ = e.place_type || SUNB_NO_TYP;
     if (!hier.has(isl)) hier.set(isl, new Map());
     const rm = hier.get(isl);
     if (!rm.has(reg)) rm.set(reg, new Map());
@@ -695,8 +699,10 @@ function renderSunburst(entries) {
     const islSpan = (islN / grandTotal) * TAU;
     const a0 = a, a1 = a + islSpan;
     const hue = ISLAND_HUE[isl] || "#475569";
-    svg += `<path d="${arcPath(cx, cy, r1, r2, a0, a1)}" fill="${hue}" stroke="#fff" stroke-width="1.5" opacity="0.95">` +
-           `<title>${esc(isl)}: ${islN} entrades</title></path>`;
+    const islPct = (islN / grandTotal * 100).toFixed(1);
+    svg += `<path d="${arcPath(cx, cy, r1, r2, a0, a1)}" fill="${hue}" stroke="#fff" stroke-width="1.5" opacity="0.95"` +
+           ` class="sunb-seg" data-level="1" data-island="${esc(isl)}" data-count="${islN}" data-pct="${islPct}">` +
+           `<title>${esc(isl)}: ${islN} entrades (${islPct}%)</title></path>`;
     if (islSpan > 0.25) {
       const mid = (a0 + a1) / 2, lr = (r1 + r2) / 2;
       labels.push(`<text x="${cx + lr * Math.cos(mid)}" y="${cy + lr * Math.sin(mid)}" class="sunb-label-island" text-anchor="middle" dominant-baseline="middle">${esc(isl)}</text>`);
@@ -712,11 +718,13 @@ function renderSunburst(entries) {
       const regSpan = (regN / islN) * islSpan;
       const ar0 = ar, ar1 = ar + regSpan;
       const tint = REGIME_TINT[reg] ?? 0.6;
-      svg += `<path d="${arcPath(cx, cy, r2, r3 - 50, ar0, ar1)}" fill="${lighten(hue, tint)}" stroke="#fff" stroke-width="1">` +
+      const regPct = (regN / islN * 100).toFixed(0);
+      svg += `<path d="${arcPath(cx, cy, r2, r3 - 50, ar0, ar1)}" fill="${lighten(hue, tint)}" stroke="#fff" stroke-width="1"` +
+             ` class="sunb-seg" data-level="2" data-island="${esc(isl)}" data-regime="${esc(reg)}" data-count="${regN}" data-pct="${regPct}">` +
              `<title>${esc(isl)} · ${esc(reg)}: ${regN}</title></path>`;
       if (regSpan > 0.18) {
         const mid = (ar0 + ar1) / 2, lr = (r2 + r3 - 50) / 2;
-        labels.push(`<text x="${cx + lr * Math.cos(mid)}" y="${cy + lr * Math.sin(mid)}" class="sunb-label-reg" text-anchor="middle" dominant-baseline="middle">${esc(reg).slice(0, 12)}</text>`);
+        labels.push(`<text x="${cx + lr * Math.cos(mid)}" y="${cy + lr * Math.sin(mid)}" class="sunb-label-reg" text-anchor="middle" dominant-baseline="middle">${esc(reg).slice(0, 14)}</text>`);
       }
 
       const types = [...typeMap.entries()].sort((a, b) => b[1] - a[1]);
@@ -724,7 +732,9 @@ function renderSunburst(entries) {
       for (const [typ, n] of types) {
         const tSpan = (n / regN) * regSpan;
         const at0 = at, at1 = at + tSpan;
-        svg += `<path d="${arcPath(cx, cy, r3 - 50, r3, at0, at1)}" fill="${lighten(hue, Math.max(0.2, tint - 0.3))}" stroke="#fff" stroke-width="0.6">` +
+        const tPct = (n / regN * 100).toFixed(0);
+        svg += `<path d="${arcPath(cx, cy, r3 - 50, r3, at0, at1)}" fill="${lighten(hue, Math.max(0.2, tint - 0.3))}" stroke="#fff" stroke-width="0.6"` +
+               ` class="sunb-seg" data-level="3" data-island="${esc(isl)}" data-regime="${esc(reg)}" data-type="${esc(typ)}" data-count="${n}" data-pct="${tPct}">` +
                `<title>${esc(isl)} · ${esc(reg)} · ${esc(typ)}: ${n}</title></path>`;
         at = at1;
       }
@@ -738,6 +748,43 @@ function renderSunburst(entries) {
   svg += `<text x="${cx}" y="${cy + 14}" text-anchor="middle" class="sunb-total-label">entrades</text>`;
   svg += "</svg>";
   return svg;
+}
+
+// Attach hover/click listeners to the freshly rendered sunburst so users
+// can see what each segment represents (the static <title> tooltip works
+// but is browser-specific and slow to appear).
+function wireSunburstHover() {
+  const host = $("stats-chart-sunburst");
+  const panel = $("stats-sunburst-info");
+  if (!host || !panel) return;
+  const segs = host.querySelectorAll(".sunb-seg");
+  if (!segs.length) return;
+
+  const show = (el) => {
+    const lvl = el.dataset.level;
+    const isl = el.dataset.island;
+    const reg = el.dataset.regime;
+    const typ = el.dataset.type;
+    const n = el.dataset.count;
+    const pct = el.dataset.pct;
+    const islHTML = `<span class="sunb-info-isl" style="color:${ISLAND_HUE[isl] || '#475569'}">${esc(isl)}</span>`;
+    let path;
+    if (lvl === "1") path = `${islHTML}`;
+    else if (lvl === "2") path = `${islHTML} <span class="sunb-info-sep">›</span> ${esc(reg)}`;
+    else path = `${islHTML} <span class="sunb-info-sep">›</span> ${esc(reg)} <span class="sunb-info-sep">›</span> <strong>${esc(typ)}</strong>`;
+    panel.innerHTML =
+      `<span class="sunb-info-path">${path}</span>` +
+      `<span class="sunb-info-count"><strong>${fmt(n)}</strong> entrades · ${pct}%</span>`;
+  };
+  const reset = () => {
+    panel.innerHTML = '<span class="sunb-info-prompt">Passa el cursor per sobre d\'un segment per veure\'n el detall ↑</span>';
+  };
+  for (const el of segs) {
+    el.addEventListener("mouseenter", () => show(el));
+    el.addEventListener("focus", () => show(el));
+    el.addEventListener("click", () => show(el));
+  }
+  host.addEventListener("mouseleave", reset);
 }
 
 // ===========================================================================

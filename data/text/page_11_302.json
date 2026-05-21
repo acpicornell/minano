@@ -11,9 +11,12 @@
       "island": "Mallorca",
       "municipality": "Puigpunyent",
       "description": "Estellenchs. El alcalde no es pedáneo, sino ordinario, alternando con el de la villa de Puigpuñent, de modo que un año el alcalde es de esta villa, y Estellenchs elige y tiene el regidor mayor: y al siguiente los de Estellenchs eligen al alcalde y los de la villa al regidor, y así sucesivamente. En su distrito hay canteras de yeso, de piedras de amolar y de afiladeras, de que no sacan partido los naturales. Está sit. al N. O. de Puigpuñent á 1 y ½ leg. de camino escabrosísimo. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "cross_references": ["Puigpunyent"],
+      "cross_references": [
+        "Puigpunyent"
+      ],
       "confidence": "high",
-      "note": "Suplement: l'alcalde és ORDINARI (no pedáneo) — alterna anualment amb Puigpunyent. Canteres de guix i pedres d'esmolar al territori. Modern: Estellencs (Mallorca, Tramuntana)."
+      "note": "Suplement: l'alcalde és ORDINARI (no pedáneo) — alterna anualment amb Puigpunyent. Canteres de guix i pedres d'esmolar al territori. Modern: Estellencs (Mallorca, Tramuntana).",
+      "seigneurial_regime": "Eclesiástico"
     }
   ]
 }
