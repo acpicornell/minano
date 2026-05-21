@@ -623,9 +623,6 @@ function renderStats() {
 
   // === Sunburst (island → regime → place_type) =========================
   $("stats-chart-sunburst").innerHTML = renderSunburst(state.entries);
-
-  // === Matriu-annex network ============================================
-  $("stats-chart-network").innerHTML = renderMatrizNetwork(state.entries);
 }
 
 // ===========================================================================
@@ -739,61 +736,6 @@ function renderSunburst(entries) {
   svg += labels.join("");
   svg += `<text x="${cx}" y="${cy - 4}" text-anchor="middle" class="sunb-total">${fmt(grandTotal)}</text>`;
   svg += `<text x="${cx}" y="${cy + 14}" text-anchor="middle" class="sunb-total-label">entrades</text>`;
-  svg += "</svg>";
-  return svg;
-}
-
-// ===========================================================================
-// === MATRIU-ANEJO NETWORK ==================================================
-// ===========================================================================
-
-function renderMatrizNetwork(entries) {
-  const byTitle = new Map(entries.map(e => [e.title, e]));
-  const matrizMap = new Map();
-  for (const e of entries) {
-    const s = e.stats || {};
-    const mat = s.contribuye_con || e.municipality;
-    if (!mat || mat === e.title) continue;
-    if (!matrizMap.has(mat)) matrizMap.set(mat, { matriz: mat, anejos: new Set() });
-    matrizMap.get(mat).anejos.add(e.title);
-  }
-  // Keep ≥ 2 anejos, exclude Palma (too many — special case).
-  const groups = [...matrizMap.values()]
-    .map(g => ({ ...g, anejos: [...g.anejos] }))
-    .filter(g => g.anejos.length >= 2 && g.matriz !== "Palma")
-    .sort((a, b) => b.anejos.length - a.anejos.length);
-  if (!groups.length) return '<p class="empty">Sense relacions matriu-annex.</p>';
-
-  const cols = Math.min(3, groups.length);
-  const rows = Math.ceil(groups.length / cols);
-  const cellW = 240, cellH = 180;
-  const W = cols * cellW, H = rows * cellH;
-  let svg = `<svg viewBox="0 0 ${W} ${H}" class="network-svg" preserveAspectRatio="xMidYMid meet" role="img">`;
-  groups.forEach((g, idx) => {
-    const col = idx % cols, row = Math.floor(idx / cols);
-    const cx = col * cellW + cellW / 2;
-    const cy = row * cellH + cellH / 2 + 6;
-    const matEntry = byTitle.get(g.matriz);
-    const colour = ISLAND_HUE[matEntry?.island] || "#475569";
-    svg += `<circle cx="${cx}" cy="${cy}" r="10" fill="${colour}" stroke="#fff" stroke-width="2"/>`;
-    svg += `<text x="${cx}" y="${cy - 16}" text-anchor="middle" class="net-matriz">${esc(g.matriz)}</text>`;
-    const N = g.anejos.length;
-    const R = Math.min(72, 30 + N * 6);
-    g.anejos.forEach((title, i) => {
-      const angle = -Math.PI / 2 + (i / N) * Math.PI * 2;
-      const ax = cx + R * Math.cos(angle);
-      const ay = cy + R * Math.sin(angle);
-      svg += `<line x1="${cx}" y1="${cy}" x2="${ax}" y2="${ay}" stroke="${colour}" stroke-opacity="0.4" stroke-width="1"/>`;
-      svg += `<circle cx="${ax}" cy="${ay}" r="3.5" fill="${colour}" fill-opacity="0.7"/>`;
-      const lx = cx + (R + 6) * Math.cos(angle);
-      const ly = cy + (R + 6) * Math.sin(angle);
-      const anchor = Math.cos(angle) > 0.3 ? "start"
-                  : Math.cos(angle) < -0.3 ? "end" : "middle";
-      const shortTitle = title.replace(/ \(adici[oó]n\)$/, "").slice(0, 22);
-      svg += `<text x="${lx}" y="${ly + 3}" class="net-anejo" text-anchor="${anchor}">${esc(shortTitle)}</text>`;
-    });
-    svg += `<text x="${cx}" y="${cy + 4}" text-anchor="middle" class="net-matriz-n">${N}</text>`;
-  });
   svg += "</svg>";
   return svg;
 }

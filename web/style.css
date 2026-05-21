@@ -695,12 +695,6 @@ tbody tr.minano-expand td {
 .sunburst-svg .sunb-total        { font-size: 26px; font-weight: 700; fill: var(--text); font-variant-numeric: tabular-nums; }
 .sunburst-svg .sunb-total-label  { font-size: 11px; fill: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
 
-/* Matriu-annex network */
-.network-svg { width: 100%; height: auto; display: block; }
-.network-svg .net-matriz   { font-size: 12px; font-weight: 700; fill: var(--text); font-family: Georgia, serif; }
-.network-svg .net-matriz-n { font-size: 9px; font-weight: 700; fill: #fff; pointer-events: none; }
-.network-svg .net-anejo    { font-size: 9.5px; fill: var(--text); font-variant-numeric: tabular-nums; }
-
 @media (max-width: 920px) {
   .demo-charts { grid-template-columns: 1fr; }
 }
