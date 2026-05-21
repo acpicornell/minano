@@ -1,0 +1,30 @@
+{
+  "vol": "08",
+  "leaf": 296,
+  "page_printed": "296",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "SINEU",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "municipality": "Sineu",
+      "description": "V. R. de España, provincia y obispado de Mallorca. A. O., 836 vecinos, 3,998 habitantes, 1 parroquia, de la que es aneja la de Llorito, 1 convento de frailes y otro de monjas. Situada casi en el centro de la Isla, al N. E. de Palma y N. O. de Manacor, en terreno llano que produce abundancia de trigo, cebada, avena, legumbres, vino, ganado lanar, cabrío y vacuno. Hay una feria el primer domingo de mayo, á donde concurren de casi todos los pueblos de la Isla á vender ganados de todas especies, y otros géneros y frutos. La población carece de fuente, pero abunda de pozos y cisternas. Contribuye 6,587 lib. 15 sueld.",
+      "stats": {
+        "vecinos": 836,
+        "habitantes": 3998,
+        "parroquias": 1,
+        "conventos_frailes": 1,
+        "conventos_monjas": 1,
+        "feria": "primer domingo de mayo",
+        "contribucion_libras": 6587
+      },
+      "cross_references": ["Llorito", "Palma", "Manacor"],
+      "confidence": "high",
+      "note": "Article principal recuperat per indicació externa: el chocr de Tom VIII tenia el lema SINEÜ massa mutilat per a la detecció automàtica. Modern: Sineu (Mallorca, Pla), una de les viles històriques del centre de l'illa amb fira ramadera medieval (primer diumenge de maig)."
+    }
+  ]
+}
