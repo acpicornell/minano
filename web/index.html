@@ -11,6 +11,10 @@
 <meta property="og:locale" content="ca_ES">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📜%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
+<!-- Leaflet for the Mapa tab — loaded lazily by app.js on first tab click -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin="">
 </head>
 <body>
 
@@ -24,6 +28,7 @@
 <nav class="tabs tabs-main">
   <button class="tab active" data-toptab="home">Inici</button>
   <button class="tab" data-toptab="explore">Explorar</button>
+  <button class="tab" data-toptab="map">Mapa</button>
   <button class="tab" data-toptab="stats">Estadístiques</button>
   <button class="tab" data-toptab="notes">Notes</button>
 </nav>
@@ -371,6 +376,39 @@
   </div>
 </section>
 
+<!-- ===== MAPA ===== -->
+<section id="tab-map" class="tab-content" data-toptab="map">
+  <div class="modern-intro">
+    <h2>Mapa balear de Miñano (1826)</h2>
+    <p>
+      Les <strong>181</strong> entrades balears de Miñano geolocalitzades, contrastades
+      amb la base toponímica oficial <a href="https://ideib.caib.es/ngib/" target="_blank" rel="noopener"
+      ><strong>NGIB</strong></a> (55.531 topònims actuals). Cada cercle és una entrada;
+      <strong>la mida indica la població declarada (vecinos)</strong> i el color l'illa.
+      Clica un punt per veure el text complet de l'article i obrir el facsímil a Internet Archive.
+    </p>
+    <p style="font-size:0.88em;color:var(--text-muted);margin-top:0.4em">
+      Tècnica: emparellament fuzzy (rapidfuzz WRatio ≥ 88) del títol normalitzat contra el gazetteer NGIB,
+      amb fallback a la matriu (per a annexes) i al centroide d'illa (per a articles generals d'illa o
+      topònims OCR-illegibles). 99,5 % de les entrades obtenen coordenades.
+    </p>
+  </div>
+  <div class="map-controls">
+    <label>
+      <input type="checkbox" id="map-toggle-fallback" checked>
+      Mostrar entrades amb coord aproximada (centroide d'illa)
+    </label>
+    <div class="map-legend">
+      <span class="map-legend-item"><span class="map-dot" style="background:#0070b8"></span>Mallorca</span>
+      <span class="map-legend-item"><span class="map-dot" style="background:#0f766e"></span>Menorca</span>
+      <span class="map-legend-item"><span class="map-dot" style="background:#c2410c"></span>Eivissa</span>
+      <span class="map-legend-item"><span class="map-dot" style="background:#a04545"></span>Formentera</span>
+      <span class="map-legend-item"><span class="map-dot" style="background:#7c3aed"></span>Cabrera</span>
+    </div>
+  </div>
+  <div id="map-canvas" class="map-canvas"></div>
+</section>
+
 <!-- ===== ESTADÍSTIQUES ===== -->
 <section id="tab-stats" class="tab-content" data-toptab="stats">
   <div class="modern-intro">
@@ -440,6 +478,30 @@
       <h3>Convents, parròquies i hospitals (totals agregats)</h3>
       <p class="demo-caption">Infraestructura eclesiàstica i social declarada per Miñano abans de la desamortització de Mendizábal (1835–1836). Mostra la densitat conventual mallorquina al 1826.</p>
       <div id="stats-chart-eccl" class="demo-chart"><p class="empty">Carregant…</p></div>
+    </div>
+
+    <div class="demo-card demo-card-wide">
+      <h3>Sunburst taxonòmic · illa → règim senyorial → tipus de lloc</h3>
+      <p class="demo-caption">
+        Anell intern: illa. Anell mig: règim senyorial (Realengo / Senyorial / Eclesiàstic / Otro).
+        Anell extern: tipus de lloc (villa, lugar, aldea, caserío, isla, possessió…).
+        Cada gruix d'arc és proporcional al nombre d'entrades. Permet veure d'un cop d'ull com
+        l'<strong>Antic Règim balear</strong> concentra el realengo a Mallorca, mentre que els
+        pocs casos de senyorial / eclesiàstic apareixen com a segments fins.
+      </p>
+      <div id="stats-chart-sunburst" class="demo-chart"><p class="empty">Carregant…</p></div>
+    </div>
+
+    <div class="demo-card demo-card-wide">
+      <h3>Xarxa matriu — annexes (jerarquia administrativa)</h3>
+      <p class="demo-caption">
+        Cada constel·lació mostra una <strong>matriu</strong> (vila principal) amb les seves
+        <strong>aldees i annexes</strong> que tributen o depenen eclesiàsticament d'ella. Revela
+        la complexitat administrativa de l'arxipèlag balear cap a 1826 — Sencelles agrupa Costitx,
+        Biniagual, Biniferri, Binifaubell, Son Arrossa; Puigpunyent inclou Estellencs, Son Bru,
+        Superna; Selva engloba Mancor, Massanella, Biniarroi; etc.
+      </p>
+      <div id="stats-chart-network" class="demo-chart"><p class="empty">Carregant…</p></div>
     </div>
   </div>
 </section>

@@ -26,6 +26,7 @@ import duckdb
 
 PROJECT = Path(__file__).resolve().parent.parent
 DB = PROJECT / "db" / "minano.duckdb"
+COORDS = PROJECT / "data" / "coords.json"
 OUT = PROJECT / "web" / "data.json"
 
 
@@ -39,10 +40,20 @@ def _load_vol_to_identifier() -> dict[str, str]:
     return mod.VOL_TO_IDENTIFIER
 
 
+def _load_coords() -> dict:
+    """Load NGIB-derived lat/lon enrichment, keyed by (vol, leaf, title).
+    Run scripts/enrich_coords.py to (re)generate."""
+    if not COORDS.exists():
+        return {}
+    rows = json.loads(COORDS.read_text())
+    return {(r["vol"], int(r["leaf"]), r["title"]): r for r in rows}
+
+
 def main() -> None:
     if not DB.exists():
         sys.exit(f"DB not found at {DB}. Run scripts/load_text.py first.")
     vol_to_id = _load_vol_to_identifier()
+    coords_by_key = _load_coords()
 
     con = duckdb.connect(str(DB), read_only=True)
     rows = con.execute(
@@ -82,6 +93,15 @@ def main() -> None:
                 f"https://archive.org/details/{identifier}"
                 f"/page/n{d['leaf']}/mode/2up"
             )
+        # Inject NGIB-matched coordinates, if any.
+        c = coords_by_key.get((d["vol"], int(d["leaf"]), d["title"]))
+        if c:
+            d["lon"] = c["lon"]
+            d["lat"] = c["lat"]
+            if c.get("matched"):
+                d["matched_toponym"] = c["matched"]
+            if c.get("fallback"):
+                d["coord_fallback"] = c["fallback"]
         # Drop empty/falsy fields to keep the JSON compact.
         for k in list(d):
             if d[k] in (None, "", []):

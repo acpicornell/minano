@@ -13,6 +13,10 @@ data/text/_chocr/
 # Gazetteer (re-buildable from NGIB via build_gazetteer.py)
 data/gazetteer.parquet
 
+# Coordinate enrichment (regenerable via enrich_coords.py from the
+# gazetteer). Already injected into web/data.json — no need to track.
+data/coords.json
+
 # Audit outputs (regenerable)
 data/fuzzy_candidates.tsv
 data/gazetteer_candidates.tsv

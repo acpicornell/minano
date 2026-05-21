@@ -39,6 +39,7 @@ function gotoTab(t) {
   document.querySelectorAll(".tab-content").forEach(sec =>
     sec.classList.toggle("active", sec.dataset.toptab === t));
   if (t === "stats") renderStats();
+  if (t === "map") renderMap();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
@@ -619,6 +620,317 @@ function renderStats() {
     labelW: 200,
     colour: "#92400e",
   });
+
+  // === Sunburst (island → regime → place_type) =========================
+  $("stats-chart-sunburst").innerHTML = renderSunburst(state.entries);
+
+  // === Matriu-annex network ============================================
+  $("stats-chart-network").innerHTML = renderMatrizNetwork(state.entries);
+}
+
+// ===========================================================================
+// === SUNBURST (island → regime → place_type) ==============================
+// ===========================================================================
+
+const ISLAND_HUE = {
+  "Mallorca":   "#0070b8",
+  "Menorca":    "#0f766e",
+  "Ibiza":      "#c2410c",
+  "Eivissa":    "#c2410c",
+  "Formentera": "#a04545",
+  "Cabrera":    "#7c3aed",
+  "Baleares":   "#475569",
+};
+
+const REGIME_TINT = {
+  "Realengo":     0.95,
+  "Señorial":     0.75,
+  "Eclesiástico": 0.55,
+  "Otro":         0.40,
+};
+
+function lighten(hex, t) {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  const f = c => Math.round(c + (255 - c) * (1 - t));
+  return `rgb(${f(r)},${f(g)},${f(b)})`;
+}
+
+function arcPath(cx, cy, rInner, rOuter, a0, a1) {
+  const x0 = cx + rInner * Math.cos(a0), y0 = cy + rInner * Math.sin(a0);
+  const x1 = cx + rOuter * Math.cos(a0), y1 = cy + rOuter * Math.sin(a0);
+  const x2 = cx + rOuter * Math.cos(a1), y2 = cy + rOuter * Math.sin(a1);
+  const x3 = cx + rInner * Math.cos(a1), y3 = cy + rInner * Math.sin(a1);
+  const large = (a1 - a0) > Math.PI ? 1 : 0;
+  return `M${x0},${y0} L${x1},${y1} A${rOuter},${rOuter} 0 ${large} 1 ${x2},${y2} ` +
+         `L${x3},${y3} A${rInner},${rInner} 0 ${large} 0 ${x0},${y0} Z`;
+}
+
+function renderSunburst(entries) {
+  const hier = new Map();
+  for (const e of entries) {
+    const isl = e.island || "(altres)";
+    const reg = e.seigneurial_regime || "(s.r.)";
+    const typ = e.place_type || "(s.t.)";
+    if (!hier.has(isl)) hier.set(isl, new Map());
+    const rm = hier.get(isl);
+    if (!rm.has(reg)) rm.set(reg, new Map());
+    const tm = rm.get(reg);
+    tm.set(typ, (tm.get(typ) || 0) + 1);
+  }
+  const islandTotals = [...hier.entries()].map(([k, v]) => {
+    let n = 0; for (const rm of v.values()) for (const tn of rm.values()) n += tn;
+    return [k, v, n];
+  }).sort((a, b) => b[2] - a[2]);
+  const grandTotal = islandTotals.reduce((s, [, , n]) => s + n, 0);
+  if (grandTotal === 0) return '<p class="empty">Sense dades.</p>';
+
+  const W = 720, H = 540;
+  const cx = W / 2, cy = H / 2;
+  const r1 = 60, r2 = 130, r3 = 220;
+  let svg = `<svg viewBox="0 0 ${W} ${H}" class="sunburst-svg" preserveAspectRatio="xMidYMid meet" role="img">`;
+  const labels = [];
+
+  let a = -Math.PI / 2;
+  const TAU = 2 * Math.PI;
+  for (const [isl, regMap, islN] of islandTotals) {
+    const islSpan = (islN / grandTotal) * TAU;
+    const a0 = a, a1 = a + islSpan;
+    const hue = ISLAND_HUE[isl] || "#475569";
+    svg += `<path d="${arcPath(cx, cy, r1, r2, a0, a1)}" fill="${hue}" stroke="#fff" stroke-width="1.5" opacity="0.95">` +
+           `<title>${esc(isl)}: ${islN} entrades</title></path>`;
+    if (islSpan > 0.25) {
+      const mid = (a0 + a1) / 2, lr = (r1 + r2) / 2;
+      labels.push(`<text x="${cx + lr * Math.cos(mid)}" y="${cy + lr * Math.sin(mid)}" class="sunb-label-island" text-anchor="middle" dominant-baseline="middle">${esc(isl)}</text>`);
+    }
+
+    const regs = [...regMap.entries()].map(([k, v]) => {
+      let n = 0; for (const tn of v.values()) n += tn;
+      return [k, v, n];
+    }).sort((a, b) => b[2] - a[2]);
+
+    let ar = a0;
+    for (const [reg, typeMap, regN] of regs) {
+      const regSpan = (regN / islN) * islSpan;
+      const ar0 = ar, ar1 = ar + regSpan;
+      const tint = REGIME_TINT[reg] ?? 0.6;
+      svg += `<path d="${arcPath(cx, cy, r2, r3 - 50, ar0, ar1)}" fill="${lighten(hue, tint)}" stroke="#fff" stroke-width="1">` +
+             `<title>${esc(isl)} · ${esc(reg)}: ${regN}</title></path>`;
+      if (regSpan > 0.18) {
+        const mid = (ar0 + ar1) / 2, lr = (r2 + r3 - 50) / 2;
+        labels.push(`<text x="${cx + lr * Math.cos(mid)}" y="${cy + lr * Math.sin(mid)}" class="sunb-label-reg" text-anchor="middle" dominant-baseline="middle">${esc(reg).slice(0, 12)}</text>`);
+      }
+
+      const types = [...typeMap.entries()].sort((a, b) => b[1] - a[1]);
+      let at = ar0;
+      for (const [typ, n] of types) {
+        const tSpan = (n / regN) * regSpan;
+        const at0 = at, at1 = at + tSpan;
+        svg += `<path d="${arcPath(cx, cy, r3 - 50, r3, at0, at1)}" fill="${lighten(hue, Math.max(0.2, tint - 0.3))}" stroke="#fff" stroke-width="0.6">` +
+               `<title>${esc(isl)} · ${esc(reg)} · ${esc(typ)}: ${n}</title></path>`;
+        at = at1;
+      }
+      ar = ar1;
+    }
+    a = a1;
+  }
+
+  svg += labels.join("");
+  svg += `<text x="${cx}" y="${cy - 4}" text-anchor="middle" class="sunb-total">${fmt(grandTotal)}</text>`;
+  svg += `<text x="${cx}" y="${cy + 14}" text-anchor="middle" class="sunb-total-label">entrades</text>`;
+  svg += "</svg>";
+  return svg;
+}
+
+// ===========================================================================
+// === MATRIU-ANEJO NETWORK ==================================================
+// ===========================================================================
+
+function renderMatrizNetwork(entries) {
+  const byTitle = new Map(entries.map(e => [e.title, e]));
+  const matrizMap = new Map();
+  for (const e of entries) {
+    const s = e.stats || {};
+    const mat = s.contribuye_con || e.municipality;
+    if (!mat || mat === e.title) continue;
+    if (!matrizMap.has(mat)) matrizMap.set(mat, { matriz: mat, anejos: new Set() });
+    matrizMap.get(mat).anejos.add(e.title);
+  }
+  // Keep ≥ 2 anejos, exclude Palma (too many — special case).
+  const groups = [...matrizMap.values()]
+    .map(g => ({ ...g, anejos: [...g.anejos] }))
+    .filter(g => g.anejos.length >= 2 && g.matriz !== "Palma")
+    .sort((a, b) => b.anejos.length - a.anejos.length);
+  if (!groups.length) return '<p class="empty">Sense relacions matriu-annex.</p>';
+
+  const cols = Math.min(3, groups.length);
+  const rows = Math.ceil(groups.length / cols);
+  const cellW = 240, cellH = 180;
+  const W = cols * cellW, H = rows * cellH;
+  let svg = `<svg viewBox="0 0 ${W} ${H}" class="network-svg" preserveAspectRatio="xMidYMid meet" role="img">`;
+  groups.forEach((g, idx) => {
+    const col = idx % cols, row = Math.floor(idx / cols);
+    const cx = col * cellW + cellW / 2;
+    const cy = row * cellH + cellH / 2 + 6;
+    const matEntry = byTitle.get(g.matriz);
+    const colour = ISLAND_HUE[matEntry?.island] || "#475569";
+    svg += `<circle cx="${cx}" cy="${cy}" r="10" fill="${colour}" stroke="#fff" stroke-width="2"/>`;
+    svg += `<text x="${cx}" y="${cy - 16}" text-anchor="middle" class="net-matriz">${esc(g.matriz)}</text>`;
+    const N = g.anejos.length;
+    const R = Math.min(72, 30 + N * 6);
+    g.anejos.forEach((title, i) => {
+      const angle = -Math.PI / 2 + (i / N) * Math.PI * 2;
+      const ax = cx + R * Math.cos(angle);
+      const ay = cy + R * Math.sin(angle);
+      svg += `<line x1="${cx}" y1="${cy}" x2="${ax}" y2="${ay}" stroke="${colour}" stroke-opacity="0.4" stroke-width="1"/>`;
+      svg += `<circle cx="${ax}" cy="${ay}" r="3.5" fill="${colour}" fill-opacity="0.7"/>`;
+      const lx = cx + (R + 6) * Math.cos(angle);
+      const ly = cy + (R + 6) * Math.sin(angle);
+      const anchor = Math.cos(angle) > 0.3 ? "start"
+                  : Math.cos(angle) < -0.3 ? "end" : "middle";
+      const shortTitle = title.replace(/ \(adici[oó]n\)$/, "").slice(0, 22);
+      svg += `<text x="${lx}" y="${ly + 3}" class="net-anejo" text-anchor="${anchor}">${esc(shortTitle)}</text>`;
+    });
+    svg += `<text x="${cx}" y="${cy + 4}" text-anchor="middle" class="net-matriz-n">${N}</text>`;
+  });
+  svg += "</svg>";
+  return svg;
+}
+
+// ===========================================================================
+// === MAPA TAB ===============================================================
+// ===========================================================================
+
+let mapInstance = null;
+let mapMarkersAll = [];
+let mapLeafletLoading = null;
+
+const ISLAND_COLOUR = {
+  "Mallorca":   "#0070b8",
+  "Menorca":    "#0f766e",
+  "Ibiza":      "#c2410c",
+  "Eivissa":    "#c2410c",
+  "Formentera": "#a04545",
+  "Cabrera":    "#7c3aed",
+  "Baleares":   "#475569",
+};
+
+// Lazy-load Leaflet's JS bundle from the CDN. Returns a promise that
+// resolves once window.L is available. Subsequent calls reuse the same
+// promise so we don't fetch twice.
+function loadLeaflet() {
+  if (window.L) return Promise.resolve();
+  if (mapLeafletLoading) return mapLeafletLoading;
+  mapLeafletLoading = new Promise((resolve, reject) => {
+    const s = document.createElement("script");
+    s.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+    s.integrity = "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=";
+    s.crossOrigin = "";
+    s.onload = resolve;
+    s.onerror = () => reject(new Error("Leaflet failed to load"));
+    document.head.appendChild(s);
+  });
+  return mapLeafletLoading;
+}
+
+function radiusForVecinos(v) {
+  if (!v || v <= 0) return 4;
+  // sqrt scaling so a 7,000-vec Palma isn't 1000× a 50-vec aldea.
+  return Math.max(4, Math.min(28, Math.sqrt(v) * 0.45));
+}
+
+function buildPopupHTML(e) {
+  const stats = e.stats || {};
+  const bits = [];
+  if (e.place_type) bits.push(e.place_type);
+  if (e.island) bits.push(e.island);
+  if (e.seigneurial_regime) bits.push(e.seigneurial_regime);
+  if (stats.vecinos) bits.push(`${fmt(stats.vecinos)} vec.`);
+  if (stats.habitantes) bits.push(`${fmt(stats.habitantes)} hab.`);
+  const meta = bits.join(" · ");
+  const desc = (e.description || "").slice(0, 600);
+  const more = (e.description || "").length > 600 ? "…" : "";
+  const matched = e.matched_toponym
+    ? ` <span class="map-popup-meta">↔ ${esc(e.matched_toponym)}</span>` : "";
+  const fb = e.coord_fallback
+    ? ` <em style="color:#94a3b8">(coord aproximada)</em>` : "";
+  return (
+    `<h3 class="map-popup-title">${esc(e.title)}${matched}</h3>` +
+    `<p class="map-popup-meta">${esc(meta)} · Tom ${e.vol} · pàg. ${e.page_printed || "?"}${fb}</p>` +
+    `<p class="map-popup-desc">${esc(desc)}${more}</p>` +
+    (e.ia_url
+      ? `<a class="map-popup-link" href="${e.ia_url}" target="_blank" rel="noopener">↗ Facsímil a IA</a>`
+      : "")
+  );
+}
+
+async function renderMap() {
+  await loadLeaflet();
+  const el = $("map-canvas");
+  if (!el) return;
+
+  if (!mapInstance) {
+    // Fit-bounds for Balearic archipelago
+    mapInstance = L.map(el, {
+      center: [39.7, 2.9],
+      zoom: 8,
+      zoomControl: true,
+      scrollWheelZoom: true,
+    });
+    // CARTO light basemap — no API key required, very legible for thematic overlays
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      maxZoom: 19,
+      subdomains: "abcd",
+    }).addTo(mapInstance);
+
+    // Build markers (only once — Leaflet keeps them in layers).
+    for (const e of state.entries) {
+      if (typeof e.lon !== "number" || typeof e.lat !== "number") continue;
+      const r = radiusForVecinos(e.stats?.vecinos);
+      const colour = ISLAND_COLOUR[e.island] || "#475569";
+      const m = L.circleMarker([e.lat, e.lon], {
+        radius: r,
+        color: "#fff",
+        weight: 1.2,
+        fillColor: colour,
+        fillOpacity: e.coord_fallback ? 0.35 : 0.78,
+      });
+      m._minano_entry = e;
+      m.bindPopup(() => buildPopupHTML(e), { maxWidth: 360, minWidth: 280 });
+      mapMarkersAll.push(m);
+    }
+
+    // Wire fallback toggle
+    const toggle = $("map-toggle-fallback");
+    if (toggle) {
+      toggle.addEventListener("change", () => syncMapMarkers(toggle.checked));
+    }
+    syncMapMarkers(toggle ? toggle.checked : true);
+
+    // Fit bounds to all visible (non-fallback) markers
+    const real = mapMarkersAll.filter(m => !m._minano_entry.coord_fallback);
+    if (real.length) {
+      const group = L.featureGroup(real);
+      mapInstance.fitBounds(group.getBounds().pad(0.08));
+    }
+  } else {
+    // Leaflet needs a kick when the container becomes visible again
+    setTimeout(() => mapInstance.invalidateSize(), 60);
+  }
+}
+
+function syncMapMarkers(showFallback) {
+  if (!mapInstance) return;
+  for (const m of mapMarkersAll) {
+    const fb = m._minano_entry.coord_fallback;
+    if (fb && !showFallback) {
+      if (mapInstance.hasLayer(m)) mapInstance.removeLayer(m);
+    } else {
+      if (!mapInstance.hasLayer(m)) m.addTo(mapInstance);
+    }
+  }
 }
 
 boot();

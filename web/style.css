@@ -593,6 +593,62 @@ tbody tr.minano-expand td {
   font-style: italic;
 }
 
+/* === Mapa tab === */
+.map-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  align-items: center;
+  padding: 0.6em 1em;
+  margin-bottom: 0.8em;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+.map-controls label {
+  display: flex; align-items: center; gap: 0.4em; cursor: pointer;
+  color: var(--text);
+}
+.map-legend { display: flex; flex-wrap: wrap; gap: 0.9em; }
+.map-legend-item { display: inline-flex; align-items: center; gap: 0.3em; font-size: 0.85em; color: var(--text-muted); }
+.map-dot {
+  display: inline-block; width: 10px; height: 10px; border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+.map-canvas {
+  width: 100%;
+  height: 70vh;
+  min-height: 480px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #e8eef2;
+}
+.map-popup-title {
+  font-family: Georgia, serif;
+  font-size: 1.05em;
+  margin: 0 0 0.3em;
+  color: var(--accent-dark);
+}
+.map-popup-meta {
+  font-size: 0.8em;
+  color: var(--text-muted);
+  margin: 0 0 0.5em;
+  font-variant-numeric: tabular-nums;
+}
+.map-popup-desc {
+  font-size: 0.85em;
+  line-height: 1.4;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 0 0 0.5em;
+}
+.map-popup-link {
+  font-size: 0.85em;
+  display: inline-block;
+  margin-top: 0.4em;
+}
+
 /* === Estadístiques tab — bar charts (SVG inline) === */
 .demo-coverage {
   margin: 0.6em 0 0;
@@ -629,6 +685,21 @@ tbody tr.minano-expand td {
 .bars-svg .bar-label  { font-size: 11px; fill: var(--text); font-variant-numeric: tabular-nums; }
 .bars-svg .bar-value  { font-size: 11px; fill: var(--text); font-variant-numeric: tabular-nums; font-weight: 600; }
 .bars-svg .bar-sub    { fill: var(--text-muted); font-weight: 400; font-size: 10px; }
+
+/* Sunburst */
+.sunburst-svg { width: 100%; height: auto; display: block; }
+.sunburst-svg path { transition: opacity 0.15s ease; cursor: default; }
+.sunburst-svg path:hover { opacity: 0.65; }
+.sunburst-svg .sunb-label-island { font-size: 13px; font-weight: 700; fill: #fff; pointer-events: none; }
+.sunburst-svg .sunb-label-reg    { font-size: 10px; font-weight: 600; fill: rgba(0,0,0,0.7); pointer-events: none; }
+.sunburst-svg .sunb-total        { font-size: 26px; font-weight: 700; fill: var(--text); font-variant-numeric: tabular-nums; }
+.sunburst-svg .sunb-total-label  { font-size: 11px; fill: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* Matriu-annex network */
+.network-svg { width: 100%; height: auto; display: block; }
+.network-svg .net-matriz   { font-size: 12px; font-weight: 700; fill: var(--text); font-family: Georgia, serif; }
+.network-svg .net-matriz-n { font-size: 9px; font-weight: 700; fill: #fff; pointer-events: none; }
+.network-svg .net-anejo    { font-size: 9.5px; fill: var(--text); font-variant-numeric: tabular-nums; }
 
 @media (max-width: 920px) {
   .demo-charts { grid-template-columns: 1fr; }
