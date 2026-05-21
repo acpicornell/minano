@@ -1,0 +1,44 @@
+# Cloudflare Pages headers config. One rule per block, path + indented
+# header lines. Glob '*' supported.
+#
+# Strategy: 'no-store' on every asset. The browser never writes the
+# response to disk and the bfcache is bypassed, so a plain reload (or
+# even a back/forward navigation) always fetches the live deploy.
+# Trade-off vs. 'max-age=0, must-revalidate': we lose the 304 short
+# circuit, so every visit re-downloads the full payload. The site is
+# small (data.json ~180 KB, the rest <50 KB) and the project's whole
+# point is showing fresh data after a push, so the cost is fine.
+
+/*.html
+  Cache-Control: no-store
+
+/*.json
+  Cache-Control: no-store
+
+/*.js
+  Cache-Control: no-store
+
+/*.css
+  Cache-Control: no-store
+
+# Security headers — site is read-only static, no auth, no forms.
+#
+# CSP notes:
+# - script-src 'self' https://unpkg.com — app.js loads Leaflet 1.9.4
+#   from unpkg lazily on the Mapa tab; integrity hash pinned in HTML.
+# - style-src 'self' 'unsafe-inline' https://unpkg.com — Leaflet's
+#   stylesheet from unpkg, plus index.html / app.js use inline
+#   style="…" for a handful of one-off touches. Accepted: CSS-only
+#   XSS has very limited impact on a read-only site without auth.
+# - img-src 'self' data: https://*.basemaps.cartocdn.com — favicon is
+#   an inline SVG data: URI; the map basemap is served by CARTO.
+# - connect-src 'self' — only fetch on the site is data.json from
+#   the same origin.
+# - external Internet Archive / Wikipedia links are navigational
+#   (<a href>), not embedded resources, so they don't need CSP
+#   allowances.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://*.basemaps.cartocdn.com; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
