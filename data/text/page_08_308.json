@@ -1,6 +1,6 @@
 {
   "vol": "08",
-  "leaf": 296,
+  "leaf": 308,
   "page_printed": "296",
   "model": "claude-opus-4-7-via-claude-code",
   "window": 1,
@@ -24,7 +24,7 @@
       },
       "cross_references": ["Llorito", "Palma", "Manacor"],
       "confidence": "high",
-      "note": "Article principal recuperat per indicació externa: el chocr de Tom VIII tenia el lema SINEÜ massa mutilat per a la detecció automàtica. Modern: Sineu (Mallorca, Pla), una de les viles històriques del centre de l'illa amb fira ramadera medieval (primer diumenge de maig)."
+      "note": "Article principal recuperat per indicació externa. L'indexador automàtic no el va detectar perquè el chocr l'havia agrupat al mateix paràgraf que SINES (Portugal): l'article SINEÜ comença a mitja columna, després de «…patria del famoso Vasco de Gama, descubridor de la India. La fortificación de este puerto y su gobierno militar…», i la heurística només mira el principi del paràgraf. Pàgina impresa 296, leaf chocr 308. Modern: Sineu (Mallorca, Pla), una de les viles històriques del centre de l'illa amb fira ramadera medieval (primer diumenge de maig)."
     }
   ]
 }
