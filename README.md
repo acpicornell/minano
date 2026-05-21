@@ -63,13 +63,76 @@ can be rebuilt without re-spending tokens.
 
 3. **Geocoding.** Each extracted title is matched against the
    **Nomenclàtor Geogràfic de les Illes Balears** (NGIB, Govern de les
-   Illes Balears: 55 531 modern toponyms). The match is fuzzy and
-   normalises Miñano's hispanicised orthography (`Iviza` → *Eivissa*,
-   `Bañalbufar` → *Banyalbufar*, etc.). Articles that cannot be matched
-   directly fall back to their parent municipality, and articles with
-   no resolvable parent fall back to the centroid of the corresponding
-   island. The geographic data download is fully reproducible from the
-   IDEIB ArcGIS REST endpoint.
+   Illes Balears: 55 531 modern toponyms). The geographic data
+   download is fully reproducible from the IDEIB ArcGIS REST endpoint.
+   The matcher normalises Miñano's hispanicised orthography
+   (`Iviza` → *Eivissa*, `Bañalbufar` → *Banyalbufar*, hyphens and
+   en/em dashes folded to spaces so `ALCARIA-ROJA` aligns with
+   `ALQUERIA ROJA`) and curates a short table of 19th-century
+   Castilian forms whose modern equivalents NGIB carries under a
+   different lemma (e.g. *Alcaria* → *Alqueria*).
+
+   Resolving toponyms against NGIB faithfully proved more involved
+   than a single fuzzy lookup. The matcher therefore relies on six
+   complementary safeguards, each addressing a distinct failure mode
+   observed in NGIB's structure or in Miñano's typography:
+
+   - **Authoritative-type priority.** Many Balearic toponyms recur
+     in NGIB under several `local_type` values (e.g. `sa Pobla`
+     exists both as a *Municipi* at the northern village and as a
+     *Finca, possessió* at a Llucmajor farm). The gazetteer builder
+     sorts candidates by an explicit priority list — `Municipi` >
+     `Capital de municipi` > `Vila` > `Entitat de Població` >
+     `Llogaret` > … > `Finca, possessió` — so the most authoritative
+     row wins the `(normalised, island)` deduplication.
+
+   - **Complete settlement-type coverage.** NGIB classifies many
+     small but real settlements (Fornells of Menorca, es Capdellà,
+     Llucalcari, several Eivissan parish villages) under the type
+     `Altre nucli de població, llogaret`, and the four main islands
+     and their islets under `Illa gran` and `Illa mitjana`. All
+     these are now included in the gazetteer; their previous
+     omission was causing matches to fall through to homonyms on
+     other islands.
+
+   - **Strict same-island matching.** When an entry declares its
+     island, the candidate pool is restricted to that island.
+     Cross-island fallback only applies when no island is declared
+     (e.g. Balearic-wide articles). Without this constraint Eivissa's
+     `es Fornells` was wrongly matched against Menorca's *Fornells*,
+     Mallorcan possessions against Menorcan homonyms, and so on.
+
+   - **Length-disparity guard.** Levenshtein-based fuzzy scorers
+     (such as `WRatio`) award high marks when one string is a
+     substring of the other; without correction, `ROJA` scored 90
+     against `ALCARIA ROJA`. Candidates shorter than 60 % of the
+     title's normalised length are discarded before scoring.
+
+   - **Municipality tiebreaker.** When the article declares a parent
+     municipality (`Sit. al N. O. de Palma…`), homonyms in that
+     municipality are preferred over equally-scoring candidates
+     elsewhere on the same island.
+
+   - **Curated overrides and ambiguous-homonym signalling.** A
+     small table of explicit `(island, title) → (lon, lat)` entries
+     resolves cases NGIB cannot disambiguate algorithmically because
+     the title appears under several settlements with different
+     types (e.g. *la Vileta* of Palma over the four other Mallorcan
+     *sa Vileta* hamlets). A second table marks titles whose Miñano
+     description is too thin to permit any disambiguation — the
+     one-line *Coto Redondo* notices that name no village, no
+     distance and no jurisdiction — and routes them to the island
+     centroid with a distinct fallback label so they are visually
+     distinguishable from centroid-fallback cases of unmatched
+     toponyms.
+
+   Articles that cannot be matched directly fall back to their
+   parent municipality, and articles with no resolvable parent fall
+   back to the centroid of the corresponding island. The aggregate
+   match rate is 99.5 %; every matched entry is independently
+   verified to land within the bounding box of its declared island
+   and within 1 km of the canonical NGIB coordinates of its matched
+   toponym.
 
 4. **Publication.** The per-article JSONs are loaded into a DuckDB
    database and exported as a single `web/data.json` consumed by the
