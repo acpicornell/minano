@@ -42,14 +42,14 @@
       "note": "Max-path recovery. Modern: Son Lluc / Son Lluís (Palma, possessió)."
     },
     {
-      "title": "SUFFERA",
+      "title": "SUPERNA",
       "place_type": "aldea",
       "island": "Mallorca",
       "municipality": "Puigpunyent",
-      "description": "Aid de España en la isla y ob. de Mallorca. Tiene una ermita, y el número de vec. y pob. se incluyen con los de la villa de Puigpunyent con quien contribuye. Está sit. al N. y á 1 legua de su matriz, camino escabrosísimo. [Not. dada por el R. P. Fr. Luis de Villafranca].",
+      "description": "Ald. de España en la isla y ob. de Mallorca. Tiene una ermita, y el número de vec. y pob. se incluyen con los de la villa de Puigpunyent con quien contribuye. Está sit. al N. y á 1 legua de su matriz, camino escabrosísimo. [Not. dada por el R. P. Fr. Luis de Villafranca].",
       "cross_references": ["Puigpunyent"],
       "confidence": "high",
-      "note": "Max-path recovery. Modern: Superna (Puigpunyent, Mallorca) — antigua possessió en el camí de Galilea."
+      "note": "Corregit de la lectura inicial 'SUFFERA' (errada d'OCR). Modern: Superna (Puigpunyent, Mallorca) — antiga possessió al camí de Galilea."
     }
   ]
 }

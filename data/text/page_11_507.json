@@ -1,0 +1,24 @@
+{
+  "vol": "11",
+  "leaf": 507,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "ULLARÓ",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Campanet",
+      "description": "Ald. R. de Esp. en la isla y obispado de Mallorca. Tiene 1 parroquia, 40 vecinos, los que con el número de habitantes se incluyen con los de la V. de Campanet, con quien contribuye. Está situado al E. de su matriz. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "stats": {
+        "vecinos": 40,
+        "parroquias": 1
+      },
+      "cross_references": ["Campanet"],
+      "confidence": "high",
+      "note": "OCR severament corrupte al chocr ('LLtKO. AH. H. de Isp. ... V. de Gampantt' a la lectura automatitzada). Recuperat per indicació externa. Modern: Ullaró (Campanet, Mallorca)."
+    }
+  ]
+}
