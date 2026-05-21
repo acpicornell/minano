@@ -485,18 +485,28 @@
       <div id="stats-chart-eccl" class="demo-chart"><p class="empty">Carregant…</p></div>
     </div>
 
-    <div class="demo-card demo-card-wide">
+    <div class="demo-card">
       <h3>Diagrama sunburst: illa → règim senyorial → tipologia de lloc</h3>
-      <p class="demo-caption">
-        Anell intern: illa. Anell intermedi: règim senyorial (realengo, senyorial, eclesiàstic).
-        Anell extern: tipologia del lloc (villa, lugar, aldea, caserío, isla, port, castell, etc.).
-        L'amplada de cada arc és proporcional al nombre d'entrades que hi corresponen. En
-        situar el cursor sobre un segment —o en seleccionar-lo— es mostren la ruta jeràrquica
-        completa i el comptatge associat. Els segments etiquetats <em>(sense règim)</em>
-        comprenen aquelles tipologies que Miñano no classifica dins les categories
-        R./S./Ab./Ord./Ecl., en particular les naturals (illa, port, serra, cap, vall) i les
-        administratives (quartó, terme).
-      </p>
+      <div class="demo-caption">
+        <p>
+          El diagrama es llegeix de dins cap a fora en tres anells concèntrics:
+        </p>
+        <ul class="sunburst-legend">
+          <li><strong>Anell intern</strong> — illa.</li>
+          <li><strong>Anell intermedi</strong> — règim senyorial (realengo, senyorial, eclesiàstic).</li>
+          <li><strong>Anell extern</strong> — tipologia del lloc (villa, lugar, aldea, caserío, isla, port, castell, etc.).</li>
+        </ul>
+        <p>
+          L'amplada de cada arc és proporcional al nombre d'entrades que hi corresponen.
+          En situar el cursor sobre un segment —o en seleccionar-lo— es mostren la ruta
+          jeràrquica completa i el comptatge associat.
+        </p>
+        <p>
+          Els segments etiquetats <em>(sense règim)</em> comprenen aquelles tipologies que
+          Miñano no classifica dins les categories R./S./Ab./Ord./Ecl., en particular les
+          naturals (illa, port, serra, cap, vall) i les administratives (quartó, terme).
+        </p>
+      </div>
       <div id="stats-chart-sunburst" class="demo-chart"><p class="empty">Carregant…</p></div>
       <div id="stats-sunburst-info" class="sunburst-info">
         <span class="sunb-info-prompt">Situï el cursor sobre un segment per consultar-ne el detall ↑</span>

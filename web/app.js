@@ -726,10 +726,6 @@ function renderSunburst(entries) {
       svg += `<path d="${arcPath(cx, cy, r2, r3 - 50, ar0, ar1)}" fill="${lighten(hue, tint)}" stroke="#fff" stroke-width="1"` +
              ` class="sunb-seg" data-level="2" data-island="${esc(isl)}" data-regime="${esc(reg)}" data-count="${regN}" data-pct="${regPct}">` +
              `<title>${esc(isl)} · ${esc(reg)}: ${regN}</title></path>`;
-      if (regSpan > 0.18) {
-        const mid = (ar0 + ar1) / 2, lr = (r2 + r3 - 50) / 2;
-        labels.push(`<text x="${cx + lr * Math.cos(mid)}" y="${cy + lr * Math.sin(mid)}" class="sunb-label-reg" text-anchor="middle" dominant-baseline="middle">${esc(reg).slice(0, 14)}</text>`);
-      }
 
       const types = [...typeMap.entries()].sort((a, b) => b[1] - a[1]);
       let at = ar0;

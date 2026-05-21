@@ -732,6 +732,15 @@ tbody tr.minano-expand td {
   color: var(--text-muted);
   line-height: 1.4;
 }
+.demo-caption p { margin: 0 0 0.6em; }
+.demo-caption p:last-child { margin-bottom: 0; }
+.sunburst-legend {
+  margin: 0 0 0.7em;
+  padding-left: 1.2em;
+  list-style: disc;
+}
+.sunburst-legend li { margin-bottom: 0.15em; }
+.sunburst-legend strong { color: var(--text); }
 .demo-card-wide { grid-column: 1 / -1; }
 .demo-chart { overflow-x: auto; }
 .bars-svg { width: 100%; height: auto; display: block; font-family: inherit; }
@@ -740,11 +749,15 @@ tbody tr.minano-expand td {
 .bars-svg .bar-sub    { fill: var(--text-muted); font-weight: 400; font-size: 10px; }
 
 /* Sunburst */
-.sunburst-svg { width: 100%; height: auto; display: block; }
+.sunburst-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .sunburst-svg path { transition: opacity 0.15s ease; cursor: default; }
 .sunburst-svg path:hover { opacity: 0.65; }
 .sunburst-svg .sunb-label-island { font-size: 13px; font-weight: 700; fill: #fff; pointer-events: none; }
-.sunburst-svg .sunb-label-reg    { font-size: 10px; font-weight: 600; fill: rgba(0,0,0,0.7); pointer-events: none; }
 .sunburst-svg .sunb-total        { font-size: 26px; font-weight: 700; fill: var(--text); font-variant-numeric: tabular-nums; }
 .sunburst-svg .sunb-total-label  { font-size: 11px; fill: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
 .sunburst-svg .sunb-seg { cursor: pointer; transition: filter 0.12s ease; }
