@@ -427,6 +427,34 @@
 
   <div class="demo-charts">
     <div class="demo-card">
+      <h3>Diagrama sunburst: illa → règim senyorial → tipologia de lloc</h3>
+      <div class="demo-caption">
+        <p>
+          El diagrama es llegeix de dins cap a fora en tres anells concèntrics:
+        </p>
+        <ul class="sunburst-legend">
+          <li><strong>Anell intern</strong> — illa.</li>
+          <li><strong>Anell intermedi</strong> — règim senyorial (realengo, senyorial, eclesiàstic).</li>
+          <li><strong>Anell extern</strong> — tipologia del lloc (villa, lugar, aldea, caserío, isla, port, castell, etc.).</li>
+        </ul>
+        <p>
+          L'amplada de cada arc és proporcional al nombre d'entrades que hi corresponen.
+          En situar el cursor sobre un segment —o en seleccionar-lo— es mostren la ruta
+          jeràrquica completa i el comptatge associat.
+        </p>
+        <p>
+          Els segments etiquetats <em>(sense règim)</em> comprenen aquelles tipologies que
+          Miñano no classifica dins les categories R./S./Ab./Ord./Ecl., en particular les
+          naturals (illa, port, serra, cap, vall) i les administratives (quartó, terme).
+        </p>
+      </div>
+      <div id="stats-chart-sunburst" class="demo-chart"><p class="empty">Carregant…</p></div>
+      <div id="stats-sunburst-info" class="sunburst-info">
+        <span class="sunb-info-prompt">Situï el cursor sobre un segment per consultar-ne el detall ↑</span>
+      </div>
+    </div>
+
+    <div class="demo-card">
       <h3>Entrades amb major nombre d'habitants (20 primeres)</h3>
       <p class="demo-caption">Xifres absolutes d'habitants declarades pel Diccionari cap a 1826. Comprèn la totalitat d'entrades que aporten dada d'habitants: viles, lugares i agregats insulars.</p>
       <div id="stats-chart-hab" class="demo-chart"><p class="empty">Carregant…</p></div>
@@ -483,34 +511,6 @@
       <h3>Infraestructura eclesiàstica i social (totals agregats)</h3>
       <p class="demo-caption">Nombre total de convents, parròquies i hospitals declarats a les entrades balears, situació documentada amb anterioritat a la desamortització de Mendizábal (1835–1836). Aquest indicador permet aproximar la densitat conventual mallorquina cap a 1826.</p>
       <div id="stats-chart-eccl" class="demo-chart"><p class="empty">Carregant…</p></div>
-    </div>
-
-    <div class="demo-card">
-      <h3>Diagrama sunburst: illa → règim senyorial → tipologia de lloc</h3>
-      <div class="demo-caption">
-        <p>
-          El diagrama es llegeix de dins cap a fora en tres anells concèntrics:
-        </p>
-        <ul class="sunburst-legend">
-          <li><strong>Anell intern</strong> — illa.</li>
-          <li><strong>Anell intermedi</strong> — règim senyorial (realengo, senyorial, eclesiàstic).</li>
-          <li><strong>Anell extern</strong> — tipologia del lloc (villa, lugar, aldea, caserío, isla, port, castell, etc.).</li>
-        </ul>
-        <p>
-          L'amplada de cada arc és proporcional al nombre d'entrades que hi corresponen.
-          En situar el cursor sobre un segment —o en seleccionar-lo— es mostren la ruta
-          jeràrquica completa i el comptatge associat.
-        </p>
-        <p>
-          Els segments etiquetats <em>(sense règim)</em> comprenen aquelles tipologies que
-          Miñano no classifica dins les categories R./S./Ab./Ord./Ecl., en particular les
-          naturals (illa, port, serra, cap, vall) i les administratives (quartó, terme).
-        </p>
-      </div>
-      <div id="stats-chart-sunburst" class="demo-chart"><p class="empty">Carregant…</p></div>
-      <div id="stats-sunburst-info" class="sunburst-info">
-        <span class="sunb-info-prompt">Situï el cursor sobre un segment per consultar-ne el detall ↑</span>
-      </div>
     </div>
 
   </div>
