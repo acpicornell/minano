@@ -1,0 +1,26 @@
+{
+  "vol": "11",
+  "leaf": 496,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "SALINAS (las)",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Santañy",
+      "description": "Tiene A. P., 1 parr. con un vicario in capite: los 59 vec., 290 hab. y la contribución se incluyen con los de Santañy que es su matriz. Sit. al O. de esta. En su territorio se hallan las salinas, como igualmente muchos sepulcros e inscripciones romanas, prueba de que fue una gran población. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "stats": {
+        "vecinos": 59,
+        "habitantes": 290,
+        "parroquias": 1
+      },
+      "cross_references": ["Santañy", "Salinas"],
+      "confidence": "high",
+      "note": "Article recuperat per la signatura de fra Lluís de Vilafranca. Modern: Ses Salines (Mallorca, municipi independent des de 1925, abans annex de Santanyí). Documenta el jaciment romà del territori (sepulcres i inscripcions) i les salines històriques."
+    }
+  ]
+}

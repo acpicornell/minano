@@ -1,0 +1,20 @@
+{
+  "vol": "11",
+  "leaf": 544,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "VALLDEMOSA (adición)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Valldemosa",
+      "description": "Vall demosa léase Valldemosa. En la lin. 4 donde dice «sit. al N. ¼ S. E. de Sóller», léase «sit. al S. de Sóller». En la 7 donde dice «hay una abadía de Bernardos», léase «un monasterio de cartujos». Las ermitas, 14 eran antes y 4 son al presente. Añádase que dista 1 leg. ¾ de Palma y se halla en lugar ameno y delicioso, abundante de fuentes con que se riegan algunos de sus campos. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Valldemosa", "Sóller", "Palma"],
+      "confidence": "high",
+      "note": "Suplement amb correccions importants: 1) la grafia és VALLDEMOSA (no «Vall demosa»); 2) està al S. de Sóller, no NE; 3) el monestir és cartoixà (no benedictí, com deia incorrectament el Diccionari); 4) de 14 ermites passen a 4; 5) dista 1 ¾ lleg. de Palma. Modern: Valldemossa (Mallorca, Tramuntana)."
+    }
+  ]
+}

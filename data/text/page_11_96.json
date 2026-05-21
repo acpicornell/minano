@@ -1,0 +1,23 @@
+{
+  "vol": "11",
+  "leaf": 96,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "ARTÁ (adición)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Señorial",
+      "municipality": "Artá",
+      "description": "Es V. S. y no R. Tiene 1,199 vec., y su parr. tiene un vicario perpetuo. Al N. E. y a mas de hora y media de Artá, se ha fundado la ermita llamada de Belén, con una iglesia muy bonita donde viven 5 ermitaños con el trabajo de sus manos: es lugar muy solitario. Hacia la misma parte á 200 pasos de la V., sobre una eminencia, está el santuario llamado de San Salvador. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "stats": {
+        "vecinos": 1199
+      },
+      "cross_references": ["Artá", "Ermita de Belén", "San Salvador"],
+      "confidence": "high",
+      "note": "Suplement: ARTÁ és Vila Señorial (no Realenga) i té 1.199 vecinos. Documenta l'ermita de Betlem (5 ermitans) i el santuari de San Salvador. Modern: Artà (Mallorca, Llevant)."
+    }
+  ]
+}

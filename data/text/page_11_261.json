@@ -1,0 +1,20 @@
+{
+  "vol": "11",
+  "leaf": 261,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "CONSELL (adición)",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Alaró",
+      "description": "En lugar de la situación inserta en el Diccionario léase la siguiente. Está sit. en el llano, camino de Palma a la villa de Inca y Alcudia. Contribuye con la matriz y no con Palma como se dice en el Diccionario. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Alaró", "Palma", "Inca", "Alcudia"],
+      "confidence": "high",
+      "note": "Suplement: corregeix la situació de CONSELL (al pla, camí de Palma a Inca i Alcúdia) i la contribució (a Alaró, no a Palma). Modern: Consell (Mallorca, Raiguer)."
+    }
+  ]
+}

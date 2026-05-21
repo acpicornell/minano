@@ -1,0 +1,20 @@
+{
+  "vol": "11",
+  "leaf": 420,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "MIRABONA",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Selva",
+      "description": "Está sit. al N. de Caymari del término de Selva, en los altos montes que rodean el santuario de Nuestra Señora de Lluch. El número de vec., hab. y contrib. se incluyen con los de su matriz. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Caymari", "Selva", "Lluch"],
+      "confidence": "high",
+      "note": "Article recuperat per la signatura de fra Lluís de Vilafranca. Aldea en l'entorn muntanyenc de Lluc, dins el terme de Selva, al nord de Caimari. Probablement una possessió/poblat de muntanya al voltant del santuari de Lluc."
+    }
+  ]
+}

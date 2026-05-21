@@ -1,0 +1,20 @@
+{
+  "vol": "11",
+  "leaf": 383,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "INCA (adición)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Inca",
+      "description": "A lo dicho en el Diccionario nos remite el R. P. Fr. Luis de Villafranca las observaciones siguientes. Celebra ferias el Domingo inmediato a la fiesta de San Lucas, y en los Domingos siguientes, inclusa la fiesta de Todos Santos. En la línea 10 donde dice «el jueves de cada semana hay mercado muy concurrido y mas que todos el que sigue a la feria de Lluc», debe decir «y mas que todos el que sigue a la feria de Todos los Santos». (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Inca", "Lluch", "San Lucas", "Todos los Santos"],
+      "confidence": "high",
+      "note": "Suplement: aclareix el calendari de fires d'Inca (diumenge següent a Sant Lluc + diumenges fins a Tots Sants) i corregeix una errada del Diccionari sobre el mercat setmanal. Modern: Inca (Mallorca, Raiguer)."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "vol": "11",
+  "leaf": 408,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "PALMA (adición · alcaldes pedáneos)",
+      "place_type": "ciudad",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Palma",
+      "description": "Desde el año 1834, en que los alcaldes de las villas empezaron a ser anuales, no son pedáneos en los lugares y aldeas sufragáneas, sino que se gobiernan por los respectivos alcaldes de sus matrices. Solamente se hallan alcaldes pedáneos en la Vileta, Son Sardina y Génova, por ser del distrito de la capital. (Noticias dadas por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Palma", "La Vileta", "Son Sardina", "Génova"],
+      "confidence": "high",
+      "note": "Suplement metodològic: a partir del 1834 els alcaldes de villa esdevenen anuals i els seus annexos passen a ser governats per ells, no per alcaldes pedáneos. Excepció: la Vileta, Son Sardina i Génova, dins el distrite de Palma, mantenen l'alcaldia pedània."
+    }
+  ]
+}

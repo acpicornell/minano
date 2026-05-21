@@ -1,0 +1,25 @@
+{
+  "vol": "11",
+  "leaf": 152,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "BINIAGUAL (adición)",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Binissalem",
+      "description": "Tiene una ermita, y sus 7 vec., 36 hab. se incluyen en los de su matriz Binisalem, de la que depende en lo civil y eclesiástico. Se halla sit. al N. E. de su matriz. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "stats": {
+        "vecinos": 7,
+        "habitantes": 36,
+        "ermitas": 1
+      },
+      "cross_references": ["Binisalem"],
+      "confidence": "high",
+      "note": "Suplement: BINIAGUAL té només 7 vecinos i 36 habitants, depèn totalment de Binissalem. Modern: Biniagual (Binissalem, Mallorca)."
+    }
+  ]
+}

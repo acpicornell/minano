@@ -61,6 +61,25 @@ can be rebuilt without re-spending tokens.
    The extracted JSONs live under `data/text/page_<vol>_<leaf>.json`
    and are the canonical source of truth for the rest of the pipeline.
 
+   A complementary **attribution-based recovery** pass catches articles
+   whose title was so OCR-damaged that no place-name regex could find
+   them. Fra Lluís de Vilafranca, the Capuchin friar of Palma who
+   served as Miñano's Balearic correspondent, signed the great majority
+   of Balearic adicions in the Suplemento with the formula «Not. dada
+   por el R. P. Fr. Luis de Villafranca». The script
+   `scripts/vilafranca_recovery.py` scans every chOCR volume looking
+   for paragraphs whose tail fuzzy-matches that attribution, filters
+   out the many peninsular false positives produced by the Catalan
+   *corregimiento de Villafranca* district, and reports paragraphs
+   absent from the corpus. The signature alone is not sufficient
+   (a peninsular paragraph may quote Vilafranca in passing), so a
+   Balearic-keyword guard rules out the corregimiento mentions; in
+   exchange, the matcher does not depend on the lemma being readable
+   at all, which is what allowed the recovery of entries like Ullaró
+   (printed by Miñano under a heading rendered «LLtKO. AH. H.» in the
+   raw OCR). This pass added fifteen Suplemento adicions that the
+   place-name indexer had missed.
+
 3. **Geocoding.** Each extracted title is matched against the
    **Nomenclàtor Geogràfic de les Illes Balears** (NGIB, Govern de les
    Illes Balears: 55 531 modern toponyms). The geographic data

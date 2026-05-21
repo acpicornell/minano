@@ -1,0 +1,20 @@
+{
+  "vol": "11",
+  "leaf": 426,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "MOSCARÍ (adición)",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Selva",
+      "description": "No tiene alcalde, pero sí una ermita. El número de vec. y habit. se incluyen en los de la villa de Selva, á que está aneja. Sit. sobre una elevación al E. de su matriz con quien contribuye, y no con Palma como se dice en el Diccionario. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Selva", "Palma"],
+      "confidence": "high",
+      "note": "Suplement: MOSCARI contribueix amb Selva, NO amb Palma com diu el Diccionari. Sense alcalde, però amb ermita. Modern: Moscari (Selva, Mallorca)."
+    }
+  ]
+}

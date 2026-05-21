@@ -1,0 +1,20 @@
+{
+  "vol": "11",
+  "leaf": 87,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "ARIAÑY (adición)",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Petra",
+      "description": "Los vec., hab. y contribución se incluyen en los de la V. de Petra, que es su matriz. Dista del mar unas 2 leg., y se halla al N. E. de la V. de Petra, de la que dista 1 hora. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Petra"],
+      "confidence": "high",
+      "note": "Suplement (adición) recuperat per la signatura de fra Lluís de Vilafranca. Modern: Ariany (Mallorca), avui municipi independent."
+    }
+  ]
+}

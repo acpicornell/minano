@@ -81,6 +81,14 @@ CURATED_OVERRIDES = {
     # «al NO i a ⅔ de llegua de Palma, al S i a una milla curta de la
     # Vileta». Coordenades en aquest entorn.
     ('Mallorca', 'SON LLUCH'): (2.7503, 39.5899, 'Son Lluc (Palma)'),
+    # Salinas (las): l'article descriu el nucli annex de Santanyí amb 290
+    # habitants i salines. És inequívocament el municipi modern ses Salines.
+    ('Mallorca', 'SALINAS LAS'): (3.0535, 39.3392, 'ses Salines'),
+    # Mirabona: aldea-annex de Selva «al N. de Caymari», als monts que
+    # envolten Lluc. No hi ha topònim NGIB amb aquest nom; assignem
+    # coordenades aproximades a la zona de muntanya al nord de Caimari,
+    # sobre el camí de Lluc.
+    ('Mallorca', 'MIRABONA'):  (2.9000, 39.7900, 'Mirabona (entorn de Lluc)'),
 }
 
 # Entries whose article is too thin to disambiguate among multiple NGIB

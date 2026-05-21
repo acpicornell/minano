@@ -50,6 +50,29 @@
       "cross_references": ["Puigpunyent"],
       "confidence": "high",
       "note": "Corregit de la lectura inicial 'SUFFERA' (errada d'OCR). Modern: Superna (Puigpunyent, Mallorca) — antiga possessió al camí de Galilea."
+    },
+    {
+      "title": "SON SARDINA",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Palma",
+      "description": "Este L. es R. con A. P., 1 parr. con un vicario in capite. Está sit. al N. de Palma, de la que dista 1 leg., camino de Valldemosa. El núm. de vec. y hab. se incluyen con los de la Cap. que es su matriz, y con quien contribuye. (Not. dada por el mismo).",
+      "cross_references": ["Palma", "Valldemosa"],
+      "confidence": "high",
+      "note": "Article recuperat per la signatura de fra Lluís de Vilafranca. Modern: Son Sardina (Palma, barri del nord)."
+    },
+    {
+      "title": "SON SERVERA (adición)",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Artá",
+      "description": "En la línea 4 donde dice «sit. al E. de la V. de Artá», léase «sit. al S. de la V. de Artá». No es cierto que es uno de los menos considerables de la isla, pues justamente es uno de los mas numerosos, y antes de la peste del año 1820, era el de mas hab. de todos los L. sufragáneos de Mallorca. Contribuye con la V. de Artá y no con Palma. Hay en ella una parr. con un vicario in capite. (Not. dada por el mismo).",
+      "cross_references": ["Son Servera", "Artá", "Palma"],
+      "confidence": "high",
+      "note": "Suplement amb tres correccions: posició (S, no E, d'Artà); demografia (no «poc considerable» sinó dels més grans, abans de la pesta de 1820); contribució (amb Artà, no amb Palma). Modern: Son Servera (Mallorca, Llevant). La pesta de 1820 fou la darrera epidèmia greu a Mallorca."
     }
   ]
 }

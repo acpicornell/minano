@@ -1,0 +1,20 @@
+{
+  "vol": "11",
+  "leaf": 470,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "PORRERAS (adición)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Porreras",
+      "description": "En la línea 3 donde dice «1 hosp., 1 oratorio», léase «1 hosp. con un oratorio público». El otro oratorio no está dentro de la villa, pues se halla á la parte del S. y á ½ de legua distante, en la cima del Puig de Montesion, donde hay un santuario de Ntra. Sra. de bastante devoción. Otro hay al N. O., una milla distante del mismo pueblo, llamado la Cruz d'en Net. Se halla á 5 y 5 ½ leguas de Palma. Entre sus producciones debe añadirse el azafrán, y entre su industria las fabricas de aguardiente. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Porreras", "Puig de Monte-Sion", "Palma", "Cruz d'en Net"],
+      "confidence": "high",
+      "note": "Suplement amb correccions sobre PORRERAS: santuari de Ntra. Sra. al Puig de Monte-Sion (½ leg. S.), Creu d'en Net al NO (1 milla), producció de safrà i fàbriques d'aguardent. Modern: Porreres (Mallorca, Pla)."
+    }
+  ]
+}
