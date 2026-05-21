@@ -1,0 +1,20 @@
+{
+  "vol": "07",
+  "leaf": 375,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "RUBERTS",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Sencelles",
+      "description": "Ald. R. de España, prov. de Mallorca.",
+      "cross_references": ["Sencelles"],
+      "confidence": "medium",
+      "note": "Article curt detectat per auditoria d'articles balears enterrats al chocr (mateix patró que SINEU: l'OCR va fusionar el paràgraf de QUINTANAPALLA amb el de RUBERTS, deixant aquest invisible per a l'indexador). El text de Miñano és inusualment breu per a aquest llogaret. Modern: Ruberts (Sencelles, Mallorca), petit nucli de població al Pla."
+    }
+  ]
+}
