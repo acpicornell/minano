@@ -38,6 +38,7 @@ function gotoTab(t) {
     b.classList.toggle("active", b.dataset.toptab === t));
   document.querySelectorAll(".tab-content").forEach(sec =>
     sec.classList.toggle("active", sec.dataset.toptab === t));
+  if (t === "stats") renderStats();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
@@ -383,6 +384,241 @@ async function boot() {
   renderHome();
   renderStatsBar();
   update();
+}
+
+// ===========================================================================
+// === ESTADÍSTIQUES TAB =====================================================
+// ===========================================================================
+
+let statsRendered = false;
+
+function fmtCompact(n) {
+  if (n >= 1e6) return `${(n / 1e6).toFixed(2)}M`;
+  if (n >= 1e3) return `${(n / 1e3).toFixed(1)}K`;
+  return String(n);
+}
+
+// Inline horizontal-bar chart. `rows` is [[label, value, sub?], ...]
+// sorted descending. `fmtVal` formats the numeric value for display.
+function svgBars(rows, opts = {}) {
+  // Drop rows whose value isn't a finite number — one stray "11,???" would
+  // otherwise NaN-poison Math.max and collapse every bar to width 0.
+  rows = rows.filter(r => typeof r[1] === "number" && isFinite(r[1]));
+  if (!rows.length) return '<p class="empty">Sense dades.</p>';
+  const fmtVal = opts.fmt || fmt;
+  const colour = opts.colour || "var(--accent)";
+  const labelW = opts.labelW ?? 160;
+  const barH = opts.barH ?? 18;
+  const gap = opts.gap ?? 6;
+  const valueW = opts.valueW ?? 110;
+  const width = 720;
+  const innerW = width - labelW - valueW - 20;
+  const max = Math.max(...rows.map(r => r[1])) || 1;
+  const height = rows.length * (barH + gap);
+  const lines = rows.map((r, i) => {
+    const [label, val, sub] = r;
+    const w = max > 0 ? Math.max(1, (val / max) * innerW) : 0;
+    const y = i * (barH + gap);
+    return (
+      `<g transform="translate(0,${y})">` +
+      `<text x="${labelW - 6}" y="${barH * 0.72}" text-anchor="end" class="bar-label">${esc(label)}</text>` +
+      `<rect x="${labelW}" y="0" width="${w}" height="${barH}" rx="2" fill="${colour}"/>` +
+      `<text x="${labelW + w + 6}" y="${barH * 0.72}" class="bar-value">${esc(fmtVal(val))}${sub ? ` <tspan class="bar-sub">${esc(sub)}</tspan>` : ""}</text>` +
+      `</g>`
+    );
+  }).join("");
+  return `<svg viewBox="0 0 ${width} ${height}" class="bars-svg" preserveAspectRatio="xMinYMin meet" role="img">${lines}</svg>`;
+}
+
+function statsOf(e) {
+  return (e.stats && typeof e.stats === "object") ? e.stats : null;
+}
+
+// Exclude island aggregates ("MALLORCA", "MENORCA", "BALEARES", "FORMENTERA")
+// from per-entry charts because their habitantes/vecinos figures are the
+// sum of all the entries in our table — they'd dwarf everything.
+function isIslandAggregate(e) {
+  return e.place_type === "isla" || e.place_type === "islas";
+}
+
+function isPlaceEntry(e) {
+  return !isIslandAggregate(e);
+}
+
+function renderStats() {
+  if (statsRendered) return;
+  statsRendered = true;
+
+  const total = state.entries.length;
+  // Strict numeric filter — OCR garbled some stats as strings (e.g.
+  // "11,???") which would poison Math.max and break the bar layout.
+  const numOf = (e, k) => {
+    const v = statsOf(e)?.[k];
+    return typeof v === "number" && isFinite(v) ? v : null;
+  };
+  const withHab = state.entries.filter(e => isPlaceEntry(e) && numOf(e, "habitantes") != null);
+  const withVec = state.entries.filter(e => isPlaceEntry(e) && numOf(e, "vecinos") != null);
+  const withRiq = state.entries.filter(e => isPlaceEntry(e) && numOf(e, "riqueza_liquida_libras") != null);
+  $("stats-coverage").innerHTML =
+    `<strong>Cobertura de dades:</strong> de ${total} entrades, ` +
+    `${withHab.length} tenen <em>habitantes</em>, ${withVec.length} <em>vecinos</em>, ` +
+    `${withRiq.length} <em>riqueza líquida</em>. ` +
+    `Les entrades sense xifres pròpies (suplements del Tom XI, aldees agregades a la matriu, etc.) queden fora dels gràfics.`;
+
+  // === Top 20 by habitants ===
+  const byHab = withHab
+    .map(e => [
+      e.title,
+      statsOf(e).habitantes,
+      statsOf(e).vecinos ? `${fmt(statsOf(e).vecinos)} vec.` : null,
+    ])
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 20);
+  $("stats-chart-hab").innerHTML = svgBars(byHab, { labelW: 200 });
+
+  // === Top 20 by vecinos ===
+  const byVec = withVec
+    .map(e => [e.title, statsOf(e).vecinos, statsOf(e).habitantes ? `${fmt(statsOf(e).habitantes)} hab.` : null])
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 20);
+  $("stats-chart-vec").innerHTML = svgBars(byVec, { labelW: 200, colour: "#0f766e" });
+
+  // === Top 15 by riqueza líquida (libras) ===
+  const byRiq = withRiq
+    .map(e => [e.title, statsOf(e).riqueza_liquida_libras, "lib."])
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 15);
+  $("stats-chart-riq").innerHTML = svgBars(byRiq, {
+    labelW: 200,
+    colour: "#c2410c",
+    fmt: v => fmtCompact(v),
+  });
+
+  // === Population aggregated per island ===
+  // For per-island totals, we INCLUDE the island-aggregate entries
+  // (the "MALLORCA isla" entry from Tomo V has 191,805 hab — that's
+  // the canonical figure for the whole island c. 1826).
+  const islandTotals = new Map();
+  for (const e of state.entries) {
+    const s = statsOf(e);
+    if (!s || s.habitantes == null) continue;
+    if (!isIslandAggregate(e)) continue;
+    const key = e.title || e.island || "(altres)";
+    islandTotals.set(key, (islandTotals.get(key) || 0) + s.habitantes);
+  }
+  const byIsla = [...islandTotals.entries()]
+    .map(([k, v]) => [k, v, "hab."])
+    .sort((a, b) => b[1] - a[1]);
+  $("stats-chart-illa").innerHTML = svgBars(byIsla, {
+    labelW: 140,
+    colour: "#0f766e",
+  });
+
+  // === Seigneurial regime distribution ===
+  const regCounts = new Map();
+  for (const e of state.entries) {
+    if (!e.seigneurial_regime) continue;
+    regCounts.set(e.seigneurial_regime, (regCounts.get(e.seigneurial_regime) || 0) + 1);
+  }
+  const byReg = [...regCounts.entries()]
+    .map(([k, v]) => [k, v, "entr."])
+    .sort((a, b) => b[1] - a[1]);
+  $("stats-chart-reg").innerHTML = svgBars(byReg, {
+    labelW: 160,
+    colour: "#7c3aed",
+  });
+
+  // === Household size (habitants / vecinos) ===
+  const ratioRows = state.entries
+    .filter(e => isPlaceEntry(e) && statsOf(e)?.habitantes && statsOf(e)?.vecinos && statsOf(e).vecinos > 0)
+    .map(e => {
+      const s = statsOf(e);
+      return [e.title, +(s.habitantes / s.vecinos).toFixed(2), `${fmt(s.vecinos)} → ${fmt(s.habitantes)}`];
+    })
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 20);
+  $("stats-chart-ratio").innerHTML = svgBars(ratioRows, {
+    labelW: 200,
+    colour: "#0891b2",
+    fmt: v => v.toFixed(2),
+  });
+
+  // === Place type distribution ===
+  const typeCounts = new Map();
+  for (const e of state.entries) {
+    if (!e.place_type) continue;
+    typeCounts.set(e.place_type, (typeCounts.get(e.place_type) || 0) + 1);
+  }
+  const byType = [...typeCounts.entries()]
+    .map(([k, v]) => [k, v, "entr."])
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 12);
+  $("stats-chart-types").innerHTML = svgBars(byType, {
+    labelW: 130,
+    colour: "#65a30d",
+  });
+
+  // === Coverage per tomo ===
+  const volCounts = new Map();
+  for (const e of state.entries) {
+    if (!e.vol) continue;
+    volCounts.set(e.vol, (volCounts.get(e.vol) || 0) + 1);
+  }
+  const VOL_ROMAN = {
+    "01": "I", "02": "II", "03": "III", "04": "IV", "05": "V", "06": "VI",
+    "07": "VII", "08": "VIII", "09": "IX", "10": "X", "11": "XI",
+  };
+  const VOL_RANGE = {
+    "01": "A — AZ",
+    "02": "BAB — CAS",
+    "03": "CAS — ESPADILLO",
+    "04": "ESP — HIT",
+    "05": "HIT — MEMBRIVE",
+    "06": "MEM — PALMA",
+    "07": "PALMA — SAN",
+    "08": "SAN — TEMPLE",
+    "09": "TOR — VIL",
+    "10": "VIL — VIZ",
+    "11": "Suplement",
+  };
+  const byVol = [...volCounts.entries()]
+    .map(([k, v]) => [`Tom ${VOL_ROMAN[k] || k}`, v, VOL_RANGE[k] || ""])
+    .sort((a, b) => {
+      const ai = Object.values(VOL_ROMAN).indexOf(a[0].replace("Tom ", ""));
+      const bi = Object.values(VOL_ROMAN).indexOf(b[0].replace("Tom ", ""));
+      return ai - bi;
+    });
+  $("stats-chart-vol").innerHTML = svgBars(byVol, {
+    labelW: 110,
+    colour: "#0891b2",
+  });
+
+  // === Ecclesiastical infrastructure aggregated ===
+  const ECCL_KEYS = [
+    ["parroquias",         "Parròquies"],
+    ["conventos",          "Convents"],
+    ["conventos_frailes",  "Convents de frares"],
+    ["conventos_monjas",   "Convents de monges"],
+    ["ermitas",            "Ermites"],
+    ["hospitales",         "Hospitals"],
+    ["molinos_viento",     "Molins de vent"],
+    ["cartujas",           "Cartoixes"],
+    ["santuarios",         "Santuaris"],
+    ["fabricas_jabon",     "Fàbriques de sabó"],
+  ];
+  const ecclTotals = ECCL_KEYS.map(([key, label]) => {
+    let sum = 0, n = 0;
+    for (const e of state.entries) {
+      const s = statsOf(e);
+      if (s && typeof s[key] === "number") { sum += s[key]; n++; }
+    }
+    return [label, sum, n > 0 ? `en ${n} entrades` : ""];
+  }).filter(r => r[1] > 0)
+    .sort((a, b) => b[1] - a[1]);
+  $("stats-chart-eccl").innerHTML = svgBars(ecclTotals, {
+    labelW: 200,
+    colour: "#92400e",
+  });
 }
 
 boot();

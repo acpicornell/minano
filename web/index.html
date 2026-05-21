@@ -24,6 +24,7 @@
 <nav class="tabs tabs-main">
   <button class="tab active" data-toptab="home">Inici</button>
   <button class="tab" data-toptab="explore">Explorar</button>
+  <button class="tab" data-toptab="stats">Estadístiques</button>
   <button class="tab" data-toptab="notes">Notes</button>
 </nav>
 
@@ -367,6 +368,79 @@
         </table>
       </div>
     </main>
+  </div>
+</section>
+
+<!-- ===== ESTADÍSTIQUES ===== -->
+<section id="tab-stats" class="tab-content" data-toptab="stats">
+  <div class="modern-intro">
+    <h2>Estadístiques balears segons Miñano (1826–1829)</h2>
+    <p>
+      Dades quantitatives extretes directament dels articles de Miñano. La majoria de xifres
+      corresponen al cens i estadístiques d'Hisenda dels anys <strong>1820–1826</strong>, vint
+      anys abans del Madoz. <strong>Atenció:</strong> un <em>vecino</em> a Miñano sol ser un
+      cap de família (≈ una llar); les xifres d'<em>habitantes</em> són persones. La majoria
+      de contribucions a Mallorca s'expressen en <em>libras mallorquinas</em> (≈ <span style="white-space:nowrap">3.2 rs.</span> ca. 1826).
+    </p>
+    <p class="demo-coverage" id="stats-coverage">…</p>
+  </div>
+
+  <div class="demo-charts">
+    <div class="demo-card">
+      <h3>Top 20 entrades per habitants</h3>
+      <p class="demo-caption">Xifres absolutes d'habitants declarades per Miñano c. 1826. Inclou totes les entrades amb xifra d'habitants — viles, lugares, agregats d'illa.</p>
+      <div id="stats-chart-hab" class="demo-chart"><p class="empty">Carregant…</p></div>
+    </div>
+
+    <div class="demo-card">
+      <h3>Top 20 entrades per vecinos (caps de família)</h3>
+      <p class="demo-caption">Equivalent a llars. Multiplicar per ~4.5 per estimar habitants.</p>
+      <div id="stats-chart-vec" class="demo-chart"><p class="empty">Carregant…</p></div>
+    </div>
+
+    <div class="demo-card">
+      <h3>Top 15 per riquesa líquida (libras mallorquinas)</h3>
+      <p class="demo-caption">Riquesa líquida en libras mallorquinas — la base imposable de la <em>talla real</em> a Mallorca. Sobretot reflecteix Tomos V–VIII (Mallorca i Menorca).</p>
+      <div id="stats-chart-riq" class="demo-chart"><p class="empty">Carregant…</p></div>
+    </div>
+
+    <div class="demo-card">
+      <h3>Habitants agregats per illa</h3>
+      <p class="demo-caption">Suma d'habitants declarats. Mallorca: ~192 K; Menorca: ~45 K; Eivissa+Formentera: ~15 K (segons les xifres dels artícles generals d'illa, Tom V/VI).</p>
+      <div id="stats-chart-illa" class="demo-chart"><p class="empty">Carregant…</p></div>
+    </div>
+
+    <div class="demo-card">
+      <h3>Distribució del règim senyorial (Mallorca + Menorca + Eivissa)</h3>
+      <p class="demo-caption">
+        L'Antic Règim baleàric encara és viu el 1826. <strong>Realengo</strong> domina aclaparadorament a Mallorca i Eivissa (drets reials reservats des de Jaume II); els pocs <strong>Senyorial</strong>/<strong>Eclesiàstic</strong> són notables.
+      </p>
+      <div id="stats-chart-reg" class="demo-chart"><p class="empty">Carregant…</p></div>
+    </div>
+
+    <div class="demo-card">
+      <h3>Top 20 per mida de llar (habitants / vecinos)</h3>
+      <p class="demo-caption">Persones per llar. Valors balears 1820: típic 4–5. Valors molt alts indiquen llogarets/possessions on Miñano declara molts habitants però comptabilitza poques famílies (peons agregats al masover).</p>
+      <div id="stats-chart-ratio" class="demo-chart"><p class="empty">Carregant…</p></div>
+    </div>
+
+    <div class="demo-card">
+      <h3>Tipus de lloc més freqüents</h3>
+      <p class="demo-caption">Tipologia jurídica/geogràfica que assigna Miñano. <em>Villa</em> = poble amb alcaldia pròpia; <em>Lugar</em> = nucli depenent d'una vila matriu; <em>Aldea</em> = poblat petit; <em>Caserío</em> i <em>Coto</em> apareixen sobretot a Eivissa i possessions mallorquines.</p>
+      <div id="stats-chart-types" class="demo-chart"><p class="empty">Carregant…</p></div>
+    </div>
+
+    <div class="demo-card">
+      <h3>Cobertura per tom</h3>
+      <p class="demo-caption">Quantes entrades balears té cada un dels 11 toms del Miñano original. El <strong>Tom XI Suplement</strong> és el més ric perquè recopila correccions/adicions a tots els tomos anteriors (sobretot del R.P. Lluís de Vilafranca, caputxí de Palma).</p>
+      <div id="stats-chart-vol" class="demo-chart"><p class="empty">Carregant…</p></div>
+    </div>
+
+    <div class="demo-card">
+      <h3>Convents, parròquies i hospitals (totals agregats)</h3>
+      <p class="demo-caption">Infraestructura eclesiàstica i social declarada per Miñano abans de la desamortització de Mendizábal (1835–1836). Mostra la densitat conventual mallorquina al 1826.</p>
+      <div id="stats-chart-eccl" class="demo-chart"><p class="empty">Carregant…</p></div>
+    </div>
   </div>
 </section>
 
