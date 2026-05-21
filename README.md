@@ -14,9 +14,7 @@ two decades before Mendizábal's confiscations.
 This repository extracts every article relating to Mallorca, Menorca,
 Eivissa, Formentera and Cabrera, structures the data into a relational
 schema, and publishes a static website for consultation and
-exploration. Sister projects of the same family are
-[`../madoz`](../madoz), `../Nomenclator`, `../floridablanca` and
-`../nomenclator_1860`; each is independent and self-contained.
+exploration.
 
 ## Coverage
 
