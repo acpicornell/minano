@@ -81,17 +81,34 @@ def has_balearic_anchor(text: str) -> bool:
     return any(k.lower() in low for k in BALEARIC_KEYWORDS)
 
 
-def load_corpus_index() -> tuple[dict, dict]:
-    """Returns (by_vol_norm_titles, by_leaf_titles)."""
+def load_corpus_index() -> tuple[dict, dict, dict]:
+    """Returns three indices keyed for fast dedup lookups:
+      - by_vol_norm_titles : {vol → {normalised_title, ...}}
+      - by_leaf_titles     : {(vol, leaf) → [title, ...]}
+      - by_vol_bodies      : {vol → [description_text, ...]}
+    Bodies are used for content-level dedup: a Vilafranca-attributed
+    paragraph whose title is OCR-mangled (Ariaiii, Üyeró, vecinos…)
+    often shares its body's clean prose with an already-extracted
+    description. Fuzzy-matching the bodies catches these cases that
+    title-level dedup cannot.
+    """
     by_vol: dict[str, set[str]] = {}
     by_leaf: dict[tuple[str, int], list[str]] = {}
+    by_vol_bodies: dict[str, list[str]] = {}
     for jp in sorted(TEXT.glob("page_*.json")):
         d = json.loads(jp.read_text())
         vol, leaf = d["vol"], int(d["leaf"])
         for e in d.get("entries", []):
             by_vol.setdefault(vol, set()).add(normalize(e["title"]))
             by_leaf.setdefault((vol, leaf), []).append(e["title"])
-    return by_vol, by_leaf
+            desc = e.get("description") or ""
+            if desc:
+                # Normalise: lowercase, strip punctuation, collapse whitespace
+                body = re.sub(r"[^\w\s]", " ", desc).lower()
+                body = re.sub(r"\s+", " ", body).strip()
+                if len(body) >= 60:
+                    by_vol_bodies.setdefault(vol, []).append(body)
+    return by_vol, by_leaf, by_vol_bodies
 
 
 _TITLE_HEAD_RX = re.compile(
@@ -106,26 +123,46 @@ def guess_title(paragraph: str) -> str | None:
 
 
 def already_in_corpus(
-    title_guess: str, vol: str, leaf: int,
-    by_vol: dict, by_leaf: dict, *,
+    title_guess: str, body: str, vol: str, leaf: int,
+    by_vol: dict, by_leaf: dict, by_vol_bodies: dict, *,
     leaf_threshold: int = 75, vol_threshold: int = 85,
+    body_threshold: int = 70,
 ) -> bool:
-    """True if the corpus already covers this lemma, accounting for OCR
-    noise. We compare against entries on the same leaf first (which is
-    where adicions duplicate), then against the whole tomo."""
+    """True if the corpus already covers this paragraph. Combines two
+    signals:
+
+      (a) Title fuzzy-match — fast but unreliable when the candidate
+          title is OCR-mangled (Ariaiii ≠ ARIAÑY).
+      (b) Body fuzzy-match — compares the clean-Spanish portion of the
+          candidate paragraph against the descriptions already in the
+          tomo. partial_ratio aligns the shorter description within the
+          longer noisy body and produces a high score when both
+          describe the same place, even when the title is unreadable.
+    """
     norm_g = normalize(title_guess)
     on_leaf = [normalize(t) for t in by_leaf.get((vol, leaf), [])]
     if any(fuzz.WRatio(norm_g, t) >= leaf_threshold for t in on_leaf if t):
         return True
     vol_titles = by_vol.get(vol, set())
-    return any(fuzz.WRatio(norm_g, t) >= vol_threshold for t in vol_titles)
+    if any(fuzz.WRatio(norm_g, t) >= vol_threshold for t in vol_titles):
+        return True
+    # Body-level dedup
+    body_norm = re.sub(r"[^\w\s]", " ", body).lower()
+    body_norm = re.sub(r"\s+", " ", body_norm).strip()
+    if len(body_norm) < 60:
+        return False
+    bodies = by_vol_bodies.get(vol, [])
+    return any(
+        fuzz.partial_ratio(b, body_norm) >= body_threshold
+        for b in bodies
+    )
 
 
 def scan(vol: str, *, threshold: float, max_leaf: int = 700):
     chocr = CHOCR / f"tomo{vol}.html.gz"
     if not chocr.exists():
         return []
-    by_vol, by_leaf = load_corpus_index()
+    by_vol, by_leaf, by_vol_bodies = load_corpus_index()
     candidates = []
     pars_by_leaf = leaf_paragraphs(chocr, set(range(max_leaf)))
     for leaf, paragraphs in pars_by_leaf.items():
@@ -141,7 +178,8 @@ def scan(vol: str, *, threshold: float, max_leaf: int = 700):
             title = guess_title(txt)
             if not title:
                 continue
-            if already_in_corpus(title, vol, leaf, by_vol, by_leaf):
+            if already_in_corpus(title, txt, vol, leaf,
+                                 by_vol, by_leaf, by_vol_bodies):
                 continue
             candidates.append((vol, leaf, title, score, txt))
     return candidates
@@ -160,8 +198,10 @@ def main():
     if args.vol:
         vols = [args.vol.zfill(2)]
     elif args.all:
-        vols = sorted(p.stem.replace("tomo", "")
-                      for p in CHOCR.glob("tomo*.html.gz"))
+        vols = sorted(
+            re.match(r"tomo(\d+)", p.name).group(1)
+            for p in CHOCR.glob("tomo*.html.gz")
+        )
     else:
         vols = ["11"]
 

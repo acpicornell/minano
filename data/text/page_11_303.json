@@ -1,0 +1,20 @@
+{
+  "vol": "11",
+  "leaf": 303,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "FELANITX (adición)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Felanitx",
+      "description": "Felanuche, léase Felanitx. Tiene por anejo á Horta. En la línea 10 donde dice «hay un santuario de su nombre», añádase «del que cuidan 5 ermitaños»; y en la 27 donde dice «el uno llamado Portichol, y el otro Portcolom», léase «el uno llamado Portcolom, del que se sirven los de Felanitx, y el otro Porto Petro, en el territorio de Santanyí: pues en toda aquella costa no hay Portichol grande ni pequeño». (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Felanitx", "Horta", "Portcolom", "Porto Petro", "Santanyí"],
+      "confidence": "high",
+      "note": "Suplement amb correccions sobre FELANITX: confirma Horta com a annex, el santuari de Sant Salvador atés per 5 ermitans, i corregeix els noms dels ports — Portcolom (Felanitx) i Porto Petro (Santanyí, no Portichol)."
+    }
+  ]
+}
