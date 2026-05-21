@@ -1,0 +1,18 @@
+{
+  "vol": "07",
+  "leaf": 176,
+  "page_printed": "167",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "PUERTO PI",
+      "place_type": "puerto",
+      "island": "Mallorca",
+      "description": "Puerto de Esp. en la Isla de Mallorca. Es una especie de cala defendida enteramente de los vientos, puede contener hasta fragatas del mayor porte, pero en corto número: en otro tiempo estaba mas limpio y capaz, y era el abrigo de las embarcaciones gruesas que hacían el gran comercio de Mallorca: tiene una pequeña batería en el lado de la ciudad, y mediante privilegio del rey don Pedro de Aragón, cerraba su entrada continuamente una cadena, conservándose aun en una y otra orilla las rocas en que se afirmaba. En la parte opuesta á la batería está situado el antiguo Faro, que sirve de vigía á las embarcaciones, y con su linterna debe advertirlas de noche la proximidad de la costa.",
+      "cross_references": ["Mallorca", "Palma", "Pedro de Aragón"],
+      "confidence": "high",
+      "note": "Modern: Portopí (Palma de Mallorca). Far romà → medieval, un dels més antics del món encara en servei (s. XIII)."
+    }
+  ]
+}

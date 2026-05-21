@@ -1,0 +1,28 @@
+{
+  "vol": "05",
+  "leaf": 62,
+  "page_printed": "53",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "INCA",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España, provincia y obispado de Mallorca. A. O., 754 vecinos, 5,316 habitantes, 1 parroquia, 2 conventos de frailes, 1 de monjas, 1 hospicio. Situada en el centro de la isla, en terreno llano y fértil. Produce trigo, cebada, avena, legumbres, aceite, vino, pastos, ganado lanar, cabrío y vacuno. Sus edificios y calles son de una mediana hermosura y disposición. El juéves de cada semana hay mercado muy concurrido, y mas que todo el que sigue á la feria de Lluch. Contribuye 5,617 libras 19 sueldos.",
+      "stats": {
+        "vecinos": 754,
+        "habitantes": 5316,
+        "parroquias": 1,
+        "conventos_frailes": 2,
+        "conventos_monjas": 1,
+        "hospicios": 1,
+        "contribucion": "5,617 libras 19 sueldos"
+      },
+      "cross_references": ["Lluch"],
+      "confidence": "high"
+    }
+  ]
+}

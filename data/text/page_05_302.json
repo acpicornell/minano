@@ -1,0 +1,33 @@
+{
+  "vol": "05",
+  "leaf": 302,
+  "page_printed": "293",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "LLANO DE LA VILLA",
+      "place_type": "cuartón",
+      "island": "Ibiza",
+      "description": "Cuartón de España, en la isla de Ibiza. Tiene 300 casas con 900 habitantes repartidos en caseríos, ademas de los de la ciudad su capital; una compañía de 110 hombres con su capitán, y la principal iglesia de las forenses, antes convento que abandonaron los franciscos, distante 2 millas, y todo el camino muy ameno, ladeado de huertos y viñedos. Está rodeado de los otros cuatro y su territorio ocupa 1 y ½ leg. La población llamada antes la Villa ó Real Fuerza, está al S., en una eminencia sobre peña. Las costas de este cuartón empiezan por Cabo Andreos, y acaban por Calaquifu.",
+      "stats": {
+        "casas": 300,
+        "habitantes": 900,
+        "compania_hombres": 110
+      },
+      "cross_references": ["Cabo Andreos", "Calaquifu"],
+      "confidence": "high",
+      "note": "Modern: Quartó de Ses Salines / Quartó de Portmany area. 'Llano de la Villa' = Pla de Vila (Eivissa), one of the four traditional 'quartons' the island was divided into."
+    },
+    {
+      "title": "LLANO DE LA VILLA",
+      "place_type": "despoblado",
+      "island": "Ibiza",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "description": "Desp. R. de España, en la isla de Ibiza. A. P.",
+      "confidence": "medium",
+      "note": "Stub entry — Miñano gives only the typology header for this second (now-depopulated) namesake site."
+    }
+  ]
+}

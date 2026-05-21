@@ -1,0 +1,55 @@
+{
+  "vol": "11",
+  "leaf": 526,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SONARROSA",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Sancellas",
+      "description": "Aid. R. de España en la isla y ob. de Mallorca, 6 vec., los que con el número de hab. y contribución se incluyen con los de la V. de Sancellas, de la que es aneja. Está sit. al S. de su matriz. [Not. dada por el R. P. Fr. Luis de Villafranca].",
+      "stats": {
+        "vecinos": 6
+      },
+      "cross_references": ["Sancellas"],
+      "confidence": "high",
+      "note": "Max-path recovery. Modern: Son Arrossa / Son Rossa (Sencelles)."
+    },
+    {
+      "title": "SONBRU",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Otro",
+      "municipality": "Puigpunyent",
+      "description": "Aid. t. de Esp. en la isla y ob. de Mallorca. El número de vec, hab. y contr. se incluyen con los de la V. de Puigpunyent. Sit. al W. y á una milla de esta. (Not. dada por el mismo).",
+      "cross_references": ["Puigpunyent"],
+      "confidence": "high",
+      "note": "Modern: Son Bru (Puigpunyent)."
+    },
+    {
+      "title": "SON-LLUCH",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Señorial",
+      "municipality": "Palma",
+      "description": "Aid. S. de Esp. en la isla y ob. de Mallorca. El número de vec. y hab. se incluyen con los de la C. de Palma. Sit. al N. O. y a ⅔ de leg. de esta C., con quien contribuye. Esta Aid. en cuanto a lo eclesiástico depende de la Vileta, de la que dista una corta milla al S. (Not. dada por el mismo).",
+      "cross_references": ["Palma", "La Vileta"],
+      "confidence": "high",
+      "note": "Max-path recovery. Modern: Son Lluc / Son Lluís (Palma, possessió)."
+    },
+    {
+      "title": "SUFFERA",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "municipality": "Puigpunyent",
+      "description": "Aid de España en la isla y ob. de Mallorca. Tiene una ermita, y el número de vec. y pob. se incluyen con los de la villa de Puigpunyent con quien contribuye. Está sit. al N. y á 1 legua de su matriz, camino escabrosísimo. [Not. dada por el R. P. Fr. Luis de Villafranca].",
+      "cross_references": ["Puigpunyent"],
+      "confidence": "high",
+      "note": "Max-path recovery. Modern: Superna (Puigpunyent, Mallorca) — antigua possessió en el camí de Galilea."
+    }
+  ]
+}

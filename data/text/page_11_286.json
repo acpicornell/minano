@@ -1,0 +1,19 @@
+{
+  "vol": "11",
+  "leaf": 286,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "DRAGONERA",
+      "place_type": "isla",
+      "island": "Mallorca",
+      "description": "Esta isla tiene 1 millas escasas de extensión, ½ de ancho, y dista de la de Mallorca ¾ de milla.",
+      "stats": {"extension_millas": 1, "ancho_millas": 0.5, "distancia_mallorca_milla": 0.75},
+      "cross_references": ["Mallorca"],
+      "confidence": "high",
+      "note": "Modern: Sa Dragonera (illa al SO de Mallorca, davant Andratx). Avui Parc Natural."
+    }
+  ]
+}

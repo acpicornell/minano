@@ -1,0 +1,31 @@
+{
+  "vol": "06",
+  "leaf": 281,
+  "page_printed": "271",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "NUESTRA SEÑORA DE LLUCH",
+      "place_type": "santuario",
+      "island": "Mallorca",
+      "description": "Santuario de España en la isla de Mallorca, y de su obispado. Situado en un profundo valle, rodeado de las mas altas sierras de Mallorca, siguiendo desde Pollensa la áspera cordillera de montes que sirven de parapeto contra los vientos boreales á casi toda la isla. La iglesia donde se venera una imagen de la Virgen, encontrada casi en el mismo sitio donde está fabricado este edificio, es toda de mármol negro, y adornada de preciosas alhajas, efecto de la piedad de los habitantes de Mallorca: la iglesia es de buen gusto, y en ella se ven hermosas columnas y adornos de jaspes, de que abunda infinitamente la isla. El edificio anejo á la iglesia está destinado al alojamiento de los sacerdotes que viven á modo de congregantes de San Felipe Nerí; del prior, y de los devotos que concurren muy á menudo en crecido número á visitar tan devoto santuario.",
+      "cross_references": ["Pollensa", "San Felipe Nerí"],
+      "confidence": "high",
+      "note": "Modern: Santuari de Lluc (Escorca, Mallorca)."
+    },
+    {
+      "title": "NUESTRA SEÑORA DEL PILAR DE LA MOLA",
+      "place_type": "parroquia",
+      "island": "Formentera",
+      "description": "Parroq. de España en la isla de Ibiza; 68 vecinos, 526 habitantes.",
+      "stats": {
+        "vecinos": 68,
+        "habitantes": 526,
+        "parroquias": 1
+      },
+      "confidence": "high",
+      "note": "Max-path recovery (this entry was not in the Phase 1 index — the indexer's title regex did not match the long multi-word headword). Although Miñano writes 'en la isla de Ibiza', 'La Mola' is the eastern plateau of FORMENTERA — Miñano's geographic attribution conflates Eivissa+Formentera (the Pitiusas pair, then administered together). The 'Nuestra Señora del Pilar de la Mola' parish is on Formentera."
+    }
+  ]
+}

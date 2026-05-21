@@ -1,0 +1,83 @@
+{
+  "vol": "11",
+  "leaf": 399,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "note": "Pàgina excepcionalment rica del Suplement: 7 entrades balears consecutives.",
+  "entries": [
+    {
+      "title": "LLOMBARTS",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Santañy",
+      "description": "Aid. R. de España en la Isla y obisp. de Mallorca, una ermita. El número de vecinos y habitantes están inclusos con los de la villa de Santañy, de la que depende en lo civil y eclesiástico. Sit. al O. y á ½ de hora de su matriz con quien contribuye. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Santañy"],
+      "confidence": "high",
+      "note": "OCR'd 'LLOMBAllTi'. Modern: es Llombards (Santanyí, Mallorca)."
+    },
+    {
+      "title": "LLORITO (adición)",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "municipality": "Sineu",
+      "description": "Los vecinos, habitantes y contribución están incluidos con los de la matriz Sineu. La parroquia es un convento de frailes Dominicos, cuyo prior hace de cura. (Not. dada por el mismo).",
+      "cross_references": ["Sineu"],
+      "confidence": "high",
+      "note": "Suplement al LLORITO (Tomo V leaf 312). Modern: Lloret de Vistalegre (Mallorca), antic 'Llorito de Vistalegre'. Confirma annexió eclesiàstica a Sineu — convent dominic com a parròquia."
+    },
+    {
+      "title": "LLOSETA (adición)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Señorial",
+      "mayor_type": "Alcalde Ordinario",
+      "municipality": "Binisalem",
+      "description": "Es V. S. y no L. Ademas del A. O. tiene dos regidores. En la línea 4 donde dice 'sit. al O. de Inca', añádase 'y al N. E. de Binisalem, de la que depende en lo eclesiástico'. En la línea 5 donde dice 'en terreno llano', léase 'montuoso'. No contribuye con Palma, pues como goza los fueros de villa, ella misma se distribuye la contribución. (Not. dada por el mismo).",
+      "cross_references": ["Inca", "Binisalem"],
+      "confidence": "high",
+      "note": "Suplement: LLOSETA és Villa Señorial (no L. Realengo). Annexió eclesiàstica a Binissalem (no Inca)."
+    },
+    {
+      "title": "LLUBÍ (adición)",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "municipality": "Muro",
+      "description": "Léase Llubí. Dista del mar 2 leg. A sus producciones deben añadirse las alcaparras, de que hace bastante comercio. No contribuye con Palma, sino con Muro, que es su matriz. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Muro"],
+      "confidence": "high",
+      "note": "Suplement al LLUBIN (Tomo V leaf 313). Modern: Llubí (Mallorca). Important comerç de tàperes (capers)."
+    },
+    {
+      "title": "LLUCALCARI (adición)",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "municipality": "Deyá",
+      "description": "Los vecinos, habitantes y contribución se comprenden con los de Deyá, de la que es aneja. Sit. en la ribera del mar al N. de su matriz. Es patria del capitán de navío Don Felipe Bauzá, director que fue del real depósito hidrográfico de Madrid, y uno de sus mas célebres matemáticos. (Not. dada por el mismo).",
+      "cross_references": ["Deyá", "Felipe Bauzá"],
+      "confidence": "high",
+      "note": "Modern: Llucalcari (Deià). Felip Bauçà (1764-1834): cartògraf, navegant, polític liberal. Director del Depósito Hidrográfico (Madrid)."
+    },
+    {
+      "title": "LLUCH (Nuestra Señora de) — adición",
+      "place_type": "santuario",
+      "island": "Mallorca",
+      "municipality": "Escorca",
+      "description": "Este santuario es parroquia desde el año 1526 en que se le agregó la antigua de Escorca. Fundóse después un colegio, á cuyos capellanes Alejandro VI concedió el título de canónigos de San Pedro. Sit. al N. y á 6 ½ de leguas de la ciudad de Palma, y á 1 del mar, camino escabrosísimo y lleno de precipicios. Su cosecha principal aceite y ganado. Sus montes que son los mas altos de la Isla, están poblados de frondosos bosques, y abunda de fuentes preciosas. Para sus vecinos y contribución véase Escorca. (Not. dada por el mismo).",
+      "cross_references": ["Escorca", "Palma", "Alejandro VI"],
+      "confidence": "high",
+      "note": "Modern: Santuari de Lluc (Escorca, Serra de Tramuntana). Parroquial des de 1526 (agregació d'Escorca). Centre de pelegrinatge mallorquí més important."
+    },
+    {
+      "title": "LLUCMAYOR (adición)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "description": "A este artículo debe añadirse lo siguiente: A la subida del monte de Randa se halla un santuario de Nuestra Señora de Gracia, lugar de mucha devoción. Es patria de Don Miguel Tomás Tajaquet, obispo de Lérida, alabado por Cerda en su retórica de Vosio; y de Don Fr. Pedro Roig, obispo de Pamplona y virrey de Navarra. Tiene en su término 30 molinos de viento; se halla abastecida de agua por una fuente copiosa, conducida desde el territorio de la villa de Algayda: el emperador Carlos V les concedió feria todos los años desde la fiesta de san Miguel de septiembre hasta el 18 de octubre.",
+      "stats": {"molinos_viento": 30, "feria": "29 sept – 18 oct (Carlos V)"},
+      "cross_references": ["Randa", "Algaida", "Miguel Tomás Tajaquet", "Pedro Roig", "Carlos V"],
+      "confidence": "high",
+      "note": "Suplement a LLUMATOR (Tomo V leaf 314). Modern: Llucmajor (Mallorca). Patris: obispos. Santuari de Gràcia (Randa) i 30 molins de vent."
+    }
+  ]
+}

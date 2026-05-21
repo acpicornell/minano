@@ -1,0 +1,20 @@
+{
+  "vol": "08",
+  "leaf": 86,
+  "page_printed": "76",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SANTA CATALINA",
+      "place_type": "arrabal",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Palma",
+      "description": "Arrabal R. de España, prov. de Mallorca, perteneciente á la ciudad de Palma.",
+      "cross_references": ["Palma"],
+      "confidence": "high",
+      "note": "Modern: Santa Catalina (barrio extramuros de Palma, históricamente arrabal de pescadores)."
+    }
+  ]
+}

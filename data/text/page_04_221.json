@@ -1,0 +1,20 @@
+{
+  "vol": "04",
+  "leaf": 221,
+  "page_printed": "178",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "FORNELLS",
+      "place_type": "castillo",
+      "island": "Menorca",
+      "municipality": "Mercadal",
+      "description": "Castillo y puerto de Esp., en la isla de Menorca, anejo de la parroq. de Mercadal, 80 vecinos, 304 habitantes. Sit. á 6 millas al N. del monte del Toro; el castillo está edificado sobre la costa O. del puerto, ya no existen mas que ruinas. Era un cuadrado revestido de piedras del país, con 4 bastiones, otras tantas cortinas y un pequeño foso. La torre de la atalaya está situada sobre un terreno muy elevado, y sirve para señalar los barcos que se avistan. El puerto está lleno por todas partes de peligrosos bajos, y solos los que le conocen bien, se atreven al riesgo de su entrada. Las embarcaciones menores se acogen á él cuando, en su travesía a Marsella, encuentran vientos contrarios en el golfo; con todo, hay ejemplar que han entrado varios navíos de guerra. Dista 11 ½ millas de Mahón, y 14 ½ de Ciudadela.",
+      "stats": {"vecinos": 80, "habitantes": 304},
+      "cross_references": ["Mercadal", "Monte del Toro", "Mahón", "Ciudadela", "Marsella"],
+      "confidence": "high",
+      "note": "Modern: Fornells (Es Mercadal, Menorca). Pesquer i fortí als segles XVI-XVIII contra atacs corsaris."
+    }
+  ]
+}

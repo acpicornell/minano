@@ -1,0 +1,21 @@
+{
+  "vol": "05",
+  "leaf": 436,
+  "page_printed": "427",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "MARRATCHI",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España, prov. y obispado de Mallorca. A. O., 374 vecinos, 1,345 habitantes, 1 parr. Situada al N. O. de Palma. Produce trigo, cebada, avena, legumbres, aceite, vino, ganado lanar y vacuno. Tiene por armas un escudo partido: en primero 5 culebras enroscadas, y en segundo dos peces. Dista 2 leguas de Palma. Contr. 3,767 libras 15 sueldos.",
+      "stats": {"vecinos": 374, "habitantes": 1345, "parroquias": 1, "contribucion": "3,767 libras 15 sueldos"},
+      "cross_references": ["Palma"],
+      "confidence": "high",
+      "note": "Modern: Marratxí (Mallorca, raiguer). Armes parlants: '5 colobres enroscades' al·ludeixen al topònim català 'marratxí' (relacionat amb Mar-ràqix?)."
+    }
+  ]
+}

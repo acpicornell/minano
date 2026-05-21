@@ -1,0 +1,23 @@
+{
+  "vol": "07",
+  "leaf": 238,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "RANDA",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Sin alcalde",
+      "description": "L. R. de España, provincia de Mallorca. No hay alcalde, 81 vec., 401 hab.",
+      "stats": {
+        "vecinos": 81,
+        "habitantes": 401
+      },
+      "confidence": "high",
+      "note": "Modern: Randa (aldea de Algaida, Mallorca; pie del Puig de Randa)."
+    }
+  ]
+}

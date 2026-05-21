@@ -1,0 +1,18 @@
+{
+  "vol": "11",
+  "leaf": 299,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ESPORLAS (adición)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "description": "Esporlas. Además de los dos anejos que se expresan en el Diccionario, debe añadirse el de Esglayeta; y en la línea 5 donde dice 'la población de estas dos', léase 'de estas tres'. En lugar de la sit. que expresamos en el Diccionario, léase la siguiente: 'Está á más de 2 leg. distante del mar, entre frondosos montes, lugar muy ameno y fértil en aceite, algarroba, seda, frutos y vino, llamado malvasía. Tiene muchas fuentes, particularmente dos, con que se abastece la ciudad de Palma, de la que dista 2 leg. y ¼ N. O.' (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Esglayeta", "Banyalbufar", "Establiments", "Palma"],
+      "confidence": "high",
+      "note": "Suplement Esporles: 3 annexes (no 2): Banyalbufar, Establiments, Esglayeta. Llunyà del mar però abasteix Palma d'aigua. Vi malvasia famós."
+    }
+  ]
+}

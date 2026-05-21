@@ -1,0 +1,21 @@
+{
+  "vol": "11",
+  "leaf": 164,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "BUGER (adición)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Campanet",
+      "description": "Buger. Tiene 1,492 habitantes. Su parr. la sirve un teniente de cura, y es aneja de la de Campanet, con quien contribuye. Sit. sobre una eminencia á unas 2 leg. dist. del mar. Sus vecinos cuidan bastante bien del cultivo de sus campos. Industria: fábricas de cucharas y tenedores de que proveen la isla. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "stats": {"habitantes": 1492},
+      "cross_references": ["Campanet"],
+      "confidence": "high",
+      "note": "Modern: Búger (Mallorca, raiguer). Annex eclesiàstic de Campanet. Indústria notable: cuchillería/tenedors de fusta — artesania tradicional reportada per Mn. Villafranca."
+    }
+  ]
+}

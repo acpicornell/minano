@@ -1,0 +1,28 @@
+{
+  "vol": "07",
+  "leaf": 76,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "POLLENSA",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España, provincia y obispado de Mallorca. A. O., 1,??? vecinos, 7,335 habitantes, 1 parroquia, 1 convento de Dominicos, 1 colegio de Jesuitas. Situada en terreno delicioso, rodeada de montes por dos partes y despejada por otra. Es población muy antigua, y sin disputa la misma Pollentia Romanorum, tan nombrada en las historias, en cuyo distrito, caminando hacia el mar y estuvo situado el pueblo de los romanos, como lo acreditan varias medallas que se encuentran diariamente. Produce granos, aceite, algarroba, frutas, y vino delicioso que se llama Munlona. A 1 legua de distancia, hacia el N., tiene su puerto de mar, y esta parroquia fue antiguamente de los Templarios, desde cuya extinción pertenece á los caballeros de Malta que continúan percibiendo los diezmos, de cuyo fondo se paga una miserable dotación á un sacerdote que se intitula vice-prior, porque hace las veces del caballero párroco que tiene la dignidad de prior de Pollensa. Ninguna villa tiene el conjunto de circunstancias mas favorables para ser la mas rica y hermosa de todas las de la isla; pero está atrasada la agricultura é industria. Sin embargo se fabrican en ella unos paños negros muy sólidos que se llaman buirell, de que se viste toda la gente del campo de la isla. Hay feria el tercer domingo de noviembre. Dista 9 leguas de la capital. Contr. 5,596 libras 4 sueldos.",
+      "stats": {
+        "habitantes": 7335,
+        "parroquias": 1,
+        "conventos": 1,
+        "colegios_jesuitas": 1,
+        "feria": "tercer domingo de noviembre",
+        "contribucion": "5,596 libras 4 sueldos"
+      },
+      "cross_references": ["Pollentia Romanorum", "Caballeros de Malta", "Templarios", "Puerto de Pollensa"],
+      "confidence": "high",
+      "note": "OCR'd 'POLUSNZA (PoLMinnu BonAaoftiB»)' — fortíssima OCR scramble del títol (POLLENSA + POLLENTIA BALEARORUM/ROMANORUM). Mega-article. Cita històrica de Pollentia (ciutat romana fundada s. II aC, avui jaciment a Alcúdia, no a Pollença — Miñano confon les dues). Buirell = paño negro tradicional mallorquí. Vino 'Munlona' = Malvasia/Moscatell de Pollença."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "vol": "05",
+  "leaf": 314,
+  "page_printed": "305",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "note": "Max-path recovery: this leaf was not in the Phase 1 index (the LLUCMAJOR headword OCR'd as 'LLUMATOR' did not match the indexer's regex) — added directly via the in-conversation extraction pass.",
+  "entries": [
+    {
+      "title": "LLUCMAJOR",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España en la Isla de Mallorca, y de su obispado. A. O., 1,1?4 vec., 8,630 habitantes, 1 parroquia, 1 convento de frailes Franciscos. Sit. al E. de Palma, en una espaciosa llanura que se estiende con declive hasta la ciudad principal por el O. y hasta el mar por el E. y S. Por las demás partes está rodeado de sierras y montecillos que le circundan á distancia de ½ legua. Las calles y edificios del pueblo son de regular construcción, pero la iglesia principal y el convento de muy mediano gusto en la arquitectura. En sus inmediaciones está el elevado monte de Randa, que por estar casi aislado ofrece vistas deliciosas, y en él hay una casa con una reducida capilla, en donde por cuenta de la universidad de Mallorca se enseñan las primeras letras. Es célebre este monte entre los mallorquines, por haber hecho penitencia en él el Beato Raymundo. Produce por un quinquenio 10,900 cuarteras de trigo candeal, 11,550 de ceb., 14,000 de avena, 2,400 de legumbres, 14,150 cuartines de vino, 1,000 quintales de lana, 10 de lino, 12 de cáñamo, 1,000 cuarteras de almendras; frutas y hortalizas. Industria: fabrica de lienzos ordinarios, lienzos listados, estambres, estameñas, anascotes, paño burel ordinario, sombreros y aguardiente. Celebra feria el día de San Miguel y los 3 domingos siguientes, á la que concurre mucha gente á vender de casi toda la isla ganados de todas especies y otros géneros y frutos. Dist. 4½ leguas de Palma. Contribuye 7,131 lib. 4 sueldos.",
+      "stats": {
+        "habitantes": 8630,
+        "parroquias": 1,
+        "conventos": 1,
+        "trigo_cuarteras": 10900,
+        "cebada_cuarteras": 11550,
+        "avena_cuarteras": 14000,
+        "legumbres_cuarteras": 2400,
+        "vino_cuartines": 14150,
+        "lana_quintales": 1000,
+        "almendras_cuarteras": 1000,
+        "contribucion": "7,131 libras 4 sueldos"
+      },
+      "cross_references": ["Palma", "Randa", "Beato Raymundo"],
+      "confidence": "medium",
+      "note": "OCR'd 'LLUMATOR' (L-L-U-M-A-T-O-R) but body context (4½ leguas E. of Palma, Randa monte, 8,630 hab., 1 conv. franciscano) unambiguously identifies modern Llucmajor. Vecinos figure ('1,1?4') is OCR-garbled."
+    }
+  ]
+}

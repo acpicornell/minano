@@ -1,0 +1,22 @@
+{
+  "vol": "07",
+  "leaf": 450,
+  "page_printed": "446",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SAN CARLOS",
+      "place_type": "caserío",
+      "island": "Ibiza",
+      "description": "Caserío de España, provincia de Ibiza; 187 vec., 930 habitantes. (V. la descripción general de Ibiza). Dista 3½ leguas de la capital.",
+      "stats": {
+        "vecinos": 187,
+        "habitantes": 930
+      },
+      "cross_references": ["Ibiza"],
+      "confidence": "high",
+      "note": "Modern: Sant Carles de Peralta (Eivissa)."
+    }
+  ]
+}

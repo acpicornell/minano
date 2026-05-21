@@ -1,0 +1,26 @@
+{
+  "vol": "07",
+  "leaf": 13,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "PETRA",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España, provincia y obispado de Mallorca. A. O., 564 vecinos, 3,745 habitantes, 1 parroquia, de la que es aneja la de Villafranca, un conv. de Franciscos. Situada á la parte N. O. de Manacor, en una llanura. Produce trigo, cebada, avena, legumbres, vino, ganado lanar, cabrío y vacuno. Esta es la villa mas pobre de esta isla, por la escasez de agua que padece. Contribuye 6,650 lib. 5 sueldos.",
+      "stats": {
+        "vecinos": 564,
+        "habitantes": 3745,
+        "parroquias": 1,
+        "conventos": 1,
+        "contribucion": "6,650 libras 5 sueldos"
+      },
+      "cross_references": ["Villafranca", "Manacor"],
+      "confidence": "high"
+    }
+  ]
+}

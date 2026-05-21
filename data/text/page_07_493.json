@@ -1,0 +1,42 @@
+{
+  "vol": "07",
+  "leaf": 493,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SAN JOSÉ ó LAS SALINAS",
+      "place_type": "despoblado",
+      "island": "Ibiza",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "description": "Desp. R. de España, provincia de Ibiza. A. P. llamado Bayle; 189 vecinos, 951 habitantes. Dista 3 leguas de la capital.",
+      "stats": {
+        "vecinos": 189,
+        "habitantes": 951
+      },
+      "cross_references": ["Ibiza"],
+      "confidence": "high",
+      "note": "Max-path recovery: this entry was not in the Phase 1 index. Modern: Sant Josep de sa Talaia / Salines d'Eivissa area. 'A. P. llamado Bayle' uses the Catalan term 'Batlle' (alcalde) preserved in Ibiza."
+    },
+    {
+      "title": "SAN JOAN",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "municipality": "Porreras",
+      "description": "V. R. de España, en la isla y obispado de Mallorca, partido de Porreras. A. O., 450 vecinos, 2,100 habitantes, 1 parroquia. Situada en el centro de la Isla, en terreno llano, á espaldas de unos montes que la preservan del viento N.; pero la incomodan bastante los aguaceros de que se ha visto inundada estos últimos años. Produce todo género de granos, vino, hortalizas, legumbres y ganado lanar, cabrío y vacuno. Contr. 3,188 lib. 4 sueldos.",
+      "stats": {
+        "vecinos": 450,
+        "habitantes": 2100,
+        "parroquias": 1,
+        "contribucion": "3,188 libras 4 sueldos"
+      },
+      "cross_references": ["Porreras"],
+      "confidence": "high",
+      "note": "Modern: Sant Joan (Mallorca). Miñano places it as 'partido de Porreras' — historical Mallorca district."
+    }
+  ]
+}

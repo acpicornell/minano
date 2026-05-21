@@ -1,0 +1,13 @@
+[project]
+name = "minano"
+version = "0.1.0"
+description = "Re-digitalisation of the Balearic subset of Sebastián Miñano's Diccionario geográfico-estadístico de España y Portugal (1826-1829)"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.5.0",
+    "anthropic>=0.100",
+    "python-dotenv>=1.0",
+]
+
+[tool.uv]
+package = false

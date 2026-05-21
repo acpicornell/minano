@@ -1,0 +1,16 @@
+{
+  "vol": "01",
+  "leaf": 224,
+  "page_printed": "130",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ALFABIA",
+      "place_type": "sierras",
+      "island": "Mallorca",
+      "description": "Sierras de Esp., en la isla de Mallorca. Sit. al N. de la C. de Palma; en ellas hay una hermosa cas. de campo que fue habitación de los reyes moros, y en el día pertenece á la cas. de Dameto, desde la cual se disfruta de una amenísima perspectiva de la llanura y contornos de la C. de Palma.",
+      "confidence": "high"
+    }
+  ]
+}

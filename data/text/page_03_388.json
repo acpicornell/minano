@@ -1,0 +1,26 @@
+{
+  "vol": "03",
+  "leaf": 388,
+  "page_printed": "378",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ESCORGA",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España, en la isla de Mallorca, y de su obispado. A. O., 45 vecinos, 240 habitantes, 1 parroquia. Situada cerca del mar, al N. E. de Sóller. Produce trigo, cebada, avena, legumbres, aceite, ganado lanar, cabrío y vacuno. Contr. 1,118 libras 5 sueldos.",
+      "stats": {
+        "vecinos": 45,
+        "habitantes": 240,
+        "parroquias": 1,
+        "contribucion": "1,118 libras 5 sueldos"
+      },
+      "cross_references": ["Sóller"],
+      "confidence": "high",
+      "note": "Miñano gives both 'ASCORCA' (Tomo I leaf 399 — the ancient parr. united to Lluch in 1531) and 'ESCORGA' (here, with vec./hab. counts) for what is essentially the same place — modern Escorca, NE of Sóller."
+    }
+  ]
+}

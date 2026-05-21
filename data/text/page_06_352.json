@@ -1,0 +1,22 @@
+{
+  "vol": "06",
+  "leaf": 352,
+  "page_printed": "342",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ORIENT",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "description": "L. de España, provincia de Mallorca; 30 vecinos, 149 habitantes. (V. la descripción general de Mallorca).",
+      "stats": {
+        "vecinos": 30,
+        "habitantes": 149
+      },
+      "cross_references": ["Mallorca"],
+      "confidence": "high",
+      "note": "Modern: Orient (vall d'Orient, Bunyola, Mallorca). Aneja de Bunyola, as documented in BÜÑOLA entry (Tomo II)."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "vol": "06",
+  "leaf": 137,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "MONTUIRI",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España, provincia y obispado de Mallorca. A. O., 567 vec., 2,783 habitantes, 1 parroquia, y 1 iglesia en la cumbre de un monte, desde el cual se descubre gran parte de la isla. Situada hacia la parte S. de ella, al N. E. de Llucmajor, en una llanura. Produce trigo, cebada, avena y legumbres, ganado lanar, cabrío y vacuno. Terreno seco, sin fuente ni río alguno, pero abundante de pozos y de cisternas. Tiene por armas un montecillo, y encima de él una flor de lis. Contr. 411 lib. 4 sueldos.",
+      "stats": {
+        "vecinos": 567,
+        "habitantes": 2783,
+        "parroquias": 1,
+        "contribucion": "411 libras 4 sueldos"
+      },
+      "cross_references": ["Llucmajor"],
+      "confidence": "high",
+      "note": "OCR'd 'MGNTUIRI' (M-G-N for M-O-N). Modern: Montuïri (Mallorca)."
+    }
+  ]
+}

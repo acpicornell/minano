@@ -1,0 +1,30 @@
+{
+  "vol": "01",
+  "leaf": 458,
+  "page_printed": "564",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "BALEARES",
+      "place_type": "islas",
+      "island": "Baleares",
+      "description": "Islas de España en el Mediterráneo, así llamadas por los romanos, y antes por los griegos Gimnesias, unos y otros, según se cree, por sus hondas y destreza en el pelear, y por ir desnudos sus habitantes. Hoy se conocen con los nombres de Mallorca, Menorca, Cabrera, Ibiza, Formentera y Conegera (V. sus art.): las 3 primeras son Baleares y las últimas Pithiusas, en el mar Ibérico que se llama así por el famoso río Ebro que desemboca en aquella parte. Distan igualmente de ambos continentes, pero siempre han sido reputadas por pertenecer al de Europa y aun al de España, y sus naturales por verdaderos españoles, según Polibio, Estrabón, Plinio, Diodoro y Pomponio Mela. Sus primitivos habitantes fueron los Rhodios según Estrabón; según san Gerónimo, los griegos de la ciudad de Zante, y según Silio, los Fenicios. Como quiera que sea, estos isleños existieron antes de Cartago, pero no fueron conocidos hasta después que los cartagineses sujetaron a los habitantes de Iviza, una de las Pitiusas, 654 años antes de la era cristiana, tardando todavía 2 siglos en establecerse en las Baleares. Reforzados los ejércitos cartagineses con los habitantes de estas islas, trataron seriamente de sujetar a su dominio a los rebeldes agrigentinos. Lo mismo hicieron con Pirro, rey de Epiro, cuando este quiso invadir la Sicilia, al cual los cartagineses, ayudados de los mallorquines lograron rechazarle con ventajas. Los romanos, declarando posteriormente la guerra a los Cartagineses, excitaron á los mallorquines a la rebelión; pero estos, fieles a Amilcar, no se separaron de sus banderas, y aun se cree que el grande Aníbal su hijo nació en una de estas islas. En fin, batido Amilcar por los romanos, los habitantes de las islas se sometieron a su imperio, y haciéndose piratas, llevaron la desolación por las costas de España. Durante las guerras civiles que precedieron a la decadencia de la república romana, estas islas perdieron gran parte de su población siguiendo a los diferentes partidos que les subyugaron. En el año 426 de la era cristiana, se apoderaron de ellas los vándalos, de los que las conquistaron los moros de África en 798. Desde esta época fueron muchas las empresas de los cristianos contra estas Islas, hasta don Jaime I de Aragón, á quien estaba guardada la gloria de arrojar para siempre de ellas a los moros. Así fue que en 1228 mandada convocar toda la nobleza de su reyno a Barcelona, oída la propuesta del rey y enardecidos con el celo de la religión que les animaba, determinaron todos la empresa, a la cual dio el principal impulso el estado eclesiástico y los grandes maestres de las órdenes militares. En vano trataron algunos de disuadir de ella al joven y religioso rey, en vano otros suscitaron intrigas que impidiesen la ejecución, el rey se mantuvo constante en su resolución, y todos los que se habían cruzado, y los catalanes, le fueron constantes y fieles. Hízose a la vela la armada compuesta de 25 navíos, 12 galeras, 100 galeotas y 16,000 hombres de desembarco, en 1.° de septiembre de 1229, después de sufrir recias borrascas, y vencidas grandes y sangrientas batallas en el sitio y cerco de la capital de esta isla, fue tomada esta ciudad por los cristianos en 31 de diciembre del mismo año. Pocos años después el mismo rey conquistador quiso que estas islas compusiesen un reyno independiente del de Aragón, dándoles por primer soberano a su hijo segundo don Jaime, al cual sucedieron Sancho, y otro Jayme y no mas, porque este último, destronado por don Pedro IV de Aragón, murió en la misma isla peleando como bueno, por recobrar la herencia que creía suya. Sucedió esto en 1340, y entonces volvieron las islas a unirse al reino de Aragón.",
+      "stats": {
+        "armada_navios": 25,
+        "armada_galeras": 12,
+        "armada_galeotas": 100,
+        "armada_hombres_desembarco": 16000,
+        "fecha_salida_armada": "1229-09-01",
+        "fecha_toma_capital": "1229-12-31",
+        "ano_vandalos": 426,
+        "ano_moros": 798,
+        "ano_carthago_iviza": -654,
+        "ano_fin_reino_independiente_mallorca": 1340
+      },
+      "cross_references": ["Mallorca", "Menorca", "Cabrera", "Ibiza", "Formentera", "Conegera", "Jaime I de Aragón", "Polibio", "Estrabón", "Plinio", "Pomponio Mela", "San Jerónimo", "Silio", "Aníbal", "Amílcar", "Pedro IV de Aragón"],
+      "confidence": "high",
+      "note": "Mega-article — descripció general de l'arxipèlag. Etymology 'Gimnesias' < gimnos (nu) / honda. Mallorca/Menorca/Cabrera = Baleares; Ibiza/Formentera/Conegera = Pithiusas (Pitiusas). Història: greci-fenici → cartaginesa (s. VII aC) → romana → vándala (426) → musulmana (798) → conquesta de Jaume I (1229-12-31). Reine de Mallorca independent 1276-1340 (Jaume II, Sanç, Jaume III)."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "vol": "05",
+  "leaf": 312,
+  "page_printed": "303",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "LLORITO",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Sineu",
+      "description": "L. R. de España en la isla de Mallorca y de su obispado. A. P., 915 vec., 1,046 habitantes, 1 parroquia aneja de la de Sineu. Sit. al S. O. de esta villa, en terreno llano. Produce trigo, cebada, avena, legumbres, vino, ganado lanar, cabrío y vacuno. Contribuye con Palma.",
+      "stats": {
+        "vecinos": 915,
+        "habitantes": 1046,
+        "parroquias": 1,
+        "contribuye_con": "Palma"
+      },
+      "cross_references": ["Sineu", "Palma"],
+      "confidence": "medium",
+      "note": "Modern: Lloret de Vistalegre. The vecinos:habitantes ratio 915:1046 is implausibly low (typical ratio is ~4:1) — likely the '915 vec.' is an OCR misread of a smaller figure."
+    }
+  ]
+}

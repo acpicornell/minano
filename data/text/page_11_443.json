@@ -1,0 +1,20 @@
+{
+  "vol": "11",
+  "leaf": 443,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "NUESTRA SEÑORA DE LLUCH (adición)",
+      "place_type": "santuario",
+      "island": "Mallorca",
+      "municipality": "Escorca",
+      "description": "Sobre lo dicho en el Diccionario, nos remite el R. P. Fr. Luis de Villafranca las observaciones siguientes: «Es un santuario de particular devoción en la isla de Mallorca, al que acuden de toda ella, de Iviza y de otras partes. Su iglesia igual en su planta á la del colegio de Corpus Christi de Valencia, está dedicada á la Virgen llamada de Lluch, porque en aquellos bosques se encontró en el año 1238. Está sit. entre altos montes al N. E. de Palma a dist. de 6 ½ de leg., y mas de dos horas del mar por camino escabrosísimo y lleno de precipicios. A este santuario se agregó en 1456 la antigua parroquia de Escorca. Fundóse después un colegio, á cuyos capellanes concedió Alejandro VI el título de canónigos de San Pedro. Cuéntanse hoy 7 con el prior que ellos eligen cada tres años».",
+      "stats": {"ano_aparicion_virgen": 1238, "ano_agregacion_escorca": 1456, "canonigos": 7, "distancia_palma_leg": 6.5},
+      "cross_references": ["Lluch", "Mallorca", "Iviza", "Escorca", "Palma", "Corpus Christi de Valencia", "Alejandro VI"],
+      "confidence": "high",
+      "note": "Modern: Santuari de Lluc (Escorca). Centre espiritual de Mallorca. Llegenda de l'aparició de la Mare de Déu el 1238 al pastoret Lluc. La data 1456 d'agregació d'Escorca difereix de la donada al leaf 399 (1526) — probable error d'OCR / Miñano en una de les dues fonts."
+    }
+  ]
+}

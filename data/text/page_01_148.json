@@ -1,0 +1,29 @@
+{
+  "vol": "01",
+  "leaf": 148,
+  "page_printed": "54",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ALARÓ",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Otro",
+      "municipality": null,
+      "description": "V. R. de Esp., en la isla de Mallorca y de su obisp.; 1 Bayle, 4 Reg., 710 vec., 4,757 hab., 1 parr. que tiene por anejos los lugares de Almadra y Consell, su cementerio, un cast. ant. Sit. en la subida de los altos montes que rodean el santuario de Ntra. Sra. de Luch, al N. de la C. de Palma. Su terr. es escaso de granos, pero abund. de aceyt., vino, algar. y pastos para la cría de gan. lan. y cabr. Tiene por armas un escudo partido de arriba á bajo: á la der. una ala, y á la izq. un cast. Su riqueza líquida para imponer asciende á 49,275 libras, y contr. 5,185 libras y 3 sueldos.",
+      "stats": {
+        "vecinos": 710,
+        "habitantes": 4757,
+        "parroquias": 1,
+        "bayle": 1,
+        "regidores": 4,
+        "riqueza_liquida_libras": 49275,
+        "contribucion": "5,185 libras 3 sueldos"
+      },
+      "cross_references": ["Almadra", "Consell", "Luch"],
+      "confidence": "medium"
+    }
+  ]
+}

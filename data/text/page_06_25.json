@@ -1,0 +1,34 @@
+{
+  "vol": "06",
+  "leaf": 25,
+  "page_printed": "13",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "MERCADAL",
+      "place_type": "término",
+      "island": "Menorca",
+      "description": "Térm. de Esp. en la Isla de Menorca; es el menos poblado de la Isla respecto á su estension, mide 400 millas de largo sobre diez de ancho, apenas cuenta 1,700 habitantes. Báñale el mar por el N. y los términos de Mahón por E. y el de Ferrerías por O. que le sirven de límites. Al N. O. de Mercadal, hacia los límites del término de Ferrerías, está el monte de Santa Águeda, es de bastante altura que domina otras muchas que le rodean. En su término está la deliciosa granja de Adaya, que es el mejor y mas hermoso terreno de la isla, tendrá mas de dos millas de largo con un ancho muy desigual, que algunas partes pasa de milla y media y en otras no llega á 30 varas. Esta deliciosa huerta, por sus muchas y copiosas fuentes, diversas frutas, amena situación, salubridad del aire y medios para caza y pesca, es sumamente agradable, en particular durante los rigores del verano.",
+      "stats": {
+        "habitantes": 1700
+      },
+      "cross_references": ["Mahón", "Ferrerías", "Santa Águeda", "Adaya"],
+      "confidence": "high"
+    },
+    {
+      "title": "MERCADAL",
+      "place_type": "villa",
+      "island": "Menorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "description": "V. R. de Esp. en la Isla y obisp. de Menorca, cabeza del término de su nombre. A. P., 837 vec., 3,??? hab. Sit. inmediato al monte de Toro, y en el centro de la Isla. Este monte es el mas alto de toda ella. El camino que conduce á un convento de Agustinos que está en la cima, es torcido, estrecho, desigual y peligroso en muchas partes. La montaña hace la figura de un pilón de azúcar; su vasta pirámide se eleva sobre una base de muchas millas de diámetro. La perspectiva que descubre por todas partes, y que recrea por su variedad, es de la mas grande estension. Tiene una parroquia de quien son anejas Fornells y San Juan de las huertas de Carbonell. Produce trigo, cebada, legumbres, frutas y algunos gan. vacuno, lanar y de cerda. Dista 10½ millas de Mahón y 13½ de Ciudadela.",
+      "stats": {
+        "vecinos": 837,
+        "parroquias": 1
+      },
+      "cross_references": ["Toro", "Fornells", "San Juan de las huertas de Carbonell", "Mahón", "Ciudadela"],
+      "confidence": "high"
+    }
+  ]
+}

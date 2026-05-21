@@ -1,0 +1,26 @@
+{
+  "vol": "07",
+  "leaf": 181,
+  "page_printed": "169",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "PUIGPUÑENT",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Eclesiástico",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. Ecl. de Esp., prov. y obispado de Mallorca. A. O., 360 vec., 1,681 habitantes, 1 parr. de la que es aneja la de Estellens. Sit. entre unos ásperos montes, en la proximidad del parage en donde toma origen la Riera, que ciñe la muralla de Palma: produce trigo, cebada, avena, legumbres, aceite, ganado lanar y cabrío. Esta villa, aunque de poca consideración por no haber población junta y formada, no es de las mas pobres, á causa de los muchos olivos que se crian en sus peñascos, cuya naturaleza solo parece haber sido destinada para producir arbustos inútiles, pero que la humana diligencia ha cambiado en un territorio apto para estos arboles. Contribuye 3,318 libras 1 sueldo.",
+      "stats": {
+        "vecinos": 360,
+        "habitantes": 1681,
+        "parroquias": 1,
+        "contribucion": "3,318 libras 1 sueldo"
+      },
+      "cross_references": ["Estellens", "Palma"],
+      "confidence": "high",
+      "note": "OCR'd 'PUIGPÜÑEWT' (W↔N at word-end). Modern: Puigpunyent (Mallorca)."
+    }
+  ]
+}

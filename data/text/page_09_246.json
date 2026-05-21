@@ -1,0 +1,26 @@
+{
+  "vol": "09",
+  "leaf": 246,
+  "page_printed": "235",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "VALLDEMOSA",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "description": "V. R. de España, prov. y obisp. de Mallorca. A. P., 374 vecinos, ??? habitantes, 1 parroquia de la que es aneja la de Deyá. Sit. al N. 4° S. E. de Soller. Prod. trigo, ceb., avena, legumb., aceite, vino, ganado lanar, cabrío y vacuno: en sus inmediaciones hay una abadía de Bernardos, edificio que, aunque no es de los mas recomendables que poseen estos monges en las diferentes partes de la Europa católica, es de bastante buen gusto y tamaño. Algo mas hacia el N. está la ermita principal de la Isla, de la que dependen las demás que se hallan esparcidas en las diferentes partes, y reducidas a mucho menos número. Dista 3 leg. de Soller. Su riqueza líquida asciende á 31,047 libras. Contr. 3,442 lib. 5 sueldos.",
+      "stats": {
+        "vecinos": 374,
+        "parroquias": 1,
+        "riqueza_liquida_libras": 31047,
+        "contribucion": "3,442 libras 5 sueldos"
+      },
+      "cross_references": ["Deyá", "Sóller", "Abadía de Bernardos (Cartuja)"],
+      "confidence": "high",
+      "note": "Modern: Valldemossa (Mallorca). Té com a anneja Deià. La 'abadía de Bernardos' és la Cartuja de Valldemossa (en realitat dels Cartoixans, no Bernards/Cistercians — Miñano confon les ordres). El 1838 Chopin i George Sand hi feren temporada — 7 anys després d'aquest article."
+    }
+  ]
+}

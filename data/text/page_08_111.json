@@ -1,0 +1,44 @@
+{
+  "vol": "08",
+  "leaf": 111,
+  "page_printed": "101",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SANTA MARGARITA",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de Esp. en la isla y obispado de Mallorca. A. O., 712 vec., 3,351 habitantes, 1 parroquia de la que es anejo el lugar de María, situada algo distante del mar, en una crecida llanura, cuya margen sirve de límite y forma la bahía de Alcudia, y es la parte menos cultivada de la isla. Produce trigo candeal, cebada, avena, legumbres, vino, ganado lanar, cabrío y vacuno. Su riqueza líquida asciende á 47,427 libras. Contribuye 5,308 libras 12 sueldos.",
+      "stats": {
+        "vecinos": 712,
+        "habitantes": 3351,
+        "parroquias": 1,
+        "riqueza_liquida_libras": 47427,
+        "contribucion": "5,308 libras 12 sueldos"
+      },
+      "cross_references": ["María", "Alcudia"],
+      "confidence": "high",
+      "note": "Modern: Santa Margalida (Mallorca). The María entry on Tomo V leaf 421 confirms this matriz-anejo relationship."
+    },
+    {
+      "title": "SANTA MARÍA",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "description": "V. R. de España en la isla y obispado de Mallorca; 615 vecinos, 2,849 habitantes, 1 parroquia de la que es aneja la de Santa Eugenia. Situada en la subida de los altos montes que rodean el santuario de Nuestra Señora de Luch, al N. de la ciudad de Palma, terreno escaso de granos, pero abundante de aceite, vino y algarroba, algún ganado lanar y poco vacuno. Su riqueza líquida asciende á 23,256 libras. Contribuye 4,261 libras 11 sueldos.",
+      "stats": {
+        "vecinos": 615,
+        "habitantes": 2849,
+        "parroquias": 1,
+        "riqueza_liquida_libras": 23256,
+        "contribucion": "4,261 libras 11 sueldos"
+      },
+      "cross_references": ["Santa Eugenia", "Lluch", "Palma"],
+      "confidence": "high",
+      "note": "Modern: Santa Maria del Camí (Mallorca). Miñano's geographic note about Lluc/Tramuntana is generic — Santa Maria is in the plain (Pla de Mallorca), not the Sierra."
+    }
+  ]
+}

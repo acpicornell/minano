@@ -1,0 +1,30 @@
+{
+  "vol": "11",
+  "leaf": 182,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "CALONJA",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Santañy",
+      "description": "Aid. R. de Esp. en la isla de Mallorca, 1 parr. El número de vecinos, habitantes y contr. se incluyen con los de la V. de Santanyí y no Santini como dice el Diccionario, de la que depende en lo civil y eclesiástico. Sit. al E. de su matriz.",
+      "cross_references": ["Santañy"],
+      "confidence": "high",
+      "note": "Modern: s'Alqueria de Calonge / Calonge (Santanyí, Mallorca). Annex de Santanyí com indica també el Suplement 514."
+    },
+    {
+      "title": "CALVIÁ (adición)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "description": "Calviá. Tiene 1,843 hab. Su parr. tiene por aneja á la de Capdellà. En lugar de la sit. que insertamos en el Diccionario léase la siguiente: 'Sit. al O. y á 3 leg. y ¾ de Palma, y á 1 ½ de Puigpunyent en terr. muy escabroso.' Debe añadirse, «que tiene algunos puertos en su territorio y en el de Paguera desembarcó el Rey Don Jayme el Conquistador con su armada en 1229, y después los Reyes D. Alonso y D. Pedro cuando vinieron con las suyas». (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "stats": {"habitantes": 1843},
+      "cross_references": ["Capdellà", "Palma", "Puigpunyent", "Paguera", "Jaime I el Conquistador"],
+      "confidence": "high",
+      "note": "Modern: Calvià (Mallorca). Important: Paguera (Peguera) fou el lloc de desembarcament de Jaume I el 1229 — el principi de la conquesta cristiana de Mallorca. Capdellà és barri annex."
+    }
+  ]
+}

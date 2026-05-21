@@ -1,0 +1,27 @@
+{
+  "vol": "03",
+  "leaf": 302,
+  "page_printed": "292",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "DEYA",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "municipality": "Vall de Musa",
+      "description": "V. R. de España, provincia y obispado de Mallorca. A. O., 189 vecinos, 828 habitantes, 1 parroquia aneja de la de Vall de Musa, y sus productos casi los mismos. Situada al N. de Sóller y de la ciudad de Palma. Hay en su territorio y en medio de muchas casas de campo un oratorio público intitulado de la Santísima Trinidad, que fundó don Jayme II, rey de Mallorca, el cual posee hoy la casa del marqués de Alcañiz. Contr. 1,842 libras 1 sueldo.",
+      "stats": {
+        "vecinos": 189,
+        "habitantes": 828,
+        "parroquias": 1,
+        "contribucion": "1,842 libras 1 sueldo"
+      },
+      "cross_references": ["Vall de Musa", "Sóller"],
+      "confidence": "high",
+      "note": "Miñano's 'Vall de Musa' = modern Valldemossa (Mallorca)."
+    }
+  ]
+}

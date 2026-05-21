@@ -1,0 +1,35 @@
+{
+  "vol": "07",
+  "leaf": 481,
+  "page_printed": "477",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SAN FRANCISCO DE PAULA",
+      "place_type": "caserío",
+      "island": "Ibiza",
+      "description": "Caserío de España, provincia de Ibiza; 49 vecinos, 336 habitantes. (V. la descripción general de Ibiza). Dista 1½ legua de la capital.",
+      "stats": {
+        "vecinos": 49,
+        "habitantes": 336
+      },
+      "cross_references": ["Ibiza"],
+      "confidence": "high",
+      "note": "Likely modern Sant Francesc de s'Estany (Sant Josep de sa Talaia, Eivissa); the 1½ leg. distance from Eivissa capital matches."
+    },
+    {
+      "title": "SAN FRANCISCO JAVIER Y SAN FERNANDO",
+      "place_type": "caserío",
+      "island": "Formentera",
+      "description": "Caserío de Esp., provincia de Ibiza, isla de Formentera; 318 vecinos, 1,057 habitantes. (V. la descripción general de Ibiza). Dista 4 leguas de la capital.",
+      "stats": {
+        "vecinos": 318,
+        "habitantes": 1057
+      },
+      "cross_references": ["Formentera", "Ibiza"],
+      "confidence": "high",
+      "note": "Modern: Sant Francesc Xavier (capital of Formentera) + Sant Ferran de ses Roques, the two principal Formentera parishes Miñano lumps into one administrative caserío."
+    }
+  ]
+}

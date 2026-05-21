@@ -1,0 +1,21 @@
+{
+  "vol": "07",
+  "leaf": 31,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "PINA",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Sin alcalde",
+      "description": "L. R. de España, provincia de Mallorca. No hay alcalde; 48 vecinos, ?? habitantes. Contribuye con Palma.",
+      "stats": {"vecinos": 48, "contribuye_con": "Palma"},
+      "cross_references": ["Palma"],
+      "confidence": "high",
+      "note": "Modern: Pina (Algaida, Mallorca)."
+    }
+  ]
+}

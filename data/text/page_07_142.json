@@ -1,0 +1,21 @@
+{
+  "vol": "07",
+  "leaf": 142,
+  "page_printed": "132",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "PUEBLA (la)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España en la isla de Mallorca, y de su obispado. A. O., 648 vecinos, 3,160 habitantes, 1 parroquia, 1 ermita. Situada algo distante del mar, en una crecida llanura, cuyo margen sirve de límite y forma la bahía de Alcudia, y es la parte menos cultivada de la isla. Produce aceite, trigo, cebada, habas y cáñamo; pastos, vino, legumbres, ganado lanar, cabrío y vacuno. Industria: 6 herreros, 9 tejedores y 7 carpinteros. Contr. 6,946 libras 1 sueldo.",
+      "stats": {"vecinos": 648, "habitantes": 3160, "parroquias": 1, "ermitas": 1, "herreros": 6, "tejedores": 9, "carpinteros": 7, "contribucion": "6,946 libras 1 sueldo"},
+      "cross_references": ["Alcudia"],
+      "confidence": "high",
+      "note": "Modern: Sa Pobla (Mallorca). Vora la Albufera de Mallorca."
+    }
+  ]
+}

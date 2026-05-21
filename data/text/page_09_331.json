@@ -1,0 +1,27 @@
+{
+  "vol": "09",
+  "leaf": 331,
+  "page_printed": "319",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "VILAFRANCA",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Petra",
+      "description": "L. R. de España en la Illa de Mallorca, y de su obispado. A. P., 167 vec., 816 hab., 1 parr. aneja de la de Petra; situado al S. O. de Manacor, en una llanura. Prod. granos y ganados. Contribuye con Palma.",
+      "stats": {
+        "vecinos": 167,
+        "habitantes": 816,
+        "parroquias": 1,
+        "contribuye_con": "Palma"
+      },
+      "cross_references": ["Petra", "Manacor", "Palma"],
+      "confidence": "high",
+      "note": "OCR'd 'VILAFRAHCA' (h→N). Modern: Vilafranca de Bonany (Mallorca). Confirmed via PETRA entry (Tomo VII leaf 13) which lists Villafranca as anejo."
+    }
+  ]
+}

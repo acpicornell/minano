@@ -1,0 +1,24 @@
+{
+  "vol": "01",
+  "leaf": 369,
+  "page_printed": "275",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ARIAÑY",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "description": "L. R. de Esp., en la isla de Mallorca, y de su obisp. A. P., 84 vec., 345 hab., 1 parr. Sit. algo dist. del mar en una gran llanura, cuya margen sirve de límite y forma la Bahía de Alcudia. Produce algunos granos y ganados.",
+      "stats": {
+        "vecinos": 84,
+        "habitantes": 345,
+        "parroquias": 1
+      },
+      "cross_references": ["Bahía de Alcudia"],
+      "confidence": "high"
+    }
+  ]
+}

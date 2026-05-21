@@ -1,0 +1,21 @@
+{
+  "vol": "08",
+  "leaf": 83,
+  "page_printed": "73",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SANSELLAS",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España, provincia y obispado de Mallorca. A. O., 812 vecinos, 3,833 habitantes, 1 parroquia, de la que es aneja la de Costiche, 1 oratorio público. Situada en el centro de la Isla, en terreno llano y fértil. Prod. trigo, cebada, avena, legumbres, vino, ganado lanar, cabrío y vacuno. Sus edificios y calles son de una mediana hermosura y disposición. Contribuye 5,851 libras 15 sueldos.",
+      "stats": {"vecinos": 812, "habitantes": 3833, "parroquias": 1, "contribucion": "5,851 libras 15 sueldos"},
+      "cross_references": ["Costitx"],
+      "confidence": "high",
+      "note": "OCR'd 'SAN SELLAS' (separated). Modern: Sencelles (Mallorca, pla). Té Costitx com a aneja eclesiàstica. Suplement Tomo XI leaf 153 inclou Bimfaualt/Biniferri/Bimfoubell/Sonarrosa com a aldees annexes."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "vol": "03",
+  "leaf": 171,
+  "page_printed": "161",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "CONSELL",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Alaró",
+      "description": "L. R. de España, en la Isla de Mallorca y de su obisp. A. P., 150 vec., 750 habitantes, 1 parroquia aneja de la de Alaró. Situado en la montaña subiendo los altos montes que rodean el santuario de Nuestra Señora de Lluch, al N. de Palma. Produce pocos granos, aceite, vino, algarrobas, ganado lanar y cabrío. Contribuye con Palma.",
+      "stats": {
+        "vecinos": 150,
+        "habitantes": 750,
+        "parroquias": 1,
+        "contribuye_con": "Palma"
+      },
+      "cross_references": ["Alaró", "Lluch"],
+      "confidence": "high"
+    }
+  ]
+}

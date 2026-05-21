@@ -1,0 +1,27 @@
+{
+  "vol": "04",
+  "leaf": 127,
+  "page_printed": "84",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ESPORLAS",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España, provincia y obispado de Mallorca. A. O., 547 vecinos, 1,355 habitantes, 1 parroquia, de la que son anejas las de Bañalbufar y Establimens; la población de estas dos está incluida en esta villa. Sit. en la inmediación del mar, siguiendo la costa del N. para el O. Produce trigo, cebada, avena, legumbres, ganado lanar y cabrío y vino malvasía. En una alquería de este término, llamada la Granja, hay un copioso manantial de agua que, después de correr debajo de tierra por espacio de 3 millas, vuelve á salir en un lugar del mismo término, llamado Canet. Tiene por armas las cuatro barras catalanas. Contribuye 4,??? lib. 12 sueldos. Su riqueza líquida asciende á 45,507 libras.",
+      "stats": {
+        "vecinos": 547,
+        "habitantes": 1355,
+        "parroquias": 1,
+        "riqueza_liquida_libras": 45507,
+        "contribucion": "4,??? libras 12 sueldos"
+      },
+      "cross_references": ["Bañalbufar", "Establimens", "La Granja", "Canet"],
+      "confidence": "high",
+      "note": "Modern: Esporles (Mallorca). Té com a annexes Banyalbufar i Establiments. La Granja és un dels topònims emblemàtics. El manantial subterrani de 3 milles és el famós riu de Sa Granja → Canet."
+    }
+  ]
+}

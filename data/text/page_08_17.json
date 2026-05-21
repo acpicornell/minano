@@ -1,0 +1,40 @@
+{
+  "vol": "08",
+  "leaf": 17,
+  "page_printed": "7",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SAN LORENZO",
+      "place_type": "caserío",
+      "island": "Ibiza",
+      "description": "Caserío de España, provincia de Ibiza; 152 vec., 711 habitantes. (V. la descripción general de Ibiza). Dista 3 leguas de la capital.",
+      "stats": {
+        "vecinos": 152,
+        "habitantes": 711
+      },
+      "cross_references": ["Ibiza"],
+      "confidence": "high",
+      "note": "Max-path recovery. Modern: Sant Llorenç de Balàfia (Sant Joan de Labritja, Eivissa)."
+    },
+    {
+      "title": "SAN LORENZO DEL CARDASAR",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Manacor",
+      "description": "L. R. de España, provincia y obispado de Mallorca. A. P., 150 vec., 697 habitantes, 1 parroquia aneja de la de Manacor. Sit. al N. de Manacor, en una fértil llanura. Produce trigo y cebada, avena, legumb., vino, ganado lanar, cabrío y vacuno. Contribuye con Palma.",
+      "stats": {
+        "vecinos": 150,
+        "habitantes": 697,
+        "parroquias": 1,
+        "contribuye_con": "Palma"
+      },
+      "cross_references": ["Manacor", "Palma"],
+      "confidence": "high",
+      "note": "Modern: Sant Llorenç des Cardassar. Miñano writes the Spanish-Catalan hybrid 'San Lorenzo del Cardasar' here; he also lists the pure Catalan form 'SAN LLORENS DESCARDASAR' separately on leaf 20 — see the note there."
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+// Miñano Balears — static web, vanilla JS.
+// One fetch of data.json, then everything happens in memory.
+
+const state = {
+  entries: [],
+  filtered: [],
+  search: "",
+  island: "",
+  regime: "",
+  mayor: "",
+  municipality: "",
+  type: "",
+  vol: "",
+  conf: "",
+  sort_col: "title",
+  sort_dir: "asc",
+};
+
+const COLS = ["title", "place_type", "island", "seigneurial_regime",
+              "mayor_type", "municipality", "vol", "page_printed", "confidence"];
+
+function esc(s) {
+  if (s == null) return "";
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+}
+function $(id) { return document.getElementById(id); }
+function fmt(n) { return Number(n).toLocaleString("ca-ES"); }
+function norm(s) {
+  if (!s) return "";
+  return s.toString().toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g, "");
+}
+
+// === TABS ===
+function gotoTab(t) {
+  document.querySelectorAll(".tabs .tab").forEach(b =>
+    b.classList.toggle("active", b.dataset.toptab === t));
+  document.querySelectorAll(".tab-content").forEach(sec =>
+    sec.classList.toggle("active", sec.dataset.toptab === t));
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function initTabs() {
+  document.querySelectorAll(".tabs .tab").forEach(btn => {
+    btn.addEventListener("click", () => gotoTab(btn.dataset.toptab));
+  });
+  document.querySelectorAll(".home-action").forEach(btn => {
+    btn.addEventListener("click", () => gotoTab(btn.dataset.goto));
+  });
+}
+
+// === FILTERS ===
+const FILTER_DEFS = [
+  { id: "f-island",       stateKey: "island",       field: "island",             allLabel: "— Totes —" },
+  { id: "f-regime",       stateKey: "regime",       field: "seigneurial_regime", allLabel: "— Tots —" },
+  { id: "f-mayor",        stateKey: "mayor",        field: "mayor_type",         allLabel: "— Tots —" },
+  { id: "f-municipality", stateKey: "municipality", field: "municipality",       allLabel: "— Tots —" },
+  { id: "f-type",         stateKey: "type",         field: "place_type",         allLabel: "— Tots —" },
+  { id: "f-vol",          stateKey: "vol",          field: "vol",                allLabel: "— Tots —" },
+  { id: "f-conf",         stateKey: "conf",         field: "confidence",         allLabel: "— Totes —" },
+];
+
+function matchesExcept(e, exceptKey) {
+  for (const f of FILTER_DEFS) {
+    if (f.stateKey === exceptKey) continue;
+    const v = state[f.stateKey];
+    if (v && e[f.field] !== v) return false;
+  }
+  if (state.search) {
+    const hay = norm((e.title || "") + " " + (e.description || ""));
+    if (!hay.includes(norm(state.search))) return false;
+  }
+  return true;
+}
+
+function refillFilters() {
+  for (const f of FILTER_DEFS) {
+    const counts = new Map();
+    for (const e of state.entries) {
+      if (!matchesExcept(e, f.stateKey)) continue;
+      const v = e[f.field];
+      if (v == null || v === "") continue;
+      counts.set(v, (counts.get(v) || 0) + 1);
+    }
+    const arr = [...counts.entries()];
+    if (f.id === "f-vol" || f.id === "f-municipality") {
+      arr.sort((a, b) => a[0].localeCompare(b[0], "ca", { numeric: true }));
+    } else if (f.id === "f-conf") {
+      const order = { high: 0, medium: 1, low: 2 };
+      arr.sort((a, b) => (order[a[0]] ?? 9) - (order[b[0]] ?? 9));
+    } else {
+      arr.sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+    }
+    const cur = state[f.stateKey];
+    if (cur && !counts.has(cur)) state[f.stateKey] = "";
+
+    const labelMap = f.id === "f-conf"
+      ? { high: "Alta", medium: "Mitjana", low: "Baixa" }
+      : null;
+    const opts = arr.map(([v, n]) => {
+      const label = labelMap ? (labelMap[v] || v) : v;
+      return `<option value="${esc(v)}">${esc(label)} (${n})</option>`;
+    }).join("");
+    const sel = $(f.id);
+    sel.innerHTML = `<option value="">${f.allLabel}</option>` + opts;
+    sel.value = state[f.stateKey] || "";
+  }
+}
+
+function applyFilters() {
+  state.filtered = state.entries.filter(e => matchesExcept(e, null));
+  sortFiltered();
+}
+
+function sortFiltered() {
+  const k = state.sort_col;
+  const dir = state.sort_dir === "desc" ? -1 : 1;
+  state.filtered.sort((a, b) => {
+    let av = a[k], bv = b[k];
+    if (av == null && bv == null) return 0;
+    if (av == null) return 1;
+    if (bv == null) return -1;
+    if (typeof av === "number" && typeof bv === "number") return (av - bv) * dir;
+    return String(av).localeCompare(String(bv), "ca", { numeric: true }) * dir;
+  });
+}
+
+// === TABLE ===
+function renderTable() {
+  applyFilters();
+  const tbody = $("tbody-minano");
+  const total = state.filtered.length;
+  $("count").textContent = `${fmt(total)} entrades`;
+  if (!total) {
+    tbody.innerHTML = `<tr><td colspan="9" class="empty">Cap entrada amb aquests filtres.</td></tr>`;
+    return;
+  }
+  const slice = state.filtered.slice(0, 500);
+  const dot = c => c === "high" ? "●" : c === "medium" ? "◐" : c === "low" ? "○" : "—";
+  // Compact regime/mayor for the table column (full label appears in the
+  // expanded row).
+  const regimeShort = r => ({
+    "Realengo": "R.", "Señorial": "S.", "Abadengo": "Ab.",
+    "de Órdenes": "Ord.", "Eclesiástico": "Ecl.",
+    "Mixto": "Mix.", "Otro": "?",
+  }[r] || "—");
+  const mayorShort = m => ({
+    "Alcalde Ordinario": "A.O.", "Alcalde Pedáneo": "A.P.",
+    "Alcalde Mayor": "A.M.", "Sin alcalde": "—",
+    "Otro": "?",
+  }[m] || "—");
+  tbody.innerHTML = slice.map(e => {
+    const volLeaf = e.ia_url
+      ? `<a href="${esc(e.ia_url)}" target="_blank" rel="noopener" class="ia-link" title="Obre el facsímil a Internet Archive (pàgina sencera)">${esc(e.vol)}/${esc(e.leaf)} ↗</a>`
+      : `${esc(e.vol)}/${esc(e.leaf)}`;
+    return `<tr data-id="${e.id}" class="minano-row">
+      <td><strong>${esc(e.title)}</strong></td>
+      <td>${esc(e.place_type || "—")}</td>
+      <td>${esc(e.island || "—")}</td>
+      <td title="${esc(e.seigneurial_regime || '')}">${esc(regimeShort(e.seigneurial_regime))}</td>
+      <td title="${esc(e.mayor_type || '')}">${esc(mayorShort(e.mayor_type))}</td>
+      <td>${esc(e.municipality || "—")}</td>
+      <td>${volLeaf}</td>
+      <td>${esc(e.page_printed || "—")}</td>
+      <td class="conf-${esc(e.confidence || "")}">${dot(e.confidence)}</td>
+    </tr>`;
+  }).join("") + (total > 500
+    ? `<tr><td colspan="9" class="empty">Mostrant 500 de ${fmt(total)}. Afina els filtres per veure menys.</td></tr>`
+    : "");
+  tbody.querySelectorAll("tr.minano-row").forEach(tr =>
+    tr.addEventListener("click", ev => {
+      if (ev.target.closest("a")) return;
+      toggleExpand(tr);
+    }));
+}
+
+function toggleExpand(tr) {
+  const next = tr.nextElementSibling;
+  if (next && next.classList.contains("minano-expand")) {
+    next.remove(); tr.classList.remove("expanded"); return;
+  }
+  document.querySelectorAll(".minano-expand").forEach(el => el.remove());
+  document.querySelectorAll(".minano-row.expanded").forEach(el => el.classList.remove("expanded"));
+  const id = Number(tr.dataset.id);
+  const e = state.entries.find(x => x.id === id);
+  if (!e) return;
+
+  let statsHtml = "";
+  if (e.stats && typeof e.stats === "object") {
+    const items = Object.entries(e.stats).filter(([_, v]) => v != null && v !== "");
+    if (items.length) {
+      statsHtml = `<div class="entry-stats"><strong>Estadístiques:</strong> ` +
+        items.map(([k, v]) =>
+          `<span class="stat-pill">${esc(k)}: <strong>${esc(typeof v === "number" ? fmt(v) : v)}</strong></span>`
+        ).join(" ") + `</div>`;
+    }
+  }
+  let crefsHtml = "";
+  if (e.cross_references && e.cross_references.length) {
+    crefsHtml = `<div class="entry-crefs"><strong>Referències creuades:</strong> ` +
+      e.cross_references.map(c => `<code>${esc(c)}</code>`).join(", ") + `</div>`;
+  }
+  const adminBits = [];
+  if (e.seigneurial_regime) adminBits.push(`Règim: <strong>${esc(e.seigneurial_regime)}</strong>`);
+  if (e.mayor_type) adminBits.push(`Alcalde: <strong>${esc(e.mayor_type)}</strong>`);
+  const adminHtml = adminBits.length
+    ? `<div class="entry-admin">${adminBits.join(" · ")}</div>` : "";
+
+  const exp = document.createElement("tr");
+  exp.className = "minano-expand";
+  exp.innerHTML = `<td colspan="9">
+    <div class="minano-article">
+      ${adminHtml}
+      <p class="minano-body">${esc(e.description || "")}</p>
+      ${statsHtml}
+      ${crefsHtml}
+      <p class="minano-source">
+        <span>Tom ${esc(e.vol)} · full ${esc(e.leaf)} · pàg. ${esc(e.page_printed || "?")}</span>
+        ${e.ia_url ? `· <a href="${esc(e.ia_url)}" target="_blank" rel="noopener">Veure facsímil a Internet Archive →</a>` : ""}
+      </p>
+    </div>
+  </td>`;
+  tr.classList.add("expanded");
+  tr.insertAdjacentElement("afterend", exp);
+}
+
+function initSort() {
+  document.querySelectorAll("#table-minano th").forEach((th, i) => {
+    const col = COLS[i];
+    if (!col) return;
+    th.classList.add("sortable");
+    th.addEventListener("click", () => {
+      if (state.sort_col === col) state.sort_dir = state.sort_dir === "asc" ? "desc" : "asc";
+      else { state.sort_col = col; state.sort_dir = "asc"; }
+      document.querySelectorAll("#table-minano th").forEach(x => x.classList.remove("sort-asc", "sort-desc"));
+      th.classList.add(`sort-${state.sort_dir}`);
+      renderTable();
+    });
+  });
+}
+
+function update() { refillFilters(); renderTable(); }
+
+function bindFilters() {
+  let t;
+  $("f-search").addEventListener("input", e => {
+    clearTimeout(t);
+    t = setTimeout(() => { state.search = e.target.value.trim(); update(); }, 180);
+  });
+  const sel = (id, key) => $(id).addEventListener("change", e => { state[key] = e.target.value; update(); });
+  sel("f-island", "island"); sel("f-regime", "regime"); sel("f-mayor", "mayor");
+  sel("f-municipality", "municipality"); sel("f-type", "type");
+  sel("f-vol", "vol"); sel("f-conf", "conf");
+  $("f-clear").addEventListener("click", () => {
+    Object.assign(state, {
+      search: "", island: "", regime: "", mayor: "",
+      municipality: "", type: "", vol: "", conf: "",
+    });
+    $("f-search").value = "";
+    update();
+  });
+  $("f-export").addEventListener("click", exportCSV);
+}
+
+function exportCSV() {
+  const fields = ["vol", "leaf", "page_printed", "title", "place_type", "island",
+                  "seigneurial_regime", "mayor_type", "municipality",
+                  "confidence", "description"];
+  const cell = v => {
+    if (v == null) return "";
+    const s = String(v);
+    return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+  };
+  const lines = [fields.join(",")];
+  for (const e of state.filtered) lines.push(fields.map(f => cell(e[f])).join(","));
+  const blob = new Blob([lines.join("\n")], { type: "text/csv;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `minano_balears_${state.filtered.length}.csv`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+// === HOME / INICI ===
+function renderHome() {
+  const total = state.entries.length;
+  $("home-stat-entries").textContent = fmt(total);
+  // Distinct tomos with entries.
+  const vols = new Set(state.entries.map(e => e.vol).filter(Boolean));
+  $("home-stat-tomos-done").textContent = vols.size;
+  // Top place type.
+  const typeCounts = new Map();
+  for (const e of state.entries) {
+    if (!e.place_type) continue;
+    typeCounts.set(e.place_type, (typeCounts.get(e.place_type) || 0) + 1);
+  }
+  const topType = [...typeCounts.entries()].sort((a, b) => b[1] - a[1])[0];
+  if (topType) {
+    $("home-stat-toptype").textContent = fmt(topType[1]);
+    $("home-stat-toptype-label").textContent = `${topType[0]} (tipus més freqüent)`;
+  }
+
+  // Per-island cards.
+  const islandCounts = new Map();
+  for (const e of state.entries) {
+    if (!e.island) continue;
+    islandCounts.set(e.island, (islandCounts.get(e.island) || 0) + 1);
+  }
+  const setIsland = (id, key) => {
+    const el = $(id);
+    if (el) el.textContent = fmt(islandCounts.get(key) || 0);
+  };
+  setIsland("home-src-mallorca", "Mallorca");
+  setIsland("home-src-menorca", "Menorca");
+  setIsland("home-src-ibiza", "Ibiza");
+  setIsland("home-src-formentera", "Formentera");
+  setIsland("home-src-cabrera", "Cabrera");
+
+  // Featured entry — pick a random high-confidence one for the splash.
+  const highs = state.entries.filter(e => e.confidence === "high" && e.description);
+  const featured = highs.length
+    ? highs[Math.floor(Math.random() * highs.length)]
+    : state.entries.find(e => e.description);
+  if (featured) {
+    const card = $("home-featured");
+    if (card) card.hidden = false;
+    $("featured-title").textContent = featured.title;
+    const meta = [
+      featured.place_type, featured.island,
+      featured.seigneurial_regime,
+      featured.municipality && `Contr. ${featured.municipality}`,
+      `Tom ${featured.vol} · pàg. ${featured.page_printed || "?"}`,
+    ].filter(Boolean).join(" · ");
+    $("featured-meta").textContent = meta;
+    const excerpt = featured.description.length > 320
+      ? featured.description.slice(0, 320).trimEnd() + "…"
+      : featured.description;
+    $("featured-excerpt").textContent = excerpt;
+    $("featured-open").addEventListener("click", () => {
+      gotoTab("explore");
+      requestAnimationFrame(() => {
+        const tr = document.querySelector(`tr[data-id="${featured.id}"]`);
+        if (tr) {
+          tr.scrollIntoView({ behavior: "smooth", block: "center" });
+          toggleExpand(tr);
+        }
+      });
+    });
+  }
+}
+
+// === EXPLORE STATS BAR ===
+function renderStatsBar() {
+  $("stat-text").textContent = fmt(state.entries.length);
+  $("stat-volumes").textContent = new Set(
+    state.entries.map(e => e.vol).filter(Boolean)
+  ).size;
+  $("stat-islands").textContent = new Set(
+    state.entries.map(e => e.island).filter(Boolean)
+  ).size;
+  $("stat-types").textContent = new Set(
+    state.entries.map(e => e.place_type).filter(Boolean)
+  ).size;
+}
+
+// === BOOTSTRAP ===
+async function boot() {
+  initTabs();
+  initSort();
+  bindFilters();
+  let payload;
+  try {
+    const r = await fetch("data.json");
+    payload = await r.json();
+  } catch (e) {
+    console.error(e);
+    $("tbody-minano").innerHTML =
+      `<tr><td colspan="9" class="empty">Error carregant data.json</td></tr>`;
+    return;
+  }
+  state.entries = payload.entries || [];
+  renderHome();
+  renderStatsBar();
+  update();
+}
+
+boot();

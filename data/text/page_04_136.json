@@ -1,0 +1,22 @@
+{
+  "vol": "04",
+  "leaf": 136,
+  "page_printed": "93",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ESTELLENCHS",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Eclesiástico",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Puigpunyent",
+      "description": "L. Ecl. de España, provincia y obispado de Mallorca. A. P., 146 vecinos, 670 habitantes, 1 parroquia aneja de la de Puigpunyent. Sit. inmediato á la orilla del mar, siguiendo la costa del N. para el O., á corta distancia de Bañalbufar. Su riqueza líquida asciende á 6,354 libras. Contr. 774 libras 19 sueldos.",
+      "stats": {"vecinos": 146, "habitantes": 670, "parroquias": 1, "riqueza_liquida_libras": 6354, "contribucion": "774 libras 19 sueldos"},
+      "cross_references": ["Puigpunyent", "Bañalbufar"],
+      "confidence": "high",
+      "note": "Modern: Estellencs (Mallorca, Tramuntana). Annexa de Puigpunyent — confirmat per l'article PUIGPUNYENT (Tomo VII leaf 181) que la cita."
+    }
+  ]
+}

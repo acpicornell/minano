@@ -1,0 +1,18 @@
+{
+  "vol": "05",
+  "leaf": 439,
+  "page_printed": "430",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "MANSANELLA",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "description": "Aldea R. de España en la Isla de Mallorca.",
+      "confidence": "medium",
+      "note": "Brief stub. Possibly Mancor (de la Vall) or Massanella (the massif near Lluc); without further inline detail, the canonical match is uncertain."
+    }
+  ]
+}

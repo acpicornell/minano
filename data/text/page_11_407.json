@@ -1,0 +1,26 @@
+{
+  "vol": "11",
+  "leaf": 407,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "MALLORCA (adición)",
+      "place_type": "isla",
+      "island": "Mallorca",
+      "description": "Mallorca. Acerca de la riqueza de esta isla hemos cometido un grave error involuntario, copiando el censo de 1803, y el itinerario descriptivo de España de Mr. Laborde. Comunicaciones del Ayuntamiento de Palma corrigen: el aceite que se coge en la isla no son 2 millones de arrobas castellanas (×40 rs = 80 millones rs), sino: consumo del país ≈ 96,000 arrobas + extracción 1790-1805 media anual 98,480 arrobas = TOTAL 194,480 arrobas (×40 rs = 7,799,200 rs). La cifra del Diccionario sobrevalua en 1,805,520 arrobas y 72,220,800 rs. Todas las villas, lugares y aldeas de esta isla son realengas, á excepción de Ariañy y Ayamans, que son del señorío secular; así Andraix, Calvià, Marratchi y Puigpuñent son villas REALES y no eclesiásticas. Capdellá, Estellencs, Galilea, Sérecó, Son Bru y Superna son lugares y aldeas reales, no eclesiásticos. Desde el año 1824, los alcaldes de las villas empezaron a ser anuales (no pedáneos); en los lugares y aldeas sufragáneas se gobiernan por los alcaldes de sus matrices. Solo se hallan alcaldes pedáneos en La Vileta, Son Serdina y Génova por ser del distrito de la capital. Sobre los pinos del Tomo V pag. 382: 'Los vinos por lo general son ligeros, y el sobrante se convierte en aguardientes, porque no es fácil conservarle añejo' (no son los pinos cariados sinó el vi lleuger). La 'talla real' que satisface Mallorca es de 36,125 (no 480,000) libras = 487,000 rs. Importaciones: arroz, sal, tabaco, castañas, avellanas y esparto. (Datos del marqués de la Bastida, 1813, y R. P. Fr. Luis de Villafranca).",
+      "stats": {
+        "aceite_consumo_arrobas": 96000,
+        "aceite_extraccion_arrobas_media": 98480,
+        "aceite_total_arrobas": 194480,
+        "valor_aceite_rs": 7799200,
+        "talla_real_libras": 36125,
+        "ano_inicio_alcaldes_anuales": 1824
+      },
+      "cross_references": ["Palma", "Marqués de la Bastida", "Ariañy", "Ayamans", "Andraix", "Calvià", "Marratchí", "Puigpunyent", "Capdellà", "Estellencs", "Galilea", "Sérecó", "Son Bru", "Superna", "Vileta", "Génova", "Son Serdina"],
+      "confidence": "high",
+      "note": "Suplement crític: rectificació exhaustiva de l'article MALLORCA del Tomo V. Reduces la producció d'oli a 1/10 part de la xifra anterior; aclara que TOTES les viles són realengas (excepte Ariany i Aiamans); des de 1824 alcaldes anuals; la 'talla real' és 36,125 lliures (no 480,000). Important: vi mallorquí lleuger es destil·la com a aiguardent."
+    }
+  ]
+}

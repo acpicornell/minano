@@ -1,0 +1,33 @@
+{
+  "vol": "01",
+  "leaf": 155,
+  "page_printed": "61",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ALAYOR",
+      "place_type": "término",
+      "island": "Menorca",
+      "description": "Térm. de Esp., en la Isla de Menorca; tiene 8 millas de largo sobre 7 de ancho; está bañado por el mar al O. S. E.: por el E. confin. con el de Mahon; el de Mercadal y Ferrerías lo rodean por los demás rumbos.",
+      "confidence": "high"
+    },
+    {
+      "title": "ALAYOR",
+      "place_type": "villa",
+      "island": "Menorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "description": "V. R. de Esp., en la Isla de Menorca, cab. del térm. de su nombre. A. P., 1,057 vec., 5,165 hab., 1 parr., 1 convento de fr. franciscos, cuya igl. es grande y de bellas proporciones, 1 hosp. Sit. sobre una altura á ½ milla á la izq. del gran camino que atraviesa la Isla. Después de Mahon y Ciudadela es su mas hermosa pob., muy bien edificada, aunque las calles son muy estrechas, y sin otro pavimento que una piedra muy desigual que lastima los pies; la igl. mayor es gótica, muy ant., adornada de una torre cuadrada: en esta villa son muy raros los pozos, pero muchas y muy buenas las cisternas, y su agua por lo común muy fresca y saludable; y esto es general á todo el térm. En su distrito se ven vestig. de otra ant. pob. á la parte del S., en el puerto de Cas Covas, llamado así por el gran número de cuevas artificiales que allí se ven y pasan de 150. Algunas de ellas están muy bien fabricadas, y divididas en varios aposentos: otras están llenas de huesos humanos, que al parecer servían de cementerio, y en una de ellas se ven los huesos quemados con cal, que dan indicio de alguna epidemia ó combate. En algunas hay inscrip., y en una se ven muchos cuadros trabajados con muñecos en relieve y con inscrip. que parecen romanas, y que ya no pueden leerse. Produce vino, legumb. y trigo, aunque poco de éste. Dista 6½ millas de Mahón, y 14½ de Ciudadela.",
+      "stats": {
+        "vecinos": 1057,
+        "habitantes": 5165,
+        "parroquias": 1,
+        "conventos": 1,
+        "hospitales": 1
+      },
+      "cross_references": ["Mahón", "Ciudadela", "Cas Covas"],
+      "confidence": "medium"
+    }
+  ]
+}

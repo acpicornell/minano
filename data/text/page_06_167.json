@@ -1,0 +1,22 @@
+{
+  "vol": "06",
+  "leaf": 167,
+  "page_printed": "158",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "MOSCARÍ",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Selva",
+      "description": "L. R. de España, provincia de Mallorca. A. P., 85 vecinos, 407 habitantes. Contribuye con Palma.",
+      "stats": {"vecinos": 85, "habitantes": 407, "contribuye_con": "Palma"},
+      "cross_references": ["Selva", "Palma"],
+      "confidence": "high",
+      "note": "Modern: Moscari (Selva, Mallorca). Annex confirmat per l'article SELVA (Tomo VIII leaf 218)."
+    }
+  ]
+}

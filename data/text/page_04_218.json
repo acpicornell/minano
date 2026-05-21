@@ -1,0 +1,19 @@
+{
+  "vol": "04",
+  "leaf": 218,
+  "page_printed": "175",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "FORMENTERA",
+      "place_type": "isla",
+      "island": "Formentera",
+      "description": "Isla de España en el Mediterráneo, y una de las Pithiusas antiguas, conocida por la menor, que en la jerga del país se llama Formant (trigo) por la extraordinaria abundancia de esta especie. Está en los 7° 38' 03\" de long. y 39° 30' 03\" de lat. Su mayor extensión de E. á O. es de 3 leguas, y su mayor anchura de 2. No tiene pueblo alguno, y sus vecinos que ascenderán á 366 y á 1,500 los habitantes, están distribuidos en caseríos. Depende en todo del gobierno de Ibiza, con quien no sería difícil unirla, formando de las dos islas una sola, lo cual sería de mucha utilidad. Por lo que hace á su temperatura, topografía y productos (Véase el artículo Ibiza) donde se hace latamente su descripción; solo añadiremos que está muy provista de caza, particularmente de una especie de cigüeñas que se crían en un estanque llamado de los Flamencos, y que están atravesadas de diversas plumas, aunque las mas coloradas son de singular belleza.",
+      "stats": {"vecinos": 366, "habitantes": 1500, "extension_E_O_leguas": 3, "anchura_max_leguas": 2},
+      "cross_references": ["Ibiza", "Pithiusas", "Estanque de los Flamencos"],
+      "confidence": "high",
+      "note": "Mega-article — descripció de l'illa de Formentera. Etimologia popular 'Formentera < formant (blat)'. Sense pobles, només cases disperses; depèn d'Eivissa. L''estany dels Flamencs' (Estany Pudent / Salines de Formentera) ja és cèlebre per la fauna. Sant Francesc Xavier i Sant Ferran (caseríos a Tomo VII leaf 481) són els nuclis principals."
+    }
+  ]
+}

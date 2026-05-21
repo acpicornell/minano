@@ -1,0 +1,39 @@
+{
+  "vol": "08",
+  "leaf": 11,
+  "page_printed": "1",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SAN JUAN DE LAS HUERTAS",
+      "place_type": "aldea",
+      "island": "Menorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Mercadal",
+      "description": "Ald. R. de España, provincia y obispado de Menorca. A. P., 51 vecinos, 260 habitantes, 1 parroquia aneja de Mercadal. Situada en terreno pantanoso, á ½ de hora N. E. de su matriz. Produce granos, legumbres, frutas y algunos ganados.",
+      "stats": {
+        "vecinos": 51,
+        "habitantes": 260,
+        "parroquias": 1
+      },
+      "cross_references": ["Mercadal"],
+      "confidence": "high",
+      "note": "OCR'd 'IAN JUAN' (I→S). Modern: Sant Joan de Carbonell (Es Mercadal, Menorca). 'Huertas de Carbonell' = horts de Carbonell."
+    },
+    {
+      "title": "SAN JUAN BAUTISTA",
+      "place_type": "caserío",
+      "island": "Ibiza",
+      "description": "Caserío de España, provincia de Iviza; 276 vecinos, 1,378 habitantes. (V. la descripción general de Iviza). Dista 6 leguas de su capital.",
+      "stats": {
+        "vecinos": 276,
+        "habitantes": 1378
+      },
+      "cross_references": ["Ibiza"],
+      "confidence": "high",
+      "note": "Max-path recovery (not in Phase 1 index). Modern: Sant Joan de Labritja (Eivissa)."
+    }
+  ]
+}

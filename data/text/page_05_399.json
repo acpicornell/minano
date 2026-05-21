@@ -1,0 +1,20 @@
+{
+  "vol": "05",
+  "leaf": 399,
+  "page_printed": "390",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "MANCOR",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "description": "L. R. de España en la isla de Mallorca y de su obisp. A. P., 155 vec., 734 habitantes, 1 parroquia. Situado al N. de la isla en terreno llano y fértil. Produce trigo, cebada, avena, legumbres, aceite, vino y ganados.",
+      "stats": {"vecinos": 155, "habitantes": 734, "parroquias": 1},
+      "confidence": "high",
+      "note": "Modern: Mancor de la Vall (Mallorca, pre-Tramuntana). El Suplement Tomo XI (leaf 409) corregeix que el terreny NO és llano sinó al peu dels monts més alts de Mallorca."
+    }
+  ]
+}

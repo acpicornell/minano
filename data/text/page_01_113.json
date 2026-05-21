@@ -1,0 +1,16 @@
+{
+  "vol": "01",
+  "leaf": 113,
+  "page_printed": "19",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ADAYA",
+      "place_type": "puerto",
+      "island": "Menorca",
+      "description": "Puerto de Esp., en la isla de Menorca; es bastante considerable, y á su boca tiene una cala muy buena, llamada Cala Moli.",
+      "confidence": "high"
+    }
+  ]
+}

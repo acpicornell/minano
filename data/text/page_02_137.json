@@ -1,0 +1,87 @@
+{
+  "vol": "02",
+  "leaf": 137,
+  "page_printed": "123",
+  "model": "claude-sonnet-4-6",
+  "window": 2,
+  "usage": {
+    "input_tokens": 6605,
+    "output_tokens": 887
+  },
+  "entries": [
+    {
+      "title": "BINARAÜS",
+      "island": "Mallorca",
+      "place_type": "aldea",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Sin alcalde",
+      "municipality": "Palma",
+      "description": "Aid. R. de Esp., en la isla de Mallorca; 39 vec., 118 hab. No hay alcalde. Situado al E. de Sóller, en el cam. que va á Selva. (V. la descripción general de Mallorca). Contr. con Palma.",
+      "stats": {
+        "vecinos": 39,
+        "habitantes": 118,
+        "contribuye_con": "Palma"
+      },
+      "cross_references": [
+        "Mallorca"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "title": "BINIAGUAL",
+      "island": "Mallorca",
+      "place_type": "lugar",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": null,
+      "description": "L. R. de Esp., prov. de Mallorca. A. P., 7 vec., 36 hab. (Véase la descripción general de Mallorca).",
+      "stats": {
+        "vecinos": 7,
+        "habitantes": 36
+      },
+      "cross_references": [
+        "Mallorca"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "title": "BINIAMAR",
+      "island": "Mallorca",
+      "place_type": "lugar",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Palma",
+      "description": "L. R. de Esp., provincia de Mallorca. A. P., 76 vec., 318 habitantes. Véase la descripción general de Mallorca. Contr. con Palma.",
+      "stats": {
+        "vecinos": 76,
+        "habitantes": 318,
+        "contribuye_con": "Palma"
+      },
+      "cross_references": [
+        "Mallorca"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "title": "BINISALEM",
+      "island": "Mallorca",
+      "place_type": "villa",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "municipality": null,
+      "description": "V. R. de Esp., en la isla de Mallorca y su obisp. A. O., 518 vecinos, 2,510 hab., 1 parr. de la que es aneja la de Lloceta y Bincegál. Sit. en el centro de la isla, en terreno llano y fértil. Produce trigo, cebada, avena, legumbres, aceite, vino, ganado lanar, cabrío y vacuno. Sus edificios y calles son de una mediana hermosura y disposición. Tiene por armas una concha en el escudo. Contr. 6,410 libras.",
+      "stats": {
+        "vecinos": 518,
+        "habitantes": 2510,
+        "parroquias": 1,
+        "contribucion": "6,410 libras"
+      },
+      "cross_references": [],
+      "confidence": "medium"
+    }
+  ],
+  "chocr_text_leaf": "i'ttilcs. Dlst. T legua N. de la capital. Conli.f),3:Í7 rs.\n\nBIN ALLÁ , L. de Esp., piov. de Asturias , concejo de Grandas, de Salirae; i veo.,II hab., parroquia de Grandas {J^éase).\n\nBINAGUA , L. Ab. de Esp. , provinciade Aragón , pait. y obisp. de Jaca, A. O ,II vec , 83 hab. , i parr. Sit. a 2 leguas deJaca, y conf. del corregimiento de Cinco▼illas, cerca de la margen izquierda delrio Aragón , sobre el cual está el útil puentede la Reina , lindando ron términos deAlastuóy , Santa Cilia y Santa Cruz. Susproductos son los indicados en el art. Jaca.Conlr. 671 rs. G mrs.\n\nBINARAÜS , Aid. R. de Esp., en la islade Mallorca; rjg vec., ^18 hab. No hay alcalde. Situado al E. de Soliera, en el cam.que va ;\\ Selva. ( ?'. la descripción generalde Mallorca), Contr. con Palma.\n\nBmEFAR, V. Ord. de Esp., prov. deAragón , part. de Barbastro, obisp, de Lérida. A. O., 2o5 Tec, 1,232 hab., i parr. Elnombre de esta villa es de origen arábigo,y está situada en el llano de Litera , sobreuna pequeña colina que la defiende de lasaguas cu tiempos lluviosos. A ^ legua E.se halla Tamariz de Litera, á legua y ^ O.Monzón, á i N. E. San Estevan de Litera,que está en medio de la sierra de Algés , ya I S. Esplus. Produce trigo , centeno, cebada , aceite y algo de vino ; es uno de loscomprendidos en el proyectado canal delEséra, el cual si llega a ejecutarse, hará•que produzca también toda especie de legumbres, oJñamo, lino y seda, pues esterreno á propósito para ello. El trigo deeste pueblo es el mas estimado de los delpartido , y en los años que los labradoresadvierten que la cosecha de esta especie sepresenta de mal aspecto, le suplen conla sicm'ira del mijo que se multiplica prodigiosamente , y mezclado con el trigo, dapan de escclente sabor. Dist. 4 leguas N.de Barbastro y 6 S. E. de Lérida, que esdonde se hace el comercio de los granos.Contr. i4,o)5 rs. 6 mrs.\n\nBI^EINERIN, Desierto entre Ycbay Cercíuela, en el valle de Vio, provincia deAragón, corregim. y obisp. de Barbastro.Dist. 10 leguas de Barbastro.\n\nBINIAGUAL , L. R. de Esp., prov. deMallorca. A. P., 7 vec., 36 hab. (Péase ladescripción general de Alallorca).\n\nBUNIALI, L. R. de Esp., provincia de\n\nBIO 12-\n\nMallovca. A. P., 81 vec, 33(í hab. {Véase ladescripción general de Mallorca). Contr.con Palma.\n\nBINIAMAR, L. E. de Esp., provinciade Mallorca. A. P., 76 vec, 3i8 habitantes.[véase la descripción general de Mallorca^.Contr. con Palma.'\n\nBIMÉS, L. S. deEsp.', prov. de Aragón, part. de Cinco villas , obisp. de Jaca.A. O., 39 vec., 21.4 hab., 1 parr. Sit. en lacanal de Verdún {Véase). Dist. 7 leguasde Sos. Contr. 2,684 r*- 28 mrs.\n\nBINISALEM, V. R. de Esp., en la islade Mallorca y su obisp. A.. O., 5i8 vecinos,2,5io liab., 1 parr. de la que es aneja la deLloccta y Bincegál. Sit. en el centro de laisla, en terreno llano y fértil. Produce trigo,cebada, avena, legumbres, aceite, vino,ganado lanar, cabrio y vacuno. Sus edificios y calles son de unamediana hermosuray disposición. Tiene por aimas ima conchaen el escudo. Contr. 6,4io libras.\n\nBINÜÉ, L. R. de Esp., prov. de Aragón,piíTt. y obisp. de Jaca. Reg. P., 16 vecinos,60 hab. Dist. 2 leguas de Jaca. Contribuye1,342 rs. i4 mrs.\n\nBINDEIRO, Aid. S. de Esp., en Galicia,prov. de Lugo, jurisd. de Pigara, obispad»de Mondoñedo. Es una de las que componen la parroquia de san Pedro de Pig,-uti{véase).\n\nBINAS, L. de España, provincia de Asturias , concejo de Boal, parroquia de Boal( Santiago de) {V. este art).\n\nBIOÑO (San EsTEVAK de), Parr. deEsp., provincia de Asturias , cono, yarcip.de Gozon, decanato y obispado de Oviedo;52 vec, 23i hab. Confina al N. y S. con laparroquia de Cardo. Contr. i58 rs. 12 mrs.\n\nBIORRETA, Caser. S. de España, enNavarra, tercer part de la merindad deSangüesa, cu el valle de Arragoiti, obisp. dePamplona. A. O. y un diputado por elección del valle, i erm. en donde se celebraen los dias festivos el santo sacrificio de laMisa. Situado en una llanura rodeada demontes por todas partes y a i legua E. deZunzarrcn.\n\nBIOSCA, V. S. de Esp., prov. de Cataluña, corregim. de Cervcra, obisp. de Solsona. A. O. , i54 vecinos, 627 hab., i parr.,I pósito, varias erm., 4 oratorios y i hosp.Sit. entre las villas de Tora y Sanauja, cercada de los rios Llobregat y Negro. Produce legumbres y frutas, trigo y vino , el",
+  "chocr_text_continuations": [
+    "124 BIS\n\ncual llevan á Solsona y otras partes. Industria, hornos de yeso. Dist. aalior.N. deBarcelona y 6 |^ de Cervera. Contr. 9,971 rs.4 nirs.\n\nBIOTA, V. S. de Esp., prov. de Aragón , part. de Cinco villas, obisp. de Jaca.A. O., 60 vec. , 325 hab. , i parr., i pósito^Sit. en terreno placentero fuera de las sierras con que confina, y disfruta de los beneficios de la rivera. Produce trigo, poco vinoy aceite, el cual se va fomentando cadadia , lino para el surtido de los habitantes,avena y ccbatla, pocas legumbres, muchaspatatas y ganado lanar. Inil. 2 naolinos íiariacros y uno de aceite. La villa de Sadavaque dista i legua y confina con Navarra,puede compararse en todo con esta, aunque el terreno es algo mas fértil en granos.El término de Biota tiene 10 leguas de circunferencia , y le divide en dos partes el rioArija, cuyo oríg. procede de las montañasde Luésia que distan 4 leguas. La parte queestá al occidente se llama vulgarmente elSasso, cuyo t€ncno esta inculto, lleno deencinas y matorrales , y poblado de lobos,ciervos , javalies y toda clase de caza menor. La otra,es terreno llano con algunosraonlecillos, la mayor parte cultivados porsus vecinos y por los de Terrasgus y Malpica , y es término propio para el plantíode viñas y olivos. Aunque en varias partesdel término hay diferentes fuentes , la masprincipal es la que abastece á todo el pueblo y la mas inmediata á él, que esta cercada de una buena obra de cantería. A dosleguas de la villa está el señorío del Bayoque se despobló por falta de agua. En él sereconocen vestigios de dos iglesias , una delas cuales fue de Templarios. Tiene esteseñorío 2 leguas de llanura de longitud , y5de latitud enteramente inculta, y estárodeado de montes de la jurisdicción deEgéa de los Caballeros. Dist. 5 leg. de Sos.Conír. 4)25ors. 20 mrs.\n\nBISALIBOWS, L. Ab. de Esp., prov. de.Aragón, part. de Benavarre , obisp. de Lérida. A. O., 16 vec, 82 habitantes, i pósito.Sit. en terreno montañoso. Conf. con término de Magarroias, Serrat, Pociello y Bonausa. Sus productos son los indicados enel artículo de la cabeza de pattido de donde dista 6 leguas. Contr. 1,118 rs. 22 mrs.\n\nBISANTOÑA, Felig. S. de Esp., en Galicia , prov. de Abeancos. J. O., 87 vecinos,143 hab., I pavr. Contr. i,i5o rs.\n\nBIS\n\nBISANTOÑA (SanMaktin DE),FeIíg.Ecl. de Esp., en Galicia, prov. de Santiago , jurisd. de Mesía. J. O. , 4^ vecinos,217 hab,, I parr. Contr. i,o5o rs.\n\nBISANTOÑA , Aid. S. de Esp., en Galicia , prov. de Santiago, jurisd. de Villarde Ferreyros. J. O., 6 vec., 29 hab. Contr.200 rs.\n\nBISADRRY, L. Ech de Esp. , prov. deAragón, part. de Benavarre , obispado deBarbastra. A. O., 28 vec., i43 habitantes,I pósito. Sit. cerca del rio Eséra , en el vallede Bcnasque ( Véase). Dist. 9 Icg. de Benavarre. Contr. 1,789 rs. 3o mrs.\n\nBISBAL (la) , V. Ecl. de Esp., prov. deCataluña , corregiin. y obisp. de Gerona.A. O., 700 vec., 8026 hab., 1 parr., i conv.de frailes , 1 hosp. , administración subalterna de loterías. Esanejode Cabacis. Sit.en una llanura de corta estension, rodeadade montes muy fértiles; baña sus muros uuriachuelo llamado Adaró, con un buenpuente. Su término tiene de largo de N.a S.cosa de 2 leg., y de E. a O. solo¿leg. Dentrode él hay diferciites casas y mansos , cornoigualmente los lugares de Fonteta , y SanPol. Produce trigo, legumbres, vino, aceite,corcho , hortaliza y frutas. Ind. obrages decáñamo ordinario , curtidos y alfarería , ycomercio en ganado de cerda. Dista 26 hor.de Barcelona , y 6 O. de Gerona. Contribuye 33,5oo rs. 28 mrs.\n\nBISBAL (la) , L. Ab. de Esp., prov. deCataluña , subdelegacion de Montblanch,obisp. de Tortosa. A. O. , 23 vec., 96hab.,I parr. Sil. en terreno montañoso; confinapor el E. con Ull de Molins , por el S. conCabascs, por O. con Torre del Español-., ypor el N. con la Palma. Produce trigo , legumbres y vino. Dist. 34 5horas de Barcelona , y 10 :!- de Montblanch. Contr. 3,769rs. 20 mrs.\n\nBISBAL ( LA) , L. S. de Esp. , prov. deCataluña , corregim. de Villafranca, obisp.de Barcelona. A. ü., 182 vecinos, 592 hab.,I parr. Sit; en terreno llano ; conf. por elE. con Sant Jaume del Domenis , por el Sicon Albiñana, por O. con MasUorens, y porelN. con Monmell. Produce trigo , legumrbres , vino y aceite. lud. fabrica de aguardiente y obrages de palma. Dist. i4 hor. deBarcelona , y 4 de 'S'illafianca. Contribuye11,841 rs.\n\nBISCAR('), L. R. de Esp., prov. de Cataluña , subdelegacion y obisp. de Seo de"
+  ]
+}

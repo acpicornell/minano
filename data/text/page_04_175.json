@@ -1,0 +1,32 @@
+{
+  "vol": "04",
+  "leaf": 175,
+  "page_printed": "131",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "FELANITX",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España, prov. y obisp. de Mallorca. A. O., 2,005 vecinos, 9,000 habitantes, 1 parroquia con un clero de 50 eclesiásticos, 1 convento de Agustinos, 1 casa de hijas de la Caridad, 1 hospital al cuidado de aquellas. Situada en terreno ameno, entre unos montes no muy altos, á escepción del de San Salvador, que tendrá ½ legua de elevación; y en lo mas encumbrado de él hay un santuario de su nombre. Al S. de este monte hay un castillo de peña cortada, con un estrecho paso para entrar en él, llamado de Santueri, y es el último lugar de la isla, de donde fueron arrojados los moros en tiempo de la conquista. Todavía se ven en él algunos edificios y subterráneos medio arruinados, construidos en aquel tiempo. Produce abundancia de trigo y demás granos; pero con especialidad vino, cuya cosecha ha ascendido algunos años á 100,000 cuartines. Industria: mas de 60 alambiques ó fabricas de aguardiente, cuyo licor se extrae para los pueblos de la isla, y la mayor parte se embarca para España. Dista 3 leguas de Santañy y una larga del mar, en cuya costa hay dos puertos pequeños, el uno llamado Porticholy y el otro Port-Colorn, bastante capaz, pero de poco fondo. Tiene por armas un escudo partido, en primero la imagen de una custodia ó biril, y en segundo las cuatro sangrientas barras catalanas. Su riqueza líquida asciende á 170,031 libras. Contribuye 12,156 libras 2 sueldos.",
+      "stats": {
+        "vecinos": 2005,
+        "habitantes": 9000,
+        "parroquias": 1,
+        "eclesiasticos": 50,
+        "conventos": 1,
+        "hospitales": 1,
+        "fabricas_aguardiente": 60,
+        "vino_cuartines": 100000,
+        "riqueza_liquida_libras": 170031,
+        "contribucion": "12,156 libras 2 sueldos"
+      },
+      "cross_references": ["Santañy", "Santueri", "Porticholy", "Port-Colorn", "San Salvador"],
+      "confidence": "high",
+      "note": "Miñano's 'FELAMCHE' (with m for n, OCR mangle) = canonical FELANITX. 'Porticholy'/'Port-Colorn' = Portitxol / Porto Colom."
+    }
+  ]
+}

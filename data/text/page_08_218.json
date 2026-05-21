@@ -1,0 +1,25 @@
+{
+  "vol": "08",
+  "leaf": 218,
+  "page_printed": "208",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SELVA",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España, provincia y obispado de Mallorca. A. O., ??? vecinos, 3,411 habitantes, 1 parroquia. Sit. al S. O. de Campanet, en el centro de la isla, en terreno llano y fértil; sus edificios, calles y plazuelas son de una mediana arquitectura y disposición. Produce trigo, cebada, avena, legumbres, aceite, vino; ganado lanar, cabrío y vacuno. No tiene ninguna fuente, pero hay pozos que abundan de mucha y buena agua, y esta es el parage donde están los pozos de la nieve que abastecen a mucha parte de la isla. Tiene diferentes cortijos y poblaciones que son anejas suyas, como Velilla, Camarau, Manacor, Masdoella, Biniamar, Biniarroy, Caymari y Moscarí. Sus armas son un mondo en el escudo con una cruz encima y un olivo á cada lado. Contribuye 4,961 libras y 2 sueldos.",
+      "stats": {
+        "habitantes": 3411,
+        "parroquias": 1,
+        "contribucion": "4,961 libras 2 sueldos"
+      },
+      "cross_references": ["Campanet", "Velilla", "Camarau", "Manacor", "Masdoella", "Biniamar", "Biniarroy", "Caymari", "Moscarí"],
+      "confidence": "high",
+      "note": "Modern: Selva (Mallorca, pre-Tramuntana). Important: 'Manacor' aquí NO és el Manacor llevant — és un caseriu de Selva (probablement Mancor de la Vall). Inclou els 'pozos de la nieve' (cases de neu de Lluc-Selva). Annexes: Caimari, Moscari, Biniamar, Biniarroi etc. — tots topònims actuals de Selva/Mancor."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "vol": "05",
+  "leaf": 116,
+  "page_printed": "107",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "JORNETS (TORRETS)",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "description": "Aldea R., provincia de Mallorca.",
+      "confidence": "medium",
+      "note": "Brief stub. Modern: Jornets (alquería near Sant Joan / Sineu, Mallorca). Miñano's parenthetical 'TORRETS' likely flags an alternate or nearby toponym."
+    }
+  ]
+}

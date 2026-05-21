@@ -1,0 +1,27 @@
+{
+  "vol": "03",
+  "leaf": 232,
+  "page_printed": "222",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "COSTÍCHE",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Palma",
+      "description": "L. R. de España, en la isla de Mallorca, y de su obispado. A. P., 203 vecinos, 1,071 habitantes, 1 parroquia aneja de la de Sansellas. Situado al N. O. de Sineu, en terreno llano. Produce trigo, cebada, avena, legumbres, vino, ganado lanar, cabrío y vacuno. Contr. con Palma.",
+      "stats": {
+        "vecinos": 203,
+        "habitantes": 1071,
+        "parroquias": 1,
+        "contribuye_con": "Palma"
+      },
+      "cross_references": ["Sansellas", "Sineu"],
+      "confidence": "high",
+      "note": "Miñano's 'COSTÍCHE' = modern Costitx (Mallorca); 'Sansellas' = Sencelles."
+    }
+  ]
+}

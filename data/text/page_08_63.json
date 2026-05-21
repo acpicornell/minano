@@ -1,0 +1,19 @@
+{
+  "vol": "08",
+  "leaf": 63,
+  "page_printed": "53",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SAN RAFAEL",
+      "place_type": "caserío",
+      "island": "Ibiza",
+      "description": "Caserío de España, provincia de Iviza; 181 vecinos, 872 habitantes (Véase la descripción general de Iviza). Dista 1 ½ legua de la capital.",
+      "stats": {"vecinos": 181, "habitantes": 872},
+      "cross_references": ["Iviza"],
+      "confidence": "high",
+      "note": "Modern: Sant Rafel de sa Creu (Sant Antoni de Portmany, Eivissa)."
+    }
+  ]
+}

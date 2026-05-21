@@ -1,0 +1,93 @@
+{
+  "vol": "11",
+  "leaf": 153,
+  "page_printed": "131",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "BIMARROY",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Selva",
+      "description": "L. R. de Esp. en la isla de Mallorca. Sit. en los altos montes al O. del L. de Mancor, del que depende en lo espiritual, y ambos en lo civil y eclesiástico de la V. de Selva; 13 vec., estos y los hab. y contr. se incluyen con los de la matriz. (Not. dada por el mismo).",
+      "stats": {
+        "vecinos": 13
+      },
+      "cross_references": ["Mancor", "Selva"],
+      "confidence": "high",
+      "note": "Modern: Biniarroi (Mancor de la Vall, Mallorca)."
+    },
+    {
+      "title": "BIMBACI",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Sóller",
+      "description": "Aid. pequeña R. de Esp. en la isla de Mallorca, perteneciente á la villa de Sóller, donde están incorporados los 4 vec. de que consta: tiene un oratorio, y está situada al N. E. y á ½ hora de distancia de la espresada villa. Sus naranjas son alabadas por las mejores de Mallorca.",
+      "stats": {
+        "vecinos": 4
+      },
+      "cross_references": ["Sóller"],
+      "confidence": "high",
+      "note": "Max-path recovery. Modern: Binibassí (Sóller, Mallorca)."
+    },
+    {
+      "title": "BIMFAÜALT",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Sancellas",
+      "description": "Aid. R. de Esp. en la isla de Mallorca, 6 vec., los cuales con el número de hab. y contr. se incluyen con los de su matriz la V. de Sancellas. Está sit. al E. de esta. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "stats": {
+        "vecinos": 6
+      },
+      "cross_references": ["Sancellas"],
+      "confidence": "high",
+      "note": "Modern: Biniagual (Binissalem / Sencelles, Mallorca)."
+    },
+    {
+      "title": "BINIFALET",
+      "place_type": "cortijo",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Muro",
+      "description": "Cortijo R. de Esp. en la isla de Mallorca, 4 vec., los que con el número de hab. y contribución se comprenden con los de la V. de Muro, de la que depende en lo civil y eclesiástico. (Not. dada por el mismo).",
+      "stats": {
+        "vecinos": 4
+      },
+      "cross_references": ["Muro"],
+      "confidence": "high",
+      "note": "Max-path recovery. Modern: Binifalet (Muro, Mallorca)."
+    },
+    {
+      "title": "BINIFERRI",
+      "place_type": "cortijo",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Sancellas",
+      "description": "Cortijo R. de Esp. en la isla de Mallorca, 4 vec., los que con el número de hab. y contr. se incluyen con los de la V. de Sancellas, de la que dependen en lo civil y eclesiástico. Sit. al E. de esta. (Not. dada por el mismo).",
+      "stats": {
+        "vecinos": 4
+      },
+      "cross_references": ["Sancellas"],
+      "confidence": "high",
+      "note": "Modern: Biniferri (Sencelles, Mallorca)."
+    },
+    {
+      "title": "BIMFOUBELL",
+      "place_type": "cortijo",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Sancellas",
+      "description": "Cortijo R. de Esp. en la isla de Mallorca, 6 vec., los que con sus hab. y contribución se incluyen con los de Sancellas, de la que depende en lo civil y eclesiástico. Está sit. al W. de la matriz. (Not. dada por el mismo).",
+      "stats": {
+        "vecinos": 6
+      },
+      "cross_references": ["Sancellas"],
+      "confidence": "high",
+      "note": "Modern: probably Binifaubell / Binifabini area (Sencelles)."
+    }
+  ]
+}

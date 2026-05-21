@@ -1,0 +1,61 @@
+{
+  "vol": "05",
+  "leaf": 313,
+  "page_printed": "304",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "LLOSETA",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Señorial",
+      "mayor_type": "Alcalde Ordinario",
+      "municipality": "Binisalem",
+      "description": "L. S. de España en la isla de Mallorca y de su obispado. A. O., 264 vecinos, ? habitantes, 1 parroquia aneja de la de Benisalem. Situado al O. de Inca, en terreno llano. Produce trigo, cebada, avena, legumbres, aceite, vino y ganados. Contribuye con Palma.",
+      "stats": {
+        "vecinos": 264,
+        "parroquias": 1,
+        "contribuye_con": "Palma"
+      },
+      "cross_references": ["Binisalem", "Inca", "Palma"],
+      "confidence": "medium",
+      "note": "OCR'd 'LLOSBTA' (S→S, T-T). The habitantes count is OCR-garbled ('a(»4...gyj.habitantes')."
+    },
+    {
+      "title": "LLUBÍ",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Muro",
+      "description": "L. R. de España en la Isla de Mallorca. A. P., 357 vecinos, 1,708 hab., 1 parroquia aneja de la de Muro. Sit. al N. de Sineu, algo distante del mar, en una crecida llanura. Produce granos y ganado. Contribuye con Palma.",
+      "stats": {
+        "vecinos": 357,
+        "habitantes": 1708,
+        "parroquias": 1,
+        "contribuye_con": "Palma"
+      },
+      "cross_references": ["Sineu", "Muro", "Palma"],
+      "confidence": "high",
+      "note": "OCR'd 'LL13BIN' (L-L-1-3-B-I-N for L-L-U-B-Í, with U→1-3 mangle). Modern: Llubí."
+    },
+    {
+      "title": "LLUCALCARI",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Sin alcalde",
+      "municipality": "Palma",
+      "description": "Aldea R. de España, provincia de Mallorca. No hay alcalde; 13 vecinos, 62 habitantes. Contr. con Palma.",
+      "stats": {
+        "vecinos": 13,
+        "habitantes": 62,
+        "contribuye_con": "Palma"
+      },
+      "cross_references": ["Palma"],
+      "confidence": "high",
+      "note": "OCR'd 'LLCGALCARI' (L-L-C-G for L-L-U-C-, C→C+G mangle). Modern: Llucalcari (aldea de Deià)."
+    }
+  ]
+}

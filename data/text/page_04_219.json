@@ -1,0 +1,25 @@
+{
+  "vol": "04",
+  "leaf": 219,
+  "page_printed": "175",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "FORNALUCHE",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "municipality": "Sóller",
+      "description": "L. R. de España, provincia y obispado de Mallorca. A. O., una parroquia aneja de la de Sóller. Su vecindario está con el de esta villa, y su situación y productos son los mismos. Contribuye con Sóller.",
+      "stats": {
+        "parroquias": 1,
+        "contribuye_con": "Sóller"
+      },
+      "cross_references": ["Sóller"],
+      "confidence": "high",
+      "note": "Miñano's 'FORNALUCHE' = Fornalutx (Mallorca). Vec./hab. counts are bundled with Sóller (anejo)."
+    }
+  ]
+}

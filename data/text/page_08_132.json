@@ -1,0 +1,25 @@
+{
+  "vol": "08",
+  "leaf": 132,
+  "page_printed": "122",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SANTAÑY",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España, en la isla y obispado de Mallorca. A. O., 867 vecinos, 4,146 habitantes, 1 parroquia. Situada al E. en la costa, en terreno llano. Produce trigo, cebada, avena, legumbres, vino, ganado lanar, cabrío y vacuno. Contrib. 5,951 lib. 8 sueldos.",
+      "stats": {
+        "vecinos": 867,
+        "habitantes": 4146,
+        "parroquias": 1,
+        "contribucion": "5,951 libras 8 sueldos"
+      },
+      "confidence": "high",
+      "note": "Modern: Santanyí (Mallorca). Article és breu però recull les xifres clau. ALCARIA-BLANCA i ALCARIA-ROJA (al Suplement Tomo XI) són annexes d'aquesta vila."
+    }
+  ]
+}

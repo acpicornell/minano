@@ -1,0 +1,21 @@
+{
+  "vol": "07",
+  "leaf": 456,
+  "page_printed": "447",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SAN CLEMENTE",
+      "place_type": "lugar",
+      "island": "Menorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Mahón",
+      "description": "L. R. de Esp., prov. de Menorca, partido de Mahon. A. P.",
+      "cross_references": ["Mahón"],
+      "confidence": "medium",
+      "note": "Brief stub. Modern: Sant Climent (terme de Maó, Menorca)."
+    }
+  ]
+}

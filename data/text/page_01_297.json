@@ -1,0 +1,28 @@
+{
+  "vol": "01",
+  "leaf": 297,
+  "page_printed": "203",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ANDRAIG",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Eclesiástico",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. Ecl. de Esp., en la isla y obisp. de Mallorca. A. O., 1,100 vec., 4,183 hab., 1 parr. Sit. casi al estremo O. de la isla, en clima templado y sano, teniendo un puertecito de mar á ½ de hora de la V., con una fortaleza, cast. y torre á la parte del E. para su defensa. A cosa de 1½ hor. está la erm. llamada del Desierto de san José, entre varios bosques y escabrosos barrancos. En el frente O. está la isla llamada la Dragonera, que es muy alegre y templada, pero solitaria y á propósito para vivir según las reglas é instituto de los monges trapenses. En efecto, los de santa Susana han principiado por escavar y desmontar gran parte de aquel terr. inculto y escabroso; han plantado árboles, construido antemurales y descubierto una fuente con que regar una pequeña huerta, y conducir las aguas hasta cerca las cocinas del Monasterio. Las cosechas del térm. de Andraig consisten en aceite, algarroba, almendras, granos y legumbres de toda especie, vinos esquisitos y pastos para ganados. Su valor asciende aun en estos años escasos á 31,360 libras mallorquinas al año. Ind. 3 molinos de aceite, pesca y comercio marítimo, manufacturas de palmitos y otros objetos cuyo valor asciende á 11,070 libras mallorquinas. Tiene por armas un sol en el escudo. Dist. 3 leg. de Estallenchs. Contr. 3,258 libras 16 sueldos.",
+      "stats": {
+        "vecinos": 1100,
+        "habitantes": 4183,
+        "parroquias": 1,
+        "molinos_aceite": 3,
+        "valor_cosechas_libras_mallorquinas": 31360,
+        "valor_industria_libras_mallorquinas": 11070,
+        "contribucion": "3,258 libras 16 sueldos"
+      },
+      "cross_references": ["Estallenchs", "Dragonera", "Desierto de San José"],
+      "confidence": "high"
+    }
+  ]
+}

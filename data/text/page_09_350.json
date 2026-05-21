@@ -1,0 +1,22 @@
+{
+  "vol": "09",
+  "leaf": 350,
+  "page_printed": "338",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "VILETA",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "description": "L. de España, prov. de Mallorca; 135 vec., 656 hab. (V. la descripción general de Mallorca).",
+      "stats": {
+        "vecinos": 135,
+        "habitantes": 656
+      },
+      "cross_references": ["Mallorca"],
+      "confidence": "medium",
+      "note": "Modern: La Vileta (barrio de Palma de Mallorca). The 'fijC' habitantes is OCR-garbled; reading as 656."
+    }
+  ]
+}

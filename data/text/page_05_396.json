@@ -1,0 +1,27 @@
+{
+  "vol": "05",
+  "leaf": 396,
+  "page_printed": "387",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "MANACOR",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España en la isla y obispado de Mallorca. A. O., 1,822 vec., 5,905 habitantes, 1 parroquia de la que es aneja la de San Lorenzo, 1 conv. de Santo Domingo. Situada al N. 4° N. 15° de Felanitx, en una fértil y amena llanura que produce trigo candeal, cebada, avena, legumbres, aceite, vino, ganado lanar, cabrío y vacuno. La nobleza de Palma posee la mayor parte de su territorio; es esta villa de las de mejor gusto en edificios y casas pertenecientes á dichos señores. La parroquia conserva la imagen de un Crucifijo digno de ser admirado por su hermosura: la iglesia y convento son de mediano gusto y tamaño. Hay restos de un palacio que fue de los reyes de Mallorca. Tiene por armas una mano y un corazón en el escudo, aludiendo al nombre de la población. Dista 8 leg. de la capital y 4 de Felanitx. Contribuye 20,633 libras.",
+      "stats": {
+        "vecinos": 1822,
+        "habitantes": 5905,
+        "parroquias": 1,
+        "conventos": 1,
+        "contribucion": "20,633 libras"
+      },
+      "cross_references": ["San Lorenzo", "Felanitx", "Palma"],
+      "confidence": "high",
+      "note": "OCR'd 'MAM ACOR' (with M-space-A) — title fixed to MANACOR. Heraldic 'mano y corazón' is a folk-etymology pun on 'Mano-cor'."
+    }
+  ]
+}

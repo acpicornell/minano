@@ -1,0 +1,37 @@
+{
+  "vol": "08",
+  "leaf": 331,
+  "page_printed": "319",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SOLLER",
+      "place_type": "valle",
+      "island": "Mallorca",
+      "description": "Valle de España en la Isla de Mallorca, situado á la bajada de la sierra de Alfabia: tiene de circunferencia 4 leg., rodeado de montes, en cuyas faldas se ven unos bosques de bien ordenadas olivares: toda la llanura se halla regada con diferentes arroyos, que, uniéndose en un solo ramo en las inmediaciones de la villa de este nombre, después de haber beneficiado el suelo, sale al mediano á medida del deseo de los infatigables colonos, desagua en la mediania del puerto. Este valle, visto desde lo alto, parece un confuso bosque de árboles, que, hasta en el rigor del invierno, conservan su amena frondosidad; pero, examinado de cerca, se conoce que lo que parecía confusión, todo es orden. La mayor parte de este terreno está dedicado al cultivo de naranjos, y demás árboles frutales; y es tanta la abundancia de ellos, que se cuenta, un año con otro, producir á los vecinos de la villa de Soller, la cosecha de las primeras una entrada de 40,000 pesos, á causa del bien establecido comercio con los puertos de la inmediata costa de Francia.",
+      "cross_references": ["Alfabia"],
+      "confidence": "high"
+    },
+    {
+      "title": "SOLLER",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España, provincia y obispado de Mallorca. A. O., 1,725 vecinos, 5,946 habitantes, comprendidos los de la huerta, y pueblo de Fornaluche que tendrá como unos 200, y depende de esta villa en lo civil y eclesiástico; 1 parroquia, 1 convento, 1 hospital y hospicio. Situada en un valle cercano de montes muy altos, poblado hasta la cima de olivos, é intercalado con acebuches que nacen entre las breñas. La llanura está preservada de los vientos, y plantada de naranjos tan espesos, que se puede pasear toda la huerta en el rigor del estío sin esperimentar la incomodidad del calor. Al pie de dichos montes nacen dos copiosos manantiales, que son la riqueza de este pueblo, pues, á mas de abastecer de naranjas á toda la isla, se extraen para Menorca y Barcelona, y particularmente para Francia. Dista esta villa unos ½ de hora de su puerto de mar, que está habilitado desde el año de 1812, y defendido de todos los vientos, aunque con entrada difícil. Tiene un muelle muy cómodo, aduana, lazareto, baterías, y un castillo con gobernador. Como este terreno es tan montuoso, han llegado los naturales á adquirir la particular habilidad de construir unos bancares para contener la poca tierra que hay. Produce aceite y frutas. Industria: telares de lienzos, y otras telas de lino y algodón que estraen para Mahón y Barcelona. De pocos años acá han empezado á fabricar paños negros y de mezcla. Aunque hemos hablado del hospital, nos falta decir que en él se mantienen diariamente de 150 á 200 pobres, que no viven reunidos en dicha casa, sino cada cual en la suya, y van á hora determinada á recoger comida y cena a un tiempo; también los enfermos son socorridos en sus propias casas, por medio de celadores eclesiásticos, á menos que sean tan miserables que no tengan habitación propia, en cuyo caso hay camas de prevención en el hospital. Dista 10½ leg. de Alcudia. Contribuye 8,137 lib. 12 sueld.",
+      "stats": {
+        "vecinos": 1725,
+        "habitantes": 5946,
+        "parroquias": 1,
+        "conventos": 1,
+        "hospitales": 1,
+        "pobres_mantenidos": 200,
+        "contribucion": "8,137 libras 12 sueldos"
+      },
+      "cross_references": ["Fornaluche", "Alcudia", "Mahón", "Barcelona"],
+      "confidence": "high",
+      "note": "Modern: Sóller (Mallorca). The article enumerates Fornalutx (200 vec.) as part of Sóller's vecindario — this matches what's in the FORNALUCHE entry (Tomo IV leaf 219, anejo de Sóller)."
+    }
+  ]
+}

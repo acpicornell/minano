@@ -1,0 +1,18 @@
+{
+  "vol": "08",
+  "leaf": 182,
+  "page_printed": "170",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SARRECÓ",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "description": "Aldea R. de España en la isla de Mallorca.",
+      "confidence": "medium",
+      "note": "Brief stub. Likely modern S'Arracó (Andratx, Mallorca)."
+    }
+  ]
+}

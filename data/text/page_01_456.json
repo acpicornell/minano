@@ -1,0 +1,29 @@
+{
+  "vol": "01",
+  "leaf": 456,
+  "page_printed": "562",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "BALANZAT",
+      "place_type": "cuartón",
+      "island": "Ibiza",
+      "description": "Cuartón de Esp., en la isla de Ibiza; tiene 400 casas, 2,300 hab., 1 parr. Es el menor de todos. Sit. en tierra quebrada y montuosa, y aunque no de buenas marinas, seguro de corsarios. Tiene de extensión 3 leguas; linda con el de Pormany, Santa Eulalia y el del Llano de la Villa, y atando su costa con la de Santa Eulalia, empieza por Puerto Balanzat, y acaba con el Puig de Nonó. Tiene para su defensa una compañía de 300 hombres de milicia con su gefe.",
+      "stats": {"casas": 400, "habitantes": 2300, "parroquias": 1, "milicia_hombres": 300},
+      "cross_references": ["Pormany", "Santa Eulalia", "Llano de la Villa", "Puerto Balanzat", "Puig de Nonó"],
+      "confidence": "high",
+      "note": "Modern: Balansat / Sant Miquel de Balansat (Sant Joan de Labritja, Eivissa). El menor dels quatre quartons d'Eivissa."
+    },
+    {
+      "title": "BALANZAT (Desp.)",
+      "place_type": "despoblado",
+      "island": "Ibiza",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "description": "Desp. R. de Esp., en la Isla de Iviza. A. P.",
+      "confidence": "medium",
+      "note": "Entrada secundària sobre el mateix nom — possiblement el nucli antic de Sant Miquel de Balansat."
+    }
+  ]
+}

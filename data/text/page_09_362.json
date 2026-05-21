@@ -1,0 +1,25 @@
+{
+  "vol": "09",
+  "leaf": 362,
+  "page_printed": "7",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "VILLACARLOS",
+      "place_type": "villa",
+      "island": "Menorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "description": "V. R. de Esp., prov. de Menorca. A. P., 870 vec., 4,??? hab., 1 parr.; sit. á orilla del puerto, distante una milla de su boca, donde en tiempos pasados había un castillo de primer orden que fue demolido, sin que quedase mas que una batería que domina la entrada llamada de San Carlos. Tiene delante el real lazareto y la isleta de cuarentena, que proporciona una buena vista, y 3 calas de mar capaces para abrigar navíos grandes de guerra. Es el pueblo mas sano de la isla y abundante de pozos de agua muy buena. A una milla de distancia está sit. Mahón, que llega á lo último del puerto en el mismo lado de la orilla del mar. Produce granos, esquisito vino, buenas verduras, y frutas muy sabrosas. Ind.: 2 fabricas de jabón de piedra sin uso á causa del poco trabajo, carpinteros, constructores de barcos, albañiles, tejedores, zapateros y otros oficios. Dista 1 milla de Mahón y 23¼ de Ciudadela.",
+      "stats": {
+        "vecinos": 870,
+        "parroquias": 1,
+        "fabricas_jabon": 2
+      },
+      "cross_references": ["Mahón", "Ciudadela", "San Carlos"],
+      "confidence": "high",
+      "note": "OCR'd 'VILLAC ARLOS' with a space; cuerpo dice 'pror. de Menorca' (OCR mangle of 'prov.'). Modern: Es Castell (anteriormente Villa Carlos, llamada también Georgetown durante la ocupación inglesa). Fundada en 1771."
+    }
+  ]
+}

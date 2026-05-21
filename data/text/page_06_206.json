@@ -1,0 +1,28 @@
+{
+  "vol": "06",
+  "leaf": 206,
+  "page_printed": "196",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "MURO",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de España, provincia y obispado de Mallorca. A. O., 1,031 vecinos, 4,884 habitantes, 1 parroquia que tiene por aneja á Llubin, 1 convento de Mínimos. Situada algo distante del mar, en una crecida llanura, cuyo margen sirve de límite, y forma la bahía de Alcudia, y es la parte menos cultivada de la isla. Produce trigo candeal, cebada, avena, legumbres, vino, ganado lanar, cabrío y vacuno. Tiene una escelente cantera de mármoles. Industria: 3 alfarerías. Sus armas son un muro con tres torres. Contr. 5,820 lib. y 19 sueldos.",
+      "stats": {
+        "vecinos": 1031,
+        "habitantes": 4884,
+        "parroquias": 1,
+        "conventos": 1,
+        "alfarerias": 3,
+        "contribucion": "5,820 libras 19 sueldos"
+      },
+      "cross_references": ["Llubí", "Alcudia"],
+      "confidence": "high",
+      "note": "OCR'd 'MORO' on the indexer pass (the body confirms MURO de Mallorca, 1,031 vec). The 'parroquia... aneja á Llubin' confirms identification — modern Muro (Mallorca), with Llubí as historical anejo."
+    }
+  ]
+}

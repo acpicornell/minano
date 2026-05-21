@@ -1,0 +1,22 @@
+{
+  "vol": "11",
+  "leaf": 524,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SINEU (adiciones)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "description": "En la línea 5 donde dice 'Sit. casi en el centro de la isla', bórrese el 'casi', y en la 6 donde dice 'al N. E. de Palma', léase 'al E. y á 5½ leg. de Palma'. A lo de la feria el primer domingo de mayo, debe añadirse «y mercado el miércoles de cada semana»: asimismo que en sus inmediaciones se ha hallado una famosa cantera, y que lo que en el día es monasterio de monjas, era antiguamente palacio de los reyes de Mallorca. Existía esta villa ya al tiempo de la conquista. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "stats": {
+        "feria": "primer domingo de mayo",
+        "mercado": "miércoles cada semana"
+      },
+      "cross_references": ["Palma", "Palacio Reyes de Mallorca", "Sineu (artículo original)"],
+      "confidence": "high",
+      "note": "Suplement-correction al article SINEU del Diccionari original. SINEU EXISTEIX a algun tomo (probablement VIII, leaf desconegut — l'OCR del títol original ha de ser molt mangled perquè els meus filtres no l'han trobat). Correccions: situada al CENTRE de l'illa (no 'gairebé centre'); a l'EST de Palma (no NE), 5½ llegues; té mercat setmanal els dimecres a més de la fira del primer diumenge de maig. Antic Palau dels Reis de Mallorca, ara convent de monges (Convent de la Concepció de Sineu). Vila existent al moment de la Conquesta de Jaume I (1229)."
+    }
+  ]
+}

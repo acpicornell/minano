@@ -1,0 +1,19 @@
+{
+  "vol": "11",
+  "leaf": 13,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "note": "Continuació de la taula de coordenades del leaf 12. Recopila Palma de Mallorca.",
+  "entries": [
+    {
+      "title": "Palma [catedral] — coordenades",
+      "place_type": "ciudad",
+      "island": "Mallorca",
+      "description": "Palma, [catedral]. Latitud: A. 39° 34' 04\". Longitud: A. 6° 23' 30\" E.",
+      "stats": {"lat": "39°34'04\"N", "lon_E_Madrid": "6°23'30\""},
+      "confidence": "high",
+      "note": "Coordenades de la Catedral de Palma — referides al meridià de Madrid (la plaça Major). Modern: lat 39.57°N, lon 2.65°E (Greenwich) = ~6.34°E de Madrid → coincidència perfecta."
+    }
+  ]
+}

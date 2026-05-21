@@ -1,0 +1,26 @@
+{
+  "vol": "11",
+  "leaf": 191,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "CAMPOS (adición)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "description": "Campos, el de Mallorca. Tiene 4,958 habitantes. El R. P. Fr. Luis de Villafranca, religioso capuchino de Palma en Mallorca, nos ha remitido las siguientes observaciones, que copiamos literalmente para la mayor exactitud y claridad de este artículo. Dice que esta V. tiene un convento de mínimos, un hospital, 3 ermitas y 2 cortijos. Las aguas de la Font-Santa no son más que tibias, y producen buenos efectos en las enfermedades cutáneas. Las aguas verdaderamente termales se hallan á unos 20 pasos de la Font-Santa, en una balsa llamada de las Estacas, las que en el año 1800 fueron analizadas por Don Juan Andrés Nieto Samaniego, doctor en medicina, primer ayudante de cirujía médica de ejército, y cirujano del regimiento infantería de Borbón, cuyas observaciones publicó el año 1805 en una disertación impresa en Mallorca con el siguiente título: «Estracto del análisis químico de las aguas que constituyen la Balsa, llamada vulgarmente de las Estacas, que se halla inmediata á la ermita de san Juan de la villa de Campos en esta isla de Mallorca». Dice que tienen la virtud antireumática, resolutiva, anodina, tónica, anticéptica, y otras que reconoció en dicha agua. Los de la V. de Campos se ofrecieron con gusto al gasto de las obras indispensables para la composición del lugar, y demás necesario para que este remedio pudiera aplicarse con fruto á los dolientes: pero la disputa que se suscitó luego sobre la propiedad de aquel terreno, fue la causa de que no se ha hablado mas de un asunto tan interesante al público. A la parte O., y no lejos de la Font-Santa, se hallan otras balsas, y la llamada el Salobrá, de casi media leg. de extensión, las que son causa de una atmósfera muy mal sana, y de que no se vean por allí mas que casas arruinadas y abandonadas de sus dueños. Si se desaguaran estas balsas, á más de hacer un beneficio á la salud pública, se beneficiarían para el cultivo muchas cuarteradas de tierra, ahora enteramente inútiles. Entre el Salobrá y la V. de Campos, se halla el Palmer, título de marquesado, donde es de presumir estuvo la antigua ciudad de Palma de los romanos, lo que á mas de la analogía del nombre, se infiere de Plinio, Hist. Natur., lib. 3, cap. 5 donde dice hablando de Cabrera: «á Majore XII M passuum in eelium abest Capraria insidiosa naufragiis et e regione palme urbis menorie et triquada et parva (entrum non) patria Annibalis». Si la isla de Cabrera estaba dist. 12,000 pasos de la región de la ciudad de Palma, ésta no podía ser la actual, por hallarse 40,000 pasos dist. de dicha isla. A mas de esto, entre el Palmer y el puerto de Campos, se hallan indicios de que hubo antiguamente un grande cementerio, donde se han hallado siempre lápidas sepulcrales con inscripciones romanas. Asimismo en todo el termino de Santanyí, en cuyo territorio se halla el puerto que llaman de Campos, se han encontrado siempre muchas medallas, inscripciones, etc., y en mi poder tengo una cabeza grande de marmol, hallada en Son Darms de Santanyí, por el año 1803. Si los labradores, en lugar de destruir, conservaran estas preciosidades, se pudiera haber hecho una buena colección de estos monumentos. Al S. E. y á ½ leg. de Campos, se halla la ermita de San Blas, la que antiguamente era la iglesia parroquial, y en el día no es más que iglesia rural. Dista Campos 5 leg. de la ciudad de Palma. Tiene por anejo á la Soria, cuyo vecindario y contr. está incluso con los de esta V. de Campos.",
+      "stats": {
+        "habitantes": 4958,
+        "conv_minimos": 1,
+        "hospitales": 1,
+        "ermitas": 3,
+        "cortijos": 2,
+        "dist_palma_leg": 5
+      },
+      "cross_references": ["Font-Santa", "Balsa de las Estacas", "Palmer", "Cabrera", "Santanyí", "Son Darms", "San Blas (ermita)", "La Soria", "Plinio"],
+      "confidence": "high",
+      "note": "Suplement molt ric (uns 600 paraules!). Inclou: anàlisi químic dels banys termals de Sant Joan de Campos (1800, Nieto Samaniego); cita de Plini el Vell sobre la 'Palma' romana al Palmer (no a la Palma actual!); el Salobrar com a font de malària; làpides i medalles romanes a Son Darms (Santanyí); ermita de Sant Blai com a antiga parròquia. Modern: Campos (Mallorca). Annex històric: la Soria (avui sa Sòria)."
+    }
+  ]
+}

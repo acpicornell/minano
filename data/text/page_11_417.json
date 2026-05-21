@@ -1,0 +1,30 @@
+{
+  "vol": "11",
+  "leaf": 417,
+  "page_printed": "387",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "note": "Tomo XI Suplemento — sección 'ENMIENDAS AL TOMO VI'. Corrige el artículo MENORCA del Tomo VI.",
+  "entries": [
+    {
+      "title": "MENORCA (adiciones)",
+      "place_type": "isla",
+      "island": "Menorca",
+      "description": "Acerca de lo que dijimos de esta Isla en el Diccionario nos comunican las observaciones y adiciones siguientes, desde Ciudadela, el señor Don Miguel de León y Mendiola, secretario de cámara del ilustrísimo señor Obispo, y el señor Don Felipe Caymari, secretario del ilustrísimo Cabildo. Tiene catedral, Obispo y Cabildo que reside en la ciudad de Ciudadela, su capital, de que hemos hablado en artículo separado. En la línea 6 de la segunda columna donde se dice 'y Mercadal, al que se ha unido Ferrerías', léase 'al que está unido Ferrerías', pues esta villa en lo municipal siempre ha dependido de Mercadal, y está unida á él de tiempo inmemorial. En las líneas 7, 8 y 9 debe borrarse lo que se dice de ser Mahón la capital de la Isla. En la línea 20 hasta la 24 en lugar de lo que se dice acerca de las lluvias, debe leerse que por lo regular se pierden las cosechas muchos años por la sequía, acaso por ir desapareciendo los bosques ó por otras razones que no alcanzamos, lo cierto es que llueve muy poco, particularmente en la primavera. El producto de lana y queso no es el que se supone en la página 11, línea 11, pues el de la primera con dificultad excederá de 5,000 arrobas, y el de queso de 15,000; por consiguiente la extracción de estos artículos no puede ser sino la mitad del producto dicho, y en cuanto á las alcaparras, que solo las produce el térm. de Ciudadela, no excede su extracción á 1,000 rs. En la primera columna de la misma página, línea 23, donde se dice 'y mucha sal', debe añadirse que la hacen del agua del mar, mas blanca que la nieve, pero que no sala tanto como la de las minas de Iviza, y no basta con mucho para el consumo. El ganado de esta Isla ascenderá a unas 8,793 reses vacunas, 9,864 lanares, 1,082 de cabrío, y 2,252 de cerda. Aunque apenas se conocen los prados, la tierra por sí misma produce yerbas, si bien bajas, pero que se aprovechan grandemente con estar divididas las posesiones en pequeños cercados, que llaman tancas, cerradas todas con pared de canto seco; son tan sustanciosas estas yerbas, que una vaca con otra, criando su ternero, se computa que da de leche cada día 18 libras de a 12 onzas, y la hay que da hasta 33, por cuya razón vale muy barata: se cría también buen ganado mular, algunos caballos, y sobre todo excelentes asnos, mejores quizás y mas fuertes que en ninguna otra parte, los cuales montan por lo regular bien enjaezados personas nobles y de distinción, por tener buen paso, y ser muy seguros en país pedregoso como el de esta Isla. La carne de vaca es riquísima, y hay muchas y buenas perdices, chochas, codornices, y otras aves de caza: hay también conejos en abundancia, pero no se conocen las liebres. En la línea 38 de la misma columna donde se habla de los pageses, puede añadirse que son mas civilizados que la gente del campo de nuestro continente, y entre ellos y los artesanos se cuentan varios versificadores ó copleros de Lutatumor (?). Estos isleños tienen natural disposición para las lenguas estrangeras, y les favorece maravillosamente su particular idioma para aprenderlas fácilmente y con perfección, de manera que hasta las mujeres, principalmente en Mahon, hablan el castellano, francés, italiano, inglés, angloamericano, holandés, y alguna que otra el griego y el moro. Por lo común son aficionados á la música, y tienen bella disposición para todo, siendo digno de lástima el que no haya escuelas como en otras partes donde se cultiven estos talentos raros. Cuenta esta Isla muchos marineros que en todas partes son muy apreciados por su habilidad y destreza en el arte. El pescado es abundante y bueno, pero algo mas flojo que el de los mares de Cantabria. En cuanto á las mujeres, ademas de ser de unas facciones regulares, son robustas, ágiles y airosas. En la columna 2, líneas 4 y 5 debe suprimirse la extracción que se dice de 10,000 arrobas de vino, pues no es así.",
+      "stats": {
+        "ganado_vacuno": 8793,
+        "ganado_lanar": 9864,
+        "ganado_cabrio": 1082,
+        "ganado_cerda": 2252,
+        "lana_arrobas_max": 5000,
+        "queso_arrobas_max": 15000,
+        "alcaparras_extraccion_rs_max": 1000,
+        "leche_vaca_libras_dia": 18,
+        "leche_vaca_libras_dia_max": 33
+      },
+      "cross_references": ["Menorca", "Ciudadela", "Mahon", "Mercadal", "Ferrerías", "Iviza"],
+      "confidence": "high",
+      "note": "Suplement — correcció important: la CAPITAL de Menorca és CIUTADELLA (no Mahón). La catedral i el bisbat resideixen a Ciutadella. Ferreries dependent de Mercadal des de temps inmemorial. Dades demogràfiques de cabes de bestiar més precises. Multilingüisme menorquí cita: castellà/francès/italià/anglès/anglo-americà/holandès/grec/àrab — sorprenent! Fonts: Miguel de León y Mendiola (secretari del bisbe) i Felipe Caymari (secretari del Capítol)."
+    }
+  ]
+}

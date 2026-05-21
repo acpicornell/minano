@@ -1,0 +1,33 @@
+{
+  "vol": "08",
+  "leaf": 107,
+  "page_printed": "97",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SANTA GERTRUDIS",
+      "place_type": "caserío",
+      "island": "Ibiza",
+      "description": "Caserío de España, provincia de Ibiza; 150 vecinos, ? habitantes. Dista 2 leguas de la capital.",
+      "stats": {
+        "vecinos": 150
+      },
+      "cross_references": ["Ibiza"],
+      "confidence": "high",
+      "note": "Modern: Santa Gertrudis de Fruitera (Santa Eulària des Riu, Eivissa)."
+    },
+    {
+      "title": "SANTA INÉS",
+      "place_type": "caserío",
+      "island": "Ibiza",
+      "description": "Caserío de España, provincia de Ibiza; ? vecinos, 471 habitantes. (V. la descripción general de Ibiza). Dista 4 leguas de la capital.",
+      "stats": {
+        "habitantes": 471
+      },
+      "cross_references": ["Ibiza"],
+      "confidence": "high",
+      "note": "Max-path recovery (not in Phase 1 index). Modern: Santa Agnès de Corona (Sant Antoni de Portmany, Eivissa)."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "vol": "11",
+  "leaf": 380,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "S'HORTA",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Felanitx",
+      "description": "Aid. R. de España en la Isla y obisp. de Mallorca, una ermita. El número de vecinos, habitantes y contribución se incluyen con los de Felanitx. Sit. en la costa marítima al S. E. y á 1 leg. de su matriz. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Felanitx"],
+      "confidence": "high",
+      "note": "OCR'd 'HOHTA (se)'. Modern: S'Horta (Felanitx, Mallorca, prop de Cala Marçal i Cala d'Or)."
+    }
+  ]
+}

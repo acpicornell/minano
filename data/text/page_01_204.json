@@ -1,0 +1,32 @@
+{
+  "vol": "01",
+  "leaf": 204,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ALCUDIA",
+      "place_type": "ciudad",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "C. R. de Esp., en la Isla de Mallorca y de su obispado. Gob. milit. y político, 1 A. O., 272 vec., 1,018 hab., 1 parr., 1 conv. de frailes, 1 oratorio, 1 hospital. La C. es pequeña pero bien fortificada, y se halla sit. cerca del mar enfrente de Menorca, entre dos grandes puertos llamados Formentor y el de la Piedra, á manera de península. Es puerto habilitado para la importación y exportación al extranjero y cabotaje. Entre esta C. y la Bahía de su nombre hay en el camino 2 grandes y extendidos estanques de agua parada que los del país llaman Albuferas mayor y menor; las que son causa de una temperatura muy mal sana en sus inmediaciones; están formadas de las aguas que bajan de los montes y sierras de esta parte de la isla, que encontrando en su tránsito el mar, terreno mas bajo que las orillas de este, se depositan, y á mas de la intemperie que ocasionan, inutilizan una porción de tierra que si se practicasen desagües y canales bien entendidos, podrían ser sus aguas, perniciosas en las circunstancias presentes, ventajosísimas á la fertilidad y cultivo de estos mismos terrenos. La idea de esta obra muchas veces se ha imaginado por los señores mallorquines; pero lo inevitable de su coste ha sido siempre el mayor obstáculo para las obras mas útiles, como lo sería sin contradicción esta. No hay que dudar que la despoblación que se nota en esta C. de Alcudia, debe atribuirse á la proximidad de estos estanques, de suerte que siendo la única C. después de la de Palma y estando rodeada de un regular recinto, es sin contradicción la mas infeliz y miserable de toda la Isla, pues en ella se encuentran muchas casas desiertas y abandonadas de sus dueños, que las injurias del tiempo van convirtiendo en un montón de ruinas, y solo sirven para traer á la memoria su estado anterior y renovar el dolor de su presente sit. Adelantándose hacia el Istmo que divide las Bahías de Alcudia y Pollensa, á corta distancia se encuentra en la medianía de un montecito una pequeña erm. de Ntra. Sra. de la Vitoria y en lo mas alto de un escarpado y ruinoso cerro, una torre que sirve de vigía, de la que se descubre toda la parte oriental de la isla de Menorca y buena parte de la de Mallorca. Un poco mas abajo, y hacia la orilla del mar, sobre un alto peñasco que los del país llaman Peña Roja, está un cañón de á 18 que su colocación en este parage manifiesta el mucho trabajo que habrá costado á los hab. del país el subir este enorme peso por sitio solo destinado á ser frecuentado de las aves. Hay en su término muchas tierras incultas por falta de brazos. Produce toda especie de granos, cáñamo, vino, algarroba, aceite, verduras y se cría ganado lanar, cabrío, mular y vacuno. El queso que se fabrica no solo es el mas superior de la isla, sino también comparable con el mejor de Olanda. Abunda de palmas que no se aprovechan por falta de obreros. El producto de las Albuferas es mucho pescado, principalmente anguilas y gallinas ciegas, y en las bahías referidas se cogen muy buenos pescados, y entre ellos pájaros y servíolas, palomidas, dentolas doradas y atunes. También se pesca el coral con abundancia, de modo que en el año de 1820 había mas de 40 laudes que lo pescaban por cuenta de algunos catalanes; antes lo hacían los Genoveses. A 1 leg. de la C. en lo fragoso de un monte a la parte del S., hay una boca de gruta fabricada por la naturaleza. Su riq. líquida asciende á 15,879 libras. Contr. 5,944 libras y 5 sueldos.",
+      "stats": {
+        "vecinos": 272,
+        "habitantes": 1018,
+        "parroquias": 1,
+        "conventos": 1,
+        "oratorios": 1,
+        "hospitales": 1,
+        "riqueza_liquida_libras": 15879,
+        "contribucion": "5,944 libras 5 sueldos",
+        "ano_pesca_coral_laudes": 40,
+        "ano_referencia_pesca": 1820
+      },
+      "cross_references": ["Mallorca", "Palma", "Menorca", "Pollensa", "Cabo Formentor", "Puerto de la Piedra", "Albufera mayor", "Albufera menor", "Bahía de Alcudia", "Bahía de Pollensa", "Peña Roja", "Ntra. Sra. de la Vitoria"],
+      "confidence": "high",
+      "note": "Max-path recovery — OCR-mangled headword 'ALClülA' is el motiu pel qual l'indexer original l'havia saltat. Mega-article: ciutat fortificada, segona ciutat de Mallorca després de Palma. Article notable per la descripció de l'Albufera mallorquina i del comerç del corall (40 laudes catalans pescant el 1820, abans els fèien els genovesos)."
+    }
+  ]
+}

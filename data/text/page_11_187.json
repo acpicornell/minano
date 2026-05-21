@@ -1,0 +1,19 @@
+{
+  "vol": "11",
+  "leaf": 187,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "CAMPANET (adición)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "description": "Campanet. Tiene 670 vec., 3,348 hab. Su parroquia tiene también por aneja á la de Uyeró. La ermita se halla á la parte del N. entre altos montes á 1,500 pasos de la V., la que antiguamente fue parr. En lugar de la sit. que se pone en el Diccionario, léase la siguiente: «Está sit. en las inmediaciones de los altos montes de Ntra. Sra. de Lluch, sobre una elevación, desde la cual se descubre la isla de Menorca, y á 2 leg. de dist. del mar y de la bahía de Alcudia.» Bórrese donde dice «que es la parte menos cultivada de la isla.» Pues según se nos avisa hay otras que lo son menos. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "stats": {"vecinos": 670, "habitantes": 3348, "dist_mar_leg": 2, "ermita_dist_pasos": 1500},
+      "cross_references": ["Búger", "Uyeró", "Lluc", "Menorca", "Alcudia"],
+      "confidence": "high",
+      "note": "Modern: Campanet (Mallorca, raiguer). Té Búger com a annex i Uyeró (avui possessions a la rodalia). L'ermita de Sant Miquel és la antiga parròquia. Vista cap a Menorca des dels alts."
+    }
+  ]
+}

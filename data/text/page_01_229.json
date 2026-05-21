@@ -1,0 +1,27 @@
+{
+  "vol": "01",
+  "leaf": 229,
+  "page_printed": "135",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ALGAIDA",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "El nomb. de esta V. es de oríg. arab. V. R. de Esp., en la isla de Mallorca y de su obisp. A. O., 608 vec., 2,790 hab., 1 parr. matriz que tiene 2 filiales, 1 erm. con 6 ermitaños, 1 col. con cátedra de latinidad por cuenta del ayuntamiento de Palma. Sit. en la eminencia llamada Randa, donde se retiró á hacer penitencia el célebre Raymundo Lulio. Este pueb. es de los mas altos de la isla. Sit. en la parte O. de ella, á 4 leg. de Palma. Produce mucho trigo, ceb., av., legumb.; esquisitos higos, buen vino y gan. lan., vac. y de cerda. Abunda de pozos y fuentes, con cuyas aguas se riegan algunos cañamares; también se hace una corta cosecha de aceite. Ind. fabr. de ollas de barro, tejas y de aguardiente. Sus armas son un cast., y encima de sus almenas las barras catalanas, sostenidas de 2 leones. Su riq. líquida asciende á 28,263 lib. Contr. 5,754 lib. 1 sueldo.",
+      "stats": {
+        "vecinos": 608,
+        "habitantes": 2790,
+        "parroquias": 1,
+        "ermitas": 1,
+        "riqueza_liquida_libras": 28263,
+        "contribucion": "5,754 libras 1 sueldo"
+      },
+      "cross_references": ["Randa", "Raymundo Lulio"],
+      "confidence": "high"
+    }
+  ]
+}

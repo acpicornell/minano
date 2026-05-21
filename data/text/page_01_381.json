@@ -1,0 +1,27 @@
+{
+  "vol": "01",
+  "leaf": 381,
+  "page_printed": "287",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ARTÁ",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "V. R. de Esp., en la isla y obisp. de Mallorca. A. O., 1,158 vecinos, 5,985 hab., 1 parr., 1 conv. de frailes; tiene por anejos los lugares de Son Cervera y Cap de Pera y su vecindario está incluido en el de esta V. Sit. al N. de Son Cervera, en terreno desigual y pedregoso. Produce trigo, cebada, avena, legumbres y aceite, y se cría ganado lanar, cabrío y vacuno. Tiene por armas un castillo con 3 torreones, y en el de en medio una banderita blanca. Su riqueza líquida asciende á 79,515 libras. Contr. 7,455 libras 8 sueldos.",
+      "stats": {
+        "vecinos": 1158,
+        "habitantes": 5985,
+        "parroquias": 1,
+        "conventos": 1,
+        "riqueza_liquida_libras": 79515,
+        "contribucion": "7,455 libras 8 sueldos"
+      },
+      "cross_references": ["Son Cervera", "Cap de Pera"],
+      "confidence": "high"
+    }
+  ]
+}

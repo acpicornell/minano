@@ -1,0 +1,54 @@
+{
+  "vol": "11",
+  "leaf": 48,
+  "page_printed": "32",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "note": "Tomo XI is the Suplemento — entries here are corrections/additions to earlier tomos. Most are short, citing the informant 'R. P. Fr. Luis de Villafranca, religioso capuchino de Palma de Mallorca'.",
+  "entries": [
+    {
+      "title": "ALCARIA DEL CONDE DE AMPURIAS",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Sóller",
+      "description": "Aid. R. de Esp. en la isla de Mallorca, perteneciente á la villa de Sollér, donde está incorporada su población: tiene un oratorio, y está situada al N. E.: y á la inmediación de la misma villa hay en ella una fuente abundante, con cuya agua muelen algunos molinos, y se riega gran parte de la huerta de su matriz.",
+      "cross_references": ["Sóller"],
+      "confidence": "high",
+      "note": "Max-path recovery. Modern: alquería en término de Sóller (cerca de la casa de los condes d'Ampúries)."
+    },
+    {
+      "title": "ALCARIA-BLANCA",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Santañy",
+      "description": "Aid. R. de Esp. en la isla de Mallorca. Sit. al E. de Santañy, que es su matriz, y en cuyo artículo se incluyen su vecindario y contribución. [Not. dada por el R. P. Fr. Luis de Villafranca, religioso capuchino de Palma de Mallorca].",
+      "cross_references": ["Santañy"],
+      "confidence": "high",
+      "note": "OCR'd 'ALCARIABLANCA' (no hyphen). Modern: s'Alqueria Blanca (Santanyí, Mallorca)."
+    },
+    {
+      "title": "ALCARIA-ROJA",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Campos",
+      "description": "Aid. R. de Esp. en la isla de Mallorca. Sit. al N. O. de Campos, de la que depende en lo civil y eclesiástico, y en cuyo art. se incluyen su vecindario y contribución. (Not. dada por el mismo).",
+      "cross_references": ["Campos"],
+      "confidence": "high",
+      "note": "OCR'd 'ALCARIAROJA' (no hyphen). Modern: s'Alqueria Roja area."
+    },
+    {
+      "title": "ALCARIAS (Las)",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Santa María",
+      "description": "Aid. R. de Esp. en la isla de Mallorca. Sit. al N. del lugar de Santa Eugenia, y al E. de la villa de Santa María. Su vecindario se incluye en el art. Santa Eugenia, del que depende en lo eclesiástico y en lo civil, y contribución de su matriz Santa María. (Not. dada por el mismo).",
+      "cross_references": ["Santa Eugenia", "Santa María"],
+      "confidence": "high",
+      "note": "Max-path recovery. Modern: ses Alqueries (entre Santa Eugènia i Santa Maria del Camí, Mallorca)."
+    }
+  ]
+}

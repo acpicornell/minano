@@ -1,0 +1,18 @@
+{
+  "vol": "11",
+  "leaf": 107,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "BALANZAT (adición)",
+      "place_type": "cuartón",
+      "island": "Ibiza",
+      "description": "Balanzat. Cuartón. Tiene 501 vecinos.",
+      "stats": {"vecinos": 501},
+      "confidence": "high",
+      "note": "Suplement: actualització demogràfica del cuartó de Balansat (Tomo I leaf 456 li dóna 400 cases / 2,300 hab, ara 501 vecinos)."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "vol": "03",
+  "leaf": 128,
+  "page_printed": "118",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 4,
+  "entries": [
+    {
+      "title": "CIUDADELA",
+      "place_type": "término",
+      "island": "Menorca",
+      "description": "Término de España, en la Isla de Menorca y de su obispado. Es el estremo occidental de la Isla, y no tiene mas límites en lo interior que el de Ferrerías por el E. y el mar: su estensión es de 10 millas sobre 5 a 8 de ancho, que habitan 7,000 personas en todo su distrito, que contiene 131 posesiones principales y la capital.",
+      "stats": {
+        "habitantes": 7000,
+        "posesiones_principales": 131
+      },
+      "cross_references": ["Ferrerías"],
+      "confidence": "high"
+    },
+    {
+      "title": "CIUDADELA (Jamna)",
+      "place_type": "ciudad",
+      "island": "Menorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Ordinario",
+      "description": "C. R. de Esp., en la Isla de Menorca y de su obisp., cap. del término de su nombre. Hay gobernador y A. O., 1,688 vec., 7,394 habitantes, 1 convento de Agustinos, otro de Franciscos, otro de monjas de Sta. Clara, y fuera de la ciudad, á un tiro de fusil, hay otro de canónigos regulares de San Antonio, vulgarmente llamado de Viana. Fué cap. de toda Menorca desde la conquista de los moros hasta la entrada de los ingleses, por ser la tierra mas inmediata á Mallorca, de donde dependía; ciudad brillante, bien edificada y bastante poblada, su puerto muy cómodo para abrigar los barcos que trafican en el continente y Marsella. Al contrario de hoy, abastecía á Mahón de todas las producciones estrangeras, lo que ha hecho disminuir sensiblemente el comercio, riqueza y población. Es puerto habilitado para la importación y exportación al estrangero, y cabotage. Sus muros son aun el asilo de la mayor parte de la nobleza del país, y contiene cerca de 600 casas pobladas. Está murada; la parte que mira al barranco es obra de moros; lo restante es mas moderno, y se reduce á una muralla y número de bastiones de sillería; el terraplén inmediato á las cortinas es muy estrecho, pero los bastiones, cuyos parapetos son de piedra picada, son espaciosos. Hay principiado un foso, y lo que está hecho abierto en la peña, y es de una grande profundidad; al frente se ve el parapeto del camino cubierto; pero sus obras están abandonadas. La iglesia principal está en el centro de la ciudad; es grande, bella, de construcción gótica, y adornada de una torre cuadrada y de una aguja octángula de piedra picada, que realza mucho la hermosura de la perspectiva de la ciudad. Hay una administración y aduana particular dependiente de la general, y dista de Mahón 21 ½ millas N. O.",
+      "stats": {
+        "vecinos": 1688,
+        "habitantes": 7394,
+        "conventos": 4,
+        "casas": 600
+      },
+      "cross_references": ["Mahón"],
+      "confidence": "high",
+      "note": "Miñano writes 'CIUDADELA (Jamna)' — 'Jamna' is the Latinised classical name (Iamona). Modern Catalan: Ciutadella de Menorca."
+    }
+  ]
+}

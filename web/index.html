@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<title>Miñano · Diccionari geogràfic-estadístic · Balears</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explorador dels articles balears del Diccionario geográfico-estadístico de España y Portugal de Sebastián de Miñano (1826–1829). Extracció estructurada des del facsímil de l'Internet Archive amb Claude Sonnet 4.6.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Diccionari Miñano · Balears">
+<meta property="og:description" content="Articles balears del Diccionario geográfico-estadístico de España y Portugal (1826–1829) de Sebastián de Miñano, amb facsímils i text estructurat.">
+<meta property="og:locale" content="ca_ES">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📜%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <h1>Diccionari Miñano · Balears</h1>
+    <p class="subtitle">Articles balears del <em>Diccionario geográfico-estadístico de España y Portugal</em> · Sebastián de Miñano, 1826–1829</p>
+  </div>
+</header>
+
+<nav class="tabs tabs-main">
+  <button class="tab active" data-toptab="home">Inici</button>
+  <button class="tab" data-toptab="explore">Explorar</button>
+  <button class="tab" data-toptab="notes">Notes</button>
+</nav>
+
+<!-- ===== HOME / INICI ===== -->
+<section id="tab-home" class="tab-content active" data-toptab="home">
+  <div class="home-hero">
+    <h1>Diccionari Miñano · Balears</h1>
+    <p class="lead">El primer gran diccionari geogràfic-estadístic d'Espanya del segle XIX, vint anys anterior al Madoz. Aquesta web extreu i fa cercable cada un dels articles balears.</p>
+    <div class="home-stats">
+      <div class="home-stat"><span class="num" id="home-stat-entries">…</span><span class="label">articles balears</span></div>
+      <div class="home-stat"><span class="num">11</span><span class="label">volums (1826–1829)</span></div>
+      <div class="home-stat"><span class="num" id="home-stat-tomos-done">…</span><span class="label">toms indexats</span></div>
+      <div class="home-stat"><span class="num" id="home-stat-toptype">…</span><span class="label" id="home-stat-toptype-label">…</span></div>
+    </div>
+  </div>
+
+  <aside class="home-featured" id="home-featured" hidden>
+    <p class="featured-eyebrow">Una entrada del Miñano, a l'atzar</p>
+    <h2 class="featured-title" id="featured-title">…</h2>
+    <p class="featured-meta" id="featured-meta">…</p>
+    <p class="featured-excerpt" id="featured-excerpt">…</p>
+    <button class="featured-open" id="featured-open" type="button">Llegir l'entrada sencera →</button>
+  </aside>
+
+  <div class="home-prose">
+    <h2>Què és el Miñano</h2>
+    <p>
+      El <em>Diccionario geográfico-estadístico de España y Portugal</em> de <strong>Sebastián de
+      Miñano y Bedoya</strong> (Becerril de Campos, 1779 – Bayona, 1845) és el primer diccionari
+      geogràfic modern de la Península, publicat a Madrid entre <strong>1826 i 1829</strong> en
+      onze volums (deu alfabètics més un suplement). Vint anys més tard, Pascual <strong>Madoz</strong>
+      el pren com a base per al seu propi diccionari (1845–1850), molt més extens.
+    </p>
+    <p>
+      Llegir Miñano i Madoz l'un al costat de l'altre permet veure com el país canvia en dues dècades
+      —demografia, jurisdiccions, divisions administratives, vocabulari geogràfic— durant un
+      moment políticament decisiu: el regnat de Ferran VII, la dècada ominosa, i l'arribada del
+      liberalisme amb Isabel II. Miñano escriu encara amb l'estructura senyorial de l'Antic Règim
+      (cada poble carrega un règim: <em>realengo</em>, <em>señorial</em>, <em>abadengo</em>,
+      <em>de órdenes</em>, <em>eclesiástico</em>); Madoz ja descriu l'Espanya postdesamortització.
+    </p>
+
+    <h2>Què té aquesta web</h2>
+    <p>
+      Una extracció completa dels articles <strong>balears</strong> dels onze volums de Miñano,
+      treballada en dues passades: primer, un escanejat OCR (chocr d'<a
+      href="https://archive.org/" target="_blank" rel="noopener">Internet Archive</a>) identifica
+      els articles del territori illenc; després, <a href="https://www.anthropic.com" target="_blank"
+      rel="noopener">Claude Sonnet 4.6</a> llegeix el text de cada full balear i en treu el camp
+      estructurat: títol, tipus de lloc, illa, <strong>règim senyorial</strong> (R/S/Ab/Ord/Ecl),
+      <strong>tipus d'alcalde</strong> (A.O., A.P., sense), municipi del qual depèn, descripció
+      sencera, estadístics (vecinos, habitantes, contribució…) i referències creuades.
+    </p>
+    <p>
+      <strong>Estat actual:</strong> processats <strong>els 11 volums</strong> de l'obra
+      (1826–1829). L'extracció estructurada inclou tots els articles balears identificats:
+      mega-articles d'illes i capitals (MALLORCA, MENORCA, PALMA, MAHÓ, CIUTADELLA),
+      villes principals (Manacor, Sóller, Pollença, Felanitx, Inca…), entrades secundàries
+      (aldees, cortijos, caserius d'Eivissa) i les <em>adicions</em> del Suplement (Tom XI).
+      L'única llacuna és el Tom X (1828, VIL–VIZ), del qual només circula un escaneig parcial
+      a Internet Archive: cobreix unes 125 pàgines i no inclou cap entrada balear.
+    </p>
+  </div>
+
+  <div class="sources-grid">
+    <div class="source-card">
+      <h3>Mallorca</h3>
+      <p><span class="num" id="home-src-mallorca">…</span> entrades. Inclou la descripció general de l'illa (Tom V) i la capital PALMA (Tom VI), les viles principals (Manacor, Sóller, Pollença, Felanitx, Inca, Santanyí, Valldemossa, Llucmajor, Sa Pobla, Marratxí, Binissalem, Selva…), els llocs amb alcalde pedáneo (Búger, Biniagual, Biniamar, Caimari, Moscari…), i moltes <em>adicions</em> al Suplement (Sant Joan, Lluc, Llombards, S'Horta, Establiments…).</p>
+    </div>
+    <div class="source-card">
+      <h3>Menorca</h3>
+      <p><span class="num" id="home-src-menorca">…</span> entrades. La descripció general de l'illa (Tom VI), els quatre <em>términos</em> (Maó, Ciutadella, Alaior, Mercadal+Ferreries) i la població ramaderia/comerç. Els llocs petits — Sant Lluís, Sant Climent, Sant Cristòfol, Fornells, Sant Joan de Carbonell — i el suplement amb correccions sobre Ciutadella com a capital eclesiàstica.</p>
+    </div>
+    <div class="source-card">
+      <h3>Eivissa</h3>
+      <p><span class="num" id="home-src-ibiza">…</span> entrades. Miñano escriu <em>Iviza</em>. Els quatre <em>quartons</em> tradicionals (Pormany, Llano de la Villa, Santa Eulalia, Balanzat) i els caserius (Sant Joan, Sant Carles, Sant Llorenç, Sant Antoni, Sant Rafel, Sant Jordi, Sant Josep, Santa Inès, Santa Gertrudis, Santa Eulària).</p>
+    </div>
+    <div class="source-card">
+      <h3>Formentera</h3>
+      <p><span class="num" id="home-src-formentera">…</span> entrades. Descripció general de l'illa (Tom IV: <em>Pithiusa</em> menor, ~366 vec., 1.500 hab. el 1826), i els caserius de Sant Francesc Xavier + Sant Ferran (Tom VII) i del Pilar de la Mola (Tom VI).</p>
+    </div>
+    <div class="source-card">
+      <h3>Cabrera</h3>
+      <p><span class="num" id="home-src-cabrera">…</span> entrada. L'illot al sud de Mallorca té entrada pròpia al Tom II, recuperada via tolerància OCR (el títol original deia <code>CABRER^A (Isla de)</code>), més una adició al Suplement Tom XI parlant del castell i les tres fonts.</p>
+    </div>
+  </div>
+
+  <div class="home-prose">
+    <h2>Per on començar</h2>
+  </div>
+  <div class="home-actions">
+    <button class="home-action" data-goto="explore"><strong>Explorar →</strong><span>Filtra les entrades per illa, règim senyorial, tipus d'alcalde, tipus de lloc, volum i confiança.</span></button>
+    <button class="home-action" data-goto="notes"><strong>Notes →</strong><span>Abreviatures de Miñano i quadern de decisions del projecte.</span></button>
+  </div>
+
+  <div class="home-prose">
+    <h2 id="fonts">Fonts — els 11 toms a Internet Archive</h2>
+    <p>
+      Localitzar els 11 volums originals va ser feina d'agulla. Madoz (1845–1850) està digitalitzat
+      al complet sota un patró regular (<code>diccionariogeogr&lt;NN&gt;mado</code>); Miñano,
+      en canvi, va ser pujat a Internet Archive des de <strong>biblioteques diferents</strong>
+      (Universitat de Toronto, Complutense de Madrid, Bayerische Staatsbibliothek de Munic, Google
+      Books) i <strong>cada tom té un identificador opac diferent</strong>. El Tom IX (TOR–VIL,
+      que conté Vilafranca, Vilet, Valldemossa, Villacarlos…) va aparèixer només després d'una
+      cerca exhaustiva per <code>creator:(Miñano)</code> a IA, amagat sota l'identificador
+      <code>bub_gb_L1BIFQFZTHoC</code>. Els toms V i X no tenen chocr (text reconegut amb OCR)
+      servit per IA, però sí l'ABBYY raw: el reconvertim localment amb les eines pròpies d'IA
+      (<code>archive-hocr-tools</code>) per obtenir un chocr bit-per-bit equivalent.
+    </p>
+  </div>
+
+  <div class="tomos-table-wrap">
+    <table class="tomos-table">
+      <thead>
+        <tr>
+          <th>Tom</th>
+          <th>Any</th>
+          <th>Rang</th>
+          <th>Font</th>
+          <th>Identificador IA</th>
+          <th class="num-col">Pàg.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tom-num">I</td>
+          <td>1826</td>
+          <td>A — AZ</td>
+          <td>Univ. de Toronto</td>
+          <td><a href="https://archive.org/details/diccionariogeogr01mi" target="_blank" rel="noopener"><code>diccionariogeogr01mi</code></a></td>
+          <td class="num-col">612</td>
+        </tr>
+        <tr>
+          <td class="tom-num">II</td>
+          <td>1826</td>
+          <td>BAB — CAS</td>
+          <td>Univ. de Toronto</td>
+          <td><a href="https://archive.org/details/diccionariogeogr02mi" target="_blank" rel="noopener"><code>diccionariogeogr02mi</code></a></td>
+          <td class="num-col">590</td>
+        </tr>
+        <tr>
+          <td class="tom-num">III</td>
+          <td>1826</td>
+          <td>CAS — ESPADILLO</td>
+          <td>Univ. de Toronto</td>
+          <td><a href="https://archive.org/details/diccionariogeogr03mi" target="_blank" rel="noopener"><code>diccionariogeogr03mi</code></a></td>
+          <td class="num-col">615</td>
+        </tr>
+        <tr>
+          <td class="tom-num">IV</td>
+          <td>1826</td>
+          <td>ESP — HIT</td>
+          <td>Complutense de Madrid</td>
+          <td><a href="https://archive.org/details/diccionariogeog01bedogoog" target="_blank" rel="noopener"><code>diccionariogeog01bedogoog</code></a></td>
+          <td class="num-col">530</td>
+        </tr>
+        <tr class="tomo-row-abbyy">
+          <td class="tom-num">V</td>
+          <td>1826</td>
+          <td>HIT — MEMBRIVE <span class="tag tag-abbyy">ABBYY-derived</span></td>
+          <td>Google Books</td>
+          <td><a href="https://archive.org/details/diccionariogeog06machgoog" target="_blank" rel="noopener"><code>diccionariogeog06machgoog</code></a></td>
+          <td class="num-col">480</td>
+        </tr>
+        <tr>
+          <td class="tom-num">VI</td>
+          <td>1827</td>
+          <td>MEM — PALMA</td>
+          <td>Google Books</td>
+          <td><a href="https://archive.org/details/diccionariogeog05machgoog" target="_blank" rel="noopener"><code>diccionariogeog05machgoog</code></a></td>
+          <td class="num-col">555</td>
+        </tr>
+        <tr>
+          <td class="tom-num">VII</td>
+          <td>1827</td>
+          <td>PALMA — SAN</td>
+          <td>Google Books</td>
+          <td><a href="https://archive.org/details/diccionariogeog07machgoog" target="_blank" rel="noopener"><code>diccionariogeog07machgoog</code></a></td>
+          <td class="num-col">506</td>
+        </tr>
+        <tr>
+          <td class="tom-num">VIII</td>
+          <td>1827</td>
+          <td>SAN — TEMPLE</td>
+          <td>Complutense de Madrid</td>
+          <td><a href="https://archive.org/details/diccionariogeog04bedogoog" target="_blank" rel="noopener"><code>diccionariogeog04bedogoog</code></a></td>
+          <td class="num-col">486</td>
+        </tr>
+        <tr class="tomo-row-rare">
+          <td class="tom-num">IX</td>
+          <td>1828</td>
+          <td>TOR — VIL <span class="tag tag-rare">difícil de trobar</span></td>
+          <td>Bayerische Staatsbibliothek (Munic)</td>
+          <td><a href="https://archive.org/details/bub_gb_L1BIFQFZTHoC" target="_blank" rel="noopener"><code>bub_gb_L1BIFQFZTHoC</code></a></td>
+          <td class="num-col">575</td>
+        </tr>
+        <tr class="tomo-row-partial">
+          <td class="tom-num">X</td>
+          <td>1828</td>
+          <td>VIL — VIZ <span class="tag tag-partial">parcial</span></td>
+          <td>Complutense de Madrid</td>
+          <td><a href="https://archive.org/details/diccionariogeog02bedogoog" target="_blank" rel="noopener"><code>diccionariogeog02bedogoog</code></a></td>
+          <td class="num-col">~125</td>
+        </tr>
+        <tr class="tomo-row-supl">
+          <td class="tom-num">XI</td>
+          <td>1829</td>
+          <td>Suplement <span class="tag tag-supl">addicions a I–X</span></td>
+          <td>Univ. de Toronto</td>
+          <td><a href="https://archive.org/details/diccionariogeogr11mi" target="_blank" rel="noopener"><code>diccionariogeogr11mi</code></a></td>
+          <td class="num-col">644</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="home-prose">
+    <p>
+      Per a cada tom, el codi descarrega tres fitxers d'IA: <code>_chocr.html.gz</code>
+      (text per caràcter amb coordenades), <code>_page_numbers.json</code> (mapeig pàgina-impresa
+      ↔ leaf escanejat) i <code>_djvu.txt</code> (text pla pel grep ràpid). El mapeig complet
+      d'identificadors és a <code>scripts/fetch_volume.py</code> al repositori.
+    </p>
+  </div>
+
+  <div class="home-prose">
+    <h2>Sobre les dades i el codi</h2>
+    <p>
+      Font primària: l'edició original de Miñano a Madrid (1826–1829), 11 volums, en <strong>domini
+      públic</strong>. Els facsímils provenen de digitalitzacions de la <strong>Universitat de
+      Toronto</strong>, <strong>Universitat Complutense de Madrid</strong>, <strong>Bayerische
+      Staatsbibliothek</strong> de Munic i <strong>Google Books</strong>, tots allotjats a
+      l'<a href="https://archive.org/" target="_blank" rel="noopener">Internet Archive</a>
+      sota identificadors heterogenis — veieu la secció <a href="#fonts">Fonts</a> més amunt
+      per al detall de cada tom.
+    </p>
+    <p>
+      L'extracció estructurada s'ha fet en dues passades: primer un indexador per <em>regex</em>
+      tolerant a errors d'OCR (sobre el text chocr d'IA), després
+      <a href="https://www.anthropic.com" target="_blank" rel="noopener">Claude Opus 4.7</a>
+      (Anthropic) llegint cada full balear i estructurant els camps. Una passada final amb
+      cerca <em>fuzzy</em> (Levenshtein) sobre les biblioteques <code>regex</code> i
+      <code>rapidfuzz</code> recupera els articles que el regex inicial s'havia saltat per
+      OCR mangle severa (p.ex. <em>POLUSNZA</em> → POLLENÇA, <em>ALClülA</em> → ALCUDIA).
+      Web 100% estàtica: HTML + CSS + un sol fitxer JSON, JS vanilla, sense backend ni WASM.
+      Codi i dades extretes es publiquen sota
+      <a href="https://github.com/acpicornell/nomenclator/" target="_blank" rel="noopener">AGPL-3.0-or-later</a>.
+      Projecte germà: <a href="../madoz/web/" target="_blank" rel="noopener">Diccionari Madoz · Balears</a>.
+    </p>
+  </div>
+</section>
+
+<!-- ===== EXPLORE ===== -->
+<section id="tab-explore" class="tab-content" data-toptab="explore">
+  <div class="source-stats" data-source="minano">
+    <span><strong id="stat-text">…</strong> entrades extretes</span>
+    <span><strong id="stat-volumes">…</strong> toms</span>
+    <span><strong id="stat-islands">…</strong> illes</span>
+    <span><strong id="stat-types">…</strong> tipus de lloc</span>
+  </div>
+  <div class="modern-intro">
+    <p>
+      Filtra des de la barra esquerra; clica una fila per veure el text complet de l'article.
+    </p>
+    <p>
+      Cada entrada té tipus de lloc, illa, <strong>règim senyorial</strong> (Realengo / Señorial /
+      Abadengo / de Órdenes / Eclesiástico) i <strong>tipus d'alcalde</strong> (Ordinario / Pedáneo /
+      sense) inferits del text OCR del Miñano original, més la descripció sencera, els estadístics
+      (vecinos, habitantes, contribuye_con…) i les referències creuades.
+    </p>
+    <p>
+      La columna <strong>Tom/Full</strong> indica on viu l'entrada als 11 volums originals
+      (1826–1829). La icona ↗ obre el facsímil a Internet Archive a la pàgina exacta.
+    </p>
+  </div>
+  <div class="modern-explorer">
+    <aside class="filters filters-modern">
+      <h3>Filtres</h3>
+      <div class="filter-group">
+        <label for="f-search">Cercar (títol o text)</label>
+        <input id="f-search" type="text" placeholder="Ex: Mallorca, Palma, castillo…" autocomplete="off">
+      </div>
+      <div class="filter-group">
+        <label for="f-island">Illa</label>
+        <select id="f-island"><option value="">— Totes —</option></select>
+      </div>
+      <div class="filter-group">
+        <label for="f-regime">Règim senyorial</label>
+        <select id="f-regime"><option value="">— Tots —</option></select>
+      </div>
+      <div class="filter-group">
+        <label for="f-mayor">Tipus d'alcalde</label>
+        <select id="f-mayor"><option value="">— Tots —</option></select>
+      </div>
+      <div class="filter-group">
+        <label for="f-municipality">Municipi</label>
+        <select id="f-municipality"><option value="">— Tots —</option></select>
+      </div>
+      <div class="filter-group">
+        <label for="f-type">Tipus de lloc</label>
+        <select id="f-type"><option value="">— Tots —</option></select>
+      </div>
+      <div class="filter-group">
+        <label for="f-vol">Tom</label>
+        <select id="f-vol"><option value="">— Tots —</option></select>
+      </div>
+      <div class="filter-group">
+        <label for="f-conf">Confiança</label>
+        <select id="f-conf">
+          <option value="">— Totes —</option>
+          <option value="high">Alta</option>
+          <option value="medium">Mitjana</option>
+          <option value="low">Baixa</option>
+        </select>
+      </div>
+      <button id="f-clear" class="ghost">Netejar filtres</button>
+      <button id="f-export" class="ghost btn-export" title="Descarrega un CSV amb tots els resultats actuals">Descarregar CSV</button>
+      <div class="filter-group" style="margin-top:1.4em">
+        <p id="count" style="font-size:0.88em;color:var(--text-muted);margin:0">—</p>
+      </div>
+    </aside>
+    <main class="results">
+      <div class="table-wrap">
+        <table id="table-minano">
+          <thead>
+            <tr>
+              <th>Títol</th>
+              <th>Tipus</th>
+              <th>Illa</th>
+              <th>Règim</th>
+              <th>Alcalde</th>
+              <th>Municipi</th>
+              <th>Tom/Full</th>
+              <th>Pàg.</th>
+              <th>Conf.</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-minano">
+            <tr><td colspan="9" class="empty">Carregant…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</section>
+
+<!-- ===== NOTES ===== -->
+<section id="tab-notes" class="tab-content" data-toptab="notes">
+  <div class="modern-intro">
+    <h2>Abreviatures de Miñano</h2>
+    <p>
+      Llista de les abreviatures que Miñano utilitza sistemàticament al llarg del diccionari,
+      per estalviar paper a la composició tipogràfica de l'època. Difereixen lleugerament de les
+      del Madoz vint anys posterior (que també les amplia amb terme municipal modern).
+    </p>
+  </div>
+
+  <div class="abbreviations">
+    <div class="abbreviation-section">
+      <h3>Tipus d'entitat (després del títol)</h3>
+      <dl>
+        <dt><code>V.</code></dt><dd>Villa</dd>
+        <dt><code>L.</code></dt><dd>Lugar</dd>
+        <dt><code>C.</code></dt><dd>Ciudad</dd>
+        <dt><code>Ald.</code> <span class="alt">(sovint OCR'd <code>Aid.</code>)</span></dt><dd>Aldea</dd>
+        <dt><code>Cas.</code></dt><dd>Caserío</dd>
+        <dt><code>Pred.</code></dt><dd>Predio</dd>
+        <dt><code>Cot.</code></dt><dd>Coto</dd>
+        <dt><code>Desp.</code> <span class="alt">(OCR <code>Dcsp.</code>)</span></dt><dd>Despoblado</dd>
+        <dt><code>Felig.</code></dt><dd>Feligresía</dd>
+        <dt><code>Parr.</code></dt><dd>Parroquia</dd>
+        <dt><code>Jurisd.</code></dt><dd>Jurisdicción</dd>
+        <dt><code>Herm.</code></dt><dd>Hermandad</dd>
+      </dl>
+    </div>
+
+    <div class="abbreviation-section">
+      <h3>Règim senyorial (després del tipus)</h3>
+      <dl>
+        <dt><code>R.</code></dt><dd>Realengo (jurisdicció reial)</dd>
+        <dt><code>S.</code></dt><dd>Señorial (noblesa)</dd>
+        <dt><code>Ab.</code></dt><dd>Abadengo (monestir)</dd>
+        <dt><code>Ord.</code></dt><dd>de Órdenes militares (Sant Joan, Calatrava, Alcántara…)</dd>
+        <dt><code>Ecl.</code></dt><dd>Eclesiástico (bisbat, capítol)</dd>
+      </dl>
+    </div>
+
+    <div class="abbreviation-section">
+      <h3>Alcalde (introduint la població)</h3>
+      <dl>
+        <dt><code>A. O.</code></dt><dd>Alcalde Ordinario (primera instància, viles principals)</dd>
+        <dt><code>A. P.</code></dt><dd>Alcalde Pedáneo (rang inferior, depèn d'una vila)</dd>
+        <dt><code>A. M.</code></dt><dd>Alcalde Mayor (en algunes ciutats grans)</dd>
+        <dt><em>No hay alcalde</em></dt><dd>Sense alcalde — entrada depèn totalment d'un altre poble</dd>
+      </dl>
+    </div>
+
+    <div class="abbreviation-section">
+      <h3>Geografia i administració</h3>
+      <dl>
+        <dt><code>prov.</code></dt><dd>Provincia</dd>
+        <dt><code>obisp.</code></dt><dd>Obispado (diòcesi)</dd>
+        <dt><code>part.</code></dt><dd>Partido</dd>
+        <dt><code>arz.</code></dt><dd>Arzobispado</dd>
+        <dt><code>Sit.</code></dt><dd>Situado / Situada</dd>
+        <dt><code>Esp.</code></dt><dd>España</dd>
+        <dt><code>cam.</code></dt><dd>camino</dd>
+        <dt><code>conf.</code></dt><dd>confina</dd>
+        <dt><code>Dist.</code></dt><dd>Dista (distància)</dd>
+        <dt><code>leg.</code></dt><dd>legua (~5.6 km al segle XIX)</dd>
+        <dt><code>Prod.</code></dt><dd>Produce</dd>
+      </dl>
+    </div>
+
+    <div class="abbreviation-section">
+      <h3>Demografia i fiscalitat</h3>
+      <dl>
+        <dt><code>vec.</code></dt><dd>vecinos (cap de família, ≈ una llar; <strong>no</strong> persones individuals)</dd>
+        <dt><code>hab.</code></dt><dd>habitantes (persones)</dd>
+        <dt><code>Contr.</code></dt><dd>Contribuye / contribución</dd>
+        <dt><em>Contr. con X</em></dt><dd>Tributa a través del municipi <em>X</em> (sense capacitat fiscal pròpia)</dd>
+      </dl>
+    </div>
+
+    <div class="abbreviation-section">
+      <h3>Referències creuades</h3>
+      <dl>
+        <dt><code>V.</code></dt><dd>Véase — referència a un altre article</dd>
+        <dt><em>V. la descripción general de Mallorca</em></dt><dd>Referència a l'article general de l'illa, on hi ha els detalls generals</dd>
+        <dt><em>(V. este art.)</em></dt><dd>Veieu aquest mateix article (auto-referència)</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="modern-intro">
+    <h2>Notes del projecte</h2>
+    <p>
+      Aquest projecte és la <strong>germana petita</strong> de <a href="../madoz/web/" target="_blank">
+      Diccionari Madoz · Balears</a>: comparteix la mateixa estratègia (chocr d'Internet Archive +
+      extracció Claude) però treballa sobre el corpus anterior, més modest. Tres detalls que cal
+      tenir presents:
+    </p>
+    <ol>
+      <li>
+        <strong>Identificadors heterogenis a Internet Archive.</strong> A diferència de Madoz on
+        cada volum segueix el patró <code>diccionariogeogr&lt;NN&gt;mado</code>, els 11 volums de
+        Miñano s'han pujat a IA des de biblioteques diferents (Toronto, Complutense, BSB Munic,
+        Google Books) i cada tom té el seu propi identificador. La caça va ser feixuga; el Tom IX
+        (TOR–VIL, conté Vilafranca / Vilet / Villacarlos) només va aparèixer després d'una cerca
+        per <code>creator:(Miñano)</code> sobre els 80 ítems d'IA — està catalogat com
+        <code>bub_gb_L1BIFQFZTHoC</code>. La mapa completa està a
+        <code>scripts/fetch_volume.py:VOL_TO_IDENTIFIER</code> i visualment a la secció
+        <a href="#fonts">Fonts</a>.
+      </li>
+      <li>
+        <strong>Toms V i X sense chocr directe.</strong> Internet Archive no serveix el chocr
+        ja generat per a aquests dos toms, però sí l'<code>_abbyy.gz</code> brut. El reconvertim
+        localment amb les pròpies eines d'IA (<code>archive-hocr-tools</code> Python:
+        <code>abbyy-to-hocr</code> + <code>hocr-pagenumbers</code>) per obtenir un chocr
+        bit-per-bit equivalent al servit per a la resta. Veieu
+        <code>scripts/derive_chocr_from_abbyy.py</code>.
+      </li>
+      <li>
+        <strong>El Suplement és estructuralment diferent.</strong> El Tom XI (1829) no és
+        alfabètic-corrido sinó partit en seccions «AL TOMO II.», «AL TOMO III.»… amb adicions i
+        correccions a cada tom previ, sovint signades pel R.P. Fr. Lluís de Vilafranca, caputxí
+        de Palma. L'indexador ha hagut de tolerar entrades en mixed-case (<em>Sincu.</em>,
+        <em>Mancor.</em>) al costat de les majúscules clàssiques.
+      </li>
+      <li>
+        <strong>Cerca fuzzy per mega-articles.</strong> Els articles d'illa i de capital
+        (<em>MALLORCA</em>, <em>MENORCA</em>, <em>PALMA</em>, <em>ALCUDIA</em>) no es disparaven
+        amb el filtre del cos, perquè <strong>el títol</strong> és el propi nom balear (el cos
+        no diu «en la isla de Mallorca» — <em>és</em> l'article de Mallorca). La passada final
+        amb <code>regex</code> + <code>rapidfuzz</code> els va caçar tot i errors d'OCR severs
+        (<em>POLUSNZA</em>, <em>ALClülA</em>).
+      </li>
+      <li>
+        <strong>Es preserva la grafia hispanitzada de Miñano.</strong> Miñano escriu
+        <em>BÜÑOLA</em>, <em>BINARAÜS</em>, <em>CAIMARY</em>, <em>CALVIA</em> (sense accent),
+        <em>Iviza</em>. No <strong>no</strong> normalitzem a la forma catalana moderna; el facsímil
+        és la font de veritat. Només corregim errors clarament d'OCR (<em>BUGEU</em> → <em>BUGER</em>,
+        <em>CABRER^A</em> → <em>CABRERA</em>, <em>VILAFRAHCA</em> → <em>VILAFRANCA</em>).
+      </li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <p>
+    Sebastián de Miñano y Bedoya, <em>Diccionario geográfico-estadístico de España y Portugal</em>, Madrid 1826–1829.
+  </p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

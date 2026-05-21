@@ -1,0 +1,18 @@
+{
+  "vol": "11",
+  "leaf": 176,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "CABRERA (isla de) — adición",
+      "place_type": "isla",
+      "island": "Mallorca",
+      "description": "El castillo y su destacamento sirven para resguardo contra argelinos, piratas y otros enemigos. Sus 3 fuentes saludables, de poco ó nada sirven á los habitantes de esta isla de Mallorca. (Noticia dada por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Cabrera", "Mallorca"],
+      "confidence": "high",
+      "note": "Suplement al CABRERA (isla de) del Tomo II. Confirma la presència del castell i guarnició contra corsaris argelians (final s. XVIII / inici s. XIX). Les '3 fuentes saludables' són les tres fonts d'aigua dolça històriques de Cabrera."
+    }
+  ]
+}

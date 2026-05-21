@@ -1,0 +1,39 @@
+{
+  "vol": "08",
+  "leaf": 338,
+  "page_printed": "326",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "SONGAU ANA",
+      "place_type": "coto",
+      "island": "Mallorca",
+      "seigneurial_regime": "Señorial",
+      "description": "Cot. Red. S. de Esp., en la isla de Mallorca.",
+      "confidence": "medium",
+      "note": "Brief stub. Possibly Son Galiana or similar 'Son'-prefixed Mallorcan estate."
+    },
+    {
+      "title": "SONSEGUI",
+      "place_type": "coto",
+      "island": "Mallorca",
+      "seigneurial_regime": "Señorial",
+      "description": "Coto Red. S. de España en la isla de Mallorca.",
+      "confidence": "medium",
+      "note": "Max-path recovery — brief stub on the same leaf, not in Phase 1 index. Likely a Son- prefixed possession."
+    },
+    {
+      "title": "SONSERVERA",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Artá",
+      "description": "L. R. de España en la isla y obispado de Mallorca. A. P. Para su vecindario Véase Artá, de quien es anejo: situado al E. de esta villa, próximo al mar; es uno de los menos considerables de la isla. Contrib. con Palma.",
+      "cross_references": ["Artá", "Palma"],
+      "confidence": "high",
+      "note": "Max-path recovery (not in Phase 1 index). Modern: Son Servera (Mallorca). Confirms the ARTÁ article (Tomo I) listing Son Cervera as anejo."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+# OCR sources from Internet Archive — large, re-downloadable via fetch_volume.py
+data/chocr/
+data/page_numbers/
+data/txt_djvu/
+
+# NGIB toponyms — re-downloadable via fetch_ngib.py from the IDEIB API
+data/ngib/
+
+# Per-leaf chocr staging cache for Max-path extraction — regenerable
+# via stage_chocr.py from data/chocr/. Not source of truth.
+data/text/_chocr/
+
+# Gazetteer (re-buildable from NGIB via build_gazetteer.py)
+data/gazetteer.parquet
+
+# Audit outputs (regenerable)
+data/fuzzy_candidates.tsv
+data/gazetteer_candidates.tsv
+data/leaves_to_extract.txt
+
+# Page images (downloaded on demand if we ever revisit Vision)
+data/pages/
+data/minano/
+
+# Generated audit reports (regenerable from the DB; large files)
+data/reports/
+
+# DuckDB binary — rebuildable from JSONL cache via load_chocr_index.py.
+# The raw JSONL is versioned so the DB never needs to hit the network
+# to be reconstructed.
+db/*.duckdb
+db/*.duckdb.wal
+
+# Secrets — never commit. Keep .env.example as the public template.
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+data/fuzzy_shortlist.txt

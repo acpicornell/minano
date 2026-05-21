@@ -1,0 +1,26 @@
+{
+  "vol": "03",
+  "leaf": 415,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "ESGLAYETA (la)",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Sin alcalde",
+      "municipality": "Palma",
+      "description": "Aid. R. de España, provincia de Mallorca. No hay alcalde. 8 vecinos, 35 habitantes. (V. la descripción general de Mallorca). Contribuye con Palma.",
+      "stats": {
+        "vecinos": 8,
+        "habitantes": 35,
+        "contribuye_con": "Palma"
+      },
+      "cross_references": ["Mallorca"],
+      "confidence": "high",
+      "note": "Modern: s'Esgleieta (Esporles, Mallorca)."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "vol": "11",
+  "leaf": 12,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "note": "Taula de coordenades astronòmiques al Suplement. Aquesta i la 11/13 són la mateixa taula (continuació). Recopilen 3 punts balears.",
+  "entries": [
+    {
+      "title": "Iviza [castillo] — coordenades",
+      "place_type": "castillo",
+      "island": "Ibiza",
+      "description": "Iviza, [castillo]. Latitud: A. 38° 54' 30\". Longitud: A. 5° 12' 10\" E.",
+      "stats": {"lat": "38°54'30\"N", "lon_E_Madrid": "5°12'10\""},
+      "confidence": "high",
+      "note": "Coordenades del castell d'Eivissa (Dalt Vila) — referides al meridià de Madrid. (A=astronòmic). Modern lat: 38.91°N, lon: 1.43°E (Greenwich) = ~5.18°E de Madrid → coincidència perfecta."
+    },
+    {
+      "title": "Mahón [cabo de la Mola] — coordenades",
+      "place_type": "cabo",
+      "island": "Menorca",
+      "description": "Mahon, [cabo de la Mola]. Latitud: T. 39° 52' 36\". Longitud: T. 8° 07' 30\" E.",
+      "stats": {"lat": "39°52'36\"N", "lon_E_Madrid": "8°07'30\""},
+      "confidence": "high",
+      "note": "Cap de la Mola — entrada del port de Maó. Modern lat: 39.87°N, lon: 4.32°E (Greenwich) = ~8.04°E de Madrid → coincidència."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "vol": "05",
+  "leaf": 370,
+  "page_printed": "361",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 4,
+  "entries": [
+    {
+      "title": "MAHON",
+      "place_type": "término",
+      "island": "Menorca",
+      "description": "Término de España en la Isla de Menorca, que con los de Ciudadela, Alayor y Mercadal, á que está unido Ferrerías, forman la división de toda la Isla. Este está rodeado por tres partes del mar, y por la otra del de Alayor. Las aguas del Puerto de Adaya lo empiezan á dividir por el N. y N. E. del de Mercadal. Sus poblaciones son, ademas de la capital, Villa Carlos, San Luis y Binijitaps, y 147 posesiones principales.",
+      "stats": {
+        "posesiones_principales": 147
+      },
+      "cross_references": ["Ciudadela", "Alayor", "Mercadal", "Ferrerías", "Adaya", "Villa Carlos", "San Luis", "Binijitaps"],
+      "confidence": "high"
+    },
+    {
+      "title": "MAHON",
+      "place_type": "ciudad",
+      "island": "Menorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Otro",
+      "description": "C. R. y Episc. de España en la Isla de Menorca, y capital de ella y de su término. Justicia ordinaria, gobernador militar y político, teniente de rey, y segundo comandante; subdelegación de policía, administración general de rentas, y su depositaría con la del patrimonio, y oficinas donde se administra este ramo; 4,7?? vec. y ? habitantes, inclusos los de su término; 1 iglesia catedral, 1 conv. de Carmelitas, otro de Franciscos, y uno de monjas. Sit. á los 39° 52' 36\" de latitud N., 8° 7' 30\" de longitud E. de Madrid, en una altura escarpada de difícil acceso, por la parte del puerto: las casas son generalmente construidas de piedra, y acomodadas al gusto inglés. La iglesia es medianamente grande, y de un bello orden gótico, aunque poco adornada en su interior. La casa del gobernador, aunque espaciosa, es muy irregular. Al pie de la dicha altura hay un buen muelle bastante ancho y largo, pudiendo atracar en él embarcaciones mayores. Su puerto es uno de los cómodos y seguros que ha formado la naturaleza, y en él han estado al ancla en total seguridad, y sin verse uno á otro, tres almirantes ingleses con sus respectivas escuadras. Ha pasado á ser proverbial el dicho del célebre Andrea Doria: \"Junio, Julio, Agosto y Puerto Mahón / Los mejores puertos del Mediterráneo son.\" Algo mas abajo está una isleta que llaman de la Cuarentena ó lazareto, con almacenes, y demás necesario para el efecto. El hospital está en la Isla del Rey, y tiene capacidad para 700 enfermos. En la orilla opuesta, y en frente de la ciudad, está el arsenal de marina, al que antecede una isleta casi circular, que antes era un peñasco inútil, y ahora contiene almacenes muy capaces y proporcionados. Este islote se une con el continente de la isla por medio de un puente. A la parte del N. están las Albuferas ó Lagunas, á 4 millas de Mahón, muy abundantes de pescados y aves: su agua es salada, y su superficie está con poca diferencia á la del nivel del mar. Inmediato á las Albuferas está la Isla de Den Colom, llamada así á causa de la muchedumbre de palomas torcaces que se recogen en los peñascos, y también la suelen llamar de los conejos, por lo mucho que abunda de estos animales. Tendrá unas 600 toesas de largo y 200 de ancho, distando del continente de la isla algo mas de 50. Es puerto habilitado para la importación y exportación al estrangero y cabotaje. Dista 21½ millas de Ciudadela, 1 de Villa Carlos, 19 ½ de Mercadal, 10 ½ de Mallorca, y 53 E. de Barcelona.",
+      "stats": {
+        "iglesia_catedral": 1,
+        "conventos_frailes": 2,
+        "conventos_monjas": 1,
+        "hospital_capacidad": 700
+      },
+      "cross_references": ["Ciudadela", "Villa Carlos", "Mercadal", "Mallorca", "Barcelona", "Andrea Doria", "Isla del Rey", "Isla de Den Colom", "Albuferas"],
+      "confidence": "high",
+      "note": "MAHÓN ciudad — mega-article. Vecinos figure '4,7?? vec. y 71 Kavttantes' is OCR-garbled (could be 4,750 / 4,720 with ~25-30k hab. inclusive del término). Latitude 39°52'36\" matches actual Mahón position. The Andrea Doria quote about Mahón as one of the four best Mediterranean ports is famous."
+    }
+  ]
+}

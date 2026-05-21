@@ -1,0 +1,19 @@
+{
+  "vol": "11",
+  "leaf": 487,
+  "page_printed": "453",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "RULLO",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "description": "Aid. R. de Esp. en la isla de Mallorca, a la que unos llaman Establimens y otros el Rulló, por formarse este lugar de las aldeas de Establimens, la Puiita y Rulló. (Véase Establimens en el suplemento).",
+      "cross_references": ["Establimens", "La Punta"],
+      "confidence": "high",
+      "note": "Modern: el Rul·lo / Es Rotlo area, en realidad Establiments (Palma de Mallorca). Miñano da nota de la confusión de nombres."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "vol": "06",
+  "leaf": 418,
+  "page_printed": "409",
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 2,
+  "entries": [
+    {
+      "title": "PALMA",
+      "place_type": "ciudad",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Otro",
+      "description": "Ciudad R. de voto en cortes y Episcopal de España, capital de la Isla de Mallorca. Gobernador, correg. y A. M. de tercera clase, intendente de Rentas y de Policía. 7,080 vecinos, 34,353 habit., una catedral que es magnífica, hecha en el orden gótico; sufragánea de Valencia, y su cabildo se compone de su ilustrísimo obispo, 5 dignidades, un personado llamado Sucentor, 33 canongías, 4 pabordes, 146 beneficios, y 66 pilas bautismales en todo el obispado: 6 parroquias, 15 conventos de frailes, 11 de monjas, una cartuja en sus inmediaciones, universidad fundada por Don Fernando el Católico en 1483, y reformada en 18 de octubre de 1697; sociedad económica, un seminario conciliar, 9 colegios y varias casas de Misericordia. Situada á los 39° 34' 04\" de latitud, 0° 30' de longitud or. de Madrid, al S. O. de la isla, en un semicírculo cuyo arco se proyecta por el lado de la campiña, y su cuerda mira al mar, entre dos promontorios que los llaman Cala Figura y Blanco, en la costa del mar Mediterráneo, que forma un gran golfo de mas de 5 leguas de largo. Tiene un famoso muelle pero estrecho, y solo se puede atracar en él por el N. que es donde está limpio y abrigado. Las circunstancias de las entradas y salidas de su rada, quedan descritas en el artículo Mallorca; pero se puede fondear en ella con bastante abrigo, pues se halla defendida por el castillo de San Carlos. Está cercada de murallas de 14 palmos de espesor, con 13 baluartes cuyo terraplén excede de 50 pasos geométricos. Se entra en la plaza por 8 puertas bien distribuidas, 3 que miran al mar y 5 de tierra. Sus calles por lo común son estrechas por el excesivo saliente de los balcones, enlosadas y limpias; pero el piso de ellas muy incómodo, y tiene muy buenas plazas. Todas las casas son de piedra como igualmente el teatro. Hay un palacio para el gobernador de la isla, donde también habitan el regente de la audiencia y el intendente. Tiene una lonja ó casa de contratación. En la crujía de la catedral está sepultado el cuerpo de D. Jaime II, rey de Mallorca. Produce trigo candeal, cebada, avena, naranjas, legumbres, aceite, ganado lanar, cabrío y vacuno: tiene unos paseos con vistas deliciosas en todos sus alrededores, poblados de casas de campo, jardines y vergeles. La industria y los oficios se mantienen con bastante adelantamiento y estimación. Es patria de Guillermo Mezquida, célebre pintor del siglo XVII y XVIII; de José de Mora, escultor y discípulo de Alonso Cano y de Miguel Bercllo escultor; de Raimundo Lulio, llamado Doctor ilustrado, nació en 1235, fue discípulo del celebre Arnaldo de Vilanueva; se aplicó con un trabajo infatigable al estudio de la filosofía de los Árabes, de la química, de la medicina y de la teología. Murió en África en 29 de marzo de 1315, teniendo ya 80 años de edad; del Excmo. Sr. Don Pedro Caro y Sureda, marqués de la Romana, teniente general de los Reales ejércitos, y uno de los mas celosos defensores de los derechos del Rey y de su patria, á quien acudió á salvar el año de 1808 desde Dinamarca, donde se hallaba con una brillante división auxiliando á Napoleón Bonaparte, habiendo tenido que vencer para ello inmensos riesgos y dificultades, que superó á fuerza de su firmeza y patriotismo; desembarcó con una gran parte de ella en las costas de Cantabria, y habiendo añadido nuevos servicios á los que ya tenia contraídos, murió en Portugal en el mes de enero de 1811. Dista 9 leguas de Alcudia, 30 N. E. de Ibiza y 45 S. E. de Barcelona. Su riqueza líquida asciende á 354,968 libras y contribuye 478,332 reales 2 maravedises.",
+      "stats": {
+        "vecinos": 7080,
+        "habitantes": 34353,
+        "parroquias": 6,
+        "conventos_frailes": 15,
+        "conventos_monjas": 11,
+        "cartujas": 1,
+        "universidad_fundada": 1483,
+        "universidad_reformada": 1697,
+        "colegios": 9,
+        "casas_misericordia": "varias",
+        "dignidades_catedralicias": 5,
+        "canongias": 33,
+        "pabordes": 4,
+        "beneficios": 146,
+        "pilas_bautismales_obispado": 66,
+        "puertas_muralla": 8,
+        "baluartes": 13,
+        "riqueza_liquida_libras": 354968,
+        "contribucion": "478,332 reales 2 maravedises"
+      },
+      "cross_references": ["Mallorca", "Alcudia", "Ibiza", "Barcelona", "Cala Figura", "Cala Blanca", "Castillo de San Carlos", "Raimundo Lulio", "Marqués de la Romana", "Guillermo Mezquida", "José de Mora"],
+      "confidence": "high",
+      "note": "Mega-article: capital de Mallorca. Falsamente etiquetada Miñano com 'sufragánea de Valencia' — Palma era diócesis sufragánea de Tarragona / Valencia segons època. Notable: detall biogràfic exhaustiu de Ramon Llull i del Marquès de la Romana."
+    }
+  ]
+}
