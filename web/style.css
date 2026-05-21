@@ -537,11 +537,40 @@ tbody tr.minano-expand td {
 }
 
 /* === Notes / abbreviations === */
+.notes-prose {
+  max-width: 760px;
+  margin: 0 auto 2.4em;
+  padding: 0 1em;
+  line-height: 1.65;
+  font-size: 1.02em;
+  color: var(--text);
+}
+.notes-prose h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45em;
+  color: var(--accent-dark);
+  margin: 2.2em 0 0.6em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.25;
+}
+.notes-prose h2:first-of-type { margin-top: 1.2em; }
+.notes-prose p {
+  margin: 0 0 1em;
+  text-align: justify;
+  hyphens: auto;
+}
+.notes-prose em { font-style: italic; }
+.notes-prose strong { color: var(--text); }
+.notes-prose a { color: var(--accent-dark); }
+
 .abbreviations {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 1.4em;
-  margin: 0 0 2em;
+  margin: 0.6em auto 2em;
+  max-width: 1080px;
+  padding: 0 1em;
 }
 .abbreviation-section {
   background: var(--surface);
@@ -568,6 +597,30 @@ tbody tr.minano-expand td {
   font-size: 0.88em;
   color: var(--text);
   white-space: nowrap;
+}
+/* Variant for sections whose dt entries are full phrases instead of
+   short codes — stack dt/dd vertically and allow wrapping. */
+.abbreviation-section--stacked dl {
+  display: block;
+}
+.abbreviation-section--stacked dt {
+  white-space: normal;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-style: italic;
+  font-size: 0.92em;
+  margin-top: 0.7em;
+}
+.abbreviation-section--stacked dt:first-child {
+  margin-top: 0;
+}
+.abbreviation-section--stacked dt code {
+  font-family: "SF Mono", Monaco, Consolas, monospace;
+  font-style: normal;
+  font-size: 0.9em;
+}
+.abbreviation-section--stacked dd {
+  margin: 0.15em 0 0;
+  padding-left: 1em;
 }
 .abbreviation-section dt code {
   background: var(--num-bg);

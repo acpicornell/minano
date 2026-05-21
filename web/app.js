@@ -47,8 +47,12 @@ function initTabs() {
   document.querySelectorAll(".tabs .tab").forEach(btn => {
     btn.addEventListener("click", () => gotoTab(btn.dataset.toptab));
   });
-  document.querySelectorAll(".home-action").forEach(btn => {
-    btn.addEventListener("click", () => gotoTab(btn.dataset.goto));
+  document.querySelectorAll("[data-goto]").forEach(el => {
+    el.addEventListener("click", ev => {
+      ev.preventDefault();
+      gotoTab(el.dataset.goto);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
   });
 }
 
@@ -135,7 +139,7 @@ function renderTable() {
   const total = state.filtered.length;
   $("count").textContent = `${fmt(total)} entrades`;
   if (!total) {
-    tbody.innerHTML = `<tr><td colspan="9" class="empty">Cap entrada amb aquests filtres.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="9" class="empty">No s'han trobat entrades que satisfacin els filtres seleccionats.</td></tr>`;
     return;
   }
   const slice = state.filtered.slice(0, 500);
@@ -168,7 +172,7 @@ function renderTable() {
       <td class="conf-${esc(e.confidence || "")}">${dot(e.confidence)}</td>
     </tr>`;
   }).join("") + (total > 500
-    ? `<tr><td colspan="9" class="empty">Mostrant 500 de ${fmt(total)}. Afina els filtres per veure menys.</td></tr>`
+    ? `<tr><td colspan="9" class="empty">Es visualitzen 500 de ${fmt(total)} entrades. Refineu els filtres per restringir el resultat.</td></tr>`
     : "");
   tbody.querySelectorAll("tr.minano-row").forEach(tr =>
     tr.addEventListener("click", ev => {
@@ -378,7 +382,7 @@ async function boot() {
   } catch (e) {
     console.error(e);
     $("tbody-minano").innerHTML =
-      `<tr><td colspan="9" class="empty">Error carregant data.json</td></tr>`;
+      `<tr><td colspan="9" class="empty">Error en la càrrega de data.json.</td></tr>`;
     return;
   }
   state.entries = payload.entries || [];
