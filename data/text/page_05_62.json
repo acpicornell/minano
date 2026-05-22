@@ -21,8 +21,11 @@
         "hospicios": 1,
         "contribucion": "5,617 libras 19 sueldos"
       },
-      "cross_references": ["Lluch"],
-      "confidence": "high"
+      "cross_references": [
+        "Lluch"
+      ],
+      "confidence": "high",
+      "municipality": "Inca"
     }
   ]
 }

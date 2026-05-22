@@ -10,9 +10,13 @@
       "place_type": "santuario",
       "island": "Mallorca",
       "description": "Santuario de España en la isla de Mallorca, y de su obispado. Situado en un profundo valle, rodeado de las mas altas sierras de Mallorca, siguiendo desde Pollensa la áspera cordillera de montes que sirven de parapeto contra los vientos boreales á casi toda la isla. La iglesia donde se venera una imagen de la Virgen, encontrada casi en el mismo sitio donde está fabricado este edificio, es toda de mármol negro, y adornada de preciosas alhajas, efecto de la piedad de los habitantes de Mallorca: la iglesia es de buen gusto, y en ella se ven hermosas columnas y adornos de jaspes, de que abunda infinitamente la isla. El edificio anejo á la iglesia está destinado al alojamiento de los sacerdotes que viven á modo de congregantes de San Felipe Nerí; del prior, y de los devotos que concurren muy á menudo en crecido número á visitar tan devoto santuario.",
-      "cross_references": ["Pollensa", "San Felipe Nerí"],
+      "cross_references": [
+        "Pollensa",
+        "San Felipe Nerí"
+      ],
       "confidence": "high",
-      "note": "Modern: Santuari de Lluc (Escorca, Mallorca)."
+      "note": "Modern: Santuari de Lluc (Escorca, Mallorca).",
+      "municipality": "Escorca"
     },
     {
       "title": "NUESTRA SEÑORA DEL PILAR DE LA MOLA",

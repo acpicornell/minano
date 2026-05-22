@@ -11,7 +11,7 @@
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
       "mayor_type": "Alcalde Pedáneo",
-      "municipality": "Santa Margarita",
+      "municipality": "Santa Margalida",
       "description": "L. R. de España, provincia y obispado de Mallorca. A. P., 231 vecinos, 1,137 habitantes, 1 parroquia aneja de la villa de Sta. Margarita. Su situación y productos son iguales á los de la espresada villa. Contribuye con Palma.",
       "stats": {
         "vecinos": 231,
@@ -19,7 +19,10 @@
         "parroquias": 1,
         "contribuye_con": "Palma"
       },
-      "cross_references": ["Santa Margarita", "Palma"],
+      "cross_references": [
+        "Santa Margarita",
+        "Palma"
+      ],
       "confidence": "high",
       "note": "Modern: Maria de la Salut (Mallorca)."
     }

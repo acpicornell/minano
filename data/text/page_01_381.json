@@ -20,8 +20,12 @@
         "riqueza_liquida_libras": 79515,
         "contribucion": "7,455 libras 8 sueldos"
       },
-      "cross_references": ["Son Cervera", "Cap de Pera"],
-      "confidence": "high"
+      "cross_references": [
+        "Son Cervera",
+        "Cap de Pera"
+      ],
+      "confidence": "high",
+      "municipality": "Artà"
     }
   ]
 }

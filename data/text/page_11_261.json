@@ -6,6 +6,15 @@
   "window": 1,
   "entries": [
     {
+      "title": "CONEJERA (Isla)",
+      "place_type": "isla",
+      "island": "Mallorca",
+      "description": "Isla. Debe decir de España en las Baleares, junto á la costa septentrional de la Cabrera. (Not. dada por don Juan Antonio Benejto).",
+      "cross_references": ["Cabrera", "Baleares"],
+      "confidence": "high",
+      "note": "Suplement amb rectificació geogràfica: el tomo III havia inclòs Conejera sense localització balear precisa; aquesta entrada al Suplement precisa que pertany a les Balears, immediatament al N. de l'illa de Cabrera. Recuperada per l'auditoria de cadenes-de-correccions del Suplement (`scripts/inner_lemma_audit.py --pattern B`). Modern: na Conillera de Cabrera, dins el sub-arxipèlag de Cabrera. L'atribució «por don Juan Antonio Benejto» substitueix l'habitual Vilafranca, signe que el Suplement va incloure informants laics quan calia precisió tècnica."
+    },
+    {
       "title": "CONSELL (adición)",
       "place_type": "lugar",
       "island": "Mallorca",

@@ -17,8 +17,11 @@
         "habitantes": 345,
         "parroquias": 1
       },
-      "cross_references": ["Bahía de Alcudia"],
-      "confidence": "high"
+      "cross_references": [
+        "Bahía de Alcudia"
+      ],
+      "confidence": "high",
+      "municipality": "Ariany"
     }
   ]
 }

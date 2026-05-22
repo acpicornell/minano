@@ -10,12 +10,14 @@
       "place_type": "aldea",
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
-      "municipality": "Binisalem",
+      "municipality": "Binissalem",
       "description": "Aid. R. de Esp. en la isla y obisp. de Mallorca, 4 vecinos incluidos con el número de habitantes en los de Binisalem, de la que es aneja. Sit. al S. O. de su matriz, con la que contribuye. (Not. dada por el R. P. Fr. Luis de Villafranca).",
       "stats": {
         "vecinos": 4
       },
-      "cross_references": ["Binisalem"],
+      "cross_references": [
+        "Binisalem"
+      ],
       "confidence": "high",
       "note": "OCR'd 'TORPEDEES BASTARS(LA)' — the 'TORPEDEES' garbling is severe (T-O-R-P-E-D-E-E-S for T-O-R-R-E-D-E-S, the D being mistaken). Modern: la Torre des Bastons (Binissalem, Mallorca). Confirmed by the BINISALEM supplement entry on leaf 153 which lists 'la Torre deis Bastars' as an annex."
     }

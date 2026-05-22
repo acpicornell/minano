@@ -10,9 +10,13 @@
       "place_type": "villa",
       "island": "Mallorca",
       "description": "Buñola. Tiene 1,851 habitantes y dist. 2 leg. y ½ de la C. de Palma.",
-      "stats": {"habitantes": 1851, "dist_palma_leg": 2.5},
+      "stats": {
+        "habitantes": 1851,
+        "dist_palma_leg": 2.5
+      },
       "confidence": "high",
-      "note": "Modern: Bunyola (Mallorca, Tramuntana). Correcció demográfica curta — dóna xifra actualitzada d'habitants i distància a Palma."
+      "note": "Modern: Bunyola (Mallorca, Tramuntana). Correcció demográfica curta — dóna xifra actualitzada d'habitants i distància a Palma.",
+      "municipality": "Bunyola"
     }
   ]
 }

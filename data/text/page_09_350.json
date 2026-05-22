@@ -14,9 +14,12 @@
         "vecinos": 135,
         "habitantes": 656
       },
-      "cross_references": ["Mallorca"],
+      "cross_references": [
+        "Mallorca"
+      ],
       "confidence": "medium",
-      "note": "Modern: La Vileta (barrio de Palma de Mallorca). The 'fijC' habitantes is OCR-garbled; reading as 656."
+      "note": "Modern: La Vileta (barrio de Palma de Mallorca). The 'fijC' habitantes is OCR-garbled; reading as 656.",
+      "municipality": "Palma"
     }
   ]
 }

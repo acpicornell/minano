@@ -19,9 +19,13 @@
         "riqueza_liquida_libras": 47427,
         "contribucion": "5,308 libras 12 sueldos"
       },
-      "cross_references": ["María", "Alcudia"],
+      "cross_references": [
+        "María",
+        "Alcudia"
+      ],
       "confidence": "high",
-      "note": "Modern: Santa Margalida (Mallorca). The María entry on Tomo V leaf 421 confirms this matriz-anejo relationship."
+      "note": "Modern: Santa Margalida (Mallorca). The María entry on Tomo V leaf 421 confirms this matriz-anejo relationship.",
+      "municipality": "Santa Margalida"
     },
     {
       "title": "SANTA MARÍA",
@@ -36,9 +40,14 @@
         "riqueza_liquida_libras": 23256,
         "contribucion": "4,261 libras 11 sueldos"
       },
-      "cross_references": ["Santa Eugenia", "Lluch", "Palma"],
+      "cross_references": [
+        "Santa Eugenia",
+        "Lluch",
+        "Palma"
+      ],
       "confidence": "high",
-      "note": "Modern: Santa Maria del Camí (Mallorca). Miñano's geographic note about Lluc/Tramuntana is generic — Santa Maria is in the plain (Pla de Mallorca), not the Sierra."
+      "note": "Modern: Santa Maria del Camí (Mallorca). Miñano's geographic note about Lluc/Tramuntana is generic — Santa Maria is in the plain (Pla de Mallorca), not the Sierra.",
+      "municipality": "Santa Maria del Camí"
     }
   ]
 }

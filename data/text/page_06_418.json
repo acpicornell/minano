@@ -33,9 +33,22 @@
         "riqueza_liquida_libras": 354968,
         "contribucion": "478,332 reales 2 maravedises"
       },
-      "cross_references": ["Mallorca", "Alcudia", "Ibiza", "Barcelona", "Cala Figura", "Cala Blanca", "Castillo de San Carlos", "Raimundo Lulio", "Marqués de la Romana", "Guillermo Mezquida", "José de Mora"],
+      "cross_references": [
+        "Mallorca",
+        "Alcudia",
+        "Ibiza",
+        "Barcelona",
+        "Cala Figura",
+        "Cala Blanca",
+        "Castillo de San Carlos",
+        "Raimundo Lulio",
+        "Marqués de la Romana",
+        "Guillermo Mezquida",
+        "José de Mora"
+      ],
       "confidence": "high",
-      "note": "Mega-article: capital de Mallorca. Falsamente etiquetada Miñano com 'sufragánea de Valencia' — Palma era diócesis sufragánea de Tarragona / Valencia segons època. Notable: detall biogràfic exhaustiu de Ramon Llull i del Marquès de la Romana."
+      "note": "Mega-article: capital de Mallorca. Falsamente etiquetada Miñano com 'sufragánea de Valencia' — Palma era diócesis sufragánea de Tarragona / Valencia segons època. Notable: detall biogràfic exhaustiu de Ramon Llull i del Marquès de la Romana.",
+      "municipality": "Palma"
     }
   ]
 }

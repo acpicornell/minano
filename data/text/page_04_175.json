@@ -24,9 +24,16 @@
         "riqueza_liquida_libras": 170031,
         "contribucion": "12,156 libras 2 sueldos"
       },
-      "cross_references": ["Santañy", "Santueri", "Porticholy", "Port-Colorn", "San Salvador"],
+      "cross_references": [
+        "Santañy",
+        "Santueri",
+        "Porticholy",
+        "Port-Colorn",
+        "San Salvador"
+      ],
       "confidence": "high",
-      "note": "Miñano's 'FELAMCHE' (with m for n, OCR mangle) = canonical FELANITX. 'Porticholy'/'Port-Colorn' = Portitxol / Porto Colom."
+      "note": "Miñano's 'FELAMCHE' (with m for n, OCR mangle) = canonical FELANITX. 'Porticholy'/'Port-Colorn' = Portitxol / Porto Colom.",
+      "municipality": "Felanitx"
     }
   ]
 }

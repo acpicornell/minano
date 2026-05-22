@@ -6,7 +6,7 @@
   "window": 2,
   "entries": [
     {
-      "title": "BIMARROY",
+      "title": "BINIARROY",
       "place_type": "lugar",
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
@@ -15,12 +15,15 @@
       "stats": {
         "vecinos": 13
       },
-      "cross_references": ["Mancor", "Selva"],
+      "cross_references": [
+        "Mancor",
+        "Selva"
+      ],
       "confidence": "high",
       "note": "Modern: Biniarroi (Mancor de la Vall, Mallorca)."
     },
     {
-      "title": "BIMBACI",
+      "title": "BINIBACI",
       "place_type": "aldea",
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
@@ -29,23 +32,27 @@
       "stats": {
         "vecinos": 4
       },
-      "cross_references": ["Sóller"],
+      "cross_references": [
+        "Sóller"
+      ],
       "confidence": "high",
       "note": "Max-path recovery. Modern: Binibassí (Sóller, Mallorca)."
     },
     {
-      "title": "BIMFAÜALT",
+      "title": "BINIFADALT",
       "place_type": "aldea",
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
-      "municipality": "Sancellas",
+      "municipality": "Sencelles",
       "description": "Aid. R. de Esp. en la isla de Mallorca, 6 vec., los cuales con el número de hab. y contr. se incluyen con los de su matriz la V. de Sancellas. Está sit. al E. de esta. (Not. dada por el R. P. Fr. Luis de Villafranca).",
       "stats": {
         "vecinos": 6
       },
-      "cross_references": ["Sancellas"],
+      "cross_references": [
+        "Sancellas"
+      ],
       "confidence": "high",
-      "note": "Modern: Biniagual (Binissalem / Sencelles, Mallorca)."
+      "note": "Títol corregit a partir de l'OCR (BIMFAÜALT). Possessió de Sencelles, situada a l'est de la vila. No confondre amb BINIAGUAL (lloc propi documentat en l'article anterior)."
     },
     {
       "title": "BINIFALET",
@@ -57,7 +64,9 @@
       "stats": {
         "vecinos": 4
       },
-      "cross_references": ["Muro"],
+      "cross_references": [
+        "Muro"
+      ],
       "confidence": "high",
       "note": "Max-path recovery. Modern: Binifalet (Muro, Mallorca)."
     },
@@ -66,28 +75,32 @@
       "place_type": "cortijo",
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
-      "municipality": "Sancellas",
+      "municipality": "Sencelles",
       "description": "Cortijo R. de Esp. en la isla de Mallorca, 4 vec., los que con el número de hab. y contr. se incluyen con los de la V. de Sancellas, de la que dependen en lo civil y eclesiástico. Sit. al E. de esta. (Not. dada por el mismo).",
       "stats": {
         "vecinos": 4
       },
-      "cross_references": ["Sancellas"],
+      "cross_references": [
+        "Sancellas"
+      ],
       "confidence": "high",
       "note": "Modern: Biniferri (Sencelles, Mallorca)."
     },
     {
-      "title": "BIMFOUBELL",
+      "title": "BINIFOUBELL",
       "place_type": "cortijo",
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
-      "municipality": "Sancellas",
+      "municipality": "Sencelles",
       "description": "Cortijo R. de Esp. en la isla de Mallorca, 6 vec., los que con sus hab. y contribución se incluyen con los de Sancellas, de la que depende en lo civil y eclesiástico. Está sit. al W. de la matriz. (Not. dada por el mismo).",
       "stats": {
         "vecinos": 6
       },
-      "cross_references": ["Sancellas"],
+      "cross_references": [
+        "Sancellas"
+      ],
       "confidence": "high",
-      "note": "Modern: probably Binifaubell / Binifabini area (Sencelles)."
+      "note": "Títol corregit a partir de l'OCR (BIMFOUBELL). Possessió de Sencelles, situada a l'oest de la vila."
     }
   ]
 }

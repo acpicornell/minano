@@ -20,9 +20,13 @@
         "alfarerias": 3,
         "contribucion": "5,820 libras 19 sueldos"
       },
-      "cross_references": ["Llubí", "Alcudia"],
+      "cross_references": [
+        "Llubí",
+        "Alcudia"
+      ],
       "confidence": "high",
-      "note": "OCR'd 'MORO' on the indexer pass (the body confirms MURO de Mallorca, 1,031 vec). The 'parroquia... aneja á Llubin' confirms identification — modern Muro (Mallorca), with Llubí as historical anejo."
+      "note": "OCR'd 'MORO' on the indexer pass (the body confirms MURO de Mallorca, 1,031 vec). The 'parroquia... aneja á Llubin' confirms identification — modern Muro (Mallorca), with Llubí as historical anejo.",
+      "municipality": "Muro"
     }
   ]
 }

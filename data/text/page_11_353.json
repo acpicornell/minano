@@ -9,9 +9,11 @@
       "title": "FORNALUTX (adición)",
       "place_type": "lugar",
       "island": "Mallorca",
-      "municipality": "Soller",
+      "municipality": "Sóller",
       "description": "Fornaluche. Léase Fornaluig. El alcalde es pedáneo, ó más bien es gobernada por uno de los 4 regidores que tienen todas las villas principales de Mallorca, á más del Baile. Contribuye con la V. de Soller y no con Palma, como dice el Diccionario. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "cross_references": ["Soller"],
+      "cross_references": [
+        "Soller"
+      ],
       "confidence": "high",
       "note": "Modern: Fornalutx (Mallorca, vall de Sóller). Suplement: la grafia correcta és 'Fornaluig' (en català antic / Miñano-OCR), no Fornaluche; contribució amb Sóller (la matriu), no amb Palma. Sistema mallorquí de 'batle + 4 regidores'."
     }

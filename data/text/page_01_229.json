@@ -20,8 +20,12 @@
         "riqueza_liquida_libras": 28263,
         "contribucion": "5,754 libras 1 sueldo"
       },
-      "cross_references": ["Randa", "Raymundo Lulio"],
-      "confidence": "high"
+      "cross_references": [
+        "Randa",
+        "Raymundo Lulio"
+      ],
+      "confidence": "high",
+      "municipality": "Algaida"
     }
   ]
 }

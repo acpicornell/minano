@@ -1,0 +1,20 @@
+{
+  "vol": "11",
+  "leaf": 360,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "GENOVA",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Palma",
+      "description": "Aid. R. de España en la isla y ob. de Mallorca. Sit. al O. y á ⅛ de legua de la C. de Palma. El número de vec., hab. y contr. se incluyen con los de dicha ciudad. En su territorio se halla la ermita de Ntra. Sra. de la Buenanueva y el castillo real llamado de Bellver. Prod. algunos granos, algarroba y almendra. (Not. dada por el R. P. Fr. Luis de Villafranca).",
+      "cross_references": ["Palma", "Bellver"],
+      "confidence": "high",
+      "note": "Article principal recuperat per l'auditoria de cadenes-de-correccions del Suplement (`scripts/inner_lemma_audit.py --pattern B`): el lemma començava mid-paragraph immediatament després d'una correcció editorial («ob. de Málaga... Bórrese») d'un altre article peninsular. Modern: Génova (barri de Palma, peu de la Serra de na Burguesa). L'ermita esmentada és la de la Mare de Déu de la Bonanova; el castell de Bellver està al territori de Genova segons la geografia administrativa de 1826."
+    }
+  ]
+}

@@ -11,14 +11,16 @@
       "island": "Menorca",
       "seigneurial_regime": "Realengo",
       "mayor_type": "Alcalde Pedáneo",
-      "municipality": "Mercadal",
+      "municipality": "es Mercadal",
       "description": "Ald. R. de España, provincia y obispado de Menorca. A. P., 51 vecinos, 260 habitantes, 1 parroquia aneja de Mercadal. Situada en terreno pantanoso, á ½ de hora N. E. de su matriz. Produce granos, legumbres, frutas y algunos ganados.",
       "stats": {
         "vecinos": 51,
         "habitantes": 260,
         "parroquias": 1
       },
-      "cross_references": ["Mercadal"],
+      "cross_references": [
+        "Mercadal"
+      ],
       "confidence": "high",
       "note": "OCR'd 'IAN JUAN' (I→S). Modern: Sant Joan de Carbonell (Es Mercadal, Menorca). 'Huertas de Carbonell' = horts de Carbonell."
     },
@@ -31,9 +33,12 @@
         "vecinos": 276,
         "habitantes": 1378
       },
-      "cross_references": ["Ibiza"],
+      "cross_references": [
+        "Ibiza"
+      ],
       "confidence": "high",
-      "note": "Max-path recovery (not in Phase 1 index). Modern: Sant Joan de Labritja (Eivissa)."
+      "note": "Max-path recovery (not in Phase 1 index). Modern: Sant Joan de Labritja (Eivissa).",
+      "municipality": "Sant Joan de Labritja"
     }
   ]
 }

@@ -19,8 +19,12 @@
         "conventos": 1,
         "contribucion": "6,650 libras 5 sueldos"
       },
-      "cross_references": ["Villafranca", "Manacor"],
-      "confidence": "high"
+      "cross_references": [
+        "Villafranca",
+        "Manacor"
+      ],
+      "confidence": "high",
+      "municipality": "Petra"
     }
   ]
 }

@@ -71,13 +71,14 @@
       ],
       "confidence": "high",
       "note": "Correcció topològica: Marratxí està al NE de Palma, no NO (això últim seria cap a Bunyola).",
-      "seigneurial_regime": "Realengo"
+      "seigneurial_regime": "Realengo",
+      "municipality": "Marratxí"
     },
     {
       "title": "MARÍA (adición)",
       "place_type": "lugar",
       "island": "Mallorca",
-      "municipality": "Santa Margarita",
+      "municipality": "Santa Margalida",
       "description": "Contribuye no con Palma sino con Santa Margarita, que es su matriz.",
       "cross_references": [
         "María",

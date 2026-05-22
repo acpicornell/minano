@@ -18,9 +18,13 @@
         "parroquias": 1,
         "contribucion": "3,318 libras 1 sueldo"
       },
-      "cross_references": ["Estellens", "Palma"],
+      "cross_references": [
+        "Estellens",
+        "Palma"
+      ],
       "confidence": "high",
-      "note": "OCR'd 'PUIGPÜÑEWT' (W↔N at word-end). Modern: Puigpunyent (Mallorca)."
+      "note": "OCR'd 'PUIGPÜÑEWT' (W↔N at word-end). Modern: Puigpunyent (Mallorca).",
+      "municipality": "Puigpunyent"
     }
   ]
 }

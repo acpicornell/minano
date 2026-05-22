@@ -20,9 +20,15 @@
         "feria": "tercer domingo de noviembre",
         "contribucion": "5,596 libras 4 sueldos"
       },
-      "cross_references": ["Pollentia Romanorum", "Caballeros de Malta", "Templarios", "Puerto de Pollensa"],
+      "cross_references": [
+        "Pollentia Romanorum",
+        "Caballeros de Malta",
+        "Templarios",
+        "Puerto de Pollensa"
+      ],
       "confidence": "high",
-      "note": "OCR'd 'POLUSNZA (PoLMinnu BonAaoftiB»)' — fortíssima OCR scramble del títol (POLLENSA + POLLENTIA BALEARORUM/ROMANORUM). Mega-article. Cita històrica de Pollentia (ciutat romana fundada s. II aC, avui jaciment a Alcúdia, no a Pollença — Miñano confon les dues). Buirell = paño negro tradicional mallorquí. Vino 'Munlona' = Malvasia/Moscatell de Pollença."
+      "note": "OCR'd 'POLUSNZA (PoLMinnu BonAaoftiB»)' — fortíssima OCR scramble del títol (POLLENSA + POLLENTIA BALEARORUM/ROMANORUM). Mega-article. Cita històrica de Pollentia (ciutat romana fundada s. II aC, avui jaciment a Alcúdia, no a Pollença — Miñano confon les dues). Buirell = paño negro tradicional mallorquí. Vino 'Munlona' = Malvasia/Moscatell de Pollença.",
+      "municipality": "Pollença"
     }
   ]
 }

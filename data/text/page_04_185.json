@@ -10,8 +10,18 @@
       "place_type": "término",
       "island": "Menorca",
       "description": "Término de España en la isla de Menorca, unido al de Mercadal: una lengua de tierra que la atraviesa de un mar á otro, hace la extensión de Ferrerías. Tiene 12 millas de largo, con una anchura muy desigual, que donde mayor es de 3 millas. Conf. al E. con Mercadal y Alayor, al O. con Ciudadela. Estos términos comprenden las poblaciones de Fornells y San Cristóbal, y 130 posesiones principales.",
-      "stats": {"largo_millas": 12, "ancho_millas_max": 3, "posesiones_principales": 130},
-      "cross_references": ["Mercadal", "Alayor", "Ciudadela", "Fornells", "San Cristóbal"],
+      "stats": {
+        "largo_millas": 12,
+        "ancho_millas_max": 3,
+        "posesiones_principales": 130
+      },
+      "cross_references": [
+        "Mercadal",
+        "Alayor",
+        "Ciudadela",
+        "Fornells",
+        "San Cristóbal"
+      ],
       "confidence": "high",
       "note": "Ferreries (Menorca). Miñano la presenta com a apèndix de Mercadal — confirmat per la nota del Suplement del Tomo XI que diu que Ferreries depèn de Mercadal des de temps immemorial."
     },
@@ -22,10 +32,17 @@
       "seigneurial_regime": "Realengo",
       "mayor_type": "Alcalde Pedáneo",
       "description": "V. R. de España en la isla de Menorca, y de su obispado, capital del término de su nombre; 261 vecinos, 1,100 habitantes. Situada á un tiro de fusil del camino real; es muy pobre y mal edificada. La única cosa que merece alguna atención es su iglesia, que es medianamente grande. Dista 13 ½ millas de Mahón, y 7 ½ de Ciudadela.",
-      "stats": {"vecinos": 261, "habitantes": 1100},
-      "cross_references": ["Mahón", "Ciudadela"],
+      "stats": {
+        "vecinos": 261,
+        "habitantes": 1100
+      },
+      "cross_references": [
+        "Mahón",
+        "Ciudadela"
+      ],
       "confidence": "high",
-      "note": "Modern: Ferreries (Menorca)."
+      "note": "Modern: Ferreries (Menorca).",
+      "municipality": "Ferreries"
     }
   ]
 }

@@ -10,10 +10,16 @@
       "place_type": "lugar",
       "island": "Ibiza",
       "description": "L. de España, prov. de Ibiza; 138 vecinos, 631 habitantes. Dist. 3 ½ leguas de la capital.",
-      "stats": {"vecinos": 138, "habitantes": 631},
-      "cross_references": ["Ibiza"],
+      "stats": {
+        "vecinos": 138,
+        "habitantes": 631
+      },
+      "cross_references": [
+        "Ibiza"
+      ],
       "confidence": "high",
-      "note": "Modern: Sant Agustí des Vedrà (Sant Josep de sa Talaia, Eivissa)."
+      "note": "Modern: Sant Agustí des Vedrà (Sant Josep de sa Talaia, Eivissa).",
+      "municipality": "Sant Josep de sa Talaia"
     }
   ]
 }

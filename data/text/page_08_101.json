@@ -11,7 +11,7 @@
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
       "mayor_type": "Alcalde Pedáneo",
-      "municipality": "Santa María",
+      "municipality": "Santa Maria del Camí",
       "description": "L. R. de España, provincia y obispado de Mallorca. A. P., 230 vecinos, 1,155 habitantes, 1 parroquia aneja de la de Santa María. Situado en la subida de los altos montes que rodean el santuario de Nuestra Señora de Lluch, al N. de la ciudad de Palma. Produce algunos granos, aceite y ganados. Contribuye con Palma.",
       "stats": {
         "vecinos": 230,
@@ -19,7 +19,11 @@
         "parroquias": 1,
         "contribuye_con": "Palma"
       },
-      "cross_references": ["Santa María", "Lluch", "Palma"],
+      "cross_references": [
+        "Santa María",
+        "Lluch",
+        "Palma"
+      ],
       "confidence": "high",
       "note": "Max-path recovery (the leaf was indexed for SANTA EULALIA below; SANTA EUGENIA is also on the leaf). Modern: Santa Eugènia (Mallorca). Miñano's geographic note about Lluc is generic — Santa Eugènia is south of Bunyola, not in the Tramuntana proper."
     },
@@ -35,7 +39,12 @@
         "iglesias": 2,
         "milicia_hombres": 700
       },
-      "cross_references": ["Llano de la Villa", "Balanzat", "Salto Den Serra", "Cala Benirraix"],
+      "cross_references": [
+        "Llano de la Villa",
+        "Balanzat",
+        "Salto Den Serra",
+        "Cala Benirraix"
+      ],
       "confidence": "high",
       "note": "Modern: Santa Eulària des Riu (one of the four traditional 'quartons' of Eivissa). 'Benirraix' = Benirràs."
     }

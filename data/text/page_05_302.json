@@ -15,9 +15,13 @@
         "habitantes": 900,
         "compania_hombres": 110
       },
-      "cross_references": ["Cabo Andreos", "Calaquifu"],
+      "cross_references": [
+        "Cabo Andreos",
+        "Calaquifu"
+      ],
       "confidence": "high",
-      "note": "Modern: Quartó de Ses Salines / Quartó de Portmany area. 'Llano de la Villa' = Pla de Vila (Eivissa), one of the four traditional 'quartons' the island was divided into."
+      "note": "Modern: Quartó de Ses Salines / Quartó de Portmany area. 'Llano de la Villa' = Pla de Vila (Eivissa), one of the four traditional 'quartons' the island was divided into.",
+      "municipality": "Eivissa"
     },
     {
       "title": "LLANO DE LA VILLA",
@@ -27,7 +31,8 @@
       "mayor_type": "Alcalde Pedáneo",
       "description": "Desp. R. de España, en la isla de Ibiza. A. P.",
       "confidence": "medium",
-      "note": "Stub entry — Miñano gives only the typology header for this second (now-depopulated) namesake site."
+      "note": "Stub entry — Miñano gives only the typology header for this second (now-depopulated) namesake site.",
+      "municipality": "Eivissa"
     }
   ]
 }

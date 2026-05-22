@@ -10,9 +10,17 @@
       "place_type": "villa",
       "island": "Mallorca",
       "description": "Pollenza. Es la misma Pollentia Romanorum, pero se hallaba situada entre la ciudad de Alcudia y el Puerto Mayor, donde todavía se conserva parte del anfiteatro, y en sus inmediaciones se han hallado siempre inscripciones romanas y una infinidad de medallas. En las incursiones de los vándalos del siglo V es regular quedara destruida la antigua Pollenza, y sus moradores se retirarían tierra adentro de la isla, en el lugar donde se halla ahora. En la línea 14 donde dice 'lo acreditan varias medallas que se encuentran diariamente', debe añadirse: «y una lámina de bronce hallada allí en el año 1765». En la línea 31 donde dice 'hay feria en el tercer domingo de noviembre', debe decir: 'en el segundo domingo de noviembre'. A la parte del E. y á ½ legua de la villa, en la cima de un monte se halla un santuario de Ntra. Sra., donde antiguamente había un convento de monjas, las que fueron trasladadas á la ciudad de Palma en tiempo del concilio de Trento. A la parte opuesta ó la del O. está la de San Jorge, y al mismo rumbo de la villa á medio cuarto de distancia, el calvario, que es otro oratorio de mucha devoción. En su territorio se hallan muchas y deliciosas fuentes. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "cross_references": ["Alcúdia", "Puerto Mayor", "Pollentia Romanorum", "Santuari del Puig de Pollença", "San Jorge (Pollença)", "Calvario"],
+      "cross_references": [
+        "Alcúdia",
+        "Puerto Mayor",
+        "Pollentia Romanorum",
+        "Santuari del Puig de Pollença",
+        "San Jorge (Pollença)",
+        "Calvario"
+      ],
       "confidence": "high",
-      "note": "Correcció arqueològica important: la Pollentia romana NO era a la Pollença actual sinó entre Alcúdia i el Port (avui jaciment arqueològic a Alcúdia, no Pollença!). Vàndals destrueixen Pollentia s. V → habitants s'allunyen del mar i fundan Pollença actual. Làmina de bronze trobada 1765 (epigrafia romana). Santuari del Puig de Pollença (ex-convent de monges, traslladat a Palma al concili de Trento). Sant Jordi i Calvari completen els 3 oratoris."
+      "note": "Correcció arqueològica important: la Pollentia romana NO era a la Pollença actual sinó entre Alcúdia i el Port (avui jaciment arqueològic a Alcúdia, no Pollença!). Vàndals destrueixen Pollentia s. V → habitants s'allunyen del mar i fundan Pollença actual. Làmina de bronze trobada 1765 (epigrafia romana). Santuari del Puig de Pollença (ex-convent de monges, traslladat a Palma al concili de Trento). Sant Jordi i Calvari completen els 3 oratoris.",
+      "municipality": "Pollença"
     },
     {
       "title": "PORTOL (adición)",
@@ -20,7 +28,10 @@
       "island": "Mallorca",
       "municipality": "Marratxí",
       "description": "Portol. A lo dicho en el artículo debe añadirse: Sit. al E. de la parr. rural de San Marcial de la villa de Marratchi. El número de vecinos, habitantes y contribución se incluyen en los de su matriz. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "cross_references": ["Marratchí", "Sant Marçal"],
+      "cross_references": [
+        "Marratchí",
+        "Sant Marçal"
+      ],
       "confidence": "high",
       "note": "Modern: Pòrtol (Marratxí, Mallorca). Confirma: annex de Marratxí; parròquia rural de Sant Marçal."
     }

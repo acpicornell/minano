@@ -12,10 +12,16 @@
       "seigneurial_regime": "Realengo",
       "mayor_type": "Sin alcalde",
       "description": "L. R. de España, provincia de Mallorca. No hay alcalde; 48 vecinos, ?? habitantes. Contribuye con Palma.",
-      "stats": {"vecinos": 48, "contribuye_con": "Palma"},
-      "cross_references": ["Palma"],
+      "stats": {
+        "vecinos": 48,
+        "contribuye_con": "Palma"
+      },
+      "cross_references": [
+        "Palma"
+      ],
       "confidence": "high",
-      "note": "Modern: Pina (Algaida, Mallorca)."
+      "note": "Modern: Pina (Algaida, Mallorca).",
+      "municipality": "Algaida"
     }
   ]
 }

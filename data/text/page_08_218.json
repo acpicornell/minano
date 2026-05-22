@@ -17,9 +17,20 @@
         "parroquias": 1,
         "contribucion": "4,961 libras 2 sueldos"
       },
-      "cross_references": ["Campanet", "Velilla", "Camarau", "Manacor", "Masdoella", "Biniamar", "Biniarroy", "Caymari", "Moscarí"],
+      "cross_references": [
+        "Campanet",
+        "Velilla",
+        "Camarau",
+        "Manacor",
+        "Masdoella",
+        "Biniamar",
+        "Biniarroy",
+        "Caymari",
+        "Moscarí"
+      ],
       "confidence": "high",
-      "note": "Modern: Selva (Mallorca, pre-Tramuntana). Important: 'Manacor' aquí NO és el Manacor llevant — és un caseriu de Selva (probablement Mancor de la Vall). Inclou els 'pozos de la nieve' (cases de neu de Lluc-Selva). Annexes: Caimari, Moscari, Biniamar, Biniarroi etc. — tots topònims actuals de Selva/Mancor."
+      "note": "Modern: Selva (Mallorca, pre-Tramuntana). Important: 'Manacor' aquí NO és el Manacor llevant — és un caseriu de Selva (probablement Mancor de la Vall). Inclou els 'pozos de la nieve' (cases de neu de Lluc-Selva). Annexes: Caimari, Moscari, Biniamar, Biniarroi etc. — tots topònims actuals de Selva/Mancor.",
+      "municipality": "Selva"
     }
   ]
 }

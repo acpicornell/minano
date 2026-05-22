@@ -14,9 +14,14 @@
         "feria": "primer domingo de mayo",
         "mercado": "miércoles cada semana"
       },
-      "cross_references": ["Palma", "Palacio Reyes de Mallorca", "Sineu (artículo original)"],
+      "cross_references": [
+        "Palma",
+        "Palacio Reyes de Mallorca",
+        "Sineu (artículo original)"
+      ],
       "confidence": "high",
-      "note": "Suplement-correction al article SINEU del Diccionari original. SINEU EXISTEIX a algun tomo (probablement VIII, leaf desconegut — l'OCR del títol original ha de ser molt mangled perquè els meus filtres no l'han trobat). Correccions: situada al CENTRE de l'illa (no 'gairebé centre'); a l'EST de Palma (no NE), 5½ llegues; té mercat setmanal els dimecres a més de la fira del primer diumenge de maig. Antic Palau dels Reis de Mallorca, ara convent de monges (Convent de la Concepció de Sineu). Vila existent al moment de la Conquesta de Jaume I (1229)."
+      "note": "Suplement-correction al article SINEU del Diccionari original. SINEU EXISTEIX a algun tomo (probablement VIII, leaf desconegut — l'OCR del títol original ha de ser molt mangled perquè els meus filtres no l'han trobat). Correccions: situada al CENTRE de l'illa (no 'gairebé centre'); a l'EST de Palma (no NE), 5½ llegues; té mercat setmanal els dimecres a més de la fira del primer diumenge de maig. Antic Palau dels Reis de Mallorca, ara convent de monges (Convent de la Concepció de Sineu). Vila existent al moment de la Conquesta de Jaume I (1229).",
+      "municipality": "Sineu"
     }
   ]
 }

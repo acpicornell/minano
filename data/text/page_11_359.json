@@ -1,0 +1,25 @@
+{
+  "vol": "11",
+  "leaf": 359,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "GALILEA",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Eclesiástico",
+      "municipality": "Puigpunyent",
+      "description": "L. Ecl. de Esp. en la isla [de] Mallorca, 1 Reg., 1 parr. con un vicario in capite, 103 vec., los cuales y el número de hab. se incluyen con los de la V. de Puigpuñont, de la que depende en lo civil y eclesiástico. Se halla sit. en los altos montes al O. y á ⅓ de hora de su matriz, siempre subiendo. Prod. aceite, pocos granos, algarroba, higos chumbos y almendra. Contr. con Puigpuñent. (Noticia dada por el R. P. Fr. Luis de Villafranca).",
+      "stats": {
+        "vecinos": 103,
+        "parroquias": 1,
+        "regidores": 1
+      },
+      "cross_references": ["Puigpunyent"],
+      "confidence": "high",
+      "note": "Article principal recuperat per l'auditoria de cadenes-de-correccions del Suplement (`scripts/inner_lemma_audit.py --pattern B`): el lemma començava mid-paragraph després del tail d'un article gallec (GALIÑI, parròquia d'Encrobas a la Corunya), patró idèntic al de SINEU i RUBERTS. Modern: Galilea (Puigpunyent, Mallorca), llogaret de muntanya a la Serra de Tramuntana sud-occidental."
+    }
+  ]
+}

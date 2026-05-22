@@ -10,8 +10,18 @@
       "place_type": "cuartón",
       "island": "Ibiza",
       "description": "Cuartón de España en la isla de Iviza. Tiene 450 casas con 2,120 habitantes, inclusos 350 que componen su milicia. Su término se extiende cerca de 4 leg., y aunque en parte montuoso es muy apacible: tiene una gran llanura de fértil y abundante terreno. En este Cuartón está el Puerto Magno ó de San Antonio. Confina con el de Balanzat, Salinas y el del Llano de la Villa: atando su costa con la de Balanzat, empieza por Puerto Magno y acaba con el lugar de los Cabells.",
-      "stats": {"casas": 450, "habitantes": 2120, "milicia_hombres": 350},
-      "cross_references": ["Balanzat", "Salinas", "Llano de la Villa", "Puerto Magno", "San Antonio"],
+      "stats": {
+        "casas": 450,
+        "habitantes": 2120,
+        "milicia_hombres": 350
+      },
+      "cross_references": [
+        "Balanzat",
+        "Salinas",
+        "Llano de la Villa",
+        "Puerto Magno",
+        "San Antonio"
+      ],
       "confidence": "high",
       "note": "Modern: Portmany (Sant Antoni de Portmany, Eivissa). El 'Puerto Magno' = el actual port de Sant Antoni. Un dels quatre quartons tradicionals d'Eivissa."
     },
@@ -23,7 +33,8 @@
       "mayor_type": "Alcalde Pedáneo",
       "description": "Desp. R. de España en la isla de Iviza. A. P.",
       "confidence": "medium",
-      "note": "Entrada secundària sobre el mateix nom — possiblement el nucli antic de Sant Antoni de Portmany."
+      "note": "Entrada secundària sobre el mateix nom — possiblement el nucli antic de Sant Antoni de Portmany.",
+      "municipality": "Sant Antoni de Portmany"
     }
   ]
 }

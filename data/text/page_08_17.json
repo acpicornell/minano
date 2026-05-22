@@ -14,9 +14,12 @@
         "vecinos": 152,
         "habitantes": 711
       },
-      "cross_references": ["Ibiza"],
+      "cross_references": [
+        "Ibiza"
+      ],
       "confidence": "high",
-      "note": "Max-path recovery. Modern: Sant Llorenç de Balàfia (Sant Joan de Labritja, Eivissa)."
+      "note": "Max-path recovery. Modern: Sant Llorenç de Balàfia (Sant Joan de Labritja, Eivissa).",
+      "municipality": "Sant Joan de Labritja"
     },
     {
       "title": "SAN LORENZO DEL CARDASAR",
@@ -32,7 +35,10 @@
         "parroquias": 1,
         "contribuye_con": "Palma"
       },
-      "cross_references": ["Manacor", "Palma"],
+      "cross_references": [
+        "Manacor",
+        "Palma"
+      ],
       "confidence": "high",
       "note": "Modern: Sant Llorenç des Cardassar. Miñano writes the Spanish-Catalan hybrid 'San Lorenzo del Cardasar' here; he also lists the pure Catalan form 'SAN LLORENS DESCARDASAR' separately on leaf 20 — see the note there."
     }

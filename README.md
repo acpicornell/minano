@@ -61,6 +61,21 @@ can be rebuilt without re-spending tokens.
    The extracted JSONs live under `data/text/page_<vol>_<leaf>.json`
    and are the canonical source of truth for the rest of the pipeline.
 
+   The `municipality` field follows a consistent convention: for
+   *villes* and *ciutats* — which are themselves their own
+   municipality — it carries the modern Catalan form of the title
+   (e.g. `ALAYOR` → *Alaior*, `MAHON` → *Maó*, `PUEBLA (la)` →
+   *sa Pobla*); for subordinate entries (*lugar*, *aldea*,
+   *caserío*, *cortijo*, *santuari*, *castell*…) it carries the
+   historical parent municipality at the time Miñano was writing
+   (so for instance *Llorito* points to *Sineu*, of which it was
+   then an *annex*, rather than to the modern stand-alone municipi
+   of Lloret de Vistalegre). Supramunicipal entities — islands,
+   *termes* menorquins, *quartons* eivissencs and natural features
+   (caps, ports, serres, valls) — leave the field empty, which is
+   the semantically correct reading of "this place has no single
+   parent municipality".
+
    A complementary **attribution-based recovery** pass catches articles
    whose title was so OCR-damaged that no place-name regex could find
    them. Fra Lluís de Vilafranca, the Capuchin friar of Palma who
@@ -79,6 +94,32 @@ can be rebuilt without re-spending tokens.
    (printed by Miñano under a heading rendered «LLtKO. AH. H.» in the
    raw OCR). This pass added fifteen Suplemento adicions that the
    place-name indexer had missed.
+
+   A second recovery layer — the **buried-lemma audit**
+   (`scripts/inner_lemma_audit.py`) — looks for Balearic articles
+   that the indexer overlooked because they were not at the start
+   of their chOCR paragraph. Two distinct miss patterns are
+   scanned. *Pattern A* (tail-merge) catches full article openers
+   («TITLE, V.|L.|C.|Ald. de Esp. en la isla de Mallorca…»)
+   appearing mid-paragraph after the tail of an unrelated
+   (usually peninsular) entry — the cases of SINEU (Tom VIII,
+   merged with the tail of SINES of Portugal), RUBERTS (Tom VII,
+   merged with QUINTANAPALLA), GALILEA (Tom XI, merged with the
+   tail of a Galician parish) and GENOVA (Tom XI, merged with a
+   Málaga-province editorial correction) were all recovered this
+   way. *Pattern B* (chained Suplement corrections) catches short
+   adicions of the form «Title. Tiene 733 vec…» chained one after
+   another in a single Suplement paragraph; the indexer would
+   typically capture only the first item in the chain and miss
+   the rest, as happened with the Sencelles–Binissalem corrections
+   paragraph (BINIARAUS, BINIALI, BINIAMAR, BINIARAIG) and the
+   ALARÓ adición. The audit bounds each candidate's correction
+   body to the next chained correction and requires a strict
+   Balearic anchor (Mallorca, Menorca, Eivissa, Formentera, isla
+   de Cabrera, las Baleares) or the Vilafranca attribution within
+   that body, so peninsular adicions whose paragraph happens to
+   share a Vilafranca signature with a Balearic neighbour do not
+   contaminate the result.
 
 3. **Geocoding.** Each extracted title is matched against the
    **Nomenclàtor Geogràfic de les Illes Balears** (NGIB, Govern de les

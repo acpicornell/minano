@@ -11,9 +11,14 @@
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
       "description": "V. R. de Esp., en la Isla de Mallorca, sit. en medio de ásperos montes, á 6 leg. de Palma. Su terr. produce poco trigo, vino y aceite; pero abunda de bellota, madera, ganado lanar y de cerdo. Era antiguamente parr., hasta que en el año de 1531, por bula del Papa Clemente VII, se unió á la capilla real de Nuestra Señora de Lluch, quedando desde entonces con el título y nombre de colegio, observándose en él lo mismo que en las iglesias colegiatas, en cuanto á los oficios divinos: los colegiales, que son sacerdotes, viven en comunidad, y nombran de 2 en 2 años un prior que ejerce la cura de almas. Hay en el distrito de esta V., y junto al mar, un lugarcito llamado San Lorenzo de la Calobra.",
-      "cross_references": ["Lluch", "San Lorenzo de la Calobra", "Clemente VII"],
+      "cross_references": [
+        "Lluch",
+        "San Lorenzo de la Calobra",
+        "Clemente VII"
+      ],
       "confidence": "high",
-      "note": "Miñano's 'ASCORCA' = modern Escorca; 'San Lorenzo de la Calobra' = Sa Calobra."
+      "note": "Miñano's 'ASCORCA' = modern Escorca; 'San Lorenzo de la Calobra' = Sa Calobra.",
+      "municipality": "Escorca"
     }
   ]
 }

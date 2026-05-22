@@ -10,10 +10,19 @@
       "place_type": "villa",
       "island": "Mallorca",
       "description": "Deyá. Tiene 937 habitantes, y además del anejo de Vall de Muza debe añadírsele el de Llucalcarri. En la línea 5 donde dice 'sit. al N. de Soller y de la C. de Palma', léase 'sit. al S. de Soller y al N. de la C. de Palma'. Y en la línea 10 donde dice 'el cual posee hoy la casa del marqués de Alcañiz', léase 'de Ariañy', cuya casa lo poseyó hasta el año de 1800. Después pasó á otras manos, y ya ha tenido dos ó tres dueños. Añádase que está sit. en un valle frondoso, poblado de olivos, á la orilla del mar, y que tiene por anejo á Llucalcarri. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "stats": {"habitantes": 937},
-      "cross_references": ["Soller", "Palma", "Vall de Muza", "Llucalcari", "marqués de Ariañy"],
+      "stats": {
+        "habitantes": 937
+      },
+      "cross_references": [
+        "Soller",
+        "Palma",
+        "Vall de Muza",
+        "Llucalcari",
+        "marqués de Ariañy"
+      ],
       "confidence": "high",
-      "note": "Modern: Deià (Mallorca, Tramuntana). Correccions: orientació respecte de Sóller (SUD, no Nord); Llucalcari com a annex; el palau era del marquès d'Ariany (no Alcañiz, error d'OCR/Miñano)."
+      "note": "Modern: Deià (Mallorca, Tramuntana). Correccions: orientació respecte de Sóller (SUD, no Nord); Llucalcari com a annex; el palau era del marquès d'Ariany (no Alcañiz, error d'OCR/Miñano).",
+      "municipality": "Deià"
     }
   ]
 }

@@ -9,9 +9,11 @@
       "title": "CAP DE PERA (adición)",
       "place_type": "lugar",
       "island": "Mallorca",
-      "municipality": "Artá",
+      "municipality": "Artà",
       "description": "Cap de Pera. Tiene un gobernador militar, y una parroquia con un teniente de cura. Contribuye con su matriz la V. de Artá, y no con Palma como se dice en el Diccionario. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "cross_references": ["Artá"],
+      "cross_references": [
+        "Artá"
+      ],
       "confidence": "high",
       "note": "Modern: Capdepera (Mallorca, llevant). Correcció: contribució amb Artà (la matriu), no amb Palma. Té gobernador militar — pel castell de Capdepera que controlava la costa orient de Mallorca."
     }

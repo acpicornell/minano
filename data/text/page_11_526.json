@@ -6,16 +6,29 @@
   "window": 2,
   "entries": [
     {
+      "title": "SOLLER (adición)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Sóller",
+      "description": "Villa. A este artículo únicamente debe añadirse, que á mas de la Aid. de Fornaluche tiene también por aneja la Aid. de Biniaraig, Binibací y la Alcaría del Conde de Ampurias. (Véanse sus artículos).",
+      "cross_references": ["Sóller", "Fornaluche", "Biniaraig", "Binibací"],
+      "confidence": "high",
+      "note": "Suplement: amplia la llista d'annexes de Sóller (a més de Fornalutx, hi pertanyen també les aldees de Biniaraix, Binibassí i l'Alcaria del Comte d'Empúries). Cadascun rep entrada pròpia al Suplement (vegeu BINIARAIG i BINIBACI, adicions del Suplement)."
+    },
+    {
       "title": "SONARROSA",
       "place_type": "aldea",
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
-      "municipality": "Sancellas",
+      "municipality": "Sencelles",
       "description": "Aid. R. de España en la isla y ob. de Mallorca, 6 vec., los que con el número de hab. y contribución se incluyen con los de la V. de Sancellas, de la que es aneja. Está sit. al S. de su matriz. [Not. dada por el R. P. Fr. Luis de Villafranca].",
       "stats": {
         "vecinos": 6
       },
-      "cross_references": ["Sancellas"],
+      "cross_references": [
+        "Sancellas"
+      ],
       "confidence": "high",
       "note": "Max-path recovery. Modern: Son Arrossa / Son Rossa (Sencelles)."
     },
@@ -26,7 +39,9 @@
       "seigneurial_regime": "Otro",
       "municipality": "Puigpunyent",
       "description": "Aid. t. de Esp. en la isla y ob. de Mallorca. El número de vec, hab. y contr. se incluyen con los de la V. de Puigpunyent. Sit. al W. y á una milla de esta. (Not. dada por el mismo).",
-      "cross_references": ["Puigpunyent"],
+      "cross_references": [
+        "Puigpunyent"
+      ],
       "confidence": "high",
       "note": "Modern: Son Bru (Puigpunyent)."
     },
@@ -37,7 +52,10 @@
       "seigneurial_regime": "Señorial",
       "municipality": "Palma",
       "description": "Aid. S. de Esp. en la isla y ob. de Mallorca. El número de vec. y hab. se incluyen con los de la C. de Palma. Sit. al N. O. y a ⅔ de leg. de esta C., con quien contribuye. Esta Aid. en cuanto a lo eclesiástico depende de la Vileta, de la que dista una corta milla al S. (Not. dada por el mismo).",
-      "cross_references": ["Palma", "La Vileta"],
+      "cross_references": [
+        "Palma",
+        "La Vileta"
+      ],
       "confidence": "high",
       "note": "Max-path recovery. Modern: Son Lluc / Son Lluís (Palma, possessió)."
     },
@@ -47,7 +65,9 @@
       "island": "Mallorca",
       "municipality": "Puigpunyent",
       "description": "Ald. de España en la isla y ob. de Mallorca. Tiene una ermita, y el número de vec. y pob. se incluyen con los de la villa de Puigpunyent con quien contribuye. Está sit. al N. y á 1 legua de su matriz, camino escabrosísimo. [Not. dada por el R. P. Fr. Luis de Villafranca].",
-      "cross_references": ["Puigpunyent"],
+      "cross_references": [
+        "Puigpunyent"
+      ],
       "confidence": "high",
       "note": "Corregit de la lectura inicial 'SUFFERA' (errada d'OCR). Modern: Superna (Puigpunyent, Mallorca) — antiga possessió al camí de Galilea."
     },
@@ -59,7 +79,10 @@
       "mayor_type": "Alcalde Pedáneo",
       "municipality": "Palma",
       "description": "Este L. es R. con A. P., 1 parr. con un vicario in capite. Está sit. al N. de Palma, de la que dista 1 leg., camino de Valldemosa. El núm. de vec. y hab. se incluyen con los de la Cap. que es su matriz, y con quien contribuye. (Not. dada por el mismo).",
-      "cross_references": ["Palma", "Valldemosa"],
+      "cross_references": [
+        "Palma",
+        "Valldemosa"
+      ],
       "confidence": "high",
       "note": "Article recuperat per la signatura de fra Lluís de Vilafranca. Modern: Son Sardina (Palma, barri del nord)."
     },
@@ -68,9 +91,13 @@
       "place_type": "lugar",
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
-      "municipality": "Artá",
+      "municipality": "Artà",
       "description": "En la línea 4 donde dice «sit. al E. de la V. de Artá», léase «sit. al S. de la V. de Artá». No es cierto que es uno de los menos considerables de la isla, pues justamente es uno de los mas numerosos, y antes de la peste del año 1820, era el de mas hab. de todos los L. sufragáneos de Mallorca. Contribuye con la V. de Artá y no con Palma. Hay en ella una parr. con un vicario in capite. (Not. dada por el mismo).",
-      "cross_references": ["Son Servera", "Artá", "Palma"],
+      "cross_references": [
+        "Son Servera",
+        "Artá",
+        "Palma"
+      ],
       "confidence": "high",
       "note": "Suplement amb tres correccions: posició (S, no E, d'Artà); demografia (no «poc considerable» sinó dels més grans, abans de la pesta de 1820); contribució (amb Artà, no amb Palma). Modern: Son Servera (Mallorca, Llevant). La pesta de 1820 fou la darrera epidèmia greu a Mallorca."
     }

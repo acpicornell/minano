@@ -18,9 +18,14 @@
         "riqueza_liquida_libras": 31047,
         "contribucion": "3,442 libras 5 sueldos"
       },
-      "cross_references": ["Deyá", "Sóller", "Abadía de Bernardos (Cartuja)"],
+      "cross_references": [
+        "Deyá",
+        "Sóller",
+        "Abadía de Bernardos (Cartuja)"
+      ],
       "confidence": "high",
-      "note": "Modern: Valldemossa (Mallorca). Té com a anneja Deià. La 'abadía de Bernardos' és la Cartuja de Valldemossa (en realitat dels Cartoixans, no Bernards/Cistercians — Miñano confon les ordres). El 1838 Chopin i George Sand hi feren temporada — 7 anys després d'aquest article."
+      "note": "Modern: Valldemossa (Mallorca). Té com a anneja Deià. La 'abadía de Bernardos' és la Cartuja de Valldemossa (en realitat dels Cartoixans, no Bernards/Cistercians — Miñano confon les ordres). El 1838 Chopin i George Sand hi feren temporada — 7 anys després d'aquest article.",
+      "municipality": "Valldemossa"
     }
   ]
 }

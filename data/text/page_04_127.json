@@ -19,9 +19,15 @@
         "riqueza_liquida_libras": 45507,
         "contribucion": "4,??? libras 12 sueldos"
       },
-      "cross_references": ["Bañalbufar", "Establimens", "La Granja", "Canet"],
+      "cross_references": [
+        "Bañalbufar",
+        "Establimens",
+        "La Granja",
+        "Canet"
+      ],
       "confidence": "high",
-      "note": "Modern: Esporles (Mallorca). Té com a annexes Banyalbufar i Establiments. La Granja és un dels topònims emblemàtics. El manantial subterrani de 3 milles és el famós riu de Sa Granja → Canet."
+      "note": "Modern: Esporles (Mallorca). Té com a annexes Banyalbufar i Establiments. La Granja és un dels topònims emblemàtics. El manantial subterrani de 3 milles és el famós riu de Sa Granja → Canet.",
+      "municipality": "Esporles"
     }
   ]
 }

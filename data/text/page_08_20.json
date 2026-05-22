@@ -13,7 +13,8 @@
       "mayor_type": "Alcalde Pedáneo",
       "description": "L. R. de España en la isla de Mallorca; A. P.",
       "confidence": "medium",
-      "note": "Cross-reference stub: Miñano alphabetises this Catalan spelling separately from 'SAN LORENZO DEL CARDASAR' (leaf 17, Castilianised form). Same place — modern Sant Llorenç des Cardassar."
+      "note": "Cross-reference stub: Miñano alphabetises this Catalan spelling separately from 'SAN LORENZO DEL CARDASAR' (leaf 17, Castilianised form). Same place — modern Sant Llorenç des Cardassar.",
+      "municipality": "Manacor"
     },
     {
       "title": "SAN LUIS",
@@ -21,13 +22,16 @@
       "island": "Menorca",
       "seigneurial_regime": "Realengo",
       "mayor_type": "Alcalde Pedáneo",
-      "municipality": "Mahón",
+      "municipality": "Maó",
       "description": "L. R. de España, provincia de Menorca, partido de Mahón. A. P., 144 vecinos, 548 habitantes. Dista 2½ millas de Mahón y 19½ de Ciudadela.",
       "stats": {
         "vecinos": 144,
         "habitantes": 548
       },
-      "cross_references": ["Mahón", "Ciudadela"],
+      "cross_references": [
+        "Mahón",
+        "Ciudadela"
+      ],
       "confidence": "high",
       "note": "Max-path recovery (not in Phase 1 index). Modern: Sant Lluís (Menorca), founded under French occupation 1761."
     }

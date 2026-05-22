@@ -14,9 +14,12 @@
         "vecinos": 49,
         "habitantes": 336
       },
-      "cross_references": ["Ibiza"],
+      "cross_references": [
+        "Ibiza"
+      ],
       "confidence": "high",
-      "note": "Likely modern Sant Francesc de s'Estany (Sant Josep de sa Talaia, Eivissa); the 1½ leg. distance from Eivissa capital matches."
+      "note": "Likely modern Sant Francesc de s'Estany (Sant Josep de sa Talaia, Eivissa); the 1½ leg. distance from Eivissa capital matches.",
+      "municipality": "Sant Josep de sa Talaia"
     },
     {
       "title": "SAN FRANCISCO JAVIER Y SAN FERNANDO",
@@ -27,9 +30,13 @@
         "vecinos": 318,
         "habitantes": 1057
       },
-      "cross_references": ["Formentera", "Ibiza"],
+      "cross_references": [
+        "Formentera",
+        "Ibiza"
+      ],
       "confidence": "high",
-      "note": "Modern: Sant Francesc Xavier (capital of Formentera) + Sant Ferran de ses Roques, the two principal Formentera parishes Miñano lumps into one administrative caserío."
+      "note": "Modern: Sant Francesc Xavier (capital of Formentera) + Sant Ferran de ses Roques, the two principal Formentera parishes Miñano lumps into one administrative caserío.",
+      "municipality": "Formentera"
     }
   ]
 }

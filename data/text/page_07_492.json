@@ -10,10 +10,16 @@
       "place_type": "caserío",
       "island": "Ibiza",
       "description": "Caserío de Esp., provincia de Iviza; 161 vecinos, 754 habitantes (Véase la descripción general de Iviza). Dista 1 legua de la capital.",
-      "stats": {"vecinos": 161, "habitantes": 754},
-      "cross_references": ["Iviza"],
+      "stats": {
+        "vecinos": 161,
+        "habitantes": 754
+      },
+      "cross_references": [
+        "Iviza"
+      ],
       "confidence": "high",
-      "note": "Modern: Sant Jordi de ses Salines (Sant Josep de sa Talaia, Eivissa)."
+      "note": "Modern: Sant Jordi de ses Salines (Sant Josep de sa Talaia, Eivissa).",
+      "municipality": "Sant Josep de sa Talaia"
     }
   ]
 }

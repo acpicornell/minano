@@ -12,8 +12,12 @@
       "seigneurial_regime": "Realengo",
       "municipality": "Palma",
       "description": "Aid. R. de Esp. en la isla de Mallorca, 8 vec., los que con sus habitantes y contribución se incluyen con los de su matriz Palma. Está sit. al E. y a 2 leg. de la capital.",
-      "stats": {"vecinos": 8},
-      "cross_references": ["Palma"],
+      "stats": {
+        "vecinos": 8
+      },
+      "cross_references": [
+        "Palma"
+      ],
       "confidence": "high",
       "note": "Modern: Sant Jordi de Ses Salines / Sant Jordi (Palma de Mallorca). Annex de Palma a 2 llegues a l'est — actualment barri suburbà prop de l'aeroport."
     },
@@ -22,9 +26,13 @@
       "place_type": "villa",
       "island": "Mallorca",
       "description": "El de Mallorca. A lo dicho en el artículo debe añadirse, que a sus inmediaciones está el santuario de Nuestra Señora de la Consolación. Dista 5 ½ E. de Palma. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "cross_references": ["Palma", "Nuestra Señora de la Consolación"],
+      "cross_references": [
+        "Palma",
+        "Nuestra Señora de la Consolación"
+      ],
       "confidence": "high",
-      "note": "Modern: Sant Joan (Mallorca). Santuari de la Consolació (puig de Consolació, prop del poble)."
+      "note": "Modern: Sant Joan (Mallorca). Santuari de la Consolació (puig de Consolació, prop del poble).",
+      "municipality": "Sant Joan"
     },
     {
       "title": "SAN LORENZO DEL CARDASSAR (adición)",
@@ -32,7 +40,9 @@
       "island": "Mallorca",
       "municipality": "Manacor",
       "description": "No está sit. al N. de Manacor, sino al E., en territorio muy enfermizo. Contribuye con su matriz y no con Palma, como dice el Diccionario. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "cross_references": ["Manacor"],
+      "cross_references": [
+        "Manacor"
+      ],
       "confidence": "high",
       "note": "Suplement: Sant Llorenç des Cardassar està a l'EST de Manacor (no al N). Confirma ja la dependència fiscal de Manacor."
     }

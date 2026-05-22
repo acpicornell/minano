@@ -18,9 +18,12 @@
         "parroquias": 1,
         "contribucion": "1,118 libras 5 sueldos"
       },
-      "cross_references": ["Sóller"],
+      "cross_references": [
+        "Sóller"
+      ],
       "confidence": "high",
-      "note": "Miñano gives both 'ASCORCA' (Tomo I leaf 399 — the ancient parr. united to Lluch in 1531) and 'ESCORGA' (here, with vec./hab. counts) for what is essentially the same place — modern Escorca, NE of Sóller."
+      "note": "Miñano gives both 'ASCORCA' (Tomo I leaf 399 — the ancient parr. united to Lluch in 1531) and 'ESCORGA' (here, with vec./hab. counts) for what is essentially the same place — modern Escorca, NE of Sóller.",
+      "municipality": "Escorca"
     }
   ]
 }

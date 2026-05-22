@@ -19,9 +19,14 @@
         "conventos": 1,
         "contribucion": "20,633 libras"
       },
-      "cross_references": ["San Lorenzo", "Felanitx", "Palma"],
+      "cross_references": [
+        "San Lorenzo",
+        "Felanitx",
+        "Palma"
+      ],
       "confidence": "high",
-      "note": "OCR'd 'MAM ACOR' (with M-space-A) — title fixed to MANACOR. Heraldic 'mano y corazón' is a folk-etymology pun on 'Mano-cor'."
+      "note": "OCR'd 'MAM ACOR' (with M-space-A) — title fixed to MANACOR. Heraldic 'mano y corazón' is a folk-etymology pun on 'Mano-cor'.",
+      "municipality": "Manacor"
     }
   ]
 }

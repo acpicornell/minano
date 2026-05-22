@@ -26,9 +26,14 @@
         "almendras_cuarteras": 1000,
         "contribucion": "7,131 libras 4 sueldos"
       },
-      "cross_references": ["Palma", "Randa", "Beato Raymundo"],
+      "cross_references": [
+        "Palma",
+        "Randa",
+        "Beato Raymundo"
+      ],
       "confidence": "medium",
-      "note": "OCR'd 'LLUMATOR' (L-L-U-M-A-T-O-R) but body context (4½ leguas E. of Palma, Randa monte, 8,630 hab., 1 conv. franciscano) unambiguously identifies modern Llucmajor. Vecinos figure ('1,1?4') is OCR-garbled."
+      "note": "OCR'd 'LLUMATOR' (L-L-U-M-A-T-O-R) but body context (4½ leguas E. of Palma, Randa monte, 8,630 hab., 1 conv. franciscano) unambiguously identifies modern Llucmajor. Vecinos figure ('1,1?4') is OCR-garbled.",
+      "municipality": "Llucmajor"
     }
   ]
 }

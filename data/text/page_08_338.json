@@ -29,9 +29,12 @@
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
       "mayor_type": "Alcalde Pedáneo",
-      "municipality": "Artá",
+      "municipality": "Artà",
       "description": "L. R. de España en la isla y obispado de Mallorca. A. P. Para su vecindario Véase Artá, de quien es anejo: situado al E. de esta villa, próximo al mar; es uno de los menos considerables de la isla. Contrib. con Palma.",
-      "cross_references": ["Artá", "Palma"],
+      "cross_references": [
+        "Artá",
+        "Palma"
+      ],
       "confidence": "high",
       "note": "Max-path recovery (not in Phase 1 index). Modern: Son Servera (Mallorca). Confirms the ARTÁ article (Tomo I) listing Son Cervera as anejo."
     }

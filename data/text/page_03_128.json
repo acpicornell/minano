@@ -14,7 +14,9 @@
         "habitantes": 7000,
         "posesiones_principales": 131
       },
-      "cross_references": ["Ferrerías"],
+      "cross_references": [
+        "Ferrerías"
+      ],
       "confidence": "high"
     },
     {
@@ -30,9 +32,12 @@
         "conventos": 4,
         "casas": 600
       },
-      "cross_references": ["Mahón"],
+      "cross_references": [
+        "Mahón"
+      ],
       "confidence": "high",
-      "note": "Miñano writes 'CIUDADELA (Jamna)' — 'Jamna' is the Latinised classical name (Iamona). Modern Catalan: Ciutadella de Menorca."
+      "note": "Miñano writes 'CIUDADELA (Jamna)' — 'Jamna' is the Latinised classical name (Iamona). Modern Catalan: Ciutadella de Menorca.",
+      "municipality": "Ciutadella de Menorca"
     }
   ]
 }

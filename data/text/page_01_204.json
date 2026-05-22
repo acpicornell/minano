@@ -24,9 +24,23 @@
         "ano_pesca_coral_laudes": 40,
         "ano_referencia_pesca": 1820
       },
-      "cross_references": ["Mallorca", "Palma", "Menorca", "Pollensa", "Cabo Formentor", "Puerto de la Piedra", "Albufera mayor", "Albufera menor", "Bahía de Alcudia", "Bahía de Pollensa", "Peña Roja", "Ntra. Sra. de la Vitoria"],
+      "cross_references": [
+        "Mallorca",
+        "Palma",
+        "Menorca",
+        "Pollensa",
+        "Cabo Formentor",
+        "Puerto de la Piedra",
+        "Albufera mayor",
+        "Albufera menor",
+        "Bahía de Alcudia",
+        "Bahía de Pollensa",
+        "Peña Roja",
+        "Ntra. Sra. de la Vitoria"
+      ],
       "confidence": "high",
-      "note": "Max-path recovery — OCR-mangled headword 'ALClülA' is el motiu pel qual l'indexer original l'havia saltat. Mega-article: ciutat fortificada, segona ciutat de Mallorca després de Palma. Article notable per la descripció de l'Albufera mallorquina i del comerç del corall (40 laudes catalans pescant el 1820, abans els fèien els genovesos)."
+      "note": "Max-path recovery — OCR-mangled headword 'ALClülA' is el motiu pel qual l'indexer original l'havia saltat. Mega-article: ciutat fortificada, segona ciutat de Mallorca després de Palma. Article notable per la descripció de l'Albufera mallorquina i del comerç del corall (40 laudes catalans pescant el 1820, abans els fèien els genovesos).",
+      "municipality": "Alcúdia"
     }
   ]
 }

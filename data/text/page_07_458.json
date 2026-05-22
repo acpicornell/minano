@@ -11,10 +11,17 @@
       "island": "Menorca",
       "seigneurial_regime": "Realengo",
       "mayor_type": "Alcalde Pedáneo",
-      "municipality": "Mercadal",
+      "municipality": "es Mercadal",
       "description": "L. R. de España, provincia de Menorca, partido de Mercadal. A. P., 223 vecinos, 1,043 habitantes. Dista 14 millas de Mahón, y 9 y dos tercios de Ciudadela.",
-      "stats": {"vecinos": 223, "habitantes": 1043},
-      "cross_references": ["Mercadal", "Mahón", "Ciudadela"],
+      "stats": {
+        "vecinos": 223,
+        "habitantes": 1043
+      },
+      "cross_references": [
+        "Mercadal",
+        "Mahón",
+        "Ciudadela"
+      ],
       "confidence": "high",
       "note": "Modern: Sant Cristòfol (Es Migjorn Gran, Menorca) — el FERRERIAS-term article (Tomo IV leaf 185) també confirma San Cristóbal i Fornells com a poblacions del seu término."
     }

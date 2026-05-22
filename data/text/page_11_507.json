@@ -16,7 +16,9 @@
         "vecinos": 40,
         "parroquias": 1
       },
-      "cross_references": ["Campanet"],
+      "cross_references": [
+        "Campanet"
+      ],
       "confidence": "high",
       "note": "OCR severament corrupte al chocr ('LLtKO. AH. H. de Isp. ... V. de Gampantt' a la lectura automatitzada). Recuperat per indicació externa. Modern: Ullaró (Campanet, Mallorca)."
     },
@@ -25,9 +27,14 @@
       "place_type": "villa",
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
-      "municipality": "Santa Margarita",
+      "municipality": "Santa Margalida",
       "description": "Es patria del cardenal Don Antonio Maestro de Nicolao V. Sit. al E. y á 7 leg. de la C. de Palma. (Not. dada por el R. P. Fr. Luis de Villafranca).",
-      "cross_references": ["Santa Margarita", "Palma", "Cardenal Antonio Maestro", "Nicolao V"],
+      "cross_references": [
+        "Santa Margarita",
+        "Palma",
+        "Cardenal Antonio Maestro",
+        "Nicolao V"
+      ],
       "confidence": "high",
       "note": "Suplement: documenta el cardenal Antonio Maestro (mestre del Papa Nicolau V, segle XV) com a fill il·lustre. Situa la villa a 7 llegües E. de Palma. Modern: Santa Margalida (Mallorca)."
     },
@@ -36,9 +43,14 @@
       "place_type": "villa",
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
-      "municipality": "Santa María del Camí",
+      "municipality": "Santa Maria del Camí",
       "description": "En lugar de la sit. que se expresa en el Diccionario, léase la siguiente. Está sit. en el llano, camino de Palma á la C. de Alcudia: pues para llegar á las montañas de Ntra. Sra. de Lluch se necesita de dos á tres horas: á mas de esto, hay en dicha V. un conv. de mínimos. Se halla al N. E. y no al N. de la C. de Palma á 2 ½ leguas. (Not. dada por el mismo).",
-      "cross_references": ["Santa María", "Palma", "Alcudia", "Lluch"],
+      "cross_references": [
+        "Santa María",
+        "Palma",
+        "Alcudia",
+        "Lluch"
+      ],
       "confidence": "high",
       "note": "Suplement: corregeix la situació de SANTA MARÍA (al pla, camí Palma-Alcúdia; NE de Palma a 2 ½ lleg., no N) i confirma el convent de Mínims. Modern: Santa Maria del Camí (Mallorca, Raiguer)."
     }

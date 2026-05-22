@@ -6,6 +6,20 @@
   "window": 1,
   "entries": [
     {
+      "title": "BINARAUS (adición)",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Palma",
+      "description": "Tiene 453 habitantes.",
+      "stats": {
+        "habitantes": 453
+      },
+      "cross_references": ["Binaraus"],
+      "confidence": "medium",
+      "note": "Suplement: correcció demogràfica sobre l'entrada de tomo II (que en consigna 39 vec. i 118 hab.); la xifra revisada de 453 habitants suggereix una recompta amb la població completa. Modern: Binaraus / Biniaraix (Sóller) — vegeu també BINIARAIG (adición), entrada immediatament posterior en el mateix paràgraf del Suplement."
+    },
+    {
       "title": "BINIAGUAL (adición)",
       "place_type": "lugar",
       "island": "Mallorca",
@@ -20,6 +34,50 @@
       "cross_references": ["Binisalem"],
       "confidence": "high",
       "note": "Suplement: BINIAGUAL té només 7 vecinos i 36 habitants, depèn totalment de Binissalem. Modern: Biniagual (Binissalem, Mallorca)."
+    },
+    {
+      "title": "BINIALI (adición)",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Sin alcalde",
+      "municipality": "Sencelles",
+      "description": "No tiene alcalde y sí una parr. con un teniente de cura; y sus vec. y hab. con la contr. se incluyen en los de Sancellas, que es su matriz, de la que depende en lo civil y eclesiástico. Está sit. al O. de Sancellas en el cam. de Palma. (Not. dada por el mismo).",
+      "stats": {
+        "parroquias": 1
+      },
+      "cross_references": ["Sancellas", "Palma"],
+      "confidence": "high",
+      "note": "Suplement amb correcció: el tomo II consigna que BINIALI «contr. con Palma», però aquesta adició precisa que en realitat els seus vecinos, habitants i contribució s'integren amb Sancellas (Sencelles), de la qual és matriu eclesiàstica i civil. Modern: Biniali (Sencelles, Mallorca), petit llogaret a l'oest de la vila."
+    },
+    {
+      "title": "BINIAMAR (adición)",
+      "place_type": "lugar",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Sin alcalde",
+      "municipality": "Selva",
+      "description": "No tiene alcalde y sí una parr. con un teniente de cura, y sus vec. y hab. se incluyen con los de su matriz la villa de Selva, de la que depende en lo civil y eclesiástico. Sit. al S. de su matriz con la que contribuye. (Not. dada por el mismo).",
+      "stats": {
+        "parroquias": 1
+      },
+      "cross_references": ["Selva"],
+      "confidence": "high",
+      "note": "Suplement amb correcció: el tomo II consigna que BINIAMAR «contr. con Palma», però aquesta adició precisa que en realitat els vecinos i la contribució s'integren amb la matriu Selva. Modern: Biniamar (Selva, Mallorca)."
+    },
+    {
+      "title": "BINIARAIG (adición)",
+      "place_type": "aldea",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Sóller",
+      "description": "Aid. R. de Esp. en la isla de Mallorca, una parr. aneja á la de la V. de Soller. Está sit. en el ameno y frondoso valle de esta villa al E., de la que depende en lo civil y eclesiástico. Sus vec., hab. y contr. se incluyen con los de su matriz. (Not. dada por el mismo).",
+      "stats": {
+        "parroquias": 1
+      },
+      "cross_references": ["Sóller"],
+      "confidence": "high",
+      "note": "Títol corregit a partir de l'OCR (BINIAKAIG en el chocr) — la lletra R va ser reconeguda erròniament com a K. Adició al Suplement que dóna entrada pròpia a una aldea anteriorment només citada de passada dins l'article SOLLER. Modern: Biniaraix (Sóller, Mallorca), llogaret al fons del torrent homònim."
     }
   ]
 }

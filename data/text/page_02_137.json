@@ -33,7 +33,7 @@
       "place_type": "lugar",
       "seigneurial_regime": "Realengo",
       "mayor_type": "Alcalde Pedáneo",
-      "municipality": null,
+      "municipality": "Binissalem",
       "description": "L. R. de Esp., prov. de Mallorca. A. P., 7 vec., 36 hab. (Véase la descripción general de Mallorca).",
       "stats": {
         "vecinos": 7,
@@ -45,12 +45,31 @@
       "confidence": "medium"
     },
     {
+      "title": "BINIALI",
+      "island": "Mallorca",
+      "place_type": "lugar",
+      "seigneurial_regime": "Realengo",
+      "mayor_type": "Alcalde Pedáneo",
+      "municipality": "Sencelles",
+      "description": "L. R. de Esp., provincia de Mallorca. A. P., 81 vec., 336 hab. (Véase la descripción general de Mallorca). Contr. con Palma.",
+      "stats": {
+        "vecinos": 81,
+        "habitantes": 336,
+        "contribuye_con": "Palma"
+      },
+      "cross_references": [
+        "Mallorca"
+      ],
+      "confidence": "high",
+      "note": "Article recuperat: l'indexador automàtic no l'havia detectat perquè l'OCR llegeix el títol com «BUNIALI» (la combinació «NI» reconeguda com a «U»), patró idèntic al de BIMARROY → BINIARROY, BIMBACI → BINIBACI o BIMFAÜALT → BINIFADALT corregits al Suplement. La dada «Contr. con Palma» és corregida posteriorment per l'adició del tomo XI (vegeu BINIALI (adición)), que aclareix que la contribució i la dependència eclesiàstica són amb Sancellas. Modern: Biniali (Sencelles, Mallorca)."
+    },
+    {
       "title": "BINIAMAR",
       "island": "Mallorca",
       "place_type": "lugar",
       "seigneurial_regime": "Realengo",
       "mayor_type": "Alcalde Pedáneo",
-      "municipality": "Palma",
+      "municipality": "Selva",
       "description": "L. R. de Esp., provincia de Mallorca. A. P., 76 vec., 318 habitantes. Véase la descripción general de Mallorca. Contr. con Palma.",
       "stats": {
         "vecinos": 76,
@@ -68,7 +87,7 @@
       "place_type": "villa",
       "seigneurial_regime": "Realengo",
       "mayor_type": "Alcalde Ordinario",
-      "municipality": null,
+      "municipality": "Binissalem",
       "description": "V. R. de Esp., en la isla de Mallorca y su obisp. A. O., 518 vecinos, 2,510 hab., 1 parr. de la que es aneja la de Lloceta y Bincegál. Sit. en el centro de la isla, en terreno llano y fértil. Produce trigo, cebada, avena, legumbres, aceite, vino, ganado lanar, cabrío y vacuno. Sus edificios y calles son de una mediana hermosura y disposición. Tiene por armas una concha en el escudo. Contr. 6,410 libras.",
       "stats": {
         "vecinos": 518,

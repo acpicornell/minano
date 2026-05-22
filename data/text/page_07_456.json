@@ -11,9 +11,11 @@
       "island": "Menorca",
       "seigneurial_regime": "Realengo",
       "mayor_type": "Alcalde Pedáneo",
-      "municipality": "Mahón",
+      "municipality": "Maó",
       "description": "L. R. de Esp., prov. de Menorca, partido de Mahon. A. P.",
-      "cross_references": ["Mahón"],
+      "cross_references": [
+        "Mahón"
+      ],
       "confidence": "medium",
       "note": "Brief stub. Modern: Sant Climent (terme de Maó, Menorca)."
     }

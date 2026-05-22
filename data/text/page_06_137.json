@@ -18,9 +18,12 @@
         "parroquias": 1,
         "contribucion": "411 libras 4 sueldos"
       },
-      "cross_references": ["Llucmajor"],
+      "cross_references": [
+        "Llucmajor"
+      ],
       "confidence": "high",
-      "note": "OCR'd 'MGNTUIRI' (M-G-N for M-O-N). Modern: Montuïri (Mallorca)."
+      "note": "OCR'd 'MGNTUIRI' (M-G-N for M-O-N). Modern: Montuïri (Mallorca).",
+      "municipality": "Montuïri"
     }
   ]
 }

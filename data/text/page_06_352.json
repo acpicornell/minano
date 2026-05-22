@@ -14,9 +14,12 @@
         "vecinos": 30,
         "habitantes": 149
       },
-      "cross_references": ["Mallorca"],
+      "cross_references": [
+        "Mallorca"
+      ],
       "confidence": "high",
-      "note": "Modern: Orient (vall d'Orient, Bunyola, Mallorca). Aneja de Bunyola, as documented in BÜÑOLA entry (Tomo II)."
+      "note": "Modern: Orient (vall d'Orient, Bunyola, Mallorca). Aneja de Bunyola, as documented in BÜÑOLA entry (Tomo II).",
+      "municipality": "Bunyola"
     }
   ]
 }

@@ -10,7 +10,8 @@
       "place_type": "término",
       "island": "Menorca",
       "description": "Térm. de Esp., en la Isla de Menorca; tiene 8 millas de largo sobre 7 de ancho; está bañado por el mar al O. S. E.: por el E. confin. con el de Mahon; el de Mercadal y Ferrerías lo rodean por los demás rumbos.",
-      "confidence": "high"
+      "confidence": "high",
+      "municipality": "Alaior"
     },
     {
       "title": "ALAYOR",
@@ -26,8 +27,13 @@
         "conventos": 1,
         "hospitales": 1
       },
-      "cross_references": ["Mahón", "Ciudadela", "Cas Covas"],
-      "confidence": "medium"
+      "cross_references": [
+        "Mahón",
+        "Ciudadela",
+        "Cas Covas"
+      ],
+      "confidence": "medium",
+      "municipality": "Alaior"
     }
   ]
 }

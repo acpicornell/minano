@@ -13,8 +13,18 @@
       "stats": {
         "posesiones_principales": 147
       },
-      "cross_references": ["Ciudadela", "Alayor", "Mercadal", "Ferrerías", "Adaya", "Villa Carlos", "San Luis", "Binijitaps"],
-      "confidence": "high"
+      "cross_references": [
+        "Ciudadela",
+        "Alayor",
+        "Mercadal",
+        "Ferrerías",
+        "Adaya",
+        "Villa Carlos",
+        "San Luis",
+        "Binijitaps"
+      ],
+      "confidence": "high",
+      "municipality": "Maó"
     },
     {
       "title": "MAHON",
@@ -29,9 +39,20 @@
         "conventos_monjas": 1,
         "hospital_capacidad": 700
       },
-      "cross_references": ["Ciudadela", "Villa Carlos", "Mercadal", "Mallorca", "Barcelona", "Andrea Doria", "Isla del Rey", "Isla de Den Colom", "Albuferas"],
+      "cross_references": [
+        "Ciudadela",
+        "Villa Carlos",
+        "Mercadal",
+        "Mallorca",
+        "Barcelona",
+        "Andrea Doria",
+        "Isla del Rey",
+        "Isla de Den Colom",
+        "Albuferas"
+      ],
       "confidence": "high",
-      "note": "MAHÓN ciudad — mega-article. Vecinos figure '4,7?? vec. y 71 Kavttantes' is OCR-garbled (could be 4,750 / 4,720 with ~25-30k hab. inclusive del término). Latitude 39°52'36\" matches actual Mahón position. The Andrea Doria quote about Mahón as one of the four best Mediterranean ports is famous."
+      "note": "MAHÓN ciudad — mega-article. Vecinos figure '4,7?? vec. y 71 Kavttantes' is OCR-garbled (could be 4,750 / 4,720 with ~25-30k hab. inclusive del término). Latitude 39°52'36\" matches actual Mahón position. The Andrea Doria quote about Mahón as one of the four best Mediterranean ports is famous.",
+      "municipality": "Maó"
     }
   ]
 }

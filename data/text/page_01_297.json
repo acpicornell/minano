@@ -21,8 +21,13 @@
         "valor_industria_libras_mallorquinas": 11070,
         "contribucion": "3,258 libras 16 sueldos"
       },
-      "cross_references": ["Estallenchs", "Dragonera", "Desierto de San José"],
-      "confidence": "high"
+      "cross_references": [
+        "Estallenchs",
+        "Dragonera",
+        "Desierto de San José"
+      ],
+      "confidence": "high",
+      "municipality": "Andratx"
     }
   ]
 }

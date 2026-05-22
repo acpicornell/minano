@@ -11,7 +11,7 @@
       "place_type": "aldea",
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
-      "municipality": "Santañy",
+      "municipality": "Santanyí",
       "description": "Aid. R. de España en la Isla y obisp. de Mallorca, una ermita. El número de vecinos y habitantes están inclusos con los de la villa de Santañy, de la que depende en lo civil y eclesiástico. Sit. al O. y á ½ de hora de su matriz con quien contribuye. (Not. dada por el R. P. Fr. Luis de Villafranca).",
       "cross_references": [
         "Santañy"
@@ -38,7 +38,7 @@
       "island": "Mallorca",
       "seigneurial_regime": "Señorial",
       "mayor_type": "Alcalde Ordinario",
-      "municipality": "Binisalem",
+      "municipality": "Binissalem",
       "description": "Es V. S. y no L. Ademas del A. O. tiene dos regidores. En la línea 4 donde dice 'sit. al O. de Inca', añádase 'y al N. E. de Binisalem, de la que depende en lo eclesiástico'. En la línea 5 donde dice 'en terreno llano', léase 'montuoso'. No contribuye con Palma, pues como goza los fueros de villa, ella misma se distribuye la contribución. (Not. dada por el mismo).",
       "cross_references": [
         "Inca",
@@ -64,7 +64,7 @@
       "title": "LLUCALCARI (adición)",
       "place_type": "lugar",
       "island": "Mallorca",
-      "municipality": "Deyá",
+      "municipality": "Deià",
       "description": "Los vecinos, habitantes y contribución se comprenden con los de Deyá, de la que es aneja. Sit. en la ribera del mar al N. de su matriz. Es patria del capitán de navío Don Felipe Bauzá, director que fue del real depósito hidrográfico de Madrid, y uno de sus mas célebres matemáticos. (Not. dada por el mismo).",
       "cross_references": [
         "Deyá",
@@ -105,7 +105,8 @@
         "Carlos V"
       ],
       "confidence": "high",
-      "note": "Suplement a LLUMATOR (Tomo V leaf 314). Modern: Llucmajor (Mallorca). Patris: obispos. Santuari de Gràcia (Randa) i 30 molins de vent."
+      "note": "Suplement a LLUMATOR (Tomo V leaf 314). Modern: Llucmajor (Mallorca). Patris: obispos. Santuari de Gràcia (Randa) i 30 molins de vent.",
+      "municipality": "Llucmajor"
     }
   ]
 }

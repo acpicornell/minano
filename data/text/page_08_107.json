@@ -13,9 +13,12 @@
       "stats": {
         "vecinos": 150
       },
-      "cross_references": ["Ibiza"],
+      "cross_references": [
+        "Ibiza"
+      ],
       "confidence": "high",
-      "note": "Modern: Santa Gertrudis de Fruitera (Santa Eulària des Riu, Eivissa)."
+      "note": "Modern: Santa Gertrudis de Fruitera (Santa Eulària des Riu, Eivissa).",
+      "municipality": "Santa Eulària des Riu"
     },
     {
       "title": "SANTA INÉS",
@@ -25,9 +28,12 @@
       "stats": {
         "habitantes": 471
       },
-      "cross_references": ["Ibiza"],
+      "cross_references": [
+        "Ibiza"
+      ],
       "confidence": "high",
-      "note": "Max-path recovery (not in Phase 1 index). Modern: Santa Agnès de Corona (Sant Antoni de Portmany, Eivissa)."
+      "note": "Max-path recovery (not in Phase 1 index). Modern: Santa Agnès de Corona (Sant Antoni de Portmany, Eivissa).",
+      "municipality": "Sant Antoni de Portmany"
     }
   ]
 }

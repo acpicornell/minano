@@ -17,9 +17,14 @@
         "parroquias": 1,
         "fabricas_jabon": 2
       },
-      "cross_references": ["Mahón", "Ciudadela", "San Carlos"],
+      "cross_references": [
+        "Mahón",
+        "Ciudadela",
+        "San Carlos"
+      ],
       "confidence": "high",
-      "note": "OCR'd 'VILLAC ARLOS' with a space; cuerpo dice 'pror. de Menorca' (OCR mangle of 'prov.'). Modern: Es Castell (anteriormente Villa Carlos, llamada también Georgetown durante la ocupación inglesa). Fundada en 1771."
+      "note": "OCR'd 'VILLAC ARLOS' with a space; cuerpo dice 'pror. de Menorca' (OCR mangle of 'prov.'). Modern: Es Castell (anteriormente Villa Carlos, llamada también Georgetown durante la ocupación inglesa). Fundada en 1771.",
+      "municipality": "es Castell"
     }
   ]
 }

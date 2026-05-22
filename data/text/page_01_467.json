@@ -11,10 +11,14 @@
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
       "mayor_type": "Alcalde Pedáneo",
-      "municipality": "Esporlas",
+      "municipality": "Esporles",
       "description": "L. R. de Esp., en la isla y obisp. de Mallorca. A. P., 1 parr. aneja de la de Esporlas; su vecindario está incluido con el de esta villa. Sit. en la inmediación del mar, siguiendo la costa del N. para el O. Produce granos y vinos de los mejores que se recogen en la isla. En este terreno ha trabajado mucho el arte para hacerle transitable y productivo. Su riqueza líquida asciende á 11,??? libras. Contr. 1,560 libras 1 sueldo.",
-      "stats": {"contribucion": "1,560 libras 1 sueldo"},
-      "cross_references": ["Esporlas"],
+      "stats": {
+        "contribucion": "1,560 libras 1 sueldo"
+      },
+      "cross_references": [
+        "Esporlas"
+      ],
       "confidence": "high",
       "note": "Modern: Banyalbufar (Mallorca, Tramuntana). Famós per la malvasia. Annex d'Esporles."
     }

@@ -13,8 +13,14 @@
       "stats": {
         "habitantes": 1700
       },
-      "cross_references": ["Mahón", "Ferrerías", "Santa Águeda", "Adaya"],
-      "confidence": "high"
+      "cross_references": [
+        "Mahón",
+        "Ferrerías",
+        "Santa Águeda",
+        "Adaya"
+      ],
+      "confidence": "high",
+      "municipality": "es Mercadal"
     },
     {
       "title": "MERCADAL",
@@ -27,8 +33,15 @@
         "vecinos": 837,
         "parroquias": 1
       },
-      "cross_references": ["Toro", "Fornells", "San Juan de las huertas de Carbonell", "Mahón", "Ciudadela"],
-      "confidence": "high"
+      "cross_references": [
+        "Toro",
+        "Fornells",
+        "San Juan de las huertas de Carbonell",
+        "Mahón",
+        "Ciudadela"
+      ],
+      "confidence": "high",
+      "municipality": "es Mercadal"
     }
   ]
 }

@@ -11,9 +11,12 @@
       "island": "Mallorca",
       "seigneurial_regime": "Realengo",
       "mayor_type": "Alcalde Pedáneo",
-      "municipality": "Esporlas",
+      "municipality": "Esporles",
       "description": "L. R. de España, en la isla de Mallorca y de su obispado. A. P., 1 parroquia aneja de la de Esporlas; para su vecindario, véase esta villa. Situado en la inmediación del mar, siguiendo la costa del N. para el O. Produce casi lo mismo que Esporlas. Contribuye con Palma.",
-      "cross_references": ["Esporlas", "Palma"],
+      "cross_references": [
+        "Esporlas",
+        "Palma"
+      ],
       "confidence": "high",
       "note": "Modern: Establiments (barri de Palma de Mallorca). Originalment annex d'Esporles, després agregat a Palma. El Suplement del Tomo XI inclou Rullo/Establimens/La Punta com aldees del mateix nucli."
     }

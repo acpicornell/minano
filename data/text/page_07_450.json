@@ -14,9 +14,12 @@
         "vecinos": 187,
         "habitantes": 930
       },
-      "cross_references": ["Ibiza"],
+      "cross_references": [
+        "Ibiza"
+      ],
       "confidence": "high",
-      "note": "Modern: Sant Carles de Peralta (Eivissa)."
+      "note": "Modern: Sant Carles de Peralta (Eivissa).",
+      "municipality": "Santa Eulària des Riu"
     }
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "vol": "11",
+  "leaf": 37,
+  "page_printed": null,
+  "model": "claude-opus-4-7-via-claude-code",
+  "window": 1,
+  "entries": [
+    {
+      "title": "ALARÓ (adición)",
+      "place_type": "villa",
+      "island": "Mallorca",
+      "seigneurial_regime": "Realengo",
+      "municipality": "Alaró",
+      "description": "Tiene 733 vec., 3,248 hab. En lugar de la situación que espresa el Diccionario, debe leerse la siguiente. Está sit. al pie de los montes inmediatos al Puigmayor de la Isla, á 3 leg. de Palma, y mas de 4 del santuario de Ntra. Sra. de Lluch. En su distrito á la parte del N. se halla un castillo en un aislado y elevado monte, cortado á pico, donde hay un santuario dedicado á Ntra. Sra. (Not. dada por el R. P. Fr. Luis de Villafranca, religioso capuchino de Palma en Mallorca).",
+      "stats": {
+        "vecinos": 733,
+        "habitantes": 3248
+      },
+      "cross_references": ["Alaró", "Palma", "Lluch"],
+      "confidence": "high",
+      "note": "Suplement amb correcció demogràfica i de situació respecte al tomo I (que consignava 710 vec. i 4 757 hab. — l'adició revisa a 733 vec. i 3 248 hab.) i amb una descripció topogràfica refeta que situa Alaró al peu del Puig Major, a 3 llegües de Palma i més de 4 del santuari de Lluc. Recuperat per l'auditoria de cadenes-de-correccions del Suplement (`scripts/inner_lemma_audit.py --pattern B`). El castell esmentat al N. és el castell d'Alaró, amb la capelleta de la Mare de Déu del Refugi."
+    }
+  ]
+}
