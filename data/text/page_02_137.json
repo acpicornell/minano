@@ -15,7 +15,7 @@
       "place_type": "aldea",
       "seigneurial_regime": "Realengo",
       "mayor_type": "Sin alcalde",
-      "municipality": "Palma",
+      "municipality": "Sóller",
       "description": "Aid. R. de Esp., en la isla de Mallorca; 39 vec., 118 hab. No hay alcalde. Situado al E. de Sóller, en el cam. que va á Selva. (V. la descripción general de Mallorca). Contr. con Palma.",
       "stats": {
         "vecinos": 39,
@@ -23,9 +23,11 @@
         "contribuye_con": "Palma"
       },
       "cross_references": [
-        "Mallorca"
+        "Mallorca",
+        "Sóller"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "note": "Municipality corregida de Palma a Sóller: malgrat que Miñano diu «Contr. con Palma» (contribució fiscal), la situació geogràfica («al E. de Sóller, en el cam. que va á Selva») i l'adscripció eclesiàstica (parròquia aneja de Sóller) la fan annexa de Sóller; mateix patró que BINIAMAR (Selva) i BINIALI (Sencelles), on l'adició del Suplement va precisar la mateixa correcció. Probable equivalent modern: Biniaraix (Sóller), llogaret a l'entrada del Barranc de Biniaraix. Miñano també recull aquest mateix lloc al Suplement amb el títol BINIARAIG."
     },
     {
       "title": "BINIAGUAL",

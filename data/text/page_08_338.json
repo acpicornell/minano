@@ -6,13 +6,14 @@
   "window": 2,
   "entries": [
     {
-      "title": "SONGAU ANA",
+      "title": "SON-GALIANA",
       "place_type": "coto",
       "island": "Mallorca",
       "seigneurial_regime": "Señorial",
+      "municipality": "Montuïri",
       "description": "Cot. Red. S. de Esp., en la isla de Mallorca.",
-      "confidence": "medium",
-      "note": "Brief stub. Possibly Son Galiana or similar 'Son'-prefixed Mallorcan estate."
+      "confidence": "high",
+      "note": "Títol corregit (chocr llegia «SON-GAU ANA»: la L del nucli GA-LI-A-NA va ser reconeguda com a U i una I com a espai). Modern: Son Galiana, possessió històrica de Montuïri al pla mallorquí. Detectat per `scripts/suspicious_titles_audit.py` amb WRatio màxim 78 contra NGIB Mallorca; la lectura correcta fou confirmada externament."
     },
     {
       "title": "SONSEGUI",

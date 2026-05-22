@@ -121,6 +121,21 @@ can be rebuilt without re-spending tokens.
    share a Vilafranca signature with a Balearic neighbour do not
    contaminate the result.
 
+   A third audit (`scripts/suspicious_titles_audit.py`) operates
+   on the extracted titles themselves, looking for the OCR
+   confusions documented in this corpus: `BIM-` or `BUM-` /
+   `BUNI-` openings where Mallorcan toponymy expects `BINI-`
+   (NI→M, NI→U); the letter `K` (almost always a misread `R`);
+   the diaeresis on `Ü` outside the canonical Catalan `üe/üi`
+   digraphs; and lemmas whose best fuzzy match in the gazetteer
+   falls below a configurable WRatio threshold. Findings are
+   split into *probable issues* (low fuzzy score, with or
+   without a heuristic flag) and *archaic-spelling notes*
+   (OCR-looking but matched ≥ 92 against NGIB — e.g. `BÜÑOLA`
+   matching modern *Buñola*, an intentional 19th-century
+   spelling rather than scanner damage), so a human pass can
+   resolve the former without reviewing the latter.
+
 3. **Geocoding.** Each extracted title is matched against the
    **Nomenclàtor Geogràfic de les Illes Balears** (NGIB, Govern de les
    Illes Balears: 55 531 modern toponyms). The geographic data

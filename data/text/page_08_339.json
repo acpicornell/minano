@@ -6,13 +6,14 @@
   "window": 2,
   "entries": [
     {
-      "title": "SON SÜÑER",
+      "title": "SON SUÑER",
       "place_type": "coto",
       "island": "Mallorca",
       "seigneurial_regime": "Señorial",
+      "municipality": "Palma",
       "description": "Cot. Red. S. de España en la isla de Mallorca.",
-      "confidence": "medium",
-      "note": "Brief stub. Modern: Son Sunyer (possibly Son Sunyer / Son Sureda area, Mallorca; the diaeresis on Ü is OCR-introduced)."
+      "confidence": "high",
+      "note": "Títol corregit: el chocr llegia «SON SÜÑER» però la dièresi sobre la U és un artefacte d'OCR (el caràcter ÜÑ va aparèixer al mateix patró que BINARAÜS, BIMFAÜALT, BÜÑOLA). La grafia canònica de Miñano és SON SUÑER, que NGIB coincideix al 95 amb «Son Sunyer». Modern: Son Sunyer (Palma, gran possessió històrica de la plana de Sant Jordi, hui dia integrada al barri del mateix nom al SE de Palma)."
     }
   ]
 }
