@@ -1,5 +1,7 @@
 # Miñano · Balearic subset
 
+Live at <https://minano-balears.cloudflare-d82.workers.dev/>.
+
 Digital edition of the **Balearic Islands articles** of Sebastián
 Miñano y Bedoya's *Diccionario geográfico-estadístico de España y
 Portugal* (Madrid, 1826–1829, 11 vols.).
