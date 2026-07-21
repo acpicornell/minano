@@ -1,5 +1,7 @@
 # Miñano · Balearic subset
 
+[![Deploy](https://github.com/acpicornell/minano/actions/workflows/deploy.yml/badge.svg)](https://github.com/acpicornell/minano/actions/workflows/deploy.yml)
+
 Live at <https://minano-balears.cloudflare-d82.workers.dev/>.
 
 Digital edition of the **Balearic Islands articles** of Sebastián
