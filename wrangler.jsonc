@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "minano-balears",
+  "workers_dev": false,
   "compatibility_date": "2026-05-21",
   "observability": {
     "enabled": true
