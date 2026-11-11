@@ -871,11 +871,12 @@ async function renderMap() {
       zoomControl: true,
       scrollWheelZoom: true,
     });
-    // CARTO light basemap — no API key required, very legible for thematic overlays
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    // OpenStreetMap's standard tiles. CARTO's basemaps, used until 2026,
+    // now answer "API KEY REQUIRED" without a key. OSM has no dark tiles, so
+    // the dark theme inverts these in CSS.
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       maxZoom: 19,
-      subdomains: "abcd",
     }).addTo(mapInstance);
 
     // Build markers (only once — Leaflet keeps them in layers).
