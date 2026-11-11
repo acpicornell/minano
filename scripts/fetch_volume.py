@@ -5,9 +5,9 @@ Miñano's *Diccionario geográfico-estadístico de España y Portugal*
 (XI) — scanned by Google from various library partners and re-hosted on
 Internet Archive under **heterogeneous identifiers**:
 
-- Tomo XI (Suplemento, 1829, Complutense): ``diccionariogeog00bedogoog``
-- ... (other tomos to be resolved as we expand beyond the supplement;
-  see TODO below).
+``VOL_TO_IDENTIFIER`` below maps every tomo to its identifier (e.g.
+tomo XI, the Suplemento of 1829 from the Complutense, is
+``diccionariogeog00bedogoog``).
 
 For each volume we need:
 

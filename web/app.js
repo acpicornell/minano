@@ -795,17 +795,7 @@ let mapInstance = null;
 let mapMarkersAll = [];
 let mapLeafletLoading = null;
 
-const ISLAND_COLOUR = {
-  "Mallorca":   "#0070b8",
-  "Menorca":    "#0f766e",
-  "Ibiza":      "#c2410c",
-  "Eivissa":    "#c2410c",
-  "Formentera": "#a04545",
-  "Cabrera":    "#7c3aed",
-  "Baleares":   "#475569",
-};
-
-// Lazy-load Leaflet's JS bundle from the CDN. Returns a promise that
+// Lazy-load Leaflet's JS bundle from web/vendor/. Returns a promise that
 // resolves once window.L is available. Subsequent calls reuse the same
 // promise so we don't fetch twice.
 function loadLeaflet() {
@@ -883,7 +873,7 @@ async function renderMap() {
     for (const e of state.entries) {
       if (typeof e.lon !== "number" || typeof e.lat !== "number") continue;
       const r = radiusForVecinos(e.stats?.vecinos);
-      const colour = ISLAND_COLOUR[e.island] || "#475569";
+      const colour = ISLAND_HUE[e.island] || "#475569";
       const m = L.circleMarker([e.lat, e.lon], {
         radius: r,
         color: "#fff",

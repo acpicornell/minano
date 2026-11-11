@@ -216,8 +216,8 @@ can be rebuilt without re-spending tokens.
 4. **Publication.** The per-article JSONs are loaded into a DuckDB
    database and exported as a single `web/data.json` consumed by the
    static site. The site uses no framework: HTML, CSS and one
-   JavaScript file. Leaflet is loaded lazily from CDN on the *Mapa*
-   tab.
+   JavaScript file. Leaflet is vendored in `web/vendor/` and loaded
+   lazily from there on the *Mapa* tab.
 
 ## Website
 

@@ -1,5 +1,5 @@
-/* 1860 Nomenclator — clear academic palette. Slim version for minano
-   (no map / no demografia / no statistics tab; the corpus is smaller). */
+/* Miñano, Diccionario geográfico-estadístico (1826-1829) — clear academic
+   palette. Tabs: Inici, Explorar, Mapa, Estadístiques and Notes. */
 :root {
   --bg: #fdfaf3;
   --surface: #ffffff;
@@ -822,7 +822,6 @@ tbody tr.minano-expand td {
 }
 .sunburst-legend li { margin-bottom: 0.15em; }
 .sunburst-legend strong { color: var(--text); }
-.demo-card-wide { grid-column: 1 / -1; }
 .demo-chart { overflow-x: auto; }
 .bars-svg { width: 100%; height: auto; display: block; font-family: inherit; }
 .bars-svg .bar-label  { font-size: 11px; fill: var(--text); font-variant-numeric: tabular-nums; }
