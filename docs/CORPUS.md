@@ -23,8 +23,8 @@ exploration.
 | Indicator | Value |
 |---|---|
 | Volumes processed | 11 / 11 (1826–1829) |
-| Balearic articles extracted | 182 |
-| Articles with geographic coordinates | 99.5 % |
+| Balearic articles extracted | 211 |
+| Articles with geographic coordinates | 210 / 211 (99.5 %), 10 of them approximate |
 | Public website | [`web/`](../web/index.html) (static, vanilla JS) |
 | License | AGPL-3.0-or-later (code); original text in the public domain |
 

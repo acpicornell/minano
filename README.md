@@ -15,8 +15,9 @@ Live at <https://minano.corpusbalear.org>. Part of
 
 - 11 of 11 volumes processed (1826–1829); the only documented gap is
   Tomo X (VIL–VIZ), whose Internet Archive scan holds no Balearic entry.
-- 182 Balearic articles extracted, 99.5 % of them with geographic
-  coordinates.
+- 211 Balearic articles extracted; 210 of them (99.5 %) have geographic
+  coordinates, 10 of which are approximate (island centroid or
+  ambiguous toponym).
 - A static site in Catalan (`web/`): explorable table, map, statistics
   and scholarly notes.
 

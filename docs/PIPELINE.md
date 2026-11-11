@@ -176,8 +176,10 @@ can be rebuilt without re-spending tokens.
 
    Articles that cannot be matched directly fall back to their
    parent municipality, and articles with no resolvable parent fall
-   back to the centroid of the corresponding island. The aggregate
-   match rate is 99.5 %; every matched entry is independently
+   back to the centroid of the corresponding island. 210 of the 211
+   articles (99.5 %) receive coordinates; 10 of those are approximate
+   (8 island centroids, 2 ambiguous homonyms), and one — the general
+   BALEARES article — has none. Every matched entry is independently
    verified to land within the bounding box of its declared island
    and within 1 km of the canonical NGIB coordinates of its matched
    toponym.
