@@ -813,9 +813,9 @@ function loadLeaflet() {
   if (mapLeafletLoading) return mapLeafletLoading;
   mapLeafletLoading = new Promise((resolve, reject) => {
     const s = document.createElement("script");
-    s.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
-    s.integrity = "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=";
-    s.crossOrigin = "";
+    // Vendored (web/vendor/), Leaflet 1.9.4 byte for byte as unpkg served it
+    // (same SRI hash), so the site depends on no third-party server.
+    s.src = "vendor/leaflet.js";
     s.onload = resolve;
     s.onerror = () => reject(new Error("Leaflet failed to load"));
     document.head.appendChild(s);
